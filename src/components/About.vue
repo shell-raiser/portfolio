@@ -1,24 +1,26 @@
 <template>
-  <section >
-    <v-container style="background-color=red">
+  <section>
+    <v-container>
       <v-row>
         <v-col sm="6">
-          <v-hover v-slot="{ hover }">
-            <v-card
-              :elevation="hover ? 16 : 2"
-              :class="{ 'on-hover': hover }"
-              class="mx-auto"
-              width="400"
+          <v-card
+            hover
+            raised
+            rounded
+            :class="{ 'on-hover': hover }"
+            class="mx-auto"
+            max-width="400"
+            max-height="400"
+            
+          >
+            <g-image
+              alt="Profile Picture"
+              src="~/profilePicCrop.jpg"
+              max-width="400"
               height="400"
-            >
-              <g-image
-                alt="Profile Picture"
-                src="~/profilePic.jpg"
-                width="400"
-                height="400"
-              />
-            </v-card>
-          </v-hover>
+              fit="inside"
+            />
+          </v-card>
         </v-col>
         <v-col sm="6">
           <h1>Yollo there, I'm Shailesh</h1>
