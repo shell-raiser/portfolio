@@ -1,8 +1,11 @@
 <template>
   <Layout>
     <About />
+    <v-divider></v-divider>
     <Contact />
+    <v-divider></v-divider>
     <Projects />
+    <v-divider></v-divider>
     <test />
   </Layout>
 </template>
