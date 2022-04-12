@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <!-- 2:06:01 -->
-    <v-navigation-drawer class="purple darken-4" dark permanent width="200" expand-on-hover>
+    <v-navigation-drawer class="purple darken-4" dark permanent width="60" app bottom>
       <template v-slot:prepend>
         <v-list-item>
           <v-list-item-content>
@@ -13,25 +13,26 @@
       </template>
       <v-divider></v-divider>
       <v-list>
-        <v-list-item v-for="item in items" :key="item.title" link>
-          <v-hover>
-            <template v-slot:default="{ hover }">
-              <v-card class="mx-auto" max-width="344">
-                <v-icon color="red">{{ item.icon }}</v-icon>
-                <v-fade-transition>
+        <!-- <v-list-item v-for="item in items" :key="item.title" link> -->
+        <!-- <v-hover> -->
+        <!-- <template v-slot:default="{ hover }"> -->
+        <!-- <v-card class="nav-icons mx-auto" max-width="344"> -->
+        <v-icon class="nav-icons">mdi-view-dashboard</v-icon>
+        <v-icon class="nav-icons">mdi-human-greeting-proximity</v-icon>
+        <v-icon class="nav-icons">mdi-devices</v-icon>
+        <!-- <v-fade-transition>
                   <v-overlay v-if="hover" absolute opacity="0" color="red">
-                    <!-- <v-btn>See more info</v-btn> -->
                     <v-btn>{{ item.title }}</v-btn>
                   </v-overlay>
-                </v-fade-transition>
-              </v-card>
-            </template>
-          </v-hover>
+                </v-fade-transition> -->
+        <!-- </v-card> -->
+        <!-- </template> -->
+        <!-- </v-hover> -->
 
-          <!-- <v-list-item-content>
+        <!-- <v-list-item-content>
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content> -->
-        </v-list-item>
+        <!-- </v-list-item> -->
       </v-list>
 
       <!-- <template v-slot:append>
@@ -79,7 +80,6 @@ query {
 }
 .v-main {
   flex: 1 0;
-  
 }
 /* .hidden:hover {
   visibility: hidden;
@@ -93,10 +93,12 @@ query {
   position: absolute;
   width: 100%;
 }
-.v-card.on-hover.theme--dark{
-  background-color: rgba(#FFF, 0.8);}
-.v-card__text{
-  color: #000;}
+.v-card.on-hover.theme--dark {
+  background-color: rgba(#fff, 0.8);
+}
+.v-card__text {
+  color: #000;
+}
 
 h1 {
   color: rgb(100, 0, 172);
@@ -104,5 +106,36 @@ h1 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: 60s linear 0s infinite normal none running hue;
+}
+
+.nav-icons {
+  display: block;
+  text-align: center;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+}
+
+.nav-icons:hover {
+  color: aqua;
+  opacity: 0;
+}
+.nav-icons:hover::after {
+  opacity: 1;
+}
+.nav-icons:after {
+  opacity: 1;
+  content: "";
+  font-size: 9px;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.nav-icons:first-child::after {
+  content: "About me";
+}
+.nav-icons:i {
+  transition: all 0.3s ease-out;
 }
 </style>
