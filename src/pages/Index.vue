@@ -1,12 +1,14 @@
-<template>
-  <Layout>
-    <About />
+<template >
+  <Layout >
+    <div >
+   <About id="About" />
     <v-divider></v-divider>
-    <Contact />
+    <Contact id="Contact" />
     <v-divider></v-divider>
-    <Projects />
+    <Projects id="Projects"/>
     <v-divider></v-divider>
-    <test />
+    <Arsenal id="Arsenal"/>
+    </div>
   </Layout>
 </template>
 
@@ -14,8 +16,8 @@
 import About from "@/components/About.vue";
 import Contact from "@/components/Contact.vue";
 import Projects from "@/components/Projects.vue";
-import test from "@/components/test.vue";
 import 'animate.css';
+import Arsenal from "../components/Arsenal.vue";
 export default {
   metaInfo: {
     title: "Shailesh K S",
@@ -24,8 +26,8 @@ export default {
     About,
     Contact,
     Projects,
-    test,
-  },
+    Arsenal
+},
   data: () => ({
     overlay: false,
   }),
@@ -36,5 +38,7 @@ export default {
 .home-links a {
   margin-right: 1rem;
 }
+
+
 
 </style>

@@ -1,15 +1,12 @@
 <template>
-  <v-app>
+  <v-app class="background">
     <!-- 2:06:01 -->
-    <v-navigation-drawer class="purple darken-4" dark permanent width="60" app bottom>
+    <v-navigation-drawer permanent width="50" app dark bottom>
       <template v-slot:prepend>
-        <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title>Shailesh K S</v-list-item-title>
-            <!-- <v-list-item-subtitle>aka. Shell Raiser</v-list-item-subtitle> -->
-            <v-list-item-subtitle>Cybersecurity enthusiast</v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
+        <g-image class="logo" alt="logo" src="~/Shell.svg" />
+        <!-- <v-list-item-title>Shailesh K S</v-list-item-title> -->
+        <!-- <v-list-item-subtitle>aka. Shell Raiser</v-list-item-subtitle> -->
+        <!-- <v-list-item-subtitle>Cybersecurity enthusiast</v-list-item-subtitle> -->
       </template>
       <v-divider></v-divider>
       <v-list>
@@ -17,9 +14,21 @@
         <!-- <v-hover> -->
         <!-- <template v-slot:default="{ hover }"> -->
         <!-- <v-card class="nav-icons mx-auto" max-width="344"> -->
-        <v-icon class="nav-icons">mdi-view-dashboard</v-icon>
-        <v-icon class="nav-icons">mdi-human-greeting-proximity</v-icon>
-        <v-icon class="nav-icons">mdi-devices</v-icon>
+        <a href="/">
+          <v-icon class="nav-icons">mdi-view-dashboard</v-icon>
+        </a>
+
+        <a href="#Contact">
+          <v-icon class="nav-icons">mdi-human-greeting-proximity</v-icon>
+        </a>
+
+        <a href="#Projects">
+          <v-icon class="nav-icons">mdi-devices</v-icon>
+        </a>
+
+        <a href="#Arsenal">
+          <v-icon class="nav-icons">mdi-hammer-wrench</v-icon>
+        </a>
         <!-- <v-fade-transition>
                   <v-overlay v-if="hover" absolute opacity="0" color="red">
                     <v-btn>{{ item.title }}</v-btn>
@@ -55,15 +64,10 @@
 <script>
 export default {
   data() {
-    return {
-      items: [
-        { title: "About me", icon: "mdi-view-dashboard" },
-        { title: "Contact", icon: "mdi-gavel" },
-        { title: "Projects", icon: "mdi-gavel" },
-      ],
-    };
+    return {}
   },
 };
+
 </script>
 
 <static-query>
@@ -75,12 +79,20 @@ query {
 </static-query>
 
 <style>
+.logo {
+  margin: 8px auto;
+  display: block;
+  align-content: center;
+}
+
 .v-application--wrap {
   flex-direction: row;
 }
+
 .v-main {
   flex: 1 0;
 }
+
 /* .hidden:hover {
   visibility: hidden;
 } */
@@ -93,9 +105,11 @@ query {
   position: absolute;
   width: 100%;
 }
+
 .v-card.on-hover.theme--dark {
   background-color: rgba(#fff, 0.8);
 }
+
 .v-card__text {
   color: #000;
 }
@@ -112,30 +126,45 @@ h1 {
   display: block;
   text-align: center;
   position: absolute;
-  height: 50px;
   width: 100%;
+  font-size: 22px;
+  color: #0099ff;
+  display: block;
+  line-height: 51px;
+  height: 51px;
+  position: relative;
 }
 
 .nav-icons:hover {
-  color: aqua;
-  opacity: 0;
+  color: rgb(0, 174, 255);
 }
-.nav-icons:hover::after {
+
+/* .nav-icons:hover::after {
   opacity: 1;
-}
-.nav-icons:after {
-  opacity: 1;
+} */
+/* .nav-icons:after {
   content: "";
   font-size: 9px;
+  letter-spacing: 2px;
   position: absolute;
   bottom: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
   opacity: 0;
   transition: all 0.3s ease-out;
-}
+}  */
+
 .nav-icons:first-child::after {
-  content: "About me";
+  content: "About";
+  /* color: #000; */
 }
-.nav-icons:i {
+
+.nav-icons:a:i {
   transition: all 0.3s ease-out;
+}
+
+.background {
+  background-image: url('../background.png');
 }
 </style>

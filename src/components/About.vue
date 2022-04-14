@@ -1,6 +1,7 @@
 <template>
-  <section>
-    <v-container>
+  <section >
+    
+    <v-container class="background">
       <v-row>
         <v-col sm="6">
           <v-card
