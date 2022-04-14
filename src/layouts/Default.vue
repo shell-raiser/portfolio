@@ -164,7 +164,10 @@ h1 {
   transition: all 0.3s ease-out;
 }
 
-.background {
+.bg1 {
   background-image: url('../background.png');
+}
+.bg2{
+  background-image: url('../bg2.jpg');
 }
 </style>

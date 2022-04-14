@@ -26,7 +26,7 @@ export default {
     About,
     Contact,
     Projects,
-    Arsenal
+    Arsenal,
 },
   data: () => ({
     overlay: false,
