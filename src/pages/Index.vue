@@ -1,15 +1,69 @@
 <template >
   <Layout>
     <!-- <div> -->
-      <About id="About" />
-      <v-divider></v-divider>
-      <Contact id="Contact" />
-      <v-divider></v-divider>
-      <Projects id="Projects" />
-      <v-divider></v-divider>
-      <Arsenal id="Arsenal" />
-      <v-divider></v-divider>
-      <!-- <Test /> -->
+    <v-card dark flat tile>
+      <v-window v-model="onboarding">
+        <v-window-item  >
+          <v-card color="transparent" height="100%">
+            <!-- <v-row class="fill-height" align="center" justify="center"> -->
+                <About id="About" />
+            <!-- </v-row> -->
+          </v-card>
+        </v-window-item>
+        <v-window-item>
+          <v-card color="transparent" height="100%">
+            <!-- <v-row class="fill-height" align="center" justify="center"> -->
+              <v-card-text class="text-center">
+                <Contact id="Contact" />
+              </v-card-text>
+            <!-- </v-row> -->
+          </v-card>
+        </v-window-item>
+        <v-window-item>
+          <v-card color="transparent" height="100%">
+            <v-row class="fill-height" align="center" justify="center">
+              <v-card-text class="text-center">
+                <Projects id="Projects" />
+              </v-card-text>
+            </v-row>
+          </v-card>
+        </v-window-item>
+        <v-window-item>
+          <v-card color="transparent" height="100%">
+            <v-row class="fill-height" align="center" justify="center">
+              <v-card-text class="text-center">
+                <Arsenal id="Arsenal" />
+              </v-card-text>
+            </v-row>
+          </v-card>
+        </v-window-item>
+      </v-window>
+
+      <v-card-actions class="justify-space-between">
+        <v-btn text @click="prev">
+          <v-icon>mdi-chevron-left</v-icon>
+        </v-btn>
+        <v-item-group v-model="onboarding" class="text-center" mandatory>
+          <v-item v-for="n in length" :key="`btn-${n}`" v-slot="{ active, toggle }">
+            <v-btn :input-value="active" icon @click="toggle">
+              <v-icon>mdi-record</v-icon>
+            </v-btn>
+          </v-item>
+        </v-item-group>
+        <v-btn text @click="next">
+          <v-icon>mdi-chevron-right</v-icon>
+        </v-btn>
+      </v-card-actions>
+    </v-card>
+    
+    <v-divider></v-divider>
+    
+    <v-divider></v-divider>
+    
+    <v-divider></v-divider>
+    
+    <v-divider></v-divider>
+    <!-- <Test /> -->
     <!-- </div> -->
     <!-- <v-card  loader-height="100%" height="100%" flat tile>
       <v-window v-model="onboarding">
@@ -103,12 +157,27 @@ export default {
     Arsenal,
     Test
   },
+
   data: () => ({
     overlay: false,
+    length: 4,
+      onboarding: 0,
     // sections: { <About /> ,<Projects/>, <Contact/> },
     // onboarding: 0,
 
   }),
+  methods: {
+      next () {
+        this.onboarding = this.onboarding + 1 === this.length
+          ? 0
+          : this.onboarding + 1
+      },
+      prev () {
+        this.onboarding = this.onboarding - 1 < 0
+          ? this.length - 1
+          : this.onboarding - 1
+      },
+    }
   // methods: {
   //   next() {
   //     this.onboarding = this.onboarding + 1 === this.length
