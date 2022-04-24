@@ -1,12 +1,12 @@
 <template>
-  <v-app class="background">
+  <v-app>
     <!-- 2:06:01 -->
-    
+
     <!-- </v-card> -->
     <v-main>
-      <v-container>
-        <slot />
-      </v-container>
+      <!-- <v-container> -->
+      <slot />
+      <!-- </v-container> -->
     </v-main>
   </v-app>
 </template>
@@ -28,7 +28,7 @@ export default {
         ? this.length - 1
         : this.onboarding - 1
     },
-  },  
+  },
 };
 
 </script>
@@ -51,16 +51,12 @@ query {
 .v-application--wrap {
   flex-direction: row;
 }
-
+/* 
 .v-main {
   flex: 1 0;
-}
-.v-main__wrap{
-  width:100%;
-}
-.container{
-  padding: 0%;
-}
+} */
+
+
 /* .hidden:hover {
   visibility: hidden;
 } */
@@ -90,55 +86,26 @@ h1 {
   animation: 60s linear 0s infinite normal none running hue;
 }
 
-.nav-icons {
-  display: block;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  font-size: 22px;
-  color: #0099ff;
-  display: block;
-  line-height: 51px;
-  height: 51px;
-  position: relative;
-}
-
-.nav-icons:hover {
-  color: rgb(0, 174, 255);
-}
-
-/* .nav-icons:hover::after {
-  opacity: 1;
-} */
-/* .nav-icons:after {
-  content: "";
-  font-size: 9px;
-  letter-spacing: 2px;
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  transition: all 0.3s ease-out;
-}  */
-
-.nav-icons:first-child::after {
-  content: "About";
-  /* color: #000; */
-}
-
-.nav-icons:a:i {
-  transition: all 0.3s ease-out;
-}
 
 .bg1 {
   background-image: url('../background.png');
+  /* height: 93vmin; */
+  height: 94vh;
+
 }
-.bg2{
+
+.bg2 {
   background-image: url('../bg2.jpg');
+  height: 94vh;
 }
-.bg3{
+
+.bg3 {
   background-image: url('../wallpaper.png');
+  height: 96vh;
+  /* width: 90%; */
+}
+
+.bg4 {
+  height: 96vh;
 }
 </style>

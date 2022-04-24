@@ -1,6 +1,6 @@
 <template>
-    <section>
-        <v-container class="bg3">
+    <section class="bg3">
+        <v-container>
             <h1> Projects </h1>
             <v-card>
                 <v-list>
