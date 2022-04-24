@@ -2,17 +2,16 @@
     <section>
         <h1> Arsenal </h1>
         <v-list>
-            <v-card class="mx-auto">
-                <v-list-item-content>
-                    <v-list-item-title>Langs</v-list-item-title>
-                    
-                    <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"
-                        height="100">
+            <!-- <v-card class="mx-auto"> -->
+            <!-- <v-list-item-content> -->
+            <v-list-item-title>Langs</v-list-item-title>
 
-                    <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png"
-                        height="100">
-                </v-list-item-content>
-            </v-card>
+            <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png" height="100">
+
+            <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png"
+                height="100">
+            <!-- </v-list-item-content> -->
+            <!-- </v-card> -->
 
             <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png" height="100">
 
