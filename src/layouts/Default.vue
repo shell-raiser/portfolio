@@ -105,7 +105,12 @@ query {
 .v-main {
   flex: 1 0;
 }
-
+.v-main__wrap{
+  width:100%;
+}
+.container{
+  padding: 0%;
+}
 /* .hidden:hover {
   visibility: hidden;
 } */
@@ -182,5 +187,8 @@ h1 {
 }
 .bg2{
   background-image: url('../bg2.jpg');
+}
+.bg3{
+  background-image: url('../wallpaper.png');
 }
 </style>
