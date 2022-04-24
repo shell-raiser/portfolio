@@ -1,6 +1,6 @@
 <template >
   <Layout>
-    <div>
+    <!-- <div> -->
       <About id="About" />
       <v-divider></v-divider>
       <Contact id="Contact" />
@@ -10,7 +10,7 @@
       <Arsenal id="Arsenal" />
       <v-divider></v-divider>
       <!-- <Test /> -->
-    </div>
+    <!-- </div> -->
     <!-- <v-card  loader-height="100%" height="100%" flat tile>
       <v-window v-model="onboarding">
         <v-window-item >
