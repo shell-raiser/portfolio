@@ -90,22 +90,23 @@ h1 {
 .bg1 {
   background-image: url('../background.png');
   /* height: 93vmin; */
-  height: 94vh;
+  height: 90vh;
+
 
 }
 
 .bg2 {
   background-image: url('../bg2.jpg');
-  height: 94vh;
+  height: 90vh;
 }
 
 .bg3 {
   background-image: url('../wallpaper.png');
-  height: 96vh;
+  height: 90vh;
   /* width: 90%; */
 }
 
 .bg4 {
-  height: 96vh;
+  height: 94vh;
 }
 </style>
