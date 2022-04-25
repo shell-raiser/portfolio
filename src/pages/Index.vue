@@ -37,7 +37,7 @@
       <!-- <v-card-actions style="position:fixed bottom: 0;" class="justify-space-between "> -->
       <v-footer class="justify-space-between " tile app>
         <v-btn text @click="prev">
-          <v-icon>mdi-chevron-left</v-icon>
+          <v-icon>mdi-chevron-up</v-icon>
         </v-btn>
         <!-- <v-item-group v-model="onboarding" class="text-center" mandatory>
           
@@ -87,7 +87,7 @@
         </v-btn-toggle>
 
         <v-btn text @click="next">
-          <v-icon>mdi-chevron-right</v-icon>
+          <v-icon>mdi-chevron-down</v-icon>
         </v-btn>
       </v-footer>
       <!-- </v-card-actions> -->
