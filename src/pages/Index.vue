@@ -2,7 +2,7 @@
   <Layout>
     <!-- <div> -->
     <v-card dark flat tile>
-      <v-window v-model="onboarding" vertical>
+      <v-window v-model="onboarding" vertical touch>
         <v-window-item>
           <!-- <v-card style="bottom:0px;"> -->
           <!-- <v-row class="fill-height" align="center" justify="center"> -->
