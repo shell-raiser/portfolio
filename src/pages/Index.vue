@@ -72,7 +72,7 @@
 
           <v-btn :input-value="active" @click="toggle">
             <v-icon>mdi-human-greeting-proximity</v-icon>
-            <span class="d-none d-sm-block">Contact</span> 
+            <span class="d-none d-sm-block">Contact</span>
           </v-btn>
 
           <v-btn :input-value="active" @click="toggle">
@@ -151,4 +151,15 @@ export default {
 </script>
 
 <style>
+h1 {
+  font-size: xxx-large;
+  color: rgb(100, 0, 172);
+  background-image: -webkit-linear-gradient(92deg, rgb(95, 18, 250), rgb(58, 254, 251));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: 60s linear 0s infinite normal none running hue;
+}
+
+
+
 </style>

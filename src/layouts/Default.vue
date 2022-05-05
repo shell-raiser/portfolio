@@ -51,6 +51,7 @@ query {
 .v-application--wrap {
   flex-direction: row;
 }
+
 /* 
 .v-main {
   flex: 1 0;
@@ -78,19 +79,20 @@ query {
   color: #000;
 }
 
-h1 {
-  color: rgb(100, 0, 172);
-  background-image: -webkit-linear-gradient(92deg, rgb(250, 223, 18), rgb(254, 78, 58));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: 60s linear 0s infinite normal none running hue;
-}
 
+
+
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
 
 .bg1 {
   background-image: url('../background.png');
   /* height: 93vmin; */
-  height: 90vh;
+  /* height: 90vh; */
 
 
 }
