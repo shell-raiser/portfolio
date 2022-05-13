@@ -93,22 +93,22 @@ query {
   background-image: url('../background.png');
   /* height: 93vmin; */
   /* height: 90vh; */
-
+  min-height: 90vh;
 
 }
 
 .bg2 {
   background-image: url('../bg2.jpg');
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .bg3 {
   background-image: url('../wallpaper.png');
-  height: 90vh;
+  min-height: 90vh;
   /* width: 90%; */
 }
 
 .bg4 {
-  height: 94vh;
+  min-height: 95vh;
 }
 </style>
