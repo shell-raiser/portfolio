@@ -159,7 +159,4 @@ h1 {
   -webkit-text-fill-color: transparent;
   animation: 60s linear 0s infinite normal none running hue;
 }
-
-
-
 </style>
