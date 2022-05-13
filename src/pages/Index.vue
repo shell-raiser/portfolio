@@ -37,7 +37,7 @@
       <!-- <v-card-actions style="position:fixed bottom: 0;" class="justify-space-between "> -->
       <v-footer class="justify-space-between " tile app>
         <v-btn text @click="prev">
-          <v-icon color="rgb(115, 251, 253)">mdi-chevron-left</v-icon>
+          <v-icon>mdi-chevron-left</v-icon>
         </v-btn>
         <!-- <v-item-group v-model="onboarding" class="text-center" mandatory>
           
