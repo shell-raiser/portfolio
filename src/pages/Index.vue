@@ -66,22 +66,22 @@
         </v-item-group> -->
         <v-btn-toggle v-model="onboarding" class="text-center" mandatory rounded shift>
           <v-btn :input-value="active" @click="toggle">
-            <v-icon color="rgb(58, 254, 251)">mdi-view-dashboard</v-icon>
+            <v-icon color="rgb(58, 240, 251)">mdi-view-dashboard</v-icon>
             <div class="d-none d-sm-block">About </div>
           </v-btn>
 
           <v-btn :input-value="active" @click="toggle">
-            <v-icon color="rgb(58, 254, 251)">mdi-human-greeting-proximity</v-icon>
+            <v-icon color="rgb(58, 240, 251)">mdi-human-greeting-proximity</v-icon>
             <span class="d-none d-sm-block">Contact</span>
           </v-btn>
 
           <v-btn :input-value="active" @click="toggle">
-            <v-icon color="rgb(58, 254, 251)">mdi-devices</v-icon>
+            <v-icon color="rgb(58, 240, 251)">mdi-devices</v-icon>
             <span class="d-none d-sm-block">Projects</span>
           </v-btn>
 
           <v-btn :input-value="active" @click="toggle">
-            <v-icon color="rgb(58, 254, 251)">mdi-hammer-wrench</v-icon>
+            <v-icon color="rgb(58, 240, 251)">mdi-hammer-wrench</v-icon>
             <span class="d-none d-sm-block">Tools</span>
           </v-btn>
         </v-btn-toggle>
