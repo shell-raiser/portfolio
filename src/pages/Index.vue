@@ -37,7 +37,7 @@
       <!-- <v-card-actions style="position:fixed bottom: 0;" class="justify-space-between "> -->
       <v-footer class="justify-space-between " tile app>
         <v-btn text @click="prev">
-          <v-icon>mdi-chevron-up</v-icon>
+          <v-icon color="rgb(115, 251, 253)">mdi-chevron-left</v-icon>
         </v-btn>
         <!-- <v-item-group v-model="onboarding" class="text-center" mandatory>
           
@@ -66,28 +66,28 @@
         </v-item-group> -->
         <v-btn-toggle v-model="onboarding" class="text-center" mandatory rounded shift>
           <v-btn :input-value="active" @click="toggle">
-            <v-icon>mdi-view-dashboard</v-icon>
+            <v-icon color="rgb(58, 254, 251)">mdi-view-dashboard</v-icon>
             <div class="d-none d-sm-block">About </div>
           </v-btn>
 
           <v-btn :input-value="active" @click="toggle">
-            <v-icon>mdi-human-greeting-proximity</v-icon>
+            <v-icon color="rgb(58, 254, 251)">mdi-human-greeting-proximity</v-icon>
             <span class="d-none d-sm-block">Contact</span>
           </v-btn>
 
           <v-btn :input-value="active" @click="toggle">
-            <v-icon>mdi-devices</v-icon>
+            <v-icon color="rgb(58, 254, 251)">mdi-devices</v-icon>
             <span class="d-none d-sm-block">Projects</span>
           </v-btn>
 
           <v-btn :input-value="active" @click="toggle">
-            <v-icon>mdi-hammer-wrench</v-icon>
+            <v-icon color="rgb(58, 254, 251)">mdi-hammer-wrench</v-icon>
             <span class="d-none d-sm-block">Tools</span>
           </v-btn>
         </v-btn-toggle>
 
         <v-btn text @click="next">
-          <v-icon>mdi-chevron-down</v-icon>
+          <v-icon>mdi-chevron-right</v-icon>
         </v-btn>
       </v-footer>
       <!-- </v-card-actions> -->
