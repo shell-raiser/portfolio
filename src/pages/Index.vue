@@ -13,9 +13,9 @@
 
         <v-window-item>
           <!-- <v-card> -->
-            <!-- <v-row class="fill-height" align="center" justify="center"> -->
-            <Contact id="Contact" />
-            <!-- </v-row> -->
+          <!-- <v-row class="fill-height" align="center" justify="center"> -->
+          <Contact id="Contact" />
+          <!-- </v-row> -->
           <!-- </v-card> -->
         </v-window-item>
         <v-window-item>
@@ -28,7 +28,7 @@
         <v-window-item>
           <!-- <v-card> -->
           <!-- <v-row class="fill-height" align="center" justify="center"> -->
-            <Arsenal id="Arsenal" />
+          <Arsenal id="Arsenal" />
           <!-- </v-row> -->
           <!-- </v-card> -->
         </v-window-item>
@@ -160,4 +160,25 @@ h1 {
   animation: 6s linear 0s infinite normal none running hue;
   /* z-index: 1; */
 }
+
+.headtext::before {
+            content: "Front end dev";
+            animation: animate infinite 5s;
+            /* padding-left: 10px; */
+        }
+  
+        @keyframes animate {
+  
+            25% {
+                content: "CyberSec enthusiast";
+            }
+
+            50% {
+                content: "Designer";
+            }
+  
+            75% {
+                content: "Physics Lover";
+            }
+        }
 </style>

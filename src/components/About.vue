@@ -16,7 +16,11 @@
             I'm Shailesh
           </h1>
           <p style="color:black">
-            I'm a CyberSec enthusiast
+            I'm a 
+            <span class="headtext pink rounded"></span>
+            <!-- [<span id="iMVar" class="red rounded">
+              Nice, Nice 
+            </span>] -->
           </p>
         </v-col>
       </v-row>
