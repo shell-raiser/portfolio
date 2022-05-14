@@ -1,8 +1,9 @@
 <template>
-    <section  class="bg4">
-        <v-container>
-        <h1> Arsenal </h1>
-        <!-- <v-list> -->
+    <section class="bg4">
+        <v-container fluid>
+
+            <h1> Arsenal </h1>
+            <!-- <v-list> -->
             <!-- <v-card class="mx-auto"> -->
             <!-- <v-list-item-content> -->
 
@@ -39,7 +40,7 @@
                 <path fill="#42b883" d="M78.8,10L64,35.4L49.2,10H0l64,110l64-110C128,10,78.8,10,78.8,10z"></path>
                 <path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z"></path>
             </svg>
-        <!-- </v-list> -->
+            <!-- </v-list> -->
         </v-container>
     </section>
 </template>
