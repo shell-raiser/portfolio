@@ -79,10 +79,6 @@ query {
   color: #000;
 }
 
-
-
-
-
 @keyframes textclip {
   to {
     background-position: 200% center;
@@ -90,25 +86,49 @@ query {
 }
 
 .bg1 {
-  background-image: url('../background.png');
+  /* background-image: url('../background.png'); */
   /* height: 93vmin; */
-  /* height: 90vh; */
   min-height: 90vh;
+  /* min-height: 90vh; */
+  background: linear-gradient(45deg, #09254f, #23d5ab);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
 
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .bg2 {
-  background-image: url('../bg2.jpg');
   min-height: 90vh;
+  background: linear-gradient(90deg, #09254f, #23d5ab);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
 }
 
 .bg3 {
-  background-image: url('../wallpaper.png');
   min-height: 90vh;
-  /* width: 90%; */
+  background: linear-gradient(90deg, #09254f, #23d5ab);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+
 }
 
 .bg4 {
   min-height: 95vh;
+  background: linear-gradient(-45deg, #09254f, #23d5ab);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
 }
 </style>
