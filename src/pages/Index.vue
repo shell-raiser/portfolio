@@ -157,6 +157,7 @@ h1 {
   background-image: -webkit-linear-gradient(92deg, rgb(95, 18, 250), rgb(58, 254, 251));
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: 60s linear 0s infinite normal none running hue;
+  animation: 6s linear 0s infinite normal none running hue;
+  /* z-index: 1; */
 }
 </style>
