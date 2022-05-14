@@ -27,9 +27,9 @@
         </v-window-item>
         <v-window-item>
           <!-- <v-card> -->
-          <v-row class="fill-height" align="center" justify="center">
+          <!-- <v-row class="fill-height" align="center" justify="center"> -->
             <Arsenal id="Arsenal" />
-          </v-row>
+          <!-- </v-row> -->
           <!-- </v-card> -->
         </v-window-item>
       </v-window>
