@@ -12,11 +12,11 @@
         </v-window-item>
 
         <v-window-item>
-          <v-card>
+          <!-- <v-card> -->
             <!-- <v-row class="fill-height" align="center" justify="center"> -->
             <Contact id="Contact" />
             <!-- </v-row> -->
-          </v-card>
+          <!-- </v-card> -->
         </v-window-item>
         <v-window-item>
           <!-- <v-card> -->
