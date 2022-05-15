@@ -21,7 +21,8 @@
 
             <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/c/c.png" height="100" />
 
-            <img src="https://pbs.twimg.com/profile_images/1327348581372575744/6M3Ll1hq_400x400.jpg" height="100" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Qiskit-Logo.svg/800px-Qiskit-Logo.svg.png" height="100" />
+            
 
             <img src="https://pbs.twimg.com/profile_images/1036953347943743488/1dbRCWDq_400x400.jpg" height="100" />
 
