@@ -24,7 +24,7 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Qiskit-Logo.svg/800px-Qiskit-Logo.svg.png" height="100" />
             
 
-            <img src="https://pbs.twimg.com/profile_images/1036953347943743488/1dbRCWDq_400x400.jpg" height="100" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Logo_Blender.svg" height="100" />
 
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Canva_Logo.png/1920px-Canva_Logo.png"
                 height="100" />
