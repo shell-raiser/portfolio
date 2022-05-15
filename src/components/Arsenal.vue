@@ -1,7 +1,7 @@
 <template>
     <section class="bg4">
         <v-container>
-            <h1>Arsenal</h1>
+            <h1 class="ArsenalHead">Arsenal</h1>
             <!-- <v-list> -->
             <!-- <v-card class="mx-auto"> -->
             <!-- <v-list-item-content> -->

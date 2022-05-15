@@ -1,7 +1,7 @@
 <template>
     <section class="bg3">
         <v-container>
-            <h1> Projects </h1>
+            <h1 class="ProjectsHead"> Projects </h1>
             <v-card>
                 <v-list>
                     <v-list-item-group>

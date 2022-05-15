@@ -90,7 +90,7 @@ query {
   /* height: 93vmin; */
   min-height: 90vh;
   /* min-height: 90vh; */
-  background: linear-gradient(45deg, #09254f, #23d5ab);
+  background: linear-gradient(45deg, rgb(124, 253, 253), rgb(106, 106, 255));
   background-size: 200% 200%;
   animation: gradient 10s ease infinite;
 
@@ -112,14 +112,14 @@ query {
 
 .bg2 {
   min-height: 90vh;
-  background: linear-gradient(90deg, #09254f, #23d5ab);
+  background: linear-gradient(90deg, #09254f, #0b4b3d);
   background-size: 200% 200%;
   animation: gradient 10s ease infinite;
 }
 
 .bg3 {
   min-height: 90vh;
-  background: linear-gradient(90deg, #09254f, #23d5ab);
+  background: linear-gradient(90deg, yellow, brown);
   background-size: 200% 200%;
   animation: gradient 10s ease infinite;
 

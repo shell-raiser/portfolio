@@ -155,16 +155,41 @@ export default {
 </script>
 
 <style>
-h1 {
+.ContactHead {
   font-size: xxx-large;
-  color: rgb(100, 0, 172);
-  background-image: -webkit-linear-gradient(92deg, rgb(95, 18, 250), rgb(58, 254, 251));
+  color: #09254f;
+  background-image: -webkit-linear-gradient(90deg, #28f6c6,#2d6ff4);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: 10s linear 0s infinite normal none running hue;
+  /* z-index: 1; */
+}
+.ProjectsHead {
+  font-size: xxx-large;
+  /* color: rgb(100, 0, 172); */
+  background-image: -webkit-linear-gradient(90deg,yellow, red);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: 6s linear 0s infinite normal none running hue;
   /* z-index: 1; */
 }
-
+.AboutHead {
+  font-size: xxx-large;
+  color: rgb(100, 0, 172);
+  background-image: -webkit-linear-gradient(0deg, rgb(95, 18, 250), rgb(26, 108, 107));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: 6s linear 0s infinite normal none running hue;
+  /* z-index: 1; */
+}
+.ArsenalHead{
+  font-size: xxx-large;
+  color: #09254f;
+  background-image: -webkit-linear-gradient(90deg, #1d4ba5,#105c4a);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: 10s linear 0s infinite normal none running hue;
+}
 .headtext::before {
             content: "Front end dev";
             animation: animate infinite 5s;

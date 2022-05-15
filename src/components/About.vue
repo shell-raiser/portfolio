@@ -11,7 +11,7 @@
           </v-card>
         </v-col>
         <v-col sm="6">
-          <h1>Yollo there,
+          <h1 class="AboutHead">Yollo there,
             <br>
             I'm Shailesh
           </h1>

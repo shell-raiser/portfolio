@@ -1,7 +1,7 @@
 <template>
     <section class="bg2">
         <v-container>
-            <h1>Contact</h1>
+            <h1 class="ContactHead">Contact</h1>
             <v-card>
                 <!-- <v-list> -->
                 <v-list-item-group >
