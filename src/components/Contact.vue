@@ -4,14 +4,14 @@
             <h1>Contact</h1>
             <v-card>
                 <!-- <v-list> -->
-                <v-list-item-group>
-                    <v-list-item two-line>
-                        <v-list-item-icon>
+                <v-list-item-group >
+                    <v-list-item  two-line>
+                        <v-list-item-icon >
                             <v-icon> mdi-email-variant</v-icon>
                         </v-list-item-icon>
                         <v-list-item-content>
                             <v-list-item-title>Email at</v-list-item-title>
-                            <v-list-item-subtitle>someemail@gmail.com</v-list-item-subtitle>
+                            <v-list-item-subtitle @click="GHLink()">someemail@gmail.com</v-list-item-subtitle>
                         </v-list-item-content>
                     </v-list-item>
 
