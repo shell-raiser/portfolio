@@ -132,6 +132,10 @@ export default {
         ? this.length - 1
         : this.onboarding - 1
     },
+    GHLink(){
+      window.open(
+              "https://www.geeksforgeeks.org", "_blank");
+    }
   }
   // methods: {
   //   next() {
