@@ -2,10 +2,10 @@
     <section class="bg4">
         <v-container>
             <h1 class="ArsenalHead">Arsenal</h1>
+            <v-card class="white" rounded flat >
             <!-- <v-list> -->
-            <!-- <v-card class="mx-auto"> -->
             <!-- <v-list-item-content> -->
-
+            
             <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png" height="100" />
 
             <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png"
@@ -40,6 +40,7 @@
                 <path fill="#35495e" d="M78.8,10L64,35.4L49.2,10H25.6L64,76l38.4-66H78.8z"></path>
             </svg>
             <!-- </v-list> -->
+            </v-card>
         </v-container>
     </section>
 </template>
