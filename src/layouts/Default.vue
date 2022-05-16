@@ -119,8 +119,10 @@ query {
 
 .bg3 {
   min-height: 90vh;
-  background: linear-gradient(90deg, yellow, brown);
-  background-size: 200% 200%;
+  background-image: url('http://i.stack.imgur.com/kx8MT.gif');
+  background-size: cover;
+  /* background: linear-gradient(90deg, yellow, brown); */
+  /* background-size: 200% 200%; */
   animation: gradient 10s ease infinite;
 
 }
