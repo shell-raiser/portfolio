@@ -167,7 +167,7 @@ export default {
 .ProjectsHead {
   font-size: xxx-large;
   /* color: rgb(100, 0, 172); */
-  background-image: -webkit-linear-gradient(90deg,yellow, red);
+  background-image: -webkit-linear-gradient(90deg,rgb(210, 210, 210), rgb(255, 255, 255));
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: 6s linear 0s infinite normal none running hue;

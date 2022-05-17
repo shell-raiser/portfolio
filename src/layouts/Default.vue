@@ -86,7 +86,7 @@ query {
 }
 
 .bg1 {
-  /* background-image: url('../background.png'); */
+  /* background-image: url('../background.png  '); */
   /* height: 93vmin; */
   min-height: 90vh;
   /* min-height: 90vh; */
@@ -119,11 +119,13 @@ query {
 
 .bg3 {
   min-height: 90vh;
-  background-image: url('http://fc02.deviantart.net/fs21/f/2007/236/a/a/Animated_Rain_Desktop_HD_by_MrQuicksilver.gif');
+  /* background-image: url('http://fc02.deviantart.net/fs21/f/2007/236/a/a/Animated_Rain_Desktop_HD_by_MrQuicksilver.gif'); */
+  background-color: #000;
   background-size: cover;
   /* background: linear-gradient(90deg, yellow, brown); */
   /* background-size: 200% 200%; */
   animation: gradient 10s ease infinite;
+  
 
 }
 
