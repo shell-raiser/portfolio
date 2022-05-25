@@ -10,7 +10,7 @@ export default function (Vue, { appOptions, head }) {
   
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
+    href: 'https://fonts.googleapis.com/css?family=Syncopate:100,300,400,500,700,900',
   });
   
   const opts = {} //opts includes, vuetify themes, icons, etc.
