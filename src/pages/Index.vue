@@ -132,9 +132,9 @@ export default {
         ? this.length - 1
         : this.onboarding - 1
     },
-    GHLink(){
+    GHLink() {
       window.open(
-              "https://www.geeksforgeeks.org", "_blank");
+        "https://www.geeksforgeeks.org", "_blank");
     }
   }
   // methods: {
@@ -152,28 +152,31 @@ export default {
 
 
 };
-</script>
 
+</script>
 <style>
-.ContactHead {
-  font-size: xxx-large;
-  color: #09254f;
-  background-image: -webkit-linear-gradient(90deg, #28f6c6,#2d6ff4);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: 10s linear 0s infinite normal none running hue;
-  /* z-index: 1; */
-}
 .ProjectsHead {
   font-size: xxx-large;
+  color: #2B2F57;
+  /* position: relative; */
+  /* left: 100%;   */
+  /* float: right; */
+  text-align: left;
+  /* z-index: 1; */
+}
+
+.ContactHead {
+  font-size: xxx-large;
   /* color: rgb(100, 0, 172); */
-  background-image: -webkit-linear-gradient(90deg,rgb(210, 210, 210), rgb(255, 255, 255));
+  background-image: -webkit-linear-gradient(90deg, rgb(210, 210, 210), rgb(255, 255, 255));
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: 6s linear 0s infinite normal none running hue;
   /* z-index: 1; */
 }
+
 .AboutHead {
+
   font-size: xxx-large;
   color: rgb(100, 0, 172);
   background-image: -webkit-linear-gradient(0deg, rgb(95, 18, 250), rgb(26, 108, 107));
@@ -182,32 +185,34 @@ export default {
   animation: 6s linear 0s infinite normal none running hue;
   /* z-index: 1; */
 }
-.ArsenalHead{
+
+.ArsenalHead {
   font-size: xxx-large;
   color: #09254f;
-  background-image: -webkit-linear-gradient(90deg, #1d4ba5,#105c4a);
+  background-image: -webkit-linear-gradient(90deg, #1d4ba5, #105c4a);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: 10s linear 0s infinite normal none running hue;
 }
-.headtext::before {
-            content: "Front end dev";
-            animation: animate infinite 5s;
-            /* padding-left: 10px; */
-        }
-  
-        @keyframes animate {
-  
-            25% {
-                content: "CyberSec enthusiast";
-            }
 
-            50% {
-                content: "Designer";
-            }
-  
-            75% {
-                content: "Physics Lover";
-            }
-        }
+.headtext::before {
+  content: "Front end dev";
+  animation: animate infinite 5s;
+  /* padding-left: 10px; */
+}
+
+@keyframes animate {
+
+  25% {
+    content: "CyberSec enthusiast";
+  }
+
+  50% {
+    content: "Designer";
+  }
+
+  75% {
+    content: "Physics Lover";
+  }
+}
 </style>
