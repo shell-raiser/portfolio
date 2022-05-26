@@ -10,21 +10,27 @@
             <v-img src="https://randomuser.me/api/portraits/lego/5.jpg" height="80vh" width="80vh"></v-img>
           </v-card>
         </v-col>
-        <v-col sm="6">
-          <h1 class="AboutHead">Yollo there,
-            <br>
-            I'm Shailesh
-          </h1>
-          <p style="color:black">
-            I'm a 
-            <span class="headtext pink rounded"></span>
-            <!-- [<span id="iMVar" class="red rounded">
+        <v-col>
+          <v-container style="background-color: rgba(255, 255, 255, 0.4);margin: 0;position:relative;top:50%;transform: translateY(-50%);" class="rounded">
+            <!-- <div style="min-height:90vh; position:fixed;top: 50%;"> -->
+            <h1 class="AboutHead">Yollo there,
+              <br>
+              I'm Shailesh
+            </h1>
+            <p style="color:black">
+              I'm a
+              <span class="headtext pink rounded"></span>
+              <!-- [<span id="iMVar" class="red rounded">
               Nice, Nice 
             </span>] -->
-          </p>
+            </p>
+            <!-- </div> -->
+          </v-container>
         </v-col>
+
       </v-row>
     </v-container>
+
   </section>
   <!-- <div>About</div> -->
 </template>
