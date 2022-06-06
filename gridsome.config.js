@@ -6,5 +6,7 @@
 
 module.exports = {
   siteName: 'Shailesh Portfolio',
-  plugins: []
+  plugins: [],
+  siteUrl: 'https://shell-raiser.github.io',
+  pathPrefix: '/portfolio',
 }
