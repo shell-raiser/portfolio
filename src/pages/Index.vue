@@ -212,7 +212,7 @@ export default {
   }
 
   75% {
-    content: "Physics Lover";
+    content: "Python dev";
   }
 }
 </style>
