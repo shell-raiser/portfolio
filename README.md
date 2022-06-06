@@ -1,15 +1,11 @@
-# Default starter for Gridsome
+# My Potential Portfolio, still heavily under development ⚠️
 
-This is the project you get when you run `gridsome create new-project`.
+Made with Gridsome, Vue.js and Vuetify
 
-### 1. Install Gridsome CLI tool if you don't have
+## How to use this code 
+### 1. Install Gridsome CLI tool and other packages
+    npm install
 
-`npm install --global @gridsome/cli`
+### 2. `gridsome develop` to start a local dev server at `http://localhost:8080`
 
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
-# portfolio
+### 3. `gridsome build` to build the files.
