@@ -1,6 +1,6 @@
 # My Potential Portfolio, still heavily under development ⚠️
 
-Made with Gridsome, Vue.js and Vuetify
+Made with Gridsome, Vue.js and Vuetify <br>
 Hosted at https://shell-raiser.github.io/portfolio/ for now
 
 ## How to use this code 
