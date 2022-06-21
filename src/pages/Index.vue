@@ -1,8 +1,8 @@
 <template >
   <Layout>
     <!-- <div> -->
-    <v-card dark flat tile>
-      <v-window v-model="onboarding" vertical touch>
+    <v-card  flat >
+      <v-window v-model="onboarding" vertical>
         <v-window-item>
           <!-- <v-card style="bottom:0px;"> -->
           <!-- <v-row class="fill-height" align="center" justify="center"> -->
@@ -64,7 +64,7 @@
           </v-item>
 
         </v-item-group> -->
-        <v-btn-toggle v-model="onboarding" class="text-center" mandatory rounded shift>
+        <v-btn-toggle v-model="onboarding" class="text-center"  rounded shift>
           <v-btn :input-value="active" @click="toggle">
             <v-icon color="rgb(58, 240, 251)">mdi-view-dashboard</v-icon>
             <div class="d-none d-sm-block">About </div>
@@ -131,10 +131,6 @@ export default {
       this.onboarding = this.onboarding - 1 < 0
         ? this.length - 1
         : this.onboarding - 1
-    },
-    GHLink() {
-      window.open(
-        "https://www.geeksforgeeks.org", "_blank");
     }
   }
   // methods: {
