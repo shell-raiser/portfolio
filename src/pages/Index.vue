@@ -116,7 +116,9 @@ export default {
     overlay: false,
     length: 4,
     onboarding: 0,
-    window: 0
+    window: 0,
+    reveal: false
+
     // sections: { <About /> ,<Projects/>, <Contact/> },
     // onboarding: 0,
 
@@ -151,6 +153,18 @@ export default {
 
 </script>
 <style>
+
+
+.v-card--reveal {
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  opacity: .5;
+  position: absolute;
+  width: 100%;
+}
+
+
 .ProjectsHead {
   font-size: xxx-large;
   color: #2B2F57;
