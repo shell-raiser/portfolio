@@ -1,7 +1,7 @@
 <template >
   <Layout>
     <!-- <div> -->
-    <v-card  flat >
+    <v-card flat>
       <v-window v-model="onboarding" vertical>
         <v-window-item>
           <!-- <v-card style="bottom:0px;"> -->
@@ -64,24 +64,24 @@
           </v-item>
 
         </v-item-group> -->
-        <v-btn-toggle v-model="onboarding" class="text-center"  rounded shift>
+        <v-btn-toggle v-model="onboarding" class="text-center" rounded mandatory color="deep-purple">
           <v-btn :input-value="active" @click="toggle">
-            <v-icon color="rgb(58, 240, 251)">mdi-view-dashboard</v-icon>
+            <v-icon color="deep-purple">mdi-view-dashboard</v-icon>
             <div class="d-none d-sm-block">About </div>
           </v-btn>
 
           <v-btn :input-value="active" @click="toggle">
-            <v-icon color="rgb(58, 240, 251)">mdi-human-greeting-proximity</v-icon>
+            <v-icon color="deep-purple">mdi-human-greeting-proximity</v-icon>
             <span class="d-none d-sm-block">Contact</span>
           </v-btn>
 
           <v-btn :input-value="active" @click="toggle">
-            <v-icon color="rgb(58, 240, 251)">mdi-devices</v-icon>
+            <v-icon color="deep-purple">mdi-devices</v-icon>
             <span class="d-none d-sm-block">Projects</span>
           </v-btn>
 
           <v-btn :input-value="active" @click="toggle">
-            <v-icon color="rgb(58, 240, 251)">mdi-hammer-wrench</v-icon>
+            <v-icon color="deep-purple">mdi-hammer-wrench</v-icon>
             <span class="d-none d-sm-block">Tools</span>
           </v-btn>
         </v-btn-toggle>
@@ -174,8 +174,9 @@ export default {
 .AboutHead {
 
   font-size: xxx-large;
-  color: rgb(100, 0, 172);
-  background-image: -webkit-linear-gradient(0deg, rgb(95, 18, 250), rgb(26, 108, 107));
+  /* color: rgb(100, 0, 172); */
+  color: #65499c;
+  background-image: -webkit-linear-gradient(0deg, #3F51B5, #9C27B0);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: 6s linear 0s infinite normal none running hue;

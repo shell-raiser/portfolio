@@ -17,7 +17,7 @@
               <br>
               I'm Shailesh
             </h1>
-            <p class="red">This site is still under development, many things are yet to be implemented</p>
+            <!-- <p class="red">This site is still under development, many things are yet to be implemented</p> -->
             <p style="color:black">
               I'm a
               <span class="headtext pink rounded"></span>
