@@ -1,69 +1,36 @@
 <template >
   <Layout>
     <!-- <div> -->
-    <v-card flat>
-      <v-window v-model="onboarding" vertical>
+    
+      <v-window v-model="onboarding">
         <v-window-item>
-          <!-- <v-card style="bottom:0px;"> -->
-          <!-- <v-row class="fill-height" align="center" justify="center"> -->
+
           <About id="About" />
-          <!-- </v-row> -->
-          <!-- </v-card> -->
+
         </v-window-item>
 
         <v-window-item>
-          <!-- <v-card> -->
-          <!-- <v-row class="fill-height" align="center" justify="center"> -->
           <Contact id="Contact" />
-          <!-- </v-row> -->
-          <!-- </v-card> -->
+
         </v-window-item>
         <v-window-item>
-          <!-- <v-card> -->
-          <!-- <v-row class="fill-height" align="center" justify="center"> -->
+
           <Projects id="Projects" />
-          <!-- </v-row> -->
-          <!-- </v-card> -->
+
         </v-window-item>
         <v-window-item>
-          <!-- <v-card> -->
-          <!-- <v-row class="fill-height" align="center" justify="center"> -->
+
           <Arsenal id="Arsenal" />
-          <!-- </v-row> -->
-          <!-- </v-card> -->
+
         </v-window-item>
       </v-window>
 
-      <!-- <v-card-actions style="position:fixed bottom: 0;" class="justify-space-between "> -->
+
       <v-footer class="justify-space-between " tile app>
         <v-btn text @click="prev">
           <v-icon>mdi-chevron-left</v-icon>
         </v-btn>
-        <!-- <v-item-group v-model="onboarding" class="text-center" mandatory>
-          
-          <v-item v-slot="{ active, toggle }">
-            <v-btn :input-value="active" icon @click="toggle">
-              <v-icon>mdi-view-dashboard</v-icon>
-            </v-btn>
-            <v-list-item-subtitle>About</v-list-item-subtitle>
-          </v-item>
-          <v-item v-slot="{ active, toggle }">
-            <v-btn :input-value="active" icon @click="toggle">
-              <v-icon>mdi-human-greeting-proximity</v-icon>
-            </v-btn>
-          </v-item>
-          <v-item v-slot="{ active, toggle }">
-            <v-btn :input-value="active" icon @click="toggle">
-              <v-icon>mdi-devices</v-icon>
-            </v-btn>
-          </v-item>
-          <v-item v-slot="{ active, toggle }">
-            <v-btn :input-value="active" icon @click="toggle">
-              <v-icon>mdi-hammer-wrench</v-icon>
-            </v-btn>
-          </v-item>
 
-        </v-item-group> -->
         <v-btn-toggle v-model="onboarding" class="text-center" rounded mandatory color="deep-purple">
           <v-btn :input-value="active" @click="toggle">
             <v-icon color="deep-purple">mdi-view-dashboard</v-icon>
@@ -91,7 +58,6 @@
         </v-btn>
       </v-footer>
       <!-- </v-card-actions> -->
-    </v-card>
   </Layout>
 </template>
 
@@ -153,8 +119,6 @@ export default {
 
 </script>
 <style>
-
-
 .v-card--reveal {
   align-items: center;
   bottom: 0;
