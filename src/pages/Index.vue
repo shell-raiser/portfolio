@@ -118,6 +118,7 @@ export default {
 };
 
 </script>
+
 <style>
 .v-card--reveal {
   align-items: center;
