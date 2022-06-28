@@ -56,7 +56,7 @@
                     <!-- <img src="../sphere.gif"
                         style=" display: block; margin-left: auto; margin-right: auto; height: 50%; pointer-events: none; overflow: hidden;" /> -->
                         
-                        <iframe src='https://my.spline.design/untitled-6f179805e7f0a0cad3287dd3bfaadc76/' frameborder='0' width='100%' height='100%'></iframe>
+                        <iframe src='https://my.spline.design/untitled-869cd974c7495e5b1f6d1e653692a6b0/' frameborder='0' width='100%' height='100%'></iframe>
                 </v-col>
             </v-row>
         </v-container>
