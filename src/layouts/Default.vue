@@ -42,29 +42,6 @@ query {
 </static-query>
 
 <style>
-/* .logo {
-  margin: 8px auto;
-  display: block;
-  align-content: center;
-} */
-
-/* .v-application--wrap {
-  flex-direction: row;
-} */
-/* .v-application{
-  font-family: Syncopate;
-  font-stretch:normal;
-} */
-/* 
-.v-main {
-  flex: 1 0;
-} */
-
-
-/* .hidden:hover {
-  visibility: hidden;
-} */
-
 
 .v-card.on-hover.theme--dark {
   background-color: rgba(#fff, 0.8);
@@ -85,7 +62,7 @@ query {
   /* height: 93vmin; */
   min-height: 90vh;
   /* min-height: 90vh; */
-  background: linear-gradient(45deg, #90caf9, #9575cd);
+  background: linear-gradient(45deg, #90caf9, #9575CD);
   /* background-size: 200% 200%; */
   animation: gradient 10s ease infinite;
 
