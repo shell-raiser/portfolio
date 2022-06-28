@@ -53,8 +53,10 @@
                     </v-card>
                 </v-col>
                 <v-col sm="6">
-                    <img src="../sphere.gif"
-                        style=" display: block; margin-left: auto; margin-right: auto; height: 50%; pointer-events: none; overflow: hidden;" />
+                    <!-- <img src="../sphere.gif"
+                        style=" display: block; margin-left: auto; margin-right: auto; height: 50%; pointer-events: none; overflow: hidden;" /> -->
+                        
+                        <iframe src='https://my.spline.design/untitled-6f179805e7f0a0cad3287dd3bfaadc76/' frameborder='0' width='100%' height='100%'></iframe>
                 </v-col>
             </v-row>
         </v-container>
