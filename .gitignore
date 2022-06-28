@@ -10,3 +10,4 @@ dist
 *.blend
 *.blend1
 *.kdenlive
+target/npmlist.json
