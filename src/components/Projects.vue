@@ -1,6 +1,6 @@
 <template>
     <section class="bg3">
-        <v-container style="z-index:10;">
+        <v-container >
 
             <v-row>
                 <v-col sm="6" class="d-none d-sm-block">
