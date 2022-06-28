@@ -32,7 +32,8 @@
                                 </v-expand-transition>
                             </v-img>
                             <v-card-text class="pt-6" style="position: relative;">
-                                <v-btn absolute color="teal" class="white--text" fab large right top>
+                                <v-btn absolute color="teal" class="white--text" fab large right top href="https://shellraiser.itch.io/dark" target="_blank"
+                                rel="noopener noreferrer">
                                     <v-icon>mdi-play</v-icon>
                                 </v-btn>
 
@@ -42,7 +43,8 @@
                                 <p>2D Platformer game</p>
                             </v-card-text>
                             <v-card-actions>
-                                <v-btn>
+                                <v-btn href="https://github.com/shell-raiser/Dark-Green-Space" target="_blank"
+                                rel="noopener noreferrer">
                                     <v-icon> mdi-github</v-icon>
                                 </v-btn>
                                 <v-btn>
@@ -50,6 +52,38 @@
                                     <font-awesome :icon="['fab', 'itch-io']"/>
                                     <font-awesome-icon icon="fa-brands fa-itch-io" />
 
+                                </v-btn>
+                            </v-card-actions>
+                        </v-card>
+                    </v-hover>
+                    <v-divider></v-divider>
+                    <v-hover v-slot="{ hover }">
+                        <v-card class="mx-auto" color="grey lighten-4" max-width="600">
+                            <v-img :aspect-ratio="16 / 9"
+                                src="https://user-images.githubusercontent.com/78999739/176103044-fe939cd9-ce4f-492d-8f50-22a795c7adb9.png">
+                                <v-expand-transition>
+                                    <div v-if="hover"
+                                        class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
+                                        style="height: 100%;padding: 10px;">
+                                        An online quiz, which determines your dosha and recommends diet on a daily basis
+                                    </div>
+                                </v-expand-transition>
+                            </v-img>
+                            <v-card-text class="pt-6" style="position: relative;">
+                                <v-btn absolute color="teal" class="white--text" fab large right top href="https://shell-raiser.github.io/Dosha-quiz-app/" target="_blank"
+                                rel="noopener noreferrer">
+                                    <v-icon>mdi-link</v-icon>
+                                </v-btn>
+
+                                <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
+                                    Dosha Quiz
+                                </h3>
+                                <p>An online quiz, which determines your dosha </p>
+                            </v-card-text>
+                            <v-card-actions>
+                                <v-btn href="https://github.com/shell-raiser/Dosha-quiz-app" target="_blank"
+                                rel="noopener noreferrer">
+                                    <v-icon> mdi-github</v-icon>
                                 </v-btn>
                             </v-card-actions>
                         </v-card>
