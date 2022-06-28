@@ -53,9 +53,7 @@
                     </v-card>
                 </v-col>
                 <v-col sm="6">
-
-
-                    <img src="../pebbleAnimationC.gif"
+                    <img src="../sphere.gif"
                         style=" display: block; margin-left: auto; margin-right: auto; height: 50%; pointer-events: none; overflow: hidden;" />
                 </v-col>
             </v-row>
