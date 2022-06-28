@@ -124,7 +124,7 @@ export default {
   align-items: center;
   bottom: 0;
   justify-content: center;
-  opacity: .5;
+  opacity: .8;
   position: absolute;
   width: 100%;
 }
