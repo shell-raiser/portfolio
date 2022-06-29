@@ -1,105 +1,120 @@
 <template>
     <section class="bg3">
-        <v-container >
-        <h1 class="ProjectsHead rounded text-center"> Projects </h1>
-                    </v-container>
-        <v-container >
+        <table width=100% height=100%>
+            <tr>
+                <td width=80%>
+                    <v-container>
 
-                    
-            <v-row>
-                <!-- <v-col sm="6" class="d-none d-sm-block">
+
+                        <v-row>
+                            <!-- <v-col sm="6" class="d-none d-sm-block">
                     
                 </v-col> -->
-                <v-col sm="6">
-                    
-                            <!-- <v-list-item href="https://github.com/shell-raiser/Dosha-quiz-app" target="_blank"
+                            <v-col sm="6">
+
+                                <!-- <v-list-item href="https://github.com/shell-raiser/Dosha-quiz-app" target="_blank"
                                 rel="noopener noreferrer">https://github.com/shell-raiser/Dosha-quiz-app
                             </v-list-item>
                             <v-list-item href="https://github.com/shell-raiser/Dark-Green-Space" target="_blank"
                                 rel="noopener noreferrer">https://github.com/shell-raiser/Dark-Green-Space
                             </v-list-item> -->
-                        
 
 
 
-                    <v-hover v-slot="{ hover }">
-                        <v-card class="mx-auto" color="grey lighten-4" width="350">
-                            <v-img :aspect-ratio="16 / 9"
-                                src="https://user-images.githubusercontent.com/78999739/171996793-c0e2e157-b6ea-4984-b861-184b0568a011.png">
-                                <v-expand-transition>
-                                    <div v-if="hover"
-                                        class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
-                                        style="height: 100%;">
-                                        A 2D Platformer shooter game, with NCS Dubstep BGM
-                                    </div>
-                                </v-expand-transition>
-                            </v-img>
-                            <v-card-text class="pt-6" style="position: relative;">
-                                <v-btn absolute color="teal" class="white--text" fab large right top href="https://shellraiser.itch.io/dark" target="_blank"
-                                rel="noopener noreferrer">
-                                    <v-icon>mdi-play</v-icon>
-                                </v-btn>
 
-                                <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
-                                    Dark-Green-Space
-                                </h3>
-                                <p>2D Platformer game</p>
-                            </v-card-text>
-                            <v-card-actions>
-                                <v-btn href="https://github.com/shell-raiser/Dark-Green-Space" target="_blank"
-                                rel="noopener noreferrer">
-                                    <v-icon> mdi-github</v-icon>
-                                </v-btn>
-                                <v-btn>
-                                    
-                                    <font-awesome :icon="['fab', 'itch-io']"/>
-                                    <font-awesome-icon icon="fa-brands fa-itch-io" />
+                                <v-hover v-slot="{ hover }">
+                                    <v-card class="mx-auto" color="grey lighten-4" width="350">
+                                        <v-img :aspect-ratio="16 / 9"
+                                            src="https://user-images.githubusercontent.com/78999739/171996793-c0e2e157-b6ea-4984-b861-184b0568a011.png">
+                                            <v-expand-transition>
+                                                <div v-if="hover"
+                                                    class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
+                                                    style="height: 100%;">
+                                                    A 2D Platformer shooter game, with NCS Dubstep BGM
+                                                </div>
+                                            </v-expand-transition>
+                                        </v-img>
+                                        <v-card-text class="pt-6" style="position: relative;">
+                                            <v-btn absolute color="teal" class="white--text" fab large right top
+                                                href="https://shellraiser.itch.io/dark" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <v-icon>mdi-play</v-icon>
+                                            </v-btn>
 
-                                </v-btn>
-                            </v-card-actions>
-                        </v-card>
-                    </v-hover>
-                    </v-col>
-                    <!-- <v-divider></v-divider> -->
-                    <v-col>
-                    <v-hover v-slot="{ hover }">
-                        <v-card class="mx-auto" color="grey lighten-4" width="350">
-                            <v-img :aspect-ratio="16 / 9"
-                                src="https://user-images.githubusercontent.com/78999739/176103044-fe939cd9-ce4f-492d-8f50-22a795c7adb9.png">
-                                <v-expand-transition>
-                                    <div v-if="hover"
-                                        class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
-                                        style="height: 100%;padding: 10px;">
-                                        An online quiz, which determines your dosha and recommends diet on a daily basis
-                                    </div>
-                                </v-expand-transition>
-                            </v-img>
-                            <v-card-text class="pt-6" style="position: relative;">
-                                <v-btn absolute color="teal" class="white--text" fab large right top href="https://shell-raiser.github.io/Dosha-quiz-app/" target="_blank"
-                                rel="noopener noreferrer">
-                                    <v-icon>mdi-link</v-icon>
-                                </v-btn>
+                                            <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
+                                                Dark-Green-Space
+                                            </h3>
+                                            <p>2D Platformer game</p>
+                                        </v-card-text>
+                                        <v-card-actions>
+                                            <v-btn href="https://github.com/shell-raiser/Dark-Green-Space"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <v-icon> mdi-github</v-icon>
+                                            </v-btn>
+                                            <v-btn>
 
-                                <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
-                                    Dosha Quiz
-                                </h3>
-                                <p>An online quiz, which determines your dosha </p>
-                            </v-card-text>
-                            <v-card-actions>
-                                <v-btn href="https://github.com/shell-raiser/Dosha-quiz-app" target="_blank"
-                                rel="noopener noreferrer">
-                                    <v-icon> mdi-github</v-icon>
-                                </v-btn>
-                            </v-card-actions>
-                        </v-card>
-                    </v-hover></v-col>
-                
+                                                <font-awesome :icon="['fab', 'itch-io']" />
+                                                <font-awesome-icon icon="fa-brands fa-itch-io" />
 
-            </v-row>
+                                            </v-btn>
+                                        </v-card-actions>
+                                    </v-card>
+                                </v-hover>
+                            </v-col>
+                            <!-- <v-divider></v-divider> -->
+                            <v-col>
+                                <v-hover v-slot="{ hover }">
+                                    <v-card class="mx-auto" color="grey lighten-4" width="350">
+                                        <v-img :aspect-ratio="16 / 9"
+                                            src="https://user-images.githubusercontent.com/78999739/176103044-fe939cd9-ce4f-492d-8f50-22a795c7adb9.png">
+                                            <v-expand-transition>
+                                                <div v-if="hover"
+                                                    class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
+                                                    style="height: 100%;padding: 10px;">
+                                                    An online quiz, which determines your dosha and recommends diet on a
+                                                    daily basis
+                                                </div>
+                                            </v-expand-transition>
+                                        </v-img>
+                                        <v-card-text class="pt-6" style="position: relative;">
+                                            <v-btn absolute color="teal" class="white--text" fab large right top
+                                                href="https://shell-raiser.github.io/Dosha-quiz-app/" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <v-icon>mdi-link</v-icon>
+                                            </v-btn>
+
+                                            <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
+                                                Dosha Quiz
+                                            </h3>
+                                            <p>An online quiz, which determines your dosha </p>
+                                        </v-card-text>
+                                        <v-card-actions>
+                                            <v-btn href="https://github.com/shell-raiser/Dosha-quiz-app" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <v-icon> mdi-github</v-icon>
+                                            </v-btn>
+                                        </v-card-actions>
+                                    </v-card>
+                                </v-hover>
+                            </v-col>
+
+
+                        </v-row>
 
 
 
-        </v-container>
-        
+                    </v-container>
+                </td>
+                <td>
+                    <h1 class="ProjectsHead text-center"
+                        style="height:90vh;   display: flex;   justify-content: center;  align-items: center;">Projects
+                    </h1>
+                </td>
+            </tr>
+        </table>
+
+
+
+
     </section>
 </template>
