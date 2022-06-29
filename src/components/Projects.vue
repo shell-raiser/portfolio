@@ -1,13 +1,16 @@
 <template>
     <section class="bg3">
         <v-container >
+        <h1 class="ProjectsHead rounded text-center"> Projects </h1>
+                    </v-container>
+        <v-container >
 
-            <v-row>
-                <v-col sm="6" class="d-none d-sm-block">
                     
-                </v-col>
+            <v-row>
+                <!-- <v-col sm="6" class="d-none d-sm-block">
+                    
+                </v-col> -->
                 <v-col sm="6">
-                    <h1 class="ProjectsHead"> Projects </h1>
                     
                             <!-- <v-list-item href="https://github.com/shell-raiser/Dosha-quiz-app" target="_blank"
                                 rel="noopener noreferrer">https://github.com/shell-raiser/Dosha-quiz-app
@@ -20,7 +23,7 @@
 
 
                     <v-hover v-slot="{ hover }">
-                        <v-card class="mx-auto" color="grey lighten-4" max-width="600">
+                        <v-card class="mx-auto" color="grey lighten-4" width="350">
                             <v-img :aspect-ratio="16 / 9"
                                 src="https://user-images.githubusercontent.com/78999739/171996793-c0e2e157-b6ea-4984-b861-184b0568a011.png">
                                 <v-expand-transition>
@@ -56,9 +59,11 @@
                             </v-card-actions>
                         </v-card>
                     </v-hover>
-                    <v-divider></v-divider>
+                    </v-col>
+                    <!-- <v-divider></v-divider> -->
+                    <v-col>
                     <v-hover v-slot="{ hover }">
-                        <v-card class="mx-auto" color="grey lighten-4" max-width="600">
+                        <v-card class="mx-auto" color="grey lighten-4" width="350">
                             <v-img :aspect-ratio="16 / 9"
                                 src="https://user-images.githubusercontent.com/78999739/176103044-fe939cd9-ce4f-492d-8f50-22a795c7adb9.png">
                                 <v-expand-transition>
@@ -87,8 +92,8 @@
                                 </v-btn>
                             </v-card-actions>
                         </v-card>
-                    </v-hover>
-                </v-col>
+                    </v-hover></v-col>
+                
 
             </v-row>
 
