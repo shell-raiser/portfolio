@@ -133,6 +133,7 @@ export default {
 .ProjectsHead {
   font-size: xxx-large;
   color: #2B2F57;
+  background-color: rgba(255, 255, 255,0.3);
   /* position: relative; */
   /* left: 100%;   */
   /* float: right; */
@@ -142,11 +143,11 @@ export default {
 
 .ContactHead {
   font-size: xxx-large;
-  /* color: rgb(100, 0, 172); */
-  background-image: -webkit-linear-gradient(90deg, rgb(210, 210, 210), rgb(255, 255, 255));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: 6s linear 0s infinite normal none running hue;
+  color: #2B2F57;
+  /* background-image: -webkit-linear-gradient(90deg, purple, #2B2F57); */
+  /* background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* animation: 6s linear 0s infinite normal none running hue; */
   /* z-index: 1; */
 }
 

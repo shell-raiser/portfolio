@@ -1,64 +1,75 @@
 <template>
     <section class="bg2">
-        <v-container>
-            <h1 class="ContactHead">Contact</h1>
-            <v-row>
-                <v-col sm="6">
-                    <v-card>
-                        <!-- <v-list> -->
-                        <v-list-item-group>
-                            <v-list-item two-line>
-                                <v-list-item-icon>
-                                    <v-icon> mdi-email-variant</v-icon>
-                                </v-list-item-icon>
-                                <v-list-item-content>
-                                    <v-list-item-title>Email at</v-list-item-title>
-                                    <v-list-item-subtitle @click="GHLink()">someemail@gmail.com</v-list-item-subtitle>
-                                </v-list-item-content>
-                            </v-list-item>
+        <table width=100% height=100%>
+            <tr>
+                <td width=50% style="background:#9575cd;top:0;">
+                    <v-container style="top:0;">
+                        <h1 class="ContactHead">Contact</h1>
+                        <!-- <v-col sm="6"> -->
+                        <v-card min-width="300">
+                            <!-- <v-list> -->
+                            <v-list-item-group>
+                                <v-list-item two-line>
+                                    <v-list-item-icon>
+                                        <v-icon> mdi-email-variant</v-icon>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>Email at</v-list-item-title>
+                                        <v-list-item-subtitle @click="GHLink()">someemail@gmail.com
+                                        </v-list-item-subtitle>
+                                    </v-list-item-content>
+                                </v-list-item>
 
-                            <v-list-item two-line>
-                                <v-list-item-icon>
-                                    <v-icon>mdi-github</v-icon>
-                                </v-list-item-icon>
-                                <v-list-item-content>
-                                    <v-list-item-title>Github</v-list-item-title>
-                                    <v-list-item-subtitle>@shell-raiser</v-list-item-subtitle>
-                                </v-list-item-content>
-                            </v-list-item>
+                                <v-list-item two-line>
+                                    <v-list-item-icon>
+                                        <v-icon>mdi-github</v-icon>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>Github</v-list-item-title>
+                                        <v-list-item-subtitle>@shell-raiser</v-list-item-subtitle>
+                                    </v-list-item-content>
+                                </v-list-item>
 
-                            <v-list-item two-line>
-                                <v-list-item-icon>
-                                    <v-icon>mdi-soundcloud</v-icon>
-                                </v-list-item-icon>
-                                <v-list-item-content>
-                                    <v-list-item-title>Soundcloud</v-list-item-title>
-                                    <v-list-item-subtitle>soundcloud.com/user-185450671</v-list-item-subtitle>
-                                </v-list-item-content>
-                            </v-list-item>
+                                <v-list-item two-line>
+                                    <v-list-item-icon>
+                                        <v-icon>mdi-soundcloud</v-icon>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>Soundcloud</v-list-item-title>
+                                        <v-list-item-subtitle>soundcloud.com/user-185450671
+                                        </v-list-item-subtitle>
+                                    </v-list-item-content>
+                                </v-list-item>
 
-                            <v-list-item two-line>
-                                <v-list-item-icon>
-                                    <v-icon>mdi-youtube</v-icon>
-                                </v-list-item-icon>
-                                <v-list-item-content>
-                                    <v-list-item-title>Youtube</v-list-item-title>
-                                    <v-list-item-subtitle>youtube.com/channel/UCmEShK3aru1usVrGOrzGqqw
-                                    </v-list-item-subtitle>
-                                </v-list-item-content>
-                            </v-list-item>
-                        </v-list-item-group>
+                                <v-list-item two-line>
+                                    <v-list-item-icon>
+                                        <v-icon>mdi-youtube</v-icon>
+                                    </v-list-item-icon>
+                                    <v-list-item-content>
+                                        <v-list-item-title>Youtube</v-list-item-title>
+                                        <v-list-item-subtitle>youtube.com/channel/UCmEShK3aru1usVrGOrzGqqw
+                                        </v-list-item-subtitle>
+                                    </v-list-item-content>
+                                </v-list-item>
+                            </v-list-item-group>
 
-                        <!-- </v-list> -->
-                    </v-card>
-                </v-col>
-                <v-col sm="6">
-                    <!-- <img src="../sphere.gif"
+                            <!-- </v-list> -->
+                        </v-card>
+                        <!-- </v-col> -->
+                        <!-- <v-col sm="6"> -->
+                        <!-- <img src="../sphere.gif"
                         style=" display: block; margin-left: auto; margin-right: auto; height: 50%; pointer-events: none; overflow: hidden;" /> -->
-                        
-                        <iframe src='https://my.spline.design/untitled-869cd974c7495e5b1f6d1e653692a6b0/' frameborder='0' width='100%' height='100%'></iframe>
-                </v-col>
-            </v-row>
-        </v-container>
+
+                        <!-- </v-col> -->
+                    </v-container>
+                </td>
+                <td width=50% >
+                    <!-- <div style="height:100vh;"> -->
+                    <iframe src='https://my.spline.design/untitled-869cd974c7495e5b1f6d1e653692a6b0/' frameborder='0'
+                        width='100%' min-width="300" style="height:90vh;" class="d-none d-sm-block"></iframe>
+                    <!-- </div> -->
+                </td>
+            </tr>
+        </table>
     </section>
 </template>

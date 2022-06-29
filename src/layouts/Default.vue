@@ -104,7 +104,8 @@ background: lightblue url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.c
 .bg2 {
   min-height: 90vh;
   /* background-image: url('http://fc02.deviantart.net/fs21/f/2007/236/a/a/Animated_Rain_Desktop_HD_by_MrQuicksilver.gif'); */
-  background-color: #9575cd;
+  /* background-color: #9575cd; */
+  background-color:#000;
   background-size: cover;
   /* background: linear-gradient(90deg, yellow, brown); */
   /* background-size: 200% 200%; */
