@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Shailesh Portfolio',
+  siteName: 'Portfolio',
   plugins: [],
   siteUrl: 'https://shell-raiser.github.io',
   pathPrefix: '/portfolio',
