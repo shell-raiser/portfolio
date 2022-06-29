@@ -1,63 +1,63 @@
 <template >
   <Layout>
     <!-- <div> -->
-    
-      <v-window v-model="onboarding">
-        <v-window-item>
 
-          <About id="About" />
+    <v-window v-model="onboarding">
+      <v-window-item>
 
-        </v-window-item>
+        <About id="About" />
 
-        <v-window-item>
-          <Contact id="Contact" />
+      </v-window-item>
 
-        </v-window-item>
-        <v-window-item>
+      <v-window-item>
+        <Contact id="Contact" />
 
-          <Projects id="Projects" />
+      </v-window-item>
+      <v-window-item>
 
-        </v-window-item>
-        <v-window-item>
+        <Projects id="Projects" />
 
-          <Arsenal id="Arsenal" />
+      </v-window-item>
+      <v-window-item>
 
-        </v-window-item>
-      </v-window>
+        <Arsenal id="Arsenal" />
+
+      </v-window-item>
+    </v-window>
 
 
-      <v-footer class="justify-space-between " tile app>
-        <v-btn text @click="prev">
-          <v-icon>mdi-chevron-left</v-icon>
+    <v-footer class="justify-space-between " tile app>
+      <v-btn text @click="prev">
+        <v-icon>mdi-chevron-left</v-icon>
+      </v-btn>
+
+      <v-btn-toggle v-model="onboarding" class="text-center" rounded mandatory color="deep-purple">
+        <v-btn :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-view-dashboard</v-icon>
+          <div class="d-none d-sm-block">About </div>
         </v-btn>
 
-        <v-btn-toggle v-model="onboarding" class="text-center" rounded mandatory color="deep-purple">
-          <v-btn :input-value="active" @click="toggle">
-            <v-icon color="deep-purple">mdi-view-dashboard</v-icon>
-            <div class="d-none d-sm-block">About </div>
-          </v-btn>
-
-          <v-btn :input-value="active" @click="toggle">
-            <v-icon color="deep-purple">mdi-human-greeting-proximity</v-icon>
-            <span class="d-none d-sm-block">Contact</span>
-          </v-btn>
-
-          <v-btn :input-value="active" @click="toggle">
-            <v-icon color="deep-purple">mdi-devices</v-icon>
-            <span class="d-none d-sm-block">Projects</span>
-          </v-btn>
-
-          <v-btn :input-value="active" @click="toggle">
-            <v-icon color="deep-purple">mdi-hammer-wrench</v-icon>
-            <span class="d-none d-sm-block">Tools</span>
-          </v-btn>
-        </v-btn-toggle>
-
-        <v-btn text @click="next">
-          <v-icon>mdi-chevron-right</v-icon>
+        <v-btn :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-human-greeting-proximity</v-icon>
+          <span class="d-none d-sm-block">Contact</span>
         </v-btn>
-      </v-footer>
-      <!-- </v-card-actions> -->
+
+        <v-btn :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-devices</v-icon>
+          <span class="d-none d-sm-block">Projects</span>
+        </v-btn>
+
+        <v-btn :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-hammer-wrench</v-icon>
+          <span class="d-none d-sm-block">Tools</span>
+        </v-btn>
+      </v-btn-toggle>
+
+      <v-btn text @click="next">
+        <v-icon>mdi-chevron-right</v-icon>
+      </v-btn>
+    </v-footer>
+    <!-- </v-card-actions> -->
   </Layout>
 </template>
 
@@ -133,7 +133,7 @@ export default {
 .ProjectsHead {
   font-size: xxx-large;
   color: #2B2F57;
-  background-color: rgba(255, 255, 255,0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   /* position: relative; */
   /* left: 100%;   */
   /* float: right; */
@@ -144,6 +144,7 @@ export default {
 .ContactHead {
   font-size: xxx-large;
   color: #2B2F57;
+  text-align: right;
   /* background-image: -webkit-linear-gradient(90deg, purple, #2B2F57); */
   /* background-clip: text; */
   /* -webkit-text-fill-color: transparent; */
@@ -166,9 +167,10 @@ export default {
 .ArsenalHead {
   font-size: xxx-large;
   color: #09254f;
-  background-image: -webkit-linear-gradient(90deg, #1d4ba5, #105c4a);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background-image: -webkit-linear-gradient(90deg, #1d4ba5, #105c4a); */
+  /* background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  background-color: rgba(255, 255, 255, 0.7);
   animation: 10s linear 0s infinite normal none running hue;
 }
 
