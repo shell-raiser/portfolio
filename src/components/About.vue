@@ -7,7 +7,7 @@
         <v-col sm="6">
           <!-- <v-card hover raised rounded :class="{ 'on-hover': hover }"  style="margin: 0;position:relative;top:50%;transform: translateY(-50%);"> -->
           <!-- <g-image   alt="Profile Picture" src="~/profilePic.jpg" max-width="400" max-height="400" fit="cover" /> -->
-          <v-img alt="profile picture" src="https://randomuser.me/api/portraits/lego/5.jpg" gradient="to bottom left, rgba(149,117,205,.33),rgba(0,0,0,.5) " aspect-ratio="1" min-width="300"></v-img>
+          <v-img alt="profile picture" src="https://randomuser.me/api/portraits/lego/5.jpg" aspect-ratio="1" min-width="300"></v-img>
           <!-- </v-card> -->
           <!-- max-height="80vh" width="80vh" -->
         </v-col>
