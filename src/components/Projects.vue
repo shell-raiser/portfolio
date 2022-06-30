@@ -30,7 +30,8 @@
                                                 <div v-if="hover"
                                                     class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
                                                     style="height: 100%;">
-                                                    A 2D Platformer shooter game, with NCS Dubstep BGM
+                                                    <p class="projectCardHoverText">
+                                                    A 2D Platformer shooter game, with NCS Dubstep BGM</p>
                                                 </div>
                                             </v-expand-transition>
                                         </v-img>
@@ -51,10 +52,10 @@
                                                 target="_blank" rel="noopener noreferrer">
                                                 <v-icon> mdi-github</v-icon>
                                             </v-btn>
-                                            <v-btn>
+                                            <v-btn href="https://shellraiser.itch.io/dark"
+                                                target="_blank" rel="noopener noreferrer">
 
-                                                <font-awesome :icon="['fab', 'itch-io']" />
-                                                <font-awesome-icon icon="fa-brands fa-itch-io" />
+                                                itch.io
 
                                             </v-btn>
                                         </v-card-actions>
@@ -70,9 +71,10 @@
                                             <v-expand-transition>
                                                 <div v-if="hover"
                                                     class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
-                                                    style="height: 100%;padding: 10px;">
+                                                    style="height: 100%;">
+                                                    <p class="projectCardHoverText">
                                                     An online quiz, which determines your dosha and recommends diet on a
-                                                    daily basis
+                                                    daily basis</p>
                                                 </div>
                                             </v-expand-transition>
                                         </v-img>

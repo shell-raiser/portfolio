@@ -124,11 +124,16 @@ export default {
   align-items: center;
   bottom: 0;
   justify-content: center;
-  opacity: .8;
+  opacity: .9;
   position: absolute;
   width: 100%;
 }
 
+.projectCardHoverText {
+  opacity: 1;
+  padding: 10px;
+  text-align: center;
+}
 
 .ProjectsHead {
   font-size: xxx-large;
@@ -170,7 +175,7 @@ export default {
   /* background-image: -webkit-linear-gradient(90deg, #1d4ba5, #105c4a); */
   /* background-clip: text; */
   /* -webkit-text-fill-color: transparent; */
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.2);
   animation: 10s linear 0s infinite normal none running hue;
 }
 
