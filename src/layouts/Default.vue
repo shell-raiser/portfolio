@@ -118,7 +118,7 @@ background: lightblue url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.c
   /* background: linear-gradient(-45deg, #09254f, #23d5ab);
   background-size: 200% 200%;
   animation: gradient 10s ease infinite; */
-  background: lightblue url("https://images.unsplash.com/photo-1655910028222-4abc2d90edcc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"); 
+  background: lightblue url("https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop"); 
   /* filter: blur(8px); */
   /* -webkit-filter: blur(8px); */
   background-size: cover;
