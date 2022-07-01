@@ -42,6 +42,8 @@
                     alt="mongodb" height="100" />
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="expressjs"
                     height="100" />
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/MySQL_logo.svg/1280px-MySQL_logo.svg.png"
+                    alt="mysql" height="100">
             </v-card>
             <v-card class="white" rounded flat>
                 <v-card-title>Design</v-card-title>
@@ -50,7 +52,8 @@
                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Canva_Logo.png/1920px-Canva_Logo.png"
                     height="100" />
                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" height="100" />
-                <img src="https://inkscape.org/gallery/item/10252/Inkscape-flat-logo-2color.svg" alt="inkscape" height="100">
+                <img src="https://inkscape.org/gallery/item/10252/Inkscape-flat-logo-2color.svg" alt="inkscape"
+                    height="100">
             </v-card>
             <v-card class="white" rounded flat>
                 <v-card-title>Audio</v-card-title>
