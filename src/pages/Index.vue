@@ -185,6 +185,14 @@ export default {
   /* padding-left: 10px; */
 }
 
+
+.toolsLogos{
+    pointer-events: none;
+    user-select: none;
+    height:100px;
+    padding: 5px;
+    
+}
 @keyframes animate {
 
   25% {
