@@ -193,6 +193,12 @@ export default {
     padding: 5px;
     
 }
+
+.toolsCardsImageCont{
+  display: flex;
+      justify-content: center;
+}
+
 @keyframes animate {
 
   25% {
