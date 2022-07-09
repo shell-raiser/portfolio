@@ -23,7 +23,7 @@
             <!-- <p class="red">This site is still under development, many things are yet to be implemented</p> -->
             <p style="color:black">
               I'm a
-              <span class="headtext pink rounded"></span>
+              <span class="headtext pink rounded white--text"></span>
               <!-- [<span id="iMVar" class="red rounded">
               Nice, Nice 
             </span>] -->
