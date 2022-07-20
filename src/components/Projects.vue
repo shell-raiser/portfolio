@@ -118,7 +118,7 @@
                                         </v-img>
                                         <v-card-text class="pt-6" style="position: relative;">
                                             <v-btn absolute color="teal" class="white--text" fab large right top
-                                                href="http://54.174.113.31/3000" target="_blank"
+                                                href="https://parsifyapp-q3vtbj6djq-el.a.run.app/" target="_blank"
                                                 style="z-index:0;"
                                                 rel="noopener noreferrer">
                                                 <v-icon>mdi-aws</v-icon>
