@@ -102,14 +102,53 @@
 
 
                         </v-row>
+                        <v-row>
+                            <v-col>
+                                <v-hover v-slot="{ hover }">
+                                    <v-card class="mx-auto" color="grey lighten-4" width="350">
+                                        <v-img :aspect-ratio="16 / 9"
+                                            src="https://user-images.githubusercontent.com/78999739/178935897-f945338a-ceb4-48d3-8c67-889eb7e628b0.png">
+                                            <v-expand-transition>
+                                                <div v-if="hover"
+                                                    class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
+                                                    style="height: 100%;">
+                                                    <p class="projectCardHoverText">
+                                                    A Web App and API for OCRing and extracting key points from FIR copies</p>
+                                                </div>
+                                            </v-expand-transition>
+                                        </v-img>
+                                        <v-card-text class="pt-6" style="position: relative;">
+                                            <v-btn absolute color="teal" class="white--text" fab large right top
+                                                href="http://54.174.113.31/3000" target="_blank"
+                                                style="z-index:0;"
+                                                rel="noopener noreferrer">
+                                                <v-icon>mdi-aws</v-icon>
+                                            </v-btn>
+
+                                            <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
+                                                Parsify
+                                            </h3>
+                                            <p>A Hackathon Project </p>
+                                        </v-card-text>
+                                        <v-card-actions>
+                                            <v-btn href="https://github.com/shell-raiser/Parsify-WebApp" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <v-icon> mdi-github</v-icon>
+                                            </v-btn>
+                                        </v-card-actions>
+                                    </v-card>
+                                </v-hover>
+                            </v-col>
+
+                        </v-row>
 
 
 
                     </v-container>
                 </td>
-                <td>
-                    <h1 class="ProjectsHead text-center"
-                        style="height:90vh;   display: flex;   justify-content: center;  align-items: center;">Projects
+                <td style="display:block; position: fixed;top: 0px;">
+                    <h1 class="ProjectsHead"
+                        style="height:100vh;   display: flex;   justify-content: center;  align-items: center;">Projects
                     </h1>
                 </td>
             </tr>
