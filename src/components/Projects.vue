@@ -1,9 +1,8 @@
 <template>
     <section class="bg3">
-        <table width=100% height=100%>
-            <tr>
-                <td width=80%>
-                    <v-container>
+        <v-container width=100% height=100%>
+                <v-col style="width:80%">
+                    <!-- <v-container> -->
 
 
                         <v-row>
@@ -144,15 +143,14 @@
 
 
 
-                    </v-container>
-                </td>
-                <td style="display:block; position: fixed;top: 0px;">
+                    <!-- </v-container> -->
+                </v-col>
+                <v-col style="display:block; position: fixed;top: 0px; right:0; width:20%; padding:0;">
                     <h1 class="ProjectsHead"
                         style="height:100vh;   display: flex;   justify-content: center;  align-items: center;">Projects
                     </h1>
-                </td>
-            </tr>
-        </table>
+                </v-col>
+        </v-container>
 
 
 
