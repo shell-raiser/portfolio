@@ -5,7 +5,8 @@
             <v-card class="white" rounded flat>
                 <!-- <v-list> -->
                 <!-- <v-list-item-content> -->
-                <v-card-title class="toolsCardsImageCont">Languages</v-card-title>
+                <v-card-title class="toolsCardsImageCont deep-purple lighten-4">Languages</v-card-title>
+                
                 <div class="toolsCardsImageCont">
                     <img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"
                         class="toolsLogos" />
