@@ -1,6 +1,6 @@
 <template>
     <section class="bg3">
-        <v-container width=100% height=100%>
+        <v-container>
                 <v-col style="width:80%">
                     <!-- <v-container> -->
 
