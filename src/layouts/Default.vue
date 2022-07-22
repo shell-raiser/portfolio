@@ -60,7 +60,7 @@ query {
 .bg1 {
   /* background-image: url('../background.png  '); */
   /* height: 93vmin; */
-  min-height: 90vh;
+  min-height: calc(100vh - 60px);
   /* min-height: 90vh; */
   background: linear-gradient(45deg, #90caf9, #9575CD);
   /* background-size: 200% 200%; */
