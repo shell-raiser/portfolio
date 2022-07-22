@@ -195,8 +195,10 @@ export default {
 }
 
 .toolsCardsImageCont{
-  display: flex;
+   /* display:block; */
       justify-content: center;
+      align-content: center;
+      align-items: center;
 }
 
 @keyframes animate {
