@@ -2,7 +2,7 @@
     <section class="bg3">
         <v-container>
             <v-col style="width:80%">
-                <v-row >
+                <v-row>
                     <v-col sm="6">
 
 
@@ -129,9 +129,17 @@
 
                 <!-- </v-container> -->
             </v-col>
-            <v-col style="display:block; position: fixed;top: 0px; right:0; width:20%; padding:0;">
+            <v-col class="d-none d-sm-block"
+                style="display:block; position: fixed;top: 0px; right:0; width:20%; padding:0;">
                 <h1 class="ProjectsHead"
                     style="height:100vh;   display: flex;   justify-content: center;  align-items: center;">Projects
+                </h1>
+            </v-col>
+            <v-col class="d-sm-none" style="display:block; position: fixed;top: 0px; right:0; width:20%; padding:0;">
+                <h1 class="ProjectsHead"
+                    style="height:100vh; width:100%; display:flex; justify-content: center; align-items: center;
+                     writing-mode: vertical-lr; text-orientation: upright; background-color: rgba(255, 255, 255, 0.4);">
+                    Projects
                 </h1>
             </v-col>
         </v-container>
