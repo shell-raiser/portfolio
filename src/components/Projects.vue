@@ -21,7 +21,7 @@
                                 </v-img>
                                 <v-card-text class="pt-6" style="position: relative;">
                                     <v-btn absolute color="teal" class="white--text" fab large right top
-                                        href="https://shellraiser.itch.io/dark" target="_blank"
+                                        href="https://shellraiser.itch.io/dark" style="z-index:0;" target="_blank"
                                         rel="noopener noreferrer">
                                         <v-icon>mdi-play</v-icon>
                                     </v-btn>
@@ -32,7 +32,7 @@
                                     <p>2D Platformer game</p>
                                 </v-card-text>
                                 <v-card-actions>
-                                    <v-btn href="https://github.com/shell-raiser/Dark-Green-Space" target="_blank"
+                                    <v-btn href="https://github.com/shell-raiser/Dark-Green-Space" target="_blank" 
                                         rel="noopener noreferrer">
                                         <v-icon> mdi-github</v-icon>
                                     </v-btn>
@@ -64,7 +64,7 @@
                                 <v-card-text class="pt-6" style="position: relative;">
                                     <v-btn absolute color="teal" class="white--text" fab large right top
                                         href="https://shell-raiser.github.io/Dosha-quiz-app/" target="_blank"
-                                        rel="noopener noreferrer">
+                                        rel="noopener noreferrer" style="z-index:0;">
                                         <v-icon>mdi-link</v-icon>
                                     </v-btn>
 
