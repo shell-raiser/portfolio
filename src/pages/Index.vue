@@ -2,6 +2,17 @@
   <Layout>
     <!-- <div> -->
 
+    <v-container v-if="mobileWarn" class="d-sm-none white--text"
+      style="display:flex; position: fixed;top: 0px; height:100%;  background-color:red; z-index:10;  justify-content: center;align-items: center;text-align: center;">
+      Hello there, this website was designed to be viewed on a Desktop. Mobile experience is still not the best.
+
+      <br>
+      <br>
+      Click the Button to view it anyway
+      <br>
+      <v-btn @click="mobileWarn = false"> Continue Mobile</v-btn>
+    </v-container>
+
     <v-window v-model="onboarding">
       <v-window-item>
 
@@ -83,7 +94,8 @@ export default {
     length: 4,
     onboarding: 0,
     window: 0,
-    reveal: false
+    reveal: false,
+    mobileWarn: true
 
     // sections: { <About /> ,<Projects/>, <Contact/> },
     // onboarding: 0,
@@ -186,17 +198,17 @@ export default {
 }
 
 
-.toolsLogos{
-    pointer-events: none;
-    user-select: none;
-    height:100px;
-    padding: 5px;
-    
+.toolsLogos {
+  pointer-events: none;
+  user-select: none;
+  height: 100px;
+  padding: 5px;
+
 }
 
-.toolsCardsImageCont{
-   
-      justify-content: center;
+.toolsCardsImageCont {
+
+  justify-content: center;
 
 }
 
