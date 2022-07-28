@@ -6,7 +6,7 @@
                 <v-col cols="auto">
                     <p align="center">
                         <img
-                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=shell-raiser&layout=compact&title_color=0f0128&bg_color=0,90caf9,9575CD&text_color=0e0126&hide_border&disable_animations=true&count_private=true" />
+                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=shell-raiser&layout=compact&title_color=0f0128&text_color=0e0126&hide_border&disable_animations=true&count_private=true" />
                     </p>
                 </v-col>
                 <v-col>
