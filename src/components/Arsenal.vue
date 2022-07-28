@@ -10,7 +10,7 @@
                     </p>
                 </v-col>
                 <v-col>
-                    <v-card class="white " rounded flat>
+                    <v-card class="white" rounded flat>
                         <!-- <v-list> -->
                         <!-- <v-list-item-content> -->
                         <v-card-title class="toolsCardsImageCont deep-purple lighten-4">Languages</v-card-title>
@@ -37,9 +37,9 @@
                                 class="toolsLogos" />
                         </div>
                     </v-card>
-                    <v-divider></v-divider>
+                    <br>
                     <v-card class="white" rounded flat>
-                        <v-card-title class="toolsCardsImageCont">Front End Frameworks</v-card-title>
+                        <v-card-title class="toolsCardsImageCont red lighten-4">Front End Frameworks</v-card-title>
                         <div class="toolsCardsImageCont">
 
                             <img src="https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-dark.svg"
@@ -53,9 +53,9 @@
                             </svg>
                         </div>
                     </v-card>
-                    <v-divider></v-divider>
+                    <br>
                     <v-card class="white" rounded flat>
-                        <v-card-title class="toolsCardsImageCont">Back End Frameworks</v-card-title>
+                        <v-card-title class="toolsCardsImageCont teal lighten-4">Back End Frameworks</v-card-title>
                         <div class="toolsCardsImageCont">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Qiskit-Logo.svg/800px-Qiskit-Logo.svg.png"
                                 class="toolsLogos" />
@@ -70,9 +70,9 @@
                                 alt="mysql" class="toolsLogos" />
                         </div>
                     </v-card>
-                    <v-divider></v-divider>
+                    <br>
                     <v-card class="white" rounded flat>
-                        <v-card-title class="toolsCardsImageCont">Design</v-card-title>
+                        <v-card-title class="toolsCardsImageCont purple lighten-4">Design</v-card-title>
                         <div class="toolsCardsImageCont">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Logo_Blender.svg"
                                 class="toolsLogos" />
@@ -85,9 +85,9 @@
                                 alt="inkscape" class="toolsLogos" />
                         </div>
                     </v-card>
-                    <v-divider></v-divider>
+                    <br>
                     <v-card class="white" rounded flat>
-                        <v-card-title class="toolsCardsImageCont">Audio</v-card-title>
+                        <v-card-title class="toolsCardsImageCont indigo lighten-4">Audio</v-card-title>
                         <div class="toolsCardsImageCont">
                             <img src="https://upload.wikimedia.org/wikipedia/en/d/d7/Audacity_Logo_2-2-0.png"
                                 alt="audacity" class="toolsLogos" />
