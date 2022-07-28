@@ -7,6 +7,6 @@
 module.exports = {
   siteName: 'Portfolio',
   plugins: [],
-  siteUrl: 'https://shell-raiser.github.io',
+  siteUrl: 'https://shell-raiser.github.io'
   // pathPrefix: '/portfolio',
 }
