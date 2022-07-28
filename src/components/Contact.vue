@@ -9,10 +9,10 @@
                         <v-card min-width="300">
                             <!-- <v-list> -->
                             <!-- <v-list-item-group> -->
-                            <v-list-item two-line href="mailto: abc@example.com">
+                            <v-list-item two-line href="mailto: contactshellraiser@gmail.com">
                                 <v-list-item-content>
-                                    <v-list-item-title>Email at</v-list-item-title>
-                                    <v-list-item-subtitle @click="GHLink()">someemail@gmail.com
+                                    <v-list-item-title>Email</v-list-item-title>
+                                    <v-list-item-subtitle @click="GHLink()">contactshellraiser@gmail.com
                                     </v-list-item-subtitle>
                                 </v-list-item-content>
                                 <v-icon right> mdi-email-variant</v-icon>
