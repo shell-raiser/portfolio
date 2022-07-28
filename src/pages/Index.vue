@@ -192,7 +192,7 @@ export default {
 }
 
 .headtext::before {
-  content: "Front end dev";
+  content: "Web dev";
   animation: animate infinite 5s;
   /* padding-left: 10px; */
 }
