@@ -49,6 +49,17 @@
                                 </v-list-item-content>
                                 <v-icon right>mdi-youtube</v-icon>
                             </v-list-item>
+
+                            <v-list-item two-line href="https://www.linkedin.com/in/shailesh-k-s-1b3475226"
+                                target="_blank" rel="noopener noreferrer">
+
+                                <v-list-item-content>
+                                    <v-list-item-title>Linkedin</v-list-item-title>
+                                    <v-list-item-subtitle>linkedin.com/in/shailesh-k-s-1b3475226
+                                    </v-list-item-subtitle>
+                                </v-list-item-content>
+                                <v-icon right>mdi-linkedin</v-icon>
+                            </v-list-item>
                             <!-- </v-list-item-group> -->
 
                             <!-- </v-list> -->
