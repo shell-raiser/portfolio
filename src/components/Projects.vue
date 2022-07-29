@@ -88,14 +88,13 @@
                             alt="shell-raiser" /> -->
 
                         <!-- <v-card class="mx-auto" color="grey lighten-4" width="350"> -->
-                        <p class="white font-weight-light deep-purple--text mb-2 rounded" >
+                        <p class="white font-weight-light deep-purple--text mb-2 rounded">
                             <img width="100%"
                                 src="https://github-readme-streak-stats.herokuapp.com?user=shell-raiser&theme=buefy&hide_border=true"
                                 alt="shell-raiser" />
                             My GitHub Stats
-                            <v-btn color="deep-purple" class="white--text"
-                                href="https://github.com/shell-raiser" target="_blank" style="z-index:0;"
-                                rel="noopener noreferrer">
+                            <v-btn color="deep-purple" class="white--text" href="https://github.com/shell-raiser"
+                                target="_blank" style="z-index:0;" rel="noopener noreferrer">
                                 <v-icon>mdi-github</v-icon>
                             </v-btn>
 
@@ -147,6 +146,51 @@
                             </v-card>
                         </v-hover>
                     </v-col>
+                    <v-col sm="6">
+                        <v-hover v-slot="{ hover }">
+                            <v-card class="mx-auto" color="grey lighten-4" width="350">
+                                <v-img :aspect-ratio="16 / 9"
+                                    src="https://miro.medium.com/max/1024/1*mwXHpdt6CTQHxH78dwc6NA.jpeg">
+                                    <v-expand-transition>
+                                        <div v-if="hover"
+                                            class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
+                                            style="height: 100%;">
+                                            <p class="projectCardHoverText">
+                                                Consists of
+                                            <ul>
+                                                <li> Request Header Parsing</li>
+                                                <li> URL Shortener</li>
+                                                <li> File Meta-Data Microservice</li>
+                                                <li> Timestamp Microservice</li>
+
+                                            </ul>
+
+                                            </p>
+                                        </div>
+                                    </v-expand-transition>
+                                </v-img>
+                                <v-card-text class="pt-6" style="position: relative;">
+                                    <!-- <v-btn absolute color="teal" class="white--text" fab large right top
+                                        href="https://parsifyapp-q3vtbj6djq-el.a.run.app/" target="_blank"
+                                        style="z-index:0;" rel="noopener noreferrer">
+                                        <v-icon>mdi-google-cloud</v-icon>
+                                    </v-btn> -->
+
+                                    <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
+                                        FCC Microservices
+                                    </h3>
+                                    <p>A Compilation of APIs made for the FCC projects </p>
+                                </v-card-text>
+                                <v-card-actions>
+                                    <v-btn href="https://github.com/shell-raiser/FCC-Microservices" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <v-icon> mdi-github</v-icon>
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-hover>
+                    </v-col>
+
 
 
                 </v-row>
