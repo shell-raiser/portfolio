@@ -1,13 +1,14 @@
 <template>
   <section class="bg1">
 
-   <v-container>
+    <v-container>
 
       <v-row>
         <v-col sm="6">
           <!-- <v-card hover raised rounded :class="{ 'on-hover': hover }"  style="margin: 0;position:relative;top:50%;transform: translateY(-50%);"> -->
           <!-- <g-image   alt="Profile Picture" src="~/profilePic.jpg" max-width="400" max-height="400" fit="cover" /> -->
-          <v-img alt="profile picture" src="https://randomuser.me/api/portraits/lego/5.jpg" aspect-ratio="1" style="max-height: calc(100vh - 100px);" min-width="300"></v-img>
+          <v-img alt="profile picture" src="https://randomuser.me/api/portraits/lego/5.jpg" aspect-ratio="1"
+            style="max-height: calc(100vh - 100px);" min-width="300"></v-img>
           <!-- </v-card> -->
           <!-- max-height="80vh" width="80vh" -->
         </v-col>
@@ -20,7 +21,7 @@
               <br>
               I'm Shailesh
             </h1>
-            
+
             <p style="color:black">
               I'm a
               <span class="headtext pink rounded white--text"></span>
@@ -28,10 +29,20 @@
               Nice, Nice 
             </span>] -->
             </p>
+
+            <!-- <p style="padding:5px;"> -->
+            <!-- <p style="padding:10px;"> -->
+              <img
+                src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple"
+                alt="visitors" />
+            <!-- </p> -->
             <p class="red">This site is still under development, many things are yet to be implemented</p>
+
             <!-- </div> -->
           </v-container>
+
         </v-col>
+
 
       </v-row>
     </v-container>
