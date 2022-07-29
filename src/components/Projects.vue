@@ -32,7 +32,7 @@
                                     <p>2D Platformer game</p>
                                 </v-card-text>
                                 <v-card-actions>
-                                    <v-btn href="https://github.com/shell-raiser/Dark-Green-Space" target="_blank" 
+                                    <v-btn href="https://github.com/shell-raiser/Dark-Green-Space" target="_blank"
                                         rel="noopener noreferrer">
                                         <v-icon> mdi-github</v-icon>
                                     </v-btn>
@@ -82,10 +82,35 @@
                             </v-card>
                         </v-hover>
                     </v-col>
+                    <v-col sm="6" style="display:flex; justify-content: center; align-items: center;">
+
+                        <!-- <img src="https://github-profile-trophy.vercel.app/?username=shell-raiser&column=3"
+                            alt="shell-raiser" /> -->
+
+                        <!-- <v-card class="mx-auto" color="grey lighten-4" width="350"> -->
+                        <p class="white font-weight-light deep-purple--text mb-2 rounded" >
+                            <img width="100%"
+                                src="https://github-readme-streak-stats.herokuapp.com?user=shell-raiser&theme=buefy&hide_border=true"
+                                alt="shell-raiser" />
+                            My GitHub Stats
+                            <v-btn color="deep-purple" class="white--text"
+                                href="https://github.com/shell-raiser" target="_blank" style="z-index:0;"
+                                rel="noopener noreferrer">
+                                <v-icon>mdi-github</v-icon>
+                            </v-btn>
 
 
-                </v-row>
-                <v-row>
+                        </p>
+                        <!-- <v-card-text class="pt-6" style="position: relative;"> -->
+
+
+
+                        <!-- </v-card-text> -->
+                        <!-- </v-card> -->
+
+
+
+                    </v-col>
                     <v-col sm="6">
                         <v-hover v-slot="{ hover }">
                             <v-card class="mx-auto" color="grey lighten-4" width="350">
@@ -122,6 +147,7 @@
                             </v-card>
                         </v-hover>
                     </v-col>
+
 
                 </v-row>
 
