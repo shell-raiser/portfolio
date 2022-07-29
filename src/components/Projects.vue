@@ -150,7 +150,7 @@
                         <v-hover v-slot="{ hover }">
                             <v-card class="mx-auto" color="grey lighten-4" width="350">
                                 <v-img :aspect-ratio="16 / 9"
-                                    src="https://miro.medium.com/max/1024/1*mwXHpdt6CTQHxH78dwc6NA.jpeg">
+                                    src="https://user-images.githubusercontent.com/78999739/181779591-f5698164-7106-451d-93bf-59175284db0c.png">
                                     <v-expand-transition>
                                         <div v-if="hover"
                                             class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
