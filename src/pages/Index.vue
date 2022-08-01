@@ -212,6 +212,19 @@ export default {
 
 }
 
+.contactAnimation {
+  height: 100%;
+  background-color: #9C27B0;
+  /* background-image: url('../profilePic.jpg'); */
+  /* background-image: rgb(0, 252, 244) url('../profilePic.jpg') no-repeat center; */
+  /* background-size: cover; */
+  background-size: cover !important;
+    width: 100%;
+  background-position: center center;
+
+}
+
+
 @keyframes animate {
 
   25% {
