@@ -2,7 +2,7 @@
   <Layout>
     <!-- <div> -->
 
-    <v-container v-if="mobileWarn" class="d-sm-none white--text"
+    <!-- <v-container v-if="mobileWarn" class="d-sm-none white--text"
       style="display:flex; position: fixed;top: 0px; height:100%;  background-color:red; z-index:10;  justify-content: center;align-items: center;text-align: center;">
       Hello there, this website was designed to be viewed on a Desktop. Mobile experience is still not the best.
 
@@ -11,7 +11,7 @@
       Click the Button to view it anyway
       <br>
       <v-btn @click="mobileWarn = false"> Continue Mobile</v-btn>
-    </v-container>
+    </v-container> -->
 
     <v-window v-model="onboarding">
       <v-window-item>
@@ -201,7 +201,7 @@ export default {
 .toolsLogos {
   pointer-events: none;
   user-select: none;
-  height: 100px;
+  max-height: 100px;
   padding: 5px;
 
 }
