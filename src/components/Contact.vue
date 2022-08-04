@@ -69,7 +69,7 @@
 
             <v-col class="d-none d-sm-block" sm="6"
                 style="display:block; position: fixed;top: 0px; right:0; padding:0;">
-                <img width="100%" src="../pebbleRotation.gif"
+                <img width="100%" src="https://github.com/shell-raiser/shell-raiser.github.io/raw/main/src/pebbleRotation.gif"
                     style="    overflow: hidden; display:flex; align-self: center;" alt="pebbels">
             </v-col>
         </v-container>

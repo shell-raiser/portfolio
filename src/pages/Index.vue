@@ -50,7 +50,7 @@
 
         <v-btn :input-value="active" @click="toggle">
           <v-icon color="deep-purple">mdi-human-greeting-proximity</v-icon>
-          <span class="d-none d-sm-block">Contact</span>
+          <span class="d-none d-sm-block">Connect</span>
         </v-btn>
 
         <v-btn :input-value="active" @click="toggle">

@@ -18,9 +18,9 @@
             style="background-color: rgba(255, 255, 255, 0.4);margin: 0;position:relative;top:50%;transform: translateY(-50%);"
             class="rounded">
             <!-- <div style="min-height:90vh; position:fixed;top: 50%;"> -->
-            <h1 class="AboutHead">Yollo there,
+            <h1 class="AboutHead">Hello there,
               <br>
-              I'm Shailesh
+              I'm Shailesh !
             </h1>
 
             <p style="color:black">
@@ -37,7 +37,7 @@
               src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple"
               alt="visitors" />
             <!-- </p> -->
-            <p class="red">This site is still under development, many things are yet to be implemented</p>
+            <p class="red white--text">This site is still under development, many things are yet to be implemented</p>
 
             <!-- </div> -->
           </v-container>
