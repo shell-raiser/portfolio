@@ -5,6 +5,11 @@
                 <v-container>
                     <h1 class="ContactHead">Contact</h1>
                     <v-card min-width="300">
+
+                        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="shailesh-k-s-1b3475226" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/shailesh-k-s-1b3475226?trk=profile-badge">Shailesh K S</a></div>
+
+                        <github-card data-user="shell-raiser"></github-card>
+
                         <!-- <v-card-title class="ContactHead" style="text-align:right;">Contact</v-card-title> -->
                         <!-- <v-list> -->
                         <!-- <v-list-item-group> -->
@@ -69,7 +74,8 @@
 
             <v-col class="d-none d-sm-block" sm="6"
                 style="display:block; position: fixed;top: 0px; right:0; padding:0;">
-                <img width="100%" src="https://github.com/shell-raiser/shell-raiser.github.io/raw/main/src/pebbleRotation.gif"
+                <img width="100%"
+                    src="https://github.com/shell-raiser/shell-raiser.github.io/raw/main/src/pebbleRotation.gif"
                     style="    overflow: hidden; display:flex; align-self: center;" alt="pebbels">
             </v-col>
         </v-container>

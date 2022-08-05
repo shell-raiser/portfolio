@@ -81,6 +81,10 @@ import Arsenal from "../components/Arsenal.vue";
 export default {
   metaInfo: {
     title: "Shailesh K S",
+    script: [
+      { src: 'https://platform.linkedin.com/badges/js/profile.js', async: true, defer: true },
+      { src: "https://unpkg.com/@rocktimsaikia/github-card@latest?module", async: true, defer: true }
+    ],
   },
   components: {
     About,
@@ -112,7 +116,16 @@ export default {
         ? this.length - 1
         : this.onboarding - 1
     }
-  }
+  },
+  // mounted() {
+  //   let linkedinScript = document.createElement('script')
+  //   linkedinScript.setAttribute('src', 'https://platform.linkedin.com/badges/js/profile.js')
+  //   linkedinScript.setAttribute('async')
+  //   linkedinScript.setAttribute('defer')
+  //   document.head.appendChild(linkedinScript)
+
+
+  // },
   // methods: {
   //   next() {
   //     this.onboarding = this.onboarding + 1 === this.length
@@ -219,7 +232,7 @@ export default {
   /* background-image: rgb(0, 252, 244) url('../profilePic.jpg') no-repeat center; */
   /* background-size: cover; */
   background-size: cover !important;
-    width: 100%;
+  width: 100%;
   background-position: center center;
 
 }
