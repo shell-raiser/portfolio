@@ -88,7 +88,7 @@
                             alt="shell-raiser" /> -->
 
                         <!-- <v-card class="mx-auto" color="grey lighten-4" width="350"> -->
-                        <p class="white font-weight-light deep-purple--text mb-2 rounded">
+                        <p class="white font-weight-light deep-purple--text mb-2 rounded" style="padding-bottom:5px;padding-left: 5px">
                             <img width="100%"
                                 src="https://github-readme-streak-stats.herokuapp.com?user=shell-raiser&theme=buefy&hide_border=true"
                                 alt="shell-raiser" />
