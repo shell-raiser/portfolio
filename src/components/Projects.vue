@@ -88,7 +88,8 @@
                             alt="shell-raiser" /> -->
 
                         <!-- <v-card class="mx-auto" color="grey lighten-4" width="350"> -->
-                        <p class="white font-weight-light deep-purple--text mb-2 rounded" style="padding-bottom:5px;padding-left: 5px">
+                        <p class="white font-weight-light deep-purple--text mb-2 rounded"
+                            style="padding-bottom:5px;padding-left: 5px">
                             <img width="100%"
                                 src="https://github-readme-streak-stats.herokuapp.com?user=shell-raiser&theme=buefy&hide_border=true"
                                 alt="shell-raiser" />
@@ -190,7 +191,51 @@
                             </v-card>
                         </v-hover>
                     </v-col>
+                    <v-col sm="6">
+                        <v-hover v-slot="{ hover }">
+                            <v-card class="mx-auto" color="grey lighten-4" width="350">
+                                <v-img :aspect-ratio="16 / 9"
+                                    src="https://user-images.githubusercontent.com/78999739/183929986-483e206d-e15b-49cb-b872-391015398ab5.png">
+                                    <v-expand-transition>
+                                        <div v-if="hover"
+                                            class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
+                                            style="height: 100%;">
+                                            <p class="projectCardHoverText">
+                                                A decentralised website/app to report and track environmental damages
+                                                caused by industries to concerned authorithies and NGOs
 
+
+                                            </p>
+                                        </div>
+                                    </v-expand-transition>
+                                </v-img>
+                                <v-card-text class="pt-6" style="position: relative;">
+                                    <v-btn absolute color="teal" class="white--text" fab large right top
+                                        href="https://black-hill-6592.on.fleek.co/" target="_blank" style="z-index:0;"
+                                        rel="noopener noreferrer">
+                                        <v-icon>mdi-link</v-icon>
+                                    </v-btn>
+
+                                    <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
+                                        Greensaver
+                                    </h3>
+                                    <p>
+                                        A Hackathon Project
+                                    </p>
+                                </v-card-text>
+                                <v-card-actions>
+                                    <v-btn href="https://github.com/shell-raiser/helpfiy" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <v-icon> mdi-github</v-icon>
+                                    </v-btn>
+                                    <v-btn href="https://devfolio.co/projects/greensavers-5b31" target="_blank"
+                                        rel="noopener noreferrer">
+                                        Devfolio
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-hover>
+                    </v-col>
 
 
                 </v-row>
