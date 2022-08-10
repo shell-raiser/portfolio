@@ -14,6 +14,21 @@
 <script>
 export default {
   data: () => ({
+    rules: [
+      value => !!value || 'Required.',
+      value => (value && value.length >= 3) || 'Min 3 characters',
+    ],
+    valid: true,
+    name: '',
+    nameRules: [
+      v => !!v || 'Name is required',
+      v => (v && v.length <= 10) || 'Name must be less than 10 characters',
+    ],
+    email: '',
+    emailRules: [
+      v => !!v || 'E-mail is required',
+      v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+    ],
     // length: 3,
     onboarding: 0,
   }),
@@ -106,8 +121,8 @@ query {
   /* min-height: calc(100vh - 60px); */
   /* background:#9575cd; */
   background: #000;
-      overflow-x: hidden; 
-          overflow-y:hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   /* background-image: url('http://fc02.deviantart.net/fs21/f/2007/236/a/a/Animated_Rain_Desktop_HD_by_MrQuicksilver.gif'); */
   /* background-color: #9575cd; */
   /* background-color: #000; */
@@ -136,6 +151,4 @@ query {
   background-image: url('../pebbleRotation.gif');
   margin: auto;
 } */
-
-
 </style>

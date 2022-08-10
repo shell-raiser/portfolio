@@ -1,83 +1,58 @@
 <template>
-    <section class="bg2">
-        <v-container style="padding:0;min-height: calc(100vh - 60px); display:flex;  align-items: center;">
-            <v-col class="rounded" sm="6" style="background:#9575cd;height:100%;text-align:right">
-                <v-container>
-                    <h1 class="ContactHead">Contact</h1>
-                    <v-card min-width="300">
+    <section class="bg3">
 
-                        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="shailesh-k-s-1b3475226" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/shailesh-k-s-1b3475226?trk=profile-badge">Shailesh K S</a></div>
+        <v-container style="padding:0;">
+            <v-col style="padding:0;">
 
-                        <github-card data-user="shell-raiser"></github-card>
+            </v-col>
+            <v-col style="padding:0;">
+                <h1 class="ArsenalHead" style="text-align:center">Contact</h1>
 
-                        <!-- <v-card-title class="ContactHead" style="text-align:right;">Contact</v-card-title> -->
-                        <!-- <v-list> -->
-                        <!-- <v-list-item-group> -->
-                        <v-list-item two-line href="mailto: contactshellraiser@gmail.com">
-                            <v-list-item-content>
-                                <v-list-item-title>Email</v-list-item-title>
-                                <v-list-item-subtitle @click="GHLink()">contactshellraiser@gmail.com
-                                </v-list-item-subtitle>
-                            </v-list-item-content>
-                            <v-icon right> mdi-email-variant</v-icon>
-                        </v-list-item>
 
-                        <v-list-item two-line href="https://github.com/shell-raiser" target="_blank"
-                            rel="noopener noreferrer">
+                <v-card style="padding:10px">
+                    <v-form ref="form" v-model="valid" lazy-validation action="https://formspree.io/f/xeqdjwoo"
+                        method="post">
+                        <!-- <label for="name">Name</label>
+                <input type="text" name="name" id="name" /> -->
+                        <v-text-field label="Name" v-model="name" type="text" name="name" id="name" :counter="10"
+                            :rules="nameRules" aria-required="">
+                        </v-text-field>
 
-                            <v-list-item-content>
-                                <v-list-item-title>Github</v-list-item-title>
-                                <v-list-item-subtitle>@shell-raiser</v-list-item-subtitle>
-                            </v-list-item-content>
-                            <v-icon right>mdi-github</v-icon>
-                        </v-list-item>
+                        <v-text-field label="Email" name="Email" id="email" type="email" :rules="rules"
+                            hint="example@gmail.com"></v-text-field>
+                        <!-- <label for="email">Email</label>
+                <input name="Email" id="email" type="email"> -->
 
-                        <v-list-item two-line href="https://soundcloud.com/user-185450671" target="_blank"
-                            rel="noopener noreferrer">
 
-                            <v-list-item-content>
-                                <v-list-item-title>Soundcloud</v-list-item-title>
-                                <v-list-item-subtitle>soundcloud.com/user-185450671
-                                </v-list-item-subtitle>
-                            </v-list-item-content>
-                            <v-icon right>mdi-soundcloud</v-icon>
-                        </v-list-item>
 
-                        <v-list-item two-line href="https://youtube.com/channel/UCmEShK3aru1usVrGOrzGqqw"
-                            target="_blank" rel="noopener noreferrer">
+                        <!-- <label for="subject">Subject</label> -->
+                        <!-- <input name="Subject" id="subject" type="subject"> -->
+                        <v-text-field label="Subject" name="Subject" id="subject" type="subject" :rules="rules">
+                        </v-text-field>
 
-                            <v-list-item-content>
-                                <v-list-item-title>Youtube</v-list-item-title>
-                                <v-list-item-subtitle>youtube.com/channel/UCmEShK3aru1usVrGOrzGqqw
-                                </v-list-item-subtitle>
-                            </v-list-item-content>
-                            <v-icon right>mdi-youtube</v-icon>
-                        </v-list-item>
+                        <!-- <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea> -->
+                        <v-textarea label="Message" name="message" id="message" :rules="rules"></v-textarea>
 
-                        <v-list-item two-line href="https://www.linkedin.com/in/shailesh-k-s-1b3475226" target="_blank"
-                            rel="noopener noreferrer">
 
-                            <v-list-item-content>
-                                <v-list-item-title>Linkedin</v-list-item-title>
-                                <v-list-item-subtitle>linkedin.com/in/shailesh-k-s-1b3475226
-                                </v-list-item-subtitle>
-                            </v-list-item-content>
-                            <v-icon right>mdi-linkedin</v-icon>
-                        </v-list-item>
-                        <!-- </v-list-item-group> -->
-
-                        <!-- </v-list> -->
-                    </v-card>
-
-                </v-container>
+                        <v-btn type="submit" class="mr-4">
+                            submit
+                        </v-btn>
+                        <v-btn type="reset" onclick="clear()">
+                            clear
+                        </v-btn>
+                        <!-- <ul>
+                    <li><input type="submit" value="Send Message" /></li>
+                    <li><input type="reset" value="Clear" /></li>
+                </ul> -->
+                    </v-form>
+                </v-card>
             </v-col>
 
-            <v-col class="d-none d-sm-block" sm="6"
-                style="display:block; position: fixed;top: 0px; right:0; padding:0;">
-                <img width="100%"
-                    src="https://github.com/shell-raiser/shell-raiser.github.io/raw/main/src/pebbleRotation.gif"
-                    style="    overflow: hidden; display:flex; align-self: center;" alt="pebbels">
-            </v-col>
         </v-container>
+
+
+
+
     </section>
 </template>

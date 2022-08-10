@@ -21,7 +21,7 @@
       </v-window-item>
 
       <v-window-item>
-        <Contact id="Contact" />
+        <Connect id="Connect" />
 
       </v-window-item>
       <v-window-item>
@@ -32,6 +32,11 @@
       <v-window-item>
 
         <Arsenal id="Arsenal" />
+
+      </v-window-item>
+      <v-window-item>
+
+        <Contact id="Contact" />
 
       </v-window-item>
     </v-window>
@@ -62,6 +67,11 @@
           <v-icon color="deep-purple">mdi-hammer-wrench</v-icon>
           <span class="d-none d-sm-block">Tools</span>
         </v-btn>
+
+        <v-btn :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-card-account-mail </v-icon>
+          <span class="d-none d-sm-block"> Contact </span>
+        </v-btn>
       </v-btn-toggle>
 
       <v-btn text @click="next">
@@ -78,22 +88,56 @@ import Contact from "@/components/Contact.vue";
 import Projects from "@/components/Projects.vue";
 import 'animate.css';
 import Arsenal from "../components/Arsenal.vue";
+import Connect from "@/components/Connect.vue";
+
+import { validationMixin } from 'vuelidate'
+import { required, maxLength, email } from 'vuelidate/lib/validators'
+
+
 export default {
+  mixins: [validationMixin],
+
+  validations: {
+    name: { required, maxLength: maxLength(10) },
+    email: { required, email },
+    select: { required },
+    checkbox: {
+      checked(val) {
+        return val
+      },
+    },
+  },
   metaInfo: {
     title: "Shailesh K S",
     script: [
       { src: 'https://platform.linkedin.com/badges/js/profile.js', async: true, defer: true },
-      { src: "https://unpkg.com/@rocktimsaikia/github-card@latest?module", async: true, defer: true }
+      { src: "https://unpkg.com/@rocktimsaikia/github-card@latest?module", async: true, defer: true },  
     ],
   },
   components: {
     About,
-    Contact,
+    Connect,
     Projects,
     Arsenal,
+    Contact,
   },
 
   data: () => ({
+    rules: [
+      value => !!value || 'Required.',
+      value => (value && value.length >= 3) || 'Min 3 characters',
+    ],
+    valid: true,
+    name: '',
+    nameRules: [
+      v => !!v || 'Name is required',
+      v => (v && v.length <= 10) || 'Name must be less than 10 characters',
+    ],
+    email: '',
+    emailRules: [
+      v => !!v || 'E-mail is required',
+      v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+    ],
     overlay: false,
     length: 4,
     onboarding: 0,
@@ -105,7 +149,46 @@ export default {
     // onboarding: 0,
 
   }),
+
+  computed: {
+    checkboxErrors() {
+      const errors = []
+      if (!this.$v.checkbox.$dirty) return errors
+      !this.$v.checkbox.checked && errors.push('You must agree to continue!')
+      return errors
+    },
+    selectErrors() {
+      const errors = []
+      if (!this.$v.select.$dirty) return errors
+      !this.$v.select.required && errors.push('Item is required')
+      return errors
+    },
+    nameErrors() {
+      const errors = []
+      if (!this.$v.name.$dirty) return errors
+      !this.$v.name.maxLength && errors.push('Name must be at most 10 characters long')
+      !this.$v.name.required && errors.push('Name is required.')
+      return errors
+    },
+    emailErrors() {
+      const errors = []
+      if (!this.$v.email.$dirty) return errors
+      !this.$v.email.email && errors.push('Must be valid e-mail')
+      !this.$v.email.required && errors.push('E-mail is required')
+      return errors
+    },
+  },
   methods: {
+    submit() {
+      this.$v.$touch()
+    },
+    clear() {
+      this.$v.$reset()
+      this.name = ''
+      this.email = ''
+      this.select = null
+      this.checkbox = false
+    },
     next() {
       this.onboarding = this.onboarding + 1 === this.length
         ? 0
