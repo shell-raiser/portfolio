@@ -136,12 +136,65 @@
                                     <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
                                         Parsify
                                     </h3>
-                                    <p>A Hackathon Project </p>
+                                    <p>A Hackathon Project made for <a
+                                            href="https://unstop.com/o/UA3b5Qn?lb=4Y9Hkj2">Codefiesta</a>
+                                    <ul>
+                                        <li>Finalist</li>
+                                    </ul>
+                                    </p>
                                 </v-card-text>
                                 <v-card-actions>
                                     <v-btn href="https://github.com/shell-raiser/Parsify-WebApp" target="_blank"
                                         rel="noopener noreferrer">
                                         <v-icon> mdi-github</v-icon>
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-hover>
+                    </v-col>
+                    <v-col sm="6">
+                        <v-hover v-slot="{ hover }">
+                            <v-card class="mx-auto" color="grey lighten-4" width="350">
+                                <v-img :aspect-ratio="16 / 9"
+                                    src="https://user-images.githubusercontent.com/78999739/183272769-7576d48c-8af4-470c-bfa7-b63adbfff33d.png">
+                                    <v-expand-transition>
+                                        <div v-if="hover"
+                                            class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
+                                            style="height: 100%;">
+                                            <p class="projectCardHoverText">
+                                                A Cross-platform Flutter app, made to connect NGOs and Volunteers protecting the environment
+
+                                            </p>
+                                        </div>
+                                    </v-expand-transition>
+                                </v-img>
+                                <v-card-text class="pt-6" style="position: relative;">
+                                    <v-btn absolute color="teal" class="white--text" fab large right top
+                                        href="https://github.com/shell-raiser/saviour_kuHacks22" target="_blank" style="z-index:0;"
+                                        rel="noopener noreferrer">
+                                        <v-icon>mdi-github</v-icon>
+                                    </v-btn>
+
+                                    <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
+                                        Saviour
+                                    </h3>
+                                    <p>
+                                        A Hackathon Project for
+                                        <a href="https://ku-hackfest-2022.devfolio.co/"> KU HackFest 2022</a>
+                                    <ul>
+                                        <li>Won Cloud Track</li>
+                                        <li>"Dream Big and Create More Cheers with AB-InBev" Winner</li>
+                                    </ul>
+                                    </p>
+                                </v-card-text>
+                                <v-card-actions>
+                                    <v-btn href="https://github.com/shell-raiser/saviour_kuHacks22" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <v-icon> mdi-github</v-icon>
+                                    </v-btn>
+                                    <v-btn href="https://devfolio.co/projects/saviour-83e6" target="_blank"
+                                        rel="noopener noreferrer">
+                                        Devfolio
                                     </v-btn>
                                 </v-card-actions>
                             </v-card>
@@ -220,7 +273,11 @@
                                         Greensaver
                                     </h3>
                                     <p>
-                                        A Hackathon Project
+                                        A Hackathon Project for <a href="https://hackoheist.devfolio.co/">HACK O
+                                            HEIST</a>
+                                    <ul>
+                                        <li>Top 15 Projects</li>
+                                    </ul>
                                     </p>
                                 </v-card-text>
                                 <v-card-actions>
@@ -236,6 +293,53 @@
                             </v-card>
                         </v-hover>
                     </v-col>
+                    <v-col sm="6">
+                        <v-hover v-slot="{ hover }">
+                            <v-card class="mx-auto" color="grey lighten-4" width="350">
+                                <v-img :aspect-ratio="16 / 9"
+                                    src="https://user-images.githubusercontent.com/78999739/184808507-fda6894a-5425-4d52-902d-471783e15f76.png">
+                                    <v-expand-transition>
+                                        <div v-if="hover"
+                                            class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
+                                            style="height: 100%;">
+                                            <p class="projectCardHoverText">
+                                                A Website connecting Startups, Investors, Mentors and wannabe
+                                                Entrepreneurs
+
+
+                                            </p>
+                                        </div>
+                                    </v-expand-transition>
+                                </v-img>
+                                <v-card-text class="pt-6" style="position: relative;">
+                                    <v-btn absolute color="teal" class="white--text" fab large right top
+                                        href="http://52.54.137.237:3000/" target="_blank" style="z-index:0;"
+                                        rel="noopener noreferrer">
+                                        <v-icon>mdi-aws</v-icon>
+                                    </v-btn>
+
+                                    <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
+                                        Avvio
+                                    </h3>
+                                    <p>
+                                        A Hackathon Project for
+                                        <a href="https://unstop.com/o/FAnGkDV?lb=4Y9Hkj2"> Codefury 5.0</a>
+                                    <ul>
+                                        <li>Won 1st place</li>
+                                    </ul>
+                                    </p>
+                                </v-card-text>
+                                <v-card-actions>
+                                    <v-btn href="https://github.com/shell-raiser/codefury5.0" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <v-icon> mdi-github</v-icon>
+                                    </v-btn>
+
+                                </v-card-actions>
+                            </v-card>
+                        </v-hover>
+                    </v-col>
+
 
 
                 </v-row>
