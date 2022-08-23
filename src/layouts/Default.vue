@@ -3,13 +3,13 @@
     <!-- 2:06:01 -->
 
     <!-- </v-card> -->
-    <!-- <v-main> -->
+    <v-main>
     <!-- <v-container> -->
     <transition name="fade" appear>
       <!-- mode="out-in"> -->
-      <main>
+      <!-- <main> -->
         <slot />
-      </main>
+      <!-- </main> -->
     </transition>
     <v-footer class="justify-center" tile app>
 
@@ -68,7 +68,7 @@
       </v-btn> -->
     </v-footer>
     <!-- </v-container> -->
-    <!-- </v-main> -->
+    </v-main>
   </v-app>
 </template>
 
