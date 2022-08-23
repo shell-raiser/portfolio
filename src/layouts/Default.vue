@@ -3,7 +3,7 @@
     <!-- 2:06:01 -->
 
     <!-- </v-card> -->
-    <v-main>
+    <!-- <v-main> -->
       <!-- <v-container> -->
       <slot />
       <v-footer class="justify-space-between " tile app>
@@ -15,43 +15,45 @@
 
         <v-btn-toggle v-model="onboarding" class="text-center" rounded mandatory color="deep-purple">
 
-          <g-link to="/">
-            <v-btn :input-value="active" @click="toggle">
+          <!-- <g-link to="/"> -->
+            <v-btn to="/" :input-value="active" @click="toggle">
               <v-icon color="deep-purple">mdi-view-dashboard</v-icon>
               <span class="d-none d-sm-block">
                 About</span>
             </v-btn>
-          </g-link>
-          <g-link to="/connect">
-            <v-btn :input-value="active" @click="toggle">
+          <!-- </g-link> -->
+          
+          <!-- <g-link to="/connect"> -->
+            <v-btn to="/connect" :input-value="active" @click="toggle">
               <v-icon color="deep-purple">mdi-human-greeting-proximity</v-icon>
               <span class="d-none d-sm-block">
                 Connect</span>
             </v-btn>
-          </g-link>
-          <g-link to="/projects">
-            <v-btn :input-value="active" @click="toggle">
+          <!-- </g-link> -->
+
+          <!-- <g-link to="/projects"> -->
+            <v-btn to="/projects" :input-value="active" @click="toggle">
               <v-icon color="deep-purple">mdi-devices</v-icon>
               <span class="d-none d-sm-block"> Projects</span>
             </v-btn>
-          </g-link>
+          <!-- </g-link> -->
 
-          <g-link to="/arsenal">
-            <v-btn :input-value="active" @click="toggle">
+          <!-- <g-link to="/arsenal"> -->
+            <v-btn to="/arsenal" :input-value="active" @click="toggle">
               <v-icon color="deep-purple">mdi-hammer-wrench</v-icon>
               <span class="d-none d-sm-block">
                 Tools</span>
             </v-btn>
-          </g-link>
+          <!-- </g-link> -->
 
 
-          <g-link to="/contact">
-            <v-btn :input-value="active" @click="toggle">
+          <!-- <g-link to="/contact"> -->
+            <v-btn to="/contact" :input-value="active" @click="toggle">
               <v-icon color="deep-purple">mdi-card-account-mail </v-icon>
               <span class="d-none d-sm-block">
                 Contact</span>
             </v-btn>
-          </g-link>
+          <!-- </g-link> -->
 
         </v-btn-toggle>
 
@@ -61,7 +63,7 @@
         </v-btn>
       </v-footer>
       <!-- </v-container> -->
-    </v-main>
+    <!-- </v-main> -->
   </v-app>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
     <Layout>
         <section class="bg3">
-            <v-container  style="padding:0">
+            <v-container style="padding:0">
                 <v-col style="width:80%">
                     <v-row>
                         <v-col sm="6">
@@ -365,9 +365,6 @@
                     </h1>
                 </v-col>
             </v-container>
-
-
-
         </section>
     </Layout>
 </template>
