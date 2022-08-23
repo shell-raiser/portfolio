@@ -1,4 +1,5 @@
 <template>
+<Layout>
     <section class="bg4 ">
         <h1 class="ArsenalHead rounded text-center">Arsenal</h1>
         <v-container class="text-center">
@@ -99,5 +100,5 @@
                 </v-col>
             </v-row>
         </v-container>
-    </section>
+    </section></Layout>
 </template>

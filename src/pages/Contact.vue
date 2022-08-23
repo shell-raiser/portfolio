@@ -1,4 +1,5 @@
 <template>
+<Layout>
     <section class="bg3">
 
         <v-container style="padding:0;">
@@ -53,6 +54,6 @@
 
 
 
-
-    </section>
+</section>
+    </Layout>
 </template>

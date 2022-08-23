@@ -1,4 +1,5 @@
 <template>
+<Layout>
   <section class="bg1">
 
     <v-container
@@ -48,6 +49,6 @@
       </v-row>
     </v-container>
 
-  </section>
+  </section></Layout>
   <!-- <div>About</div> -->
 </template>

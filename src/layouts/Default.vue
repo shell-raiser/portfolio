@@ -6,12 +6,67 @@
     <v-main>
       <!-- <v-container> -->
       <slot />
+      <v-footer class="justify-space-between " tile app>
+
+        <v-btn text @click="prev">
+          <v-icon>mdi-chevron-left</v-icon>
+        </v-btn>
+
+
+        <v-btn-toggle v-model="onboarding" class="text-center" rounded mandatory color="deep-purple">
+
+          <g-link to="/">
+            <v-btn :input-value="active" @click="toggle">
+              <v-icon color="deep-purple">mdi-view-dashboard</v-icon>
+              <span class="d-none d-sm-block">
+                About</span>
+            </v-btn>
+          </g-link>
+          <g-link to="/connect">
+            <v-btn :input-value="active" @click="toggle">
+              <v-icon color="deep-purple">mdi-human-greeting-proximity</v-icon>
+              <span class="d-none d-sm-block">
+                Connect</span>
+            </v-btn>
+          </g-link>
+          <g-link to="/projects">
+            <v-btn :input-value="active" @click="toggle">
+              <v-icon color="deep-purple">mdi-devices</v-icon>
+              <span class="d-none d-sm-block"> Projects</span>
+            </v-btn>
+          </g-link>
+
+          <g-link to="/arsenal">
+            <v-btn :input-value="active" @click="toggle">
+              <v-icon color="deep-purple">mdi-hammer-wrench</v-icon>
+              <span class="d-none d-sm-block">
+                Tools</span>
+            </v-btn>
+          </g-link>
+
+
+          <g-link to="/contact">
+            <v-btn :input-value="active" @click="toggle">
+              <v-icon color="deep-purple">mdi-card-account-mail </v-icon>
+              <span class="d-none d-sm-block">
+                Contact</span>
+            </v-btn>
+          </g-link>
+
+        </v-btn-toggle>
+
+
+        <v-btn text @click="next">
+          <v-icon>mdi-chevron-right</v-icon>
+        </v-btn>
+      </v-footer>
       <!-- </v-container> -->
     </v-main>
   </v-app>
 </template>
 
 <script>
+
 export default {
   data: () => ({
     rules: [
