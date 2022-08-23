@@ -1,7 +1,7 @@
 <template>
 <Layout>
     <section class="bg3">
-
+<transition name="slide-fade" appear>
         <v-container style="padding:0;">
             <v-col style="padding:0;">
 
@@ -52,7 +52,7 @@
 
         </v-container>
 
-
+</transition>
 
 </section>
     </Layout>

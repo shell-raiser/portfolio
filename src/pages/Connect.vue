@@ -1,6 +1,6 @@
 <template>
 <Layout>
-    <section class="bg2">
+    <section class="bg2"> <transition name="slide-fade" appear>
         <v-container style="padding:0;min-height: calc(100vh - 60px); display:flex;  align-items: center;">
             <v-col class="rounded" sm="6" style="background:#9575cd;height:100%;text-align:right">
                 <v-container>
@@ -102,6 +102,6 @@
                 style="display:flex; justify-content: center; align-items: center; padding:0; height:100vh">
                 <img src="../assets/pebbleRotation.gif" alt="pebbels">
             </v-col>
-        </v-container>
+        </v-container></transition>
     </section></Layout>
 </template>

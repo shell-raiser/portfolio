@@ -1,6 +1,6 @@
 <template>
 <Layout>
-    <section class="bg4 ">
+    <section class="bg4 "><transition name="slide-fade" appear>
         <h1 class="ArsenalHead rounded text-center">Arsenal</h1>
         <v-container class="text-center">
             <v-row>
@@ -100,5 +100,5 @@
                 </v-col>
             </v-row>
         </v-container>
-    </section></Layout>
+    </transition></section></Layout>
 </template>

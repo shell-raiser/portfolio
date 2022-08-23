@@ -4,65 +4,70 @@
 
     <!-- </v-card> -->
     <!-- <v-main> -->
-      <!-- <v-container> -->
-      <slot />
-      <v-footer class="justify-space-between " tile app>
+    <!-- <v-container> -->
+    <transition name="fade" appear>
+      <!-- mode="out-in"> -->
+      <main>
+        <slot />
+      </main>
+    </transition>
+    <v-footer class="justify-space-between " tile app>
 
-        <v-btn text @click="prev">
-          <v-icon>mdi-chevron-left</v-icon>
+      <v-btn text @click="prev">
+        <v-icon>mdi-chevron-left</v-icon>
+      </v-btn>
+
+
+      <v-btn-toggle v-model="onboarding" class="text-center" rounded mandatory color="deep-purple">
+
+        <!-- <g-link to="/"> -->
+        <v-btn to="/" :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-view-dashboard</v-icon>
+          <span class="d-none d-sm-block">
+            About</span>
         </v-btn>
+        <!-- </g-link> -->
 
-
-        <v-btn-toggle v-model="onboarding" class="text-center" rounded mandatory color="deep-purple">
-
-          <!-- <g-link to="/"> -->
-            <v-btn to="/" :input-value="active" @click="toggle">
-              <v-icon color="deep-purple">mdi-view-dashboard</v-icon>
-              <span class="d-none d-sm-block">
-                About</span>
-            </v-btn>
-          <!-- </g-link> -->
-          
-          <!-- <g-link to="/connect"> -->
-            <v-btn to="/connect" :input-value="active" @click="toggle">
-              <v-icon color="deep-purple">mdi-human-greeting-proximity</v-icon>
-              <span class="d-none d-sm-block">
-                Connect</span>
-            </v-btn>
-          <!-- </g-link> -->
-
-          <!-- <g-link to="/projects"> -->
-            <v-btn to="/projects" :input-value="active" @click="toggle">
-              <v-icon color="deep-purple">mdi-devices</v-icon>
-              <span class="d-none d-sm-block"> Projects</span>
-            </v-btn>
-          <!-- </g-link> -->
-
-          <!-- <g-link to="/arsenal"> -->
-            <v-btn to="/arsenal" :input-value="active" @click="toggle">
-              <v-icon color="deep-purple">mdi-hammer-wrench</v-icon>
-              <span class="d-none d-sm-block">
-                Tools</span>
-            </v-btn>
-          <!-- </g-link> -->
-
-
-          <!-- <g-link to="/contact"> -->
-            <v-btn to="/contact" :input-value="active" @click="toggle">
-              <v-icon color="deep-purple">mdi-card-account-mail </v-icon>
-              <span class="d-none d-sm-block">
-                Contact</span>
-            </v-btn>
-          <!-- </g-link> -->
-
-        </v-btn-toggle>
-
-
-        <v-btn text @click="next">
-          <v-icon>mdi-chevron-right</v-icon>
+        <!-- <g-link to="/connect"> -->
+        <v-btn to="/connect" :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-human-greeting-proximity</v-icon>
+          <span class="d-none d-sm-block">
+            Connect</span>
         </v-btn>
-      </v-footer>
-      <!-- </v-container> -->
+        <!-- </g-link> -->
+
+        <!-- <g-link to="/projects"> -->
+        <v-btn to="/projects" :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-devices</v-icon>
+          <span class="d-none d-sm-block"> Projects</span>
+        </v-btn>
+        <!-- </g-link> -->
+
+        <!-- <g-link to="/arsenal"> -->
+        <v-btn to="/arsenal" :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-hammer-wrench</v-icon>
+          <span class="d-none d-sm-block">
+            Tools</span>
+        </v-btn>
+        <!-- </g-link> -->
+
+
+        <!-- <g-link to="/contact"> -->
+        <v-btn to="/contact" :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-card-account-mail </v-icon>
+          <span class="d-none d-sm-block">
+            Contact</span>
+        </v-btn>
+        <!-- </g-link> -->
+
+      </v-btn-toggle>
+
+
+      <v-btn text @click="next">
+        <v-icon>mdi-chevron-right</v-icon>
+      </v-btn>
+    </v-footer>
+    <!-- </v-container> -->
     <!-- </v-main> -->
   </v-app>
 </template>
@@ -114,6 +119,35 @@ query {
 </static-query>
 
 <style>
+.slide-fade-enter-active {
+  transition: all .5s ;
+}
+
+
+.slide-fade-enter {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: all 1s;
+}
+
+.fade-enter {
+  opacity: 0.3;
+}
+
+/* .fade-enter-from{
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity .5s ease-out;
+} */
+
+
+
+
 .v-card.on-hover.theme--dark {
   background-color: rgba(#fff, 0.8);
 }
