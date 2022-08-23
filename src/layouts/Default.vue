@@ -11,11 +11,11 @@
         <slot />
       </main>
     </transition>
-    <v-footer class="justify-space-between " tile app>
+    <v-footer class="justify-center" tile app>
 
-      <v-btn text @click="prev">
+      <!-- <v-btn text @click="prev">
         <v-icon>mdi-chevron-left</v-icon>
-      </v-btn>
+      </v-btn> -->
 
 
       <v-btn-toggle v-model="onboarding" class="text-center" rounded mandatory color="deep-purple">
@@ -63,9 +63,9 @@
       </v-btn-toggle>
 
 
-      <v-btn text @click="next">
+      <!-- <v-btn text @click="next">
         <v-icon>mdi-chevron-right</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-footer>
     <!-- </v-container> -->
     <!-- </v-main> -->
