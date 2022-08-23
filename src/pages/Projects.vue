@@ -3,7 +3,7 @@
 
         <section class="bg3">
             <transition name="slide-fade" appear>
-                <v-container style="padding:0">
+                <v-container>
                     <v-col style="width:80%">
                         <v-row>
                             <v-col sm="6">
