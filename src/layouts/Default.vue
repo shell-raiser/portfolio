@@ -76,21 +76,21 @@
 
 export default {
   data: () => ({
-    rules: [
-      value => !!value || 'Required.',
-      value => (value && value.length >= 3) || 'Min 3 characters',
-    ],
-    valid: true,
-    name: '',
-    nameRules: [
-      v => !!v || 'Name is required',
-      v => (v && v.length <= 10) || 'Name must be less than 10 characters',
-    ],
-    email: '',
-    emailRules: [
-      v => !!v || 'E-mail is required',
-      v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
-    ],
+    // rules: [
+    //   value => !!value || 'Required.',
+    //   value => (value && value.length >= 3) || 'Min 3 characters',
+    // ],
+    // valid: true,
+    // name: '',
+    // nameRules: [
+    //   v => !!v || 'Name is required',
+    //   v => (v && v.length <= 10) || 'Name must be less than 10 characters',
+    // ],
+    // email: '',
+    // emailRules: [
+    //   v => !!v || 'E-mail is required',
+    //   v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+    // ],
     // length: 3,
     onboarding: 0,
   }),
@@ -109,14 +109,6 @@ export default {
 };
 
 </script>
-
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
 
 <style>
 .slide-fade-enter-active {
