@@ -61,8 +61,8 @@ query {
   /* height: 93vmin; */
   min-height: calc(100vh - 60px);
   /* min-height: 90vh; */
-  background: linear-gradient(45deg, #90caf9, #9575CD);
-  /* background-size: 200% 200%; */
+  background: linear-gradient(90deg, #9575CD, #90caf9);
+  background-size: 200% 100%;
   animation: gradient 10s ease infinite;
 
 }
