@@ -30,13 +30,15 @@
 
 
                                     <!-- <v-btn type="submit" class="mr-4"> -->
-                                    <v-btn :disabled="!valid" class="mr-4" @click="submit">
-                                        submit
-                                    </v-btn>
-                                    <!-- <v-btn type="reset" onclick="clear()"> -->
-                                    <v-btn class="mr-4" @click="reset">
-                                        clear
-                                    </v-btn>
+                                    <v-container class="d-flex  justify-center ">
+                                        <v-btn :disabled="!valid" class="mr-4" @click="submit">
+                                            submit
+                                        </v-btn>
+                                        <!-- <v-btn type="reset" onclick="clear()"> -->
+                                        <v-btn class="mr-4" @click="reset">
+                                            clear
+                                        </v-btn>
+                                    </v-container>
                                 </v-form>
                             </v-card>
                         </v-col>
