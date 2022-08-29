@@ -4,16 +4,93 @@
 
     <!-- </v-card> -->
     <v-main>
-      <!-- <v-container> -->
-      <slot />
-      <!-- </v-container> -->
+    <!-- <v-container> -->
+    <transition name="fade" appear>
+      <!-- mode="out-in"> -->
+      <!-- <main> -->
+        <slot />
+      <!-- </main> -->
+    </transition>
+    <v-footer class="justify-center" tile app>
+
+      <!-- <v-btn text @click="prev">
+        <v-icon>mdi-chevron-left</v-icon>
+      </v-btn> -->
+
+
+      <v-btn-toggle v-model="onboarding" class="text-center" rounded mandatory color="deep-purple">
+
+        <!-- <g-link to="/"> -->
+        <v-btn to="/" :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-view-dashboard</v-icon>
+          <span class="d-none d-sm-block">
+            About</span>
+        </v-btn>
+        <!-- </g-link> -->
+
+        <!-- <g-link to="/connect"> -->
+        <v-btn to="/connect" :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-human-greeting-proximity</v-icon>
+          <span class="d-none d-sm-block">
+            Connect</span>
+        </v-btn>
+        <!-- </g-link> -->
+
+        <!-- <g-link to="/projects"> -->
+        <v-btn to="/projects" :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-devices</v-icon>
+          <span class="d-none d-sm-block"> Projects</span>
+        </v-btn>
+        <!-- </g-link> -->
+
+        <!-- <g-link to="/arsenal"> -->
+        <v-btn to="/arsenal" :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-hammer-wrench</v-icon>
+          <span class="d-none d-sm-block">
+            Tools</span>
+        </v-btn>
+        <!-- </g-link> -->
+
+
+        <!-- <g-link to="/contact"> -->
+        <v-btn to="/contact" :input-value="active" @click="toggle">
+          <v-icon color="deep-purple">mdi-card-account-mail </v-icon>
+          <span class="d-none d-sm-block">
+            Contact</span>
+        </v-btn>
+        <!-- </g-link> -->
+
+      </v-btn-toggle>
+
+
+      <!-- <v-btn text @click="next">
+        <v-icon>mdi-chevron-right</v-icon>
+      </v-btn> -->
+    </v-footer>
+    <!-- </v-container> -->
     </v-main>
   </v-app>
 </template>
 
 <script>
+
 export default {
   data: () => ({
+    // rules: [
+    //   value => !!value || 'Required.',
+    //   value => (value && value.length >= 3) || 'Min 3 characters',
+    // ],
+    // valid: true,
+    // name: '',
+    // nameRules: [
+    //   v => !!v || 'Name is required',
+    //   v => (v && v.length <= 10) || 'Name must be less than 10 characters',
+    // ],
+    // email: '',
+    // emailRules: [
+    //   v => !!v || 'E-mail is required',
+    //   v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+    // ],
     // length: 3,
     onboarding: 0,
   }),
@@ -33,15 +110,36 @@ export default {
 
 </script>
 
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
-
 <style>
+.slide-fade-enter-active {
+  transition: all .5s ;
+}
+
+
+.slide-fade-enter {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: all 1s;
+}
+
+.fade-enter {
+  opacity: 0.3;
+}
+
+/* .fade-enter-from{
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity .5s ease-out;
+} */
+
+
+
+
 .v-card.on-hover.theme--dark {
   background-color: rgba(#fff, 0.8);
 }
@@ -106,8 +204,8 @@ query {
   /* min-height: calc(100vh - 60px); */
   /* background:#9575cd; */
   background: #000;
-      overflow-x: hidden; 
-          overflow-y:hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   /* background-image: url('http://fc02.deviantart.net/fs21/f/2007/236/a/a/Animated_Rain_Desktop_HD_by_MrQuicksilver.gif'); */
   /* background-color: #9575cd; */
   /* background-color: #000; */
@@ -136,6 +234,4 @@ query {
   background-image: url('../pebbleRotation.gif');
   margin: auto;
 } */
-
-
 </style>
