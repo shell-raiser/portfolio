@@ -40,7 +40,12 @@
                   src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple"
                   alt="visitors" />
                 <!-- </p> -->
-                <p class="red white--text">This site is still under development, many things are yet to be implemented
+                <p class="red white--text">This site is still under development, many things are yet to be implemented.
+                  <br>
+                  Keep an eye on
+                  <a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">
+                    other branches</a>
+                  for major changes.
                 </p>
 
                 <!-- </div> -->
