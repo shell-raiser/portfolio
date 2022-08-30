@@ -52,13 +52,13 @@
         <!-- </g-link> -->
 
 
-        <!-- <g-link to="/contact"> -->
+        <!-- <g-link to="/contact"> 
         <v-btn to="/contact" :input-value="active" @click="toggle">
           <v-icon color="deep-purple">mdi-card-account-mail </v-icon>
           <span class="d-none d-sm-block">
             Contact</span>
         </v-btn>
-        <!-- </g-link> -->
+         </g-link> -->
 
       </v-btn-toggle>
 
