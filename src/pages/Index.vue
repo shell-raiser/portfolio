@@ -35,11 +35,11 @@
         <Arsenal id="Arsenal" />
 
       </v-window-item>
-      <v-window-item>
+     <-- <v-window-item>
 
         <Contact id="Contact" />
 
-      </v-window-item>
+      </v-window-item> -->
     </v-window> -->
     <section class="bg1">
       <transition name="slide-fade" appear>
