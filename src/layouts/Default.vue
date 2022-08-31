@@ -161,7 +161,7 @@ export default {
 	/* height: 93vmin; */
 	/* min-height: calc(100vh - 60px); */
 	/* min-height: 90vh; */
-	height: 100%;
+	min-height: 100%;
 	background: linear-gradient(90deg, #9575CD, #90caf9);
 	background-size: 200% 100%;
 	animation: gradient 10s ease infinite;
@@ -183,7 +183,7 @@ export default {
 }
 
 .bg3 {
-	min-height: 90vh;
+	min-height: 100%;
 	/* height: 100%; */
 	width: 100%;
 	/* margin: 0; */
@@ -200,7 +200,7 @@ export default {
 	/* width: 100%;
     height: 100%; */
 	/* background-size:100% 100%; */
-	/* background-size:cover; */
+	background-size:cover;
 
 }
 
@@ -222,7 +222,9 @@ export default {
 }
 
 .bg4 {
-	min-height: 95vh;
+	min-height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
 	/* background: linear-gradient(-45deg, #09254f, #23d5ab);
   background-size: 200% 200%;
   animation: gradient 10s ease infinite; */
