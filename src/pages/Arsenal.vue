@@ -1,7 +1,7 @@
 <template>
     <Layout>
         <section class="bg4 ">
-                <h1 class="ArsenalHead rounded text-center">Arsenal</h1>
+            <h1 class="ArsenalHead rounded text-center">Arsenal</h1>
             <transition name="slide-fade" appear>
                 <v-container class="text-center">
                     <v-row>
@@ -73,6 +73,9 @@
                                         alt="expressjs" class="toolsLogos" />
                                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/MySQL_logo.svg/1280px-MySQL_logo.svg.png"
                                         alt="mysql" class="toolsLogos" />
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" alt="firebase" class="toolsLogos" />
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1280px-Nuxt_logo.svg.png" alt="nuxtjs" class="toolsLogos">
+                                    <img src="https://gridsome.org/logos/logo-normal.svg" alt="gridsome" class="toolsLogos">
                                 </div>
                             </v-card>
                             <br>
