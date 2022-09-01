@@ -44,8 +44,7 @@
     <section class="bg1">
       <transition name="slide-fade" appear>
 
-        <v-container
-          style="padding:0;min-height: calc(100vh - 60px); display:flex;  align-items: center;justify-content: center;">
+        <v-container style="display:flex;  align-items: center;justify-content: center;">
 
           <v-row>
             <v-col sm="6">
@@ -161,12 +160,12 @@ export default {
     //   v => !!v || 'E-mail is required',
     //   v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
     // ],
-    overlay: false,
-    length: 4,
-    onboarding: 0,
+    // overlay: false,
+    // length: 4,
+    // onboarding: 0,
     window: 0,
     reveal: false,
-    mobileWarn: true
+    // mobileWarn: true
 
     // sections: { <About /> ,<Projects/>, <Contact/> },
     // onboarding: 0,
@@ -212,16 +211,16 @@ export default {
     //   this.select = null
     //   this.checkbox = false
     // },
-    next() {
-      this.onboarding = this.onboarding + 1 === this.length
-        ? 0
-        : this.onboarding + 1
-    },
-    prev() {
-      this.onboarding = this.onboarding - 1 < 0
-        ? this.length - 1
-        : this.onboarding - 1
-    }
+    // next() {
+    //   this.onboarding = this.onboarding + 1 === this.length
+    //     ? 0
+    //     : this.onboarding + 1
+    // },
+    // prev() {
+    //   this.onboarding = this.onboarding - 1 < 0
+    //     ? this.length - 1
+    //     : this.onboarding - 1
+    // }
   },
   // mounted() {
   //   let linkedinScript = document.createElement('script')
@@ -251,41 +250,30 @@ export default {
 </script>
 
 <style>
-.v-card--reveal {
-  align-items: center;
-  bottom: 0;
-  justify-content: center;
-  opacity: .9;
-  position: absolute;
-  width: 100%;
+.bg1 {
+  /* background-image: url('../background.png  '); */
+  /* height: 93vmin; */
+  /* min-height: calc(100vh - 60px); */
+  /* min-height: 90vh; */
+  min-height: 100%;
+  background: linear-gradient(90deg, #9575CD, #90caf9);
+  background-size: 200% 100%;
+  animation: gradient 10s ease infinite;
+
 }
 
-.projectCardHoverText {
-  opacity: 1;
-  padding: 10px;
-  text-align: center;
-}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
 
-.ProjectsHead {
-  font-size: xxx-large;
-  color: #2B2F57;
-  background-color: rgba(255, 255, 255, 0.3);
-  /* position: relative; */
-  /* left: 100%;   */
-  /* float: right; */
-  text-align: left;
-  /* z-index: 1; */
-}
+  50% {
+    background-position: 100% 50%;
+  }
 
-.ContactHead {
-  font-size: xxx-large;
-  color: #2B2F57;
-  text-align: right;
-  /* background-image: -webkit-linear-gradient(90deg, purple, #2B2F57); */
-  /* background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
-  /* animation: 6s linear 0s infinite normal none running hue; */
-  /* z-index: 1; */
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .AboutHead {
@@ -300,47 +288,10 @@ export default {
   /* z-index: 1; */
 }
 
-.ArsenalHead {
-  font-size: xxx-large;
-  color: #09254f;
-  /* background-image: -webkit-linear-gradient(90deg, #1d4ba5, #105c4a); */
-  /* background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
-  background-color: rgba(255, 255, 255, 0.2);
-  animation: 10s linear 0s infinite normal none running hue;
-}
-
 .headtext::before {
   content: "Web dev";
   animation: animate infinite 5s;
   /* padding-left: 10px; */
-}
-
-
-.toolsLogos {
-  pointer-events: none;
-  user-select: none;
-  max-height: 100px;
-  padding: 5px;
-
-}
-
-.toolsCardsImageCont {
-
-  justify-content: center;
-
-}
-
-.contactAnimation {
-  height: 100%;
-  background-color: #9C27B0;
-  /* background-image: url('../profilePic.jpg'); */
-  /* background-image: rgb(0, 252, 244) url('../profilePic.jpg') no-repeat center; */
-  /* background-size: cover; */
-  background-size: cover !important;
-  width: 100%;
-  background-position: center center;
-
 }
 
 

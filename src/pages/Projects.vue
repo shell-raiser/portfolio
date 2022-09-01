@@ -375,3 +375,60 @@
         </section>
     </Layout>
 </template>
+<style>
+.projectCardHoverText {
+    opacity: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.ProjectsHead {
+    font-size: xxx-large;
+    color: #2B2F57;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* position: relative; */
+    /* left: 100%;   */
+    /* float: right; */
+    text-align: left;
+    /* z-index: 1; */
+}
+
+.v-card--reveal {
+    align-items: center;
+    bottom: 0;
+    justify-content: center;
+    opacity: .9;
+    position: absolute;
+    width: 100%;
+}
+
+.bg3 {
+    min-height: 100%;
+    /* height: 100%; */
+    width: 100%;
+    /* margin: 0; */
+    /* z-index: 10; */
+    /* background: linear-gradient(90deg, #09254f, #0b4b3d); */
+    /* background-size: 100% 100%; */
+    /* animation: gradient 10s ease infinite; */
+    /* background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/089d21ad-7782-4104-89c2-a65435feaa61/da6ks5a-344a9f7a-bbdc-42b6-9ebe-df7ca2d32799.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA4OWQyMWFkLTc3ODItNDEwNC04OWMyLWE2NTQzNWZlYWE2MVwvZGE2a3M1YS0zNDRhOWY3YS1iYmRjLTQyYjYtOWViZS1kZjdjYTJkMzI3OTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UZk_90YLEW2QTobmrD1Wwgab016coYzw7V8MexSTqtg'); */
+    /* background-clip:content-box;   */
+    background: lightblue url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/089d21ad-7782-4104-89c2-a65435feaa61/da6ks5a-344a9f7a-bbdc-42b6-9ebe-df7ca2d32799.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA4OWQyMWFkLTc3ODItNDEwNC04OWMyLWE2NTQzNWZlYWE2MVwvZGE2a3M1YS0zNDRhOWY3YS1iYmRjLTQyYjYtOWViZS1kZjdjYTJkMzI3OTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UZk_90YLEW2QTobmrD1Wwgab016coYzw7V8MexSTqtg");
+    /* display: block;  */
+    /* position: absolute; */
+    background-attachment: fixed;
+    /* width: 100%;
+    height: 100%; */
+    /* background-size:100% 100%; */
+    background-size: cover;
+
+}
+
+.v-card.on-hover.theme--dark {
+    background-color: rgba(#fff, 0.8);
+}
+
+.v-card__text {
+    color: #000;
+}
+</style>

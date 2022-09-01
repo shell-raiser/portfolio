@@ -73,9 +73,12 @@
                                         alt="expressjs" class="toolsLogos" />
                                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/MySQL_logo.svg/1280px-MySQL_logo.svg.png"
                                         alt="mysql" class="toolsLogos" />
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg" alt="firebase" class="toolsLogos" />
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1280px-Nuxt_logo.svg.png" alt="nuxtjs" class="toolsLogos">
-                                    <img src="https://gridsome.org/logos/logo-normal.svg" alt="gridsome" class="toolsLogos">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg"
+                                        alt="firebase" class="toolsLogos" />
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1280px-Nuxt_logo.svg.png"
+                                        alt="nuxtjs" class="toolsLogos">
+                                    <img src="https://gridsome.org/logos/logo-normal.svg" alt="gridsome"
+                                        class="toolsLogos">
                                 </div>
                             </v-card>
                             <br>
@@ -111,3 +114,44 @@
         </section>
     </Layout>
 </template>
+<style>
+.ArsenalHead {
+    font-size: xxx-large;
+    color: #09254f;
+    /* background-image: -webkit-linear-gradient(90deg, #1d4ba5, #105c4a); */
+    /* background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    background-color: rgba(255, 255, 255, 0.2);
+    animation: 10s linear 0s infinite normal none running hue;
+}
+
+.toolsLogos {
+    pointer-events: none;
+    user-select: none;
+    max-height: 100px;
+    max-width: 100%;
+    min-width: 100px;
+    padding: 5px;
+
+}
+
+.toolsCardsImageCont {
+
+    justify-content: center;
+
+}
+
+.bg4 {
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* background: linear-gradient(-45deg, #09254f, #23d5ab);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite; */
+    background: lightblue url("https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop");
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
+    background-attachment: fixed;
+    background-size: cover;
+}
+</style>

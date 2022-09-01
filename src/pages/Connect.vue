@@ -6,7 +6,7 @@
                     <v-col class="rounded" sm="6" style="background:#9575cd;height:100%;text-align:right">
                         <v-container>
 
-                            <h1 class="ContactHead">Links</h1>
+                            <h1 class="connectHead">Links</h1>
                             <!-- <v-card width="300">
                                 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium"
                                     data-theme="dark" data-type="HORIZONTAL" data-vanity="shailesh-k-s-1b3475226"
@@ -38,7 +38,7 @@
 
 
 
-                                <!-- <v-card-title class="ContactHead" style="text-align:right;">Contact</v-card-title> -->
+                                <!-- <v-card-title class="connectHead" style="text-align:right;">Contact</v-card-title> -->
                                 <!-- <v-list> -->
                                 <!-- <v-list-item-group> -->
                                 <v-list-item two-line href="mailto: contactshellraiser@gmail.com">
@@ -119,3 +119,30 @@
         </section>
     </Layout>
 </template>
+<style>
+.connectHead {
+    font-size: xxx-large;
+    color: #2B2F57;
+    text-align: right;
+    /* background-image: -webkit-linear-gradient(90deg, purple, #2B2F57); */
+    /* background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    /* animation: 6s linear 0s infinite normal none running hue; */
+    /* z-index: 1; */
+}
+
+.bg2 {
+    /* min-height: calc(100vh - 60px); */
+    /* background:#9575cd; */
+    min-height: 100%;
+    background: #000;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* background-image: url('http://fc02.deviantart.net/fs21/f/2007/236/a/a/Animated_Rain_Desktop_HD_by_MrQuicksilver.gif'); */
+    /* background-color: #9575cd; */
+    /* background-color: #000; */
+    /* background-size: cover; */
+    /* background: linear-gradient(90deg, yellow, brown); */
+    /* background-size: 200% 200%; */
+}
+</style>
