@@ -44,14 +44,14 @@
     <section class="bg1">
       <transition name="slide-fade" appear>
 
-        <v-container style="display:flex;  align-items: center;justify-content: center;">
+        <v-container style="min-height: 100%;">
 
-          <v-row>
+          <v-row style="min-height: 100%;">
             <v-col sm="6">
               <!-- <v-card hover raised rounded :class="{ 'on-hover': hover }"  style="margin: 0;position:relative;top:50%;transform: translateY(-50%);"> -->
               <!-- <g-image   alt="Profile Picture" src="~/profilePic.jpg" max-width="400" max-height="400" fit="cover" /> -->
               <v-img class="rounded" alt="profile picture" src="https://randomuser.me/api/portraits/lego/5.jpg"
-                aspect-ratio="1" style="max-height: calc(100vh - 100px);" min-width="300"></v-img>
+                aspect-ratio="1" min-width="300"></v-img>
               <!-- </v-card> -->
               <!-- max-height="80vh" width="80vh" -->
             </v-col>
@@ -255,6 +255,9 @@ export default {
   /* height: 93vmin; */
   /* min-height: calc(100vh - 60px); */
   /* min-height: 90vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100%;
   background: linear-gradient(90deg, #9575CD, #90caf9);
   background-size: 200% 100%;
