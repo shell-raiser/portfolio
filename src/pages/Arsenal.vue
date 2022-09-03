@@ -125,6 +125,8 @@ section {
 </style>
 <script>
 export default {
+    metaInfo: {
+    title: "Tools",},
     data: () => ({
         languages: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/cpp/cpp.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/c/c.png"],
 
