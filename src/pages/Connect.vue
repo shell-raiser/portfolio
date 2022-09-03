@@ -1,12 +1,12 @@
 <template>
     <Layout>
-        <section class="bg2">
+        <section>
             <transition name="slide-fade" appear>
                 <v-container style="padding:0;min-height: calc(100vh - 60px); display:flex;  align-items: center;">
                     <v-col class="rounded" sm="6" style="background:#9575cd;height:100%;text-align:right">
                         <v-container>
 
-                            <h1 class="connectHead">Links</h1>
+                            <h1>Links</h1>
                             <!-- <v-card width="300">
                                 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium"
                                     data-theme="dark" data-type="HORIZONTAL" data-vanity="shailesh-k-s-1b3475226"
@@ -30,21 +30,13 @@
                                 </div>
                             </v-card> -->
                             <v-card min-width="300">
-
-
-
-
-
-
-
-
                                 <!-- <v-card-title class="connectHead" style="text-align:right;">Contact</v-card-title> -->
                                 <!-- <v-list> -->
                                 <!-- <v-list-item-group> -->
                                 <v-list-item two-line href="mailto: contactshellraiser@gmail.com">
                                     <v-list-item-content>
                                         <v-list-item-title>Email</v-list-item-title>
-                                        <v-list-item-subtitle @click="GHLink()">contactshellraiser@gmail.com
+                                        <v-list-item-subtitle>contactshellraiser@gmail.com
                                         </v-list-item-subtitle>
                                     </v-list-item-content>
                                     <v-icon right> mdi-email-variant</v-icon>
@@ -112,15 +104,15 @@
 
                     <v-col class="d-none d-sm-block" sm="6"
                         style="display:flex; justify-content: center; align-items: center; padding:0; height:calc(100vh - 60px)">
-                        <img src="../assets/pebbleRotation.gif" alt="pebbels" width="100%">
+                        <img src="../assets/pebbleRotation.gif" alt="pebbels" loading="lazy" width="100%">
                     </v-col>
                 </v-container>
             </transition>
         </section>
     </Layout>
 </template>
-<style>
-.connectHead {
+<style scoped>
+h1 {
     font-size: xxx-large;
     color: #2B2F57;
     text-align: right;
@@ -131,7 +123,7 @@
     /* z-index: 1; */
 }
 
-.bg2 {
+section {
     /* min-height: calc(100vh - 60px); */
     /* background:#9575cd; */
     min-height: 100%;
