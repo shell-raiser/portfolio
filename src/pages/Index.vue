@@ -1,46 +1,5 @@
 <template >
   <Layout>
-    <!-- <div> -->
-    <!-- <About id="About" /> -->
-    <!-- <slot></slot> -->
-    <!-- <v-container v-if="mobileWarn" class="d-sm-none white--text"
-      style="display:flex; position: fixed;top: 0px; height:100%;  background-color:red; z-index:10;  justify-content: center;align-items: center;text-align: center;">
-      Hello there, this website was designed to be viewed on a Desktop. Mobile experience is still not the best.
-
-      <br>
-      <br>
-      Click the Button to view it anyway
-      <br>
-      <v-btn @click="mobileWarn = false"> Continue Mobile</v-btn>
-    </v-container> -->
-
-    <!-- <v-window v-model="onboarding">
-      <v-window-item>
-
-        <About id="About" />
-
-      </v-window-item>
-
-      <v-window-item>
-        <Connect id="Connect" />
-
-      </v-window-item>
-      <v-window-item>
-
-        <Projects id="Projects" />
-
-      </v-window-item>
-      <v-window-item>
-
-        <Arsenal id="Arsenal" />
-
-      </v-window-item>
-     <v-window-item>
-
-        <Contact id="Contact" />
-
-      </v-window-item> -->
-    <!-- </v-window> -->
     <section class="bg1">
       <transition name="slide-fade" appear>
 
@@ -48,10 +7,10 @@
 
           <v-row style="min-height: 100%;">
             <v-col sm="6">
-              <!-- <v-card hover raised rounded :class="{ 'on-hover': hover }"  style="margin: 0;position:relative;top:50%;transform: translateY(-50%);"> -->
-              <!-- <g-image   alt="Profile Picture" src="~/profilePic.jpg" max-width="400" max-height="400" fit="cover" /> -->
-              <v-img class="rounded" alt="profile picture" src="https://randomuser.me/api/portraits/lego/5.jpg"
-                aspect-ratio="1" min-width="300"></v-img>
+              <!-- <v-lazy> -->
+                <v-img class="rounded" alt="profile picture" src="https://randomuser.me/api/portraits/lego/5.jpg"
+                  aspect-ratio="1" min-width="300"></v-img>
+              <!-- </v-lazy> -->
               <!-- </v-card> -->
               <!-- max-height="80vh" width="80vh" -->
             </v-col>
@@ -108,7 +67,7 @@
 // import About from "@/components/About.vue";
 // import Contact from "@/components/Contact.vue";
 // import Projects from "@/components/Projects.vue";
-import 'animate.css';
+// import 'animate.css';
 // import Arsenal from "./Arsenal.vue";
 // import Connect from "@/components/Connect.vue";
 
@@ -130,7 +89,7 @@ export default {
   //   },
   // },
   metaInfo: {
-    title: "Shailesh K S",
+    title: "About me",
     script: [
       { src: 'https://platform.linkedin.com/badges/js/profile.js', async: true, defer: true },
       { src: "https://unpkg.com/@rocktimsaikia/github-card@latest?module", async: true, defer: true },

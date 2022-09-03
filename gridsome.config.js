@@ -6,7 +6,7 @@
 
 module.exports = {
   icon: './src/Shell.svg',
-  siteName: 'Portfolio',
+  siteName: 'Shailesh\'s Portfolio',
   plugins: [],
   siteUrl: 'https://shell-raiser.github.io'
   // pathPrefix: '/portfolio',
