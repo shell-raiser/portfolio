@@ -9,7 +9,6 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "animate.css": "^4.1.1",
     "gh-pages": "^4.0.0",
     "gridsome": "^0.7.23",
     "vuetify": "^2.6.4"
