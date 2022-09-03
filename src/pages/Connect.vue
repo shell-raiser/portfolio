@@ -138,3 +138,10 @@ section {
     /* background-size: 200% 200%; */
 }
 </style>
+
+<script>
+export default {
+    metaInfo: {
+    title: "Connect with me",},
+}
+</script>
