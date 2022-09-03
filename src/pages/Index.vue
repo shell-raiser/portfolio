@@ -1,6 +1,6 @@
 <template >
   <Layout>
-    <section class="bg1">
+    <section>
       <transition name="slide-fade" appear>
 
         <v-container style="min-height: 100%;">
@@ -8,8 +8,8 @@
           <v-row style="min-height: 100%;">
             <v-col sm="6">
               <!-- <v-lazy> -->
-                <v-img class="rounded" alt="profile picture" src="https://randomuser.me/api/portraits/lego/5.jpg"
-                  aspect-ratio="1" min-width="300"></v-img>
+              <v-img class="rounded" alt="profile picture" src="https://randomuser.me/api/portraits/lego/5.jpg"
+                aspect-ratio="1" min-width="300"></v-img>
               <!-- </v-lazy> -->
               <!-- </v-card> -->
               <!-- max-height="80vh" width="80vh" -->
@@ -208,8 +208,8 @@ export default {
 
 </script>
 
-<style>
-.bg1 {
+<style scoped>
+section {
   /* background-image: url('../background.png  '); */
   /* height: 93vmin; */
   /* min-height: calc(100vh - 60px); */
@@ -238,7 +238,7 @@ export default {
   }
 }
 
-.AboutHead {
+h1 {
 
   font-size: xxx-large;
   /* color: rgb(100, 0, 172); */
