@@ -4,13 +4,11 @@
 
 		<!-- </v-card> -->
 		<main>
-		<!-- <v-container fluid> -->
 			<!-- <v-main> -->
-				<transition name="fade" appear>
-					<slot />
-				</transition>
+			<transition name="fade" appear>
+				<slot />
+			</transition>
 			<!-- </v-main> -->
-			<!-- </v-container> -->
 		</main>
 		<v-bottom-navigation app active-class mandatory shift color="deep-purple">
 			<!-- <v-footer class="justify-center" tile app> -->

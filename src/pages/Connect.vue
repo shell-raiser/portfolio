@@ -2,9 +2,11 @@
     <Layout>
         <section>
             <transition name="slide-fade" appear>
-                <v-container style="padding:0;height:100%; display:flex;  align-items: center;">
-                    <v-col class="rounded" sm="6" style="background:#9575cd;height:fit-content;text-align:right">
-                        <v-container>
+                <v-container style="height: 100%;">
+                    <v-row style="height: 100%;">
+                        <v-col class="rounded" sm="6" style="background:#9575cd;height:fit-content;text-align:right"
+                            align-self="center">
+                            <!-- <v-container> -->
 
                             <h1>Links</h1>
                             <!-- <v-card width="300">
@@ -99,13 +101,13 @@
                                 <!-- </v-list> -->
                             </v-card>
 
-                        </v-container>
-                    </v-col>
+                            <!-- </v-container> -->
+                        </v-col>
 
-                    <v-col class="d-none d-sm-block" sm="6"
-                        style="padding:0; height:100%">
-                        <img src="../assets/pebbleRotation.gif" alt="pebbels" loading="lazy" width="100%">
-                    </v-col>
+                        <v-col class="d-none d-sm-block" sm="6" style="height:100%">
+                            <img src="../assets/pebbleRotation.gif" alt="pebbels" loading="lazy" width="100%">
+                        </v-col>
+                    </v-row>
                 </v-container>
             </transition>
         </section>
@@ -125,11 +127,14 @@ h1 {
 
 section {
     /* min-height: calc(100vh - 60px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* background:#9575cd; */
-    min-height: 100vh;
+    height: 100vh;
     background: #000;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
     /* background-image: url('http://fc02.deviantart.net/fs21/f/2007/236/a/a/Animated_Rain_Desktop_HD_by_MrQuicksilver.gif'); */
     /* background-color: #9575cd; */
     /* background-color: #000; */

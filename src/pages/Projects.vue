@@ -56,14 +56,13 @@
                     </v-col>
                     <v-col class="d-none d-sm-block"
                         style="display:block; position: fixed;top: 0px; right:0; width:20%; padding:0;">
-                        <h1 class="ProjectsHead"
-                            style="height:100vh;   display: flex;   justify-content: center;  align-items: center;">
+                        <h1 style="height:100vh;   display: flex;   justify-content: center;  align-items: center;">
                             Projects
                         </h1>
                     </v-col>
                     <v-col class="d-sm-none"
                         style="display:block; position: fixed;top: 0px; right:0; width:20%; padding:0;">
-                        <h1 class="ProjectsHead"
+                        <h1
                             style="height:100vh; width:100%; display:flex; justify-content: center; align-items: center;
                      writing-mode: vertical-lr; text-orientation: upright; background-color: rgba(255, 255, 255, 0.4);">
                             Projects
@@ -81,7 +80,7 @@
     text-align: center;
 }
 
-.ProjectsHead {
+h1 {
     font-size: xxx-large;
     color: #2B2F57;
     background-color: rgba(255, 255, 255, 0.3);
@@ -104,6 +103,7 @@
 section {
     min-height: 100%;
     /* height: 100%; */
+    padding-bottom: 60px;
     width: 100%;
     /* margin: 0; */
     /* z-index: 10; */
