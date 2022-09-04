@@ -51,15 +51,14 @@
 			<!-- </g-link> -->
 
 
-			<!-- <g-link to="/contact"> 
-        <v-btn to="/contact"  >
-          <v-icon color="deep-purple">mdi-card-account-mail </v-icon>
-          <span >
-            Contact</span>
-        </v-btn>
-         </g-link> -->
+			<!-- <g-link to="/contact"> -->
+			<v-btn to="/contact">
+				<v-icon>mdi-card-account-mail </v-icon>
+				<span>Contact</span>
+			</v-btn>
+			<!-- </g-link> 
 
-			<!-- </v-btn-toggle> -->
+			 </v-btn-toggle> -->
 
 
 			<!-- <v-btn text @click="next">
