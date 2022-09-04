@@ -4,7 +4,7 @@
             <transition name="slide-fade" appear>
                 <v-container style="height: 100%;">
                     <v-row style="height: 100%;">
-                        <v-col class="rounded" sm="6" style="background:#9575cd;height:fit-content;text-align:right"
+                        <v-col class="rounded" sm="6" style="background:#9575cd;height:fit-content;text-align :right"
                             align-self="center">
                             <!-- <v-container> -->
 
