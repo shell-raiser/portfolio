@@ -2,7 +2,7 @@
     <Layout>
         <section>
             <transition name="slide-fade" appear>
-                <v-container style="padding:0;min-height: calc(100vh - 60px); display:flex;  align-items: center;">
+                <v-container style="padding:0;height:100%; display:flex;  align-items: center;">
                     <v-col class="rounded" sm="6" style="background:#9575cd;height:100%;text-align:right">
                         <v-container>
 
@@ -126,7 +126,7 @@ h1 {
 section {
     /* min-height: calc(100vh - 60px); */
     /* background:#9575cd; */
-    min-height: 100%;
+    height: 100%;
     background: #000;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -142,6 +142,7 @@ section {
 <script>
 export default {
     metaInfo: {
-    title: "Connect with me",},
+        title: "Connect with me",
+    },
 }
 </script>

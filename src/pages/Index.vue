@@ -3,13 +3,12 @@
     <section>
       <transition name="slide-fade" appear>
 
-        <v-container style="min-height: 100%;">
+        <v-container style="height: 100%;">
 
-          <v-row style="min-height: 100%;">
+          <v-row style="height: 100%;">
             <v-col sm="6">
               <!-- <v-lazy> -->
-              <v-img class="rounded" alt="profile picture" src="https://randomuser.me/api/portraits/lego/5.jpg"
-                aspect-ratio="1" min-width="300"></v-img>
+              <v-img class="rounded" alt="profile picture" src="https://randomuser.me/api/portraits/lego/5.jpg" aspect-ratio="1" min-width="300" style="height:calc(100% - 56px)"></v-img>
               <!-- </v-lazy> -->
               <!-- </v-card> -->
               <!-- max-height="80vh" width="80vh" -->
@@ -213,11 +212,11 @@ section {
   /* background-image: url('../background.png  '); */
   /* height: 93vmin; */
   /* min-height: calc(100vh - 60px); */
-  /* min-height: 90vh; */
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100%;
+  /* height:calc(100% - 60px); */
   background: linear-gradient(90deg, #9575CD, #90caf9);
   background-size: 200% 100%;
   animation: gradient 10s ease infinite;
