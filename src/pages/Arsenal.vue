@@ -7,20 +7,26 @@
                     <v-row>
                         <v-col cols="auto">
                             <!-- <p align="center"> -->
+
                             <img style="max-width:100%;"
                                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=shell-raiser&layout=compact&title_color=0f0128&text_color=0e0126&hide_border&disable_animations=true&count_private=true" />
                             <!-- </p> -->
                         </v-col>
                         <v-col>
-                            <v-card class="white" rounded flat>
+                            <v-lazy v-model="isActive" :options="{
+                                threshold: .5
+                            }" min-height="100">
+                                <v-card class="white" rounded flat>
 
-                                <v-card-title class="toolsCardsImageCont deep-purple lighten-4">Languages</v-card-title>
-
-                                <div class="toolsCardsImageCont ">
-                                    <img class="toolsLogos" :src="item" v-for="(item, i) in languages" :key="i" />
+                                    <v-card-title class="toolsCardsImageCont deep-purple lighten-4">Languages
+                                    </v-card-title>
 
 
-                                    <!-- <img src=
+                                    <div class="toolsCardsImageCont ">
+                                        <img class="toolsLogos" :src="item" v-for="(item, i) in languages" :key="i" />
+
+
+                                        <!-- <img src=
                                         class="toolsLogos" />
 
                                     <img src=""
@@ -37,43 +43,67 @@
 
                                     <img src=
                                          /> -->
-                                </div>
-                            </v-card>
+                                    </div>
+                                </v-card>
+                            </v-lazy>
                             <br>
-                            <v-card class="white" rounded flat>
-                                <v-card-title class="toolsCardsImageCont red lighten-4">Front End Frameworks
-                                </v-card-title>
-                                <div class="toolsCardsImageCont">
+                            <v-lazy v-model="isActive" :options="{
+                                threshold: .5
+                            }" min-height="100">
+                                <v-card class="white" rounded flat>
+                                    <v-card-title class="toolsCardsImageCont red lighten-4">Front End Frameworks
+                                    </v-card-title>
 
-                                    <img class="toolsLogos" :src="item" v-for="(item, i) in frontend" :key="i" />
+                                    <div class="toolsCardsImageCont">
 
-                                </div>
-                            </v-card>
+                                        <img class="toolsLogos" :src="item" v-for="(item, i) in frontend" :key="i" />
+
+                                    </div>
+                                </v-card>
+                            </v-lazy>
                             <br>
-                            <v-card class="white" rounded flat>
-                                <v-card-title class="toolsCardsImageCont teal lighten-4">Back End Frameworks
-                                </v-card-title>
-                                <div class="toolsCardsImageCont">
+                            <v-lazy v-model="isActive" :options="{
+                                threshold: .5
+                            }" min-height="100">
+                                <v-card class="white" rounded flat>
+                                    <v-card-title class="toolsCardsImageCont teal lighten-4">Back End Frameworks
+                                    </v-card-title>
 
-                                    <img class="toolsLogos" :src="item" v-for="(item, i) in backend" :key="i" />
 
-                                </div>
-                            </v-card>
+                                    <div class="toolsCardsImageCont">
+
+                                        <img class="toolsLogos" :src="item" v-for="(item, i) in backend" :key="i" />
+
+                                    </div>
+                                </v-card>
+                            </v-lazy>
                             <br>
-                            <v-card class="white" rounded flat>
-                                <v-card-title class="toolsCardsImageCont purple lighten-4">Design</v-card-title>
-                                <div class="toolsCardsImageCont">
+                            <v-lazy v-model="isActive" :options="{
+                                threshold: .5
+                            }" min-height="100">
+                                <v-card class="white" rounded flat>
+                                    <v-card-title class="toolsCardsImageCont purple lighten-4">Design</v-card-title>
 
-                                    <img class="toolsLogos" :src="item" v-for="(item, i) in design" :key="i" />
-                                </div>
-                            </v-card>
+
+                                    <div class="toolsCardsImageCont">
+
+                                        <img class="toolsLogos" :src="item" v-for="(item, i) in design" :key="i" />
+                                    </div>
+                                </v-card>
+                            </v-lazy>
                             <br>
-                            <v-card class="white" rounded flat>
-                                <v-card-title class="toolsCardsImageCont indigo lighten-4">Audio</v-card-title>
-                                <div class="toolsCardsImageCont">
-                                    <img class="toolsLogos" :src="item" v-for="(item, i) in audio" :key="i" />
-                                </div>
-                            </v-card>
+                            <v-lazy v-model="isActive" :options="{
+                                threshold: .5
+                            }" min-height="100">
+                                <v-card class="white" rounded flat>
+                                    <v-card-title class="toolsCardsImageCont indigo lighten-4">Audio</v-card-title>
+
+
+                                    <div class="toolsCardsImageCont">
+                                        <img class="toolsLogos" :src="item" v-for="(item, i) in audio" :key="i" />
+                                    </div>
+                                </v-card>
+                            </v-lazy>
 
                         </v-col>
                     </v-row>
@@ -126,7 +156,8 @@ section {
 <script>
 export default {
     metaInfo: {
-    title: "Tools",},
+        title: "Tools",
+    },
     data: () => ({
         languages: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/cpp/cpp.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/c/c.png"],
 
