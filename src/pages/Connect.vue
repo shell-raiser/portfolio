@@ -3,7 +3,7 @@
         <section>
             <transition name="slide-fade" appear>
                 <v-container style="padding:0;height:100%; display:flex;  align-items: center;">
-                    <v-col class="rounded" sm="6" style="background:#9575cd;height:100%;text-align:right">
+                    <v-col class="rounded" sm="6" style="background:#9575cd;height:fit-content;text-align:right">
                         <v-container>
 
                             <h1>Links</h1>
@@ -103,7 +103,7 @@
                     </v-col>
 
                     <v-col class="d-none d-sm-block" sm="6"
-                        style="display:flex; justify-content: center; align-items: center; padding:0; height:calc(100vh - 60px)">
+                        style="padding:0; height:100%">
                         <img src="../assets/pebbleRotation.gif" alt="pebbels" loading="lazy" width="100%">
                     </v-col>
                 </v-container>
@@ -126,7 +126,7 @@ h1 {
 section {
     /* min-height: calc(100vh - 60px); */
     /* background:#9575cd; */
-    height: 100%;
+    min-height: 100vh;
     background: #000;
     overflow-x: hidden;
     overflow-y: hidden;

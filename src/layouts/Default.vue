@@ -1,14 +1,16 @@
 <template>
 	<v-app>
 		<!-- 2:06:01 -->
-		
+
 		<!-- </v-card> -->
-		<!-- <v-main > -->
-		<!-- <v-container> -->
 		<main>
-			<transition name="fade" appear>
-				<slot />
-			</transition>
+		<!-- <v-container fluid> -->
+			<!-- <v-main> -->
+				<transition name="fade" appear>
+					<slot />
+				</transition>
+			<!-- </v-main> -->
+			<!-- </v-container> -->
 		</main>
 		<v-bottom-navigation app active-class mandatory shift color="deep-purple">
 			<!-- <v-footer class="justify-center" tile app> -->
@@ -63,13 +65,13 @@
 
 
 			<!-- <v-btn text @click="next">
+		
+		
         <v-icon>mdi-chevron-right</v-icon>
       </v-btn> -->
 			<!-- </v-footer> -->
 		</v-bottom-navigation>
 
-		<!-- </v-container> -->
-		<!-- </v-main> -->
 
 	</v-app>
 </template>

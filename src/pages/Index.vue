@@ -212,7 +212,7 @@ section {
   /* background-image: url('../background.png  '); */
   /* height: 93vmin; */
   /* min-height: calc(100vh - 60px); */
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
