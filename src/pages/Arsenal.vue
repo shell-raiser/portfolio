@@ -114,12 +114,13 @@
 </template>
 <style scoped>
 h1 {
+    /* width: fit-content; */
     font-size: xxx-large;
-    color: #09254f;
+    color: #ffffff;
     /* background-image: -webkit-linear-gradient(90deg, #1d4ba5, #105c4a); */
     /* background-clip: text; */
     /* -webkit-text-fill-color: transparent; */
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(18, 0, 48, 0.61);
     animation: 10s linear 0s infinite normal none running hue;
 }
 
@@ -147,7 +148,8 @@ section {
     /* background: linear-gradient(-45deg, #09254f, #23d5ab);
   background-size: 200% 200%;
   animation: gradient 10s ease infinite; */
-    background: lightblue url("https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop");
+    background: url("https://images.pexels.com/photos/3527795/pexels-photo-3527795.jpeg");
+    /* https://www.pexels.com/photo/photo-of-abstract-painting-3527795/ */
     /* filter: blur(8px); */
     /* -webkit-filter: blur(8px); */
     background-attachment: fixed;
