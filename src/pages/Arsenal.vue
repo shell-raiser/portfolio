@@ -168,7 +168,7 @@ export default {
 
         backend: ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Qiskit-Logo.svg/800px-Qiskit-Logo.svg.png", "https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg", "https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg", "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png", "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/MySQL_logo.svg/1280px-MySQL_logo.svg.png", "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1280px-Nuxt_logo.svg.png", "https://gridsome.org/logos/logo-normal.svg"],
 
-        design: ["https://upload.wikimedia.org/wikipedia/commons/3/3c/Logo_Blender.svg", "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Canva_Logo.png/1920px-Canva_Logo.png", "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg", "https://inkscape.org/gallery/item/10252/Inkscape-flat-logo-2color.svg"],
+        design: ["https://upload.wikimedia.org/wikipedia/commons/3/3c/Logo_Blender.svg", "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Canva_Logo.png/1920px-Canva_Logo.png", "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg", "https://inkscape.org/gallery/item/10252/Inkscape-flat-logo-2color.svg", "https://www.gimp.org/images/frontpage/wilber-big.png"],
 
         audio: ["https://upload.wikimedia.org/wikipedia/en/d/d7/Audacity_Logo_2-2-0.png", "https://www.tracktion.com/sites/default/files/logo-tracktion-black_3x.png"]
     })
