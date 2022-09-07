@@ -11,3 +11,5 @@ dist
 *.blend1
 *.kdenlive
 target/npmlist.json
+.output
+.nuxt
