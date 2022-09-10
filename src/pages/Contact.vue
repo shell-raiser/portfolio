@@ -2,9 +2,9 @@
     <Layout>
         <section>
             <transition name="slide-fade" appear>
-                <v-container style="height: 100%;padding:0;">
-                    <v-row style="height:100vh;padding:0;">
-                        <v-col class="d-none d-sm-block" cols="auto" style="height:100%; padding:0; width:fit-content">
+                <v-container style="height: 100%;">
+                    <v-row style="height:100vh;">
+                        <v-col class="d-none d-sm-block" cols="auto" style="height:100%;  width:fit-content">
 
                             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/12cbe8a4-f55c-4b40-85bb-d8e1405e7b84/dak6s74-465171e5-27da-4de8-9ce1-a4ac85c662e9.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEyY2JlOGE0LWY1NWMtNGI0MC04NWJiLWQ4ZTE0MDVlN2I4NFwvZGFrNnM3NC00NjUxNzFlNS0yN2RhLTRkZTgtOWNlMS1hNGFjODVjNjYyZTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.HHcJ-g7f4_rV-Sot1muIyOxZH9mfMziA1-4nExOjFiU"
                                 alt="devianArtLink" style="height:100%">

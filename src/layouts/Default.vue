@@ -4,11 +4,11 @@
 
 		<!-- </v-card> -->
 		<main>
-			<!-- <v-main> -->
-			<transition name="fade" appear>
-				<slot />
-			</transition>
-			<!-- </v-main> -->
+			<v-main>
+				<transition name="fade" appear>
+					<slot />
+				</transition>
+			</v-main>
 		</main>
 		<v-bottom-navigation app active-class mandatory shift color="deep-purple">
 			<!-- <v-footer class="justify-center" tile app> -->
@@ -18,17 +18,15 @@
       </v-btn> -->
 
 
-			<!-- <v-btn-toggle v-model="onboarding" class="text-center" rounded mandatory color="deep-purple"> -->
-
 			<!-- <g-link to="/"> -->
-			<v-btn to="/">
+			<v-btn class="d-none d-sm-block" to="/">
 				<span>About</span>
 				<v-icon>mdi-view-dashboard</v-icon>
 			</v-btn>
 			<!-- </g-link> -->
 
 			<!-- <g-link to="/connect"> -->
-			<v-btn to="/connect">
+			<v-btn class="d-none d-sm-block" to="/connect">
 				<v-icon>mdi-human-greeting-proximity</v-icon>
 				<span>
 					Connect</span>
@@ -36,14 +34,14 @@
 			<!-- </g-link> -->
 
 			<!-- <g-link to="/projects"> -->
-			<v-btn to="/projects">
+			<v-btn class="d-none d-sm-block" to="/projects">
 				<v-icon>mdi-devices</v-icon>
 				<span> Projects</span>
 			</v-btn>
 			<!-- </g-link> -->
 
 			<!-- <g-link to="/arsenal"> -->
-			<v-btn to="/arsenal">
+			<v-btn class="d-none d-sm-block" to="/arsenal">
 				<v-icon>mdi-hammer-wrench</v-icon>
 				<span>
 					Tools</span>
@@ -52,13 +50,53 @@
 
 
 			<!-- <g-link to="/contact"> -->
-			<v-btn to="/contact">
+			<v-btn class="d-none d-sm-block" to="/contact">
 				<v-icon>mdi-card-account-mail </v-icon>
 				<span>Contact</span>
 			</v-btn>
-			<!-- </g-link> 
+			<!-- </g-link> -->
 
-			 </v-btn-toggle> -->
+			<v-btn-toggle group class="text-center d-sm-none" mandatory color="deep-purple">
+
+				<!-- <g-link to="/"> -->
+				<v-btn to="/">
+					<span>About</span>
+					<v-icon>mdi-view-dashboard</v-icon>
+				</v-btn>
+				<!-- </g-link> -->
+
+				<!-- <g-link to="/connect"> -->
+				<v-btn to="/connect">
+					<v-icon>mdi-human-greeting-proximity</v-icon>
+					<span>
+						Connect</span>
+				</v-btn>
+				<!-- </g-link> -->
+
+				<!-- <g-link to="/projects"> -->
+				<v-btn to="/projects">
+					<v-icon>mdi-devices</v-icon>
+					<span> Projects</span>
+				</v-btn>
+				<!-- </g-link> -->
+
+				<!-- <g-link to="/arsenal"> -->
+				<v-btn to="/arsenal">
+					<v-icon>mdi-hammer-wrench</v-icon>
+					<span>
+						Tools</span>
+				</v-btn>
+				<!-- </g-link> -->
+
+
+				<!-- <g-link to="/contact"> -->
+				<v-btn to="/contact">
+					<v-icon>mdi-card-account-mail </v-icon>
+					<span>Contact</span>
+				</v-btn>
+				<!-- </g-link> -->
+
+			</v-btn-toggle>
 
 
 			<!-- <v-btn text @click="next">
