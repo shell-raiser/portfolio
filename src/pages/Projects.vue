@@ -1,72 +1,91 @@
 <template>
     <Layout>
-
         <section>
             <transition name="slide-fade" appear>
-                <v-container>
+                <v-container >
                     <v-col style="width:80%">
                         <v-row>
                             <v-col sm="6" v-for="(project, i) in projects" :key="i">
-                                <v-lazy v-model="isActive" :options="{
-                                    threshold: .5
-                                }" min-height="200">
+                                <v-lazy
+                                    v-model="isActive"
+                                    :options="{
+                                        threshold: .5
+                                    }"
+                                    min-height="200"
+                                >
                                     <v-hover v-slot="{ hover }">
                                         <v-card class="mx-auto" color="grey lighten-4" width="350">
                                             <v-img :aspect-ratio="16 / 9" :src="project.img">
                                                 <v-expand-transition>
-                                                    <div v-if="hover"
+                                                    <div
+                                                        v-if="hover"
                                                         class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
-                                                        style="height: 100%;">
-                                                        <p class="projectCardHoverText" v-html="project.hoverText"></p>
+                                                        style="height: 100%;"
+                                                    >
+                                                        <p
+                                                            class="projectCardHoverText"
+                                                            v-html="project.hoverText"
+                                                        ></p>
                                                     </div>
                                                 </v-expand-transition>
                                             </v-img>
                                             <v-card-text class="pt-6" style="position: relative;">
-                                                <v-btn absolute color="teal" class="white--text" fab large right top
-                                                    :href="project.heroLink" target="_blank" style="z-index:0;"
-                                                    rel="noopener noreferrer">
+                                                <v-btn
+                                                    absolute
+                                                    color="teal"
+                                                    class="white--text"
+                                                    fab
+                                                    large
+                                                    right
+                                                    top
+                                                    :href="project.heroLink"
+                                                    target="_blank"
+                                                    style="z-index:0;"
+                                                    rel="noopener noreferrer"
+                                                >
                                                     <v-icon>{{ project.heroIcon }}</v-icon>
                                                 </v-btn>
 
-                                                <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
-                                                    {{ project.title }}
-                                                </h3>
-                                                <p v-html="project.desc">
-                                                    <!-- {{project.desc}} -->
-                                                </p>
+                                                <h3
+                                                    class="text-h4 font-weight-light deep-purple--text mb-2"
+                                                >{{ project.title }}</h3>
+                                                <p v-html="project.desc"></p>
                                             </v-card-text>
                                             <v-card-actions>
-                                                <v-btn v-for="(action, i) in project.actions" :key="i"
-                                                    :href="action.link" target="_blank" rel="noopener noreferrer">
-                                                    <v-icon> {{ action.icon }}</v-icon>
+                                                <v-btn
+                                                    v-for="(action, i) in project.actions"
+                                                    :key="i"
+                                                    :href="action.link"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <v-icon>{{ action.icon }}</v-icon>
                                                 </v-btn>
-
                                             </v-card-actions>
                                         </v-card>
                                     </v-hover>
                                 </v-lazy>
                             </v-col>
-
-
                         </v-row>
-
-
 
                         <!-- </v-container> -->
                     </v-col>
-                    <v-col class="d-none d-sm-block"
-                        style="display:block; position: fixed;top: 0px; right:0; width:20%; padding:0;">
-                        <h1 style="height:100vh;   display: flex;   justify-content: center;  align-items: center;">
-                            Projects
-                        </h1>
+                    <v-col
+                        class="d-none d-sm-block"
+                        style="display:block; position: fixed;top: 0px; right:0; width:20%; padding:0;"
+                    >
+                        <h1
+                            style="height:100vh;   display: flex;   justify-content: center;  align-items: center;"
+                        >Projects</h1>
                     </v-col>
-                    <v-col class="d-sm-none"
-                        style="display:block; position: fixed;top: 0px; right:0; width:20%; padding:0;">
+                    <v-col
+                        class="d-sm-none"
+                        style="display:block; position: fixed;top: 0px; right:0; width:20%; padding:0;"
+                    >
                         <h1
                             style="height:100vh; width:100%; display:flex; justify-content: center; align-items: center;
-                     writing-mode: vertical-lr; text-orientation: upright; background-color: rgba(255, 255, 255, 0.4);">
-                            Projects
-                        </h1>
+                     writing-mode: vertical-lr; text-orientation: upright; background-color: rgba(255, 255, 255, 0.4);"
+                        >Projects</h1>
                     </v-col>
                 </v-container>
             </transition>
@@ -82,7 +101,7 @@
 
 h1 {
     font-size: xxx-large;
-    color: #2B2F57;
+    color: #2b2f57;
     background-color: rgba(255, 255, 255, 0.3);
     /* position: relative; */
     /* left: 100%;   */
@@ -95,7 +114,7 @@ h1 {
     align-items: center;
     bottom: 0;
     justify-content: center;
-    opacity: .9;
+    opacity: 0.9;
     position: absolute;
     width: 100%;
 }
@@ -103,7 +122,7 @@ h1 {
 section {
     min-height: 100%;
     /* height: 100%; */
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
     width: 100%;
     /* margin: 0; */
     /* z-index: 10; */
@@ -112,7 +131,8 @@ section {
     /* animation: gradient 10s ease infinite; */
     /* background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/089d21ad-7782-4104-89c2-a65435feaa61/da6ks5a-344a9f7a-bbdc-42b6-9ebe-df7ca2d32799.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA4OWQyMWFkLTc3ODItNDEwNC04OWMyLWE2NTQzNWZlYWE2MVwvZGE2a3M1YS0zNDRhOWY3YS1iYmRjLTQyYjYtOWViZS1kZjdjYTJkMzI3OTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UZk_90YLEW2QTobmrD1Wwgab016coYzw7V8MexSTqtg'); */
     /* background-clip:content-box;   */
-    background: lightblue url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/089d21ad-7782-4104-89c2-a65435feaa61/da6ks5a-344a9f7a-bbdc-42b6-9ebe-df7ca2d32799.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA4OWQyMWFkLTc3ODItNDEwNC04OWMyLWE2NTQzNWZlYWE2MVwvZGE2a3M1YS0zNDRhOWY3YS1iYmRjLTQyYjYtOWViZS1kZjdjYTJkMzI3OTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UZk_90YLEW2QTobmrD1Wwgab016coYzw7V8MexSTqtg");
+    background: lightblue
+        url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/089d21ad-7782-4104-89c2-a65435feaa61/da6ks5a-344a9f7a-bbdc-42b6-9ebe-df7ca2d32799.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA4OWQyMWFkLTc3ODItNDEwNC04OWMyLWE2NTQzNWZlYWE2MVwvZGE2a3M1YS0zNDRhOWY3YS1iYmRjLTQyYjYtOWViZS1kZjdjYTJkMzI3OTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UZk_90YLEW2QTobmrD1Wwgab016coYzw7V8MexSTqtg");
     /* display: block;  */
     /* position: absolute; */
     background-attachment: fixed;
@@ -120,7 +140,6 @@ section {
     height: 100%; */
     /* background-size:100% 100%; */
     background-size: cover;
-
 }
 
 .v-card.on-hover.theme--dark {
