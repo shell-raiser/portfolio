@@ -10,13 +10,12 @@
 				</transition>
 			</v-main>
 		</main>
-		<v-bottom-navigation app active-class mandatory shift color="deep-purple">
+		<v-bottom-navigation id="navBar" app active-class mandatory shift color="deep-purple">
 			<!-- <v-footer class="justify-center" tile app> -->
 
 			<!-- <v-btn text @click="prev">
         <v-icon>mdi-chevron-left</v-icon>
-      </v-btn> -->
-
+			</v-btn>-->
 
 			<!-- <g-link to="/"> -->
 			<v-btn class="d-none d-sm-block" to="/">
@@ -28,36 +27,32 @@
 			<!-- <g-link to="/connect"> -->
 			<v-btn class="d-none d-sm-block" to="/connect">
 				<v-icon>mdi-human-greeting-proximity</v-icon>
-				<span>
-					Connect</span>
+				<span>Connect</span>
 			</v-btn>
 			<!-- </g-link> -->
 
 			<!-- <g-link to="/projects"> -->
 			<v-btn class="d-none d-sm-block" to="/projects">
 				<v-icon>mdi-devices</v-icon>
-				<span> Projects</span>
+				<span>Projects</span>
 			</v-btn>
 			<!-- </g-link> -->
 
 			<!-- <g-link to="/arsenal"> -->
 			<v-btn class="d-none d-sm-block" to="/arsenal">
 				<v-icon>mdi-hammer-wrench</v-icon>
-				<span>
-					Tools</span>
+				<span>Tools</span>
 			</v-btn>
 			<!-- </g-link> -->
 
-
 			<!-- <g-link to="/contact"> -->
 			<v-btn class="d-none d-sm-block" to="/contact">
-				<v-icon>mdi-card-account-mail </v-icon>
+				<v-icon>mdi-card-account-mail</v-icon>
 				<span>Contact</span>
 			</v-btn>
 			<!-- </g-link> -->
 
 			<v-btn-toggle group class="text-center d-sm-none" mandatory color="deep-purple">
-
 				<!-- <g-link to="/"> -->
 				<v-btn to="/">
 					<span>About</span>
@@ -68,69 +63,47 @@
 				<!-- <g-link to="/connect"> -->
 				<v-btn to="/connect">
 					<v-icon>mdi-human-greeting-proximity</v-icon>
-					<span>
-						Connect</span>
+					<span>Connect</span>
 				</v-btn>
 				<!-- </g-link> -->
 
 				<!-- <g-link to="/projects"> -->
 				<v-btn to="/projects">
 					<v-icon>mdi-devices</v-icon>
-					<span> Projects</span>
+					<span>Projects</span>
 				</v-btn>
 				<!-- </g-link> -->
 
 				<!-- <g-link to="/arsenal"> -->
 				<v-btn to="/arsenal">
 					<v-icon>mdi-hammer-wrench</v-icon>
-					<span>
-						Tools</span>
+					<span>Tools</span>
 				</v-btn>
 				<!-- </g-link> -->
-
 
 				<!-- <g-link to="/contact"> -->
 				<v-btn to="/contact">
-					<v-icon>mdi-card-account-mail </v-icon>
+					<v-icon>mdi-card-account-mail</v-icon>
 					<span>Contact</span>
 				</v-btn>
 				<!-- </g-link> -->
-
 			</v-btn-toggle>
-
 
 			<!-- <v-btn text @click="next">
 		
 		
         <v-icon>mdi-chevron-right</v-icon>
-      </v-btn> -->
+			</v-btn>-->
 			<!-- </v-footer> -->
 		</v-bottom-navigation>
-
-
 	</v-app>
 </template>
 
 <script>
 
 export default {
+
 	data: () => ({
-		// rules: [
-		//   value => !!value || 'Required.',
-		//   value => (value && value.length >= 3) || 'Min 3 characters',
-		// ],
-		// valid: true,
-		// name: '',
-		// nameRules: [
-		//   v => !!v || 'Name is required',
-		//   v => (v && v.length <= 10) || 'Name must be less than 10 characters',
-		// ],
-		// email: '',
-		// emailRules: [
-		//   v => !!v || 'E-mail is required',
-		//   v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
-		// ],
-		// length: 3,
 		onboarding: 0,
 	}),
 	methods: {
@@ -151,9 +124,8 @@ export default {
 
 <style>
 .slide-fade-enter-active {
-	transition: all .5s;
+	transition: all 0.5s;
 }
-
 
 .slide-fade-enter {
 	transform: translateY(20px);
@@ -176,16 +148,11 @@ export default {
   transition: opacity .5s ease-out;
 } */
 
-
-
-
 @keyframes textclip {
 	to {
 		background-position: 200% center;
 	}
 }
-
-
 
 /* .contactAnimation {
   min-height: calc(100vh - 60px);

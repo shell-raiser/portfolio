@@ -1,75 +1,44 @@
 <template >
   <Layout>
-    <section id="theSection">
+    <div style="padding:0;">
+    <section class="d-none d-sm-block" id="theSection">
       <transition name="slide-fade" appear>
-
-        <v-container>
-
-          <v-row>
-            <v-col>
-              <img class="rounded" alt="profile picture" src="https://randomuser.me/api/portraits/lego/5.jpg"
-                aspect-ratio="1" style="min-width:300px;" height="100%" />
-            </v-col>
-            <v-col cols="auto">
-              <v-container style="background-color: rgba(255, 255, 255, 0.4)" class="rounded">
-                <h1 class="AboutHead">Hello there,
-                  <br>
-                  I'm Shailesh !
-                </h1>
-
-                <p style="color:black">
-                  I'm a
-                  <span class="headtext pink rounded white--text"></span>
-
-                </p>
-
-                <img
-                  src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple"
-                  alt="visitors" />
-                <!-- </p> -->
-                <p class="red white--text">This site is still under development, many things are yet to be implemented.
-                  <br>
-                  Keep an eye on
-                  <a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">
-                    other branches</a>
-                  for major changes.
-                </p>
-
-              </v-container>
-
-            </v-col>
-
-
-          </v-row>
+        <v-container id="theSectionContainer">  
+          <AboutContent/>
         </v-container>
-
       </transition>
     </section>
-
-
+    <section class="d-sm-none">
+      <transition name="slide-fade" appear>
+        <v-container>
+          <AboutContent/>
+        </v-container>
+      </transition>
+    </section>
+    </div>
   </Layout>
 </template>
 
 <script>
-
-
-
+import AboutContent from "../components/aboutContent.vue"
 export default {
-  mounted() {
-    // document.addEventListener('DOMContentLoaded', function () {
-    // INSERT CODE HERE
-    var theSection = document.getElementById('theSection')
-    // theSection.style.height = "100vh";
-    // });
-  },
-  metaInfo: {
-    title: "About me",
-    // script: [
-    //   { src: 'https://platform.linkedin.com/badges/js/profile.js', async: true, defer: true },
-    //   { src: "https://unpkg.com/@rocktimsaikia/github-card@latest?module", async: true, defer: true },
-    // ],
-  },
+    mounted() {
+        var navBar = document.getElementById("navBar");
+        console.log(parseInt(getComputedStyle(navBar).getPropertyValue("height")));
+        var sectionHeight = window.innerHeight - parseInt(getComputedStyle(navBar).getPropertyValue("height"));
+        console.log(sectionHeight);
+        document.getElementById("theSection").style.height = sectionHeight + "px";
+    },
+    metaInfo: {
+        title: "About me",
+        // script: [
+        //   { src: 'https://platform.linkedin.com/badges/js/profile.js', async: true, defer: true },
+        //   { src: "https://unpkg.com/@rocktimsaikia/github-card@latest?module", async: true, defer: true },
+        // ],
+    },
+    components: { AboutContent }
 }
+
 
 
 
@@ -81,6 +50,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-items: center;
   background: linear-gradient(90deg, #9575CD, #90caf9);
   background-size: 200% 100%;
   animation: gradient 10s ease infinite;
@@ -101,37 +71,4 @@ section {
   }
 }
 
-h1 {
-
-  font-size: xxx-large;
-  /* color: rgb(100, 0, 172); */
-  color: #65499c;
-  background-image: -webkit-linear-gradient(0deg, #3F51B5, #9C27B0);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: 6s linear 0s infinite normal none running hue;
-  /* z-index: 1; */
-}
-
-.headtext::before {
-  content: "Web dev";
-  animation: animate infinite 5s;
-  /* padding-left: 10px; */
-}
-
-
-@keyframes animate {
-
-  25% {
-    content: "CyberSec enthusiast";
-  }
-
-  50% {
-    content: "Designer";
-  }
-
-  75% {
-    content: "Python dev";
-  }
-}
 </style>

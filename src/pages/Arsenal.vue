@@ -128,7 +128,7 @@ h1 {
     pointer-events: none;
     user-select: none;
     max-height: 100px;
-    max-width: 1000px;
+    max-width: 100%;
     min-width: 100px;
     padding: 5px;
 
@@ -141,7 +141,7 @@ h1 {
 }
 
 section {
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
     min-height: 100%;
     /* overflow-x: hidden;
     overflow-y: hidden; */
