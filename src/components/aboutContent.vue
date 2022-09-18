@@ -1,6 +1,6 @@
 <template>
     <v-row >
-        <v-col sm="6">
+        <v-col  sm="6">
             <v-img
                 class="rounded"
                 alt="profile picture"
