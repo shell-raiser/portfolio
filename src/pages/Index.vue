@@ -8,10 +8,10 @@
 					<v-col sm="6">
 						<v-img class="rounded" alt="profile picture"
 							src="https://randomuser.me/api/portraits/lego/5.jpg" aspect-ratio="1" min-width="300px"
-							style="height:80%;"></v-img>
+							style="height:100%;"></v-img>
 					</v-col>
 					<v-col>
-						<v-container style="background-color: rgba(255, 255, 255, 0.4)" class="rounded">
+						<v-container style="background-color: rgba(255, 255, 255, 0.4);min-width:fit-content;" class="rounded">
 							<h1>
 								Hello there,
 								<br />I'm Shailesh !
