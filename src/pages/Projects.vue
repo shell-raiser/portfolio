@@ -3,8 +3,9 @@
         <section>
             <transition name="slide-fade" appear>
                 <v-container >
-                    <v-col style="width:80%">
-                        <v-row>
+                    
+                    <!-- <v-col cols="8" style="width:80%"> -->
+                        <!-- <v-row> -->
                             <v-col sm="6" v-for="(project, i) in projects" :key="i">
                                 <v-lazy
                                     v-model="isActive"
@@ -66,27 +67,11 @@
                                     </v-hover>
                                 </v-lazy>
                             </v-col>
-                        </v-row>
+                        <!-- </v-row> -->
 
                         <!-- </v-container> -->
-                    </v-col>
-                    <v-col
-                        class="d-none d-sm-block"
-                        style="display:block; position: fixed;top: 0px; right:0; width:20%; padding:0;"
-                    >
-                        <h1
-                            style="height:100vh;   display: flex;   justify-content: center;  align-items: center;"
-                        >Projects</h1>
-                    </v-col>
-                    <v-col
-                        class="d-sm-none"
-                        style="display:block; position: fixed;top: 0px; right:0; width:20%; padding:0;"
-                    >
-                        <h1
-                            style="height:100vh; width:100%; display:flex; justify-content: center; align-items: center;
-                     writing-mode: vertical-lr; text-orientation: upright; background-color: rgba(255, 255, 255, 0.4);"
-                        >Projects</h1>
-                    </v-col>
+                    <!-- </v-col> -->
+
                 </v-container>
             </transition>
         </section>
@@ -121,16 +106,9 @@ h1 {
 
 section {
     min-height: 100%;
-    /* height: 100%; */
-    /* padding-bottom: 60px; */
+
     width: 100%;
-    /* margin: 0; */
-    /* z-index: 10; */
-    /* background: linear-gradient(90deg, #09254f, #0b4b3d); */
-    /* background-size: 100% 100%; */
-    /* animation: gradient 10s ease infinite; */
-    /* background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/089d21ad-7782-4104-89c2-a65435feaa61/da6ks5a-344a9f7a-bbdc-42b6-9ebe-df7ca2d32799.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA4OWQyMWFkLTc3ODItNDEwNC04OWMyLWE2NTQzNWZlYWE2MVwvZGE2a3M1YS0zNDRhOWY3YS1iYmRjLTQyYjYtOWViZS1kZjdjYTJkMzI3OTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UZk_90YLEW2QTobmrD1Wwgab016coYzw7V8MexSTqtg'); */
-    /* background-clip:content-box;   */
+    
     background: lightblue
         url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/089d21ad-7782-4104-89c2-a65435feaa61/da6ks5a-344a9f7a-bbdc-42b6-9ebe-df7ca2d32799.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA4OWQyMWFkLTc3ODItNDEwNC04OWMyLWE2NTQzNWZlYWE2MVwvZGE2a3M1YS0zNDRhOWY3YS1iYmRjLTQyYjYtOWViZS1kZjdjYTJkMzI3OTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UZk_90YLEW2QTobmrD1Wwgab016coYzw7V8MexSTqtg");
     /* display: block;  */
