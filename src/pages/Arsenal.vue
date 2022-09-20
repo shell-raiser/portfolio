@@ -13,7 +13,7 @@
                             <!-- </p> -->
                         </v-col>
                         <v-col>
-                            <v-lazy v-model="isActive" :options="{
+                            <v-lazy :options="{
                                 threshold: .5
                             }" min-height="100">
                                 <v-card class="white" rounded flat>
@@ -47,7 +47,7 @@
                                 </v-card>
                             </v-lazy>
                             <br>
-                            <v-lazy v-model="isActive" :options="{
+                            <v-lazy  :options="{
                                 threshold: .5
                             }" min-height="100">
                                 <v-card class="white" rounded flat>
@@ -62,7 +62,7 @@
                                 </v-card>
                             </v-lazy>
                             <br>
-                            <v-lazy v-model="isActive" :options="{
+                            <v-lazy  :options="{
                                 threshold: .5
                             }" min-height="100">
                                 <v-card class="white" rounded flat>
@@ -78,7 +78,7 @@
                                 </v-card>
                             </v-lazy>
                             <br>
-                            <v-lazy v-model="isActive" :options="{
+                            <v-lazy  :options="{
                                 threshold: .5
                             }" min-height="100">
                                 <v-card class="white" rounded flat>
@@ -92,7 +92,7 @@
                                 </v-card>
                             </v-lazy>
                             <br>
-                            <v-lazy v-model="isActive" :options="{
+                            <v-lazy  :options="{
                                 threshold: .5
                             }" min-height="100">
                                 <v-card class="white" rounded flat>
