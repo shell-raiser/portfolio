@@ -3,6 +3,34 @@
 		<!-- 2:06:01 -->
 
 		<!-- </v-card> -->
+		<v-navigation-drawer id="theNavbar" app fixed v-if="this.$router.history.current['path'] == '/projects'" right>
+			<template v-slot:prepend>
+				<v-list-item two-line>
+					<v-list-item-avatar>
+						<img src="https://randomuser.me/api/portraits/women/81.jpg">
+					</v-list-item-avatar>
+
+					<v-list-item-content>
+						<v-list-item-title>Jane Smith</v-list-item-title>
+						<v-list-item-subtitle>Logged In</v-list-item-subtitle>
+					</v-list-item-content>
+				</v-list-item>
+			</template>
+
+			<v-divider></v-divider>
+
+			<v-list dense>
+				<v-list-item v-for="item in items" :key="item.title">
+					<v-list-item-icon>
+						<v-icon>{{ item.icon }}</v-icon>
+					</v-list-item-icon>
+
+					<v-list-item-content>
+						<v-list-item-title>{{ item.title }}</v-list-item-title>
+					</v-list-item-content>
+				</v-list-item>
+			</v-list>
+		</v-navigation-drawer>
 		<main>
 			<v-main>
 				<transition name="fade" appear>
@@ -102,9 +130,17 @@
 <script>
 
 export default {
+	mounted() {
+		console.log(this.$router.history.current["path"])
+	},
 
 	data: () => ({
 		onboarding: 0,
+
+		items: [
+			{ title: 'Home', icon: 'mdi-view-dashboard' },
+			{ title: 'About', icon: 'mdi-forum' },
+		],
 	}),
 	methods: {
 		next() {
