@@ -82,6 +82,8 @@ export default {
         title: "Shailesh K S, About me",
         type: "summary",
       },
+      link: [],   // any links
+      script: []  // any scripts
     });
   },
 };

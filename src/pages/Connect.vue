@@ -205,6 +205,8 @@ export default {
         title: "Shailesh K S, Connect with me",
         type: "summary",
       },
+      link: [],   // any links
+      script: []  // any scripts
     });
   },
 };

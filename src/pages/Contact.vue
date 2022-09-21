@@ -117,6 +117,8 @@ export default {
         title: "Shailesh K S, Contact me",
         type: "summary",
       },
+      link: [],   // any links
+      script: []  // any scripts
     });
   },
   data: () => ({

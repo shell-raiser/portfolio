@@ -209,6 +209,8 @@ export default {
         title: "Shailesh K S, My Projects",
         type: "summary",
       },
+      link: [],   // any links
+      script: []  // any scripts
     });
   },
   data: () => ({
