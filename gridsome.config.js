@@ -11,6 +11,9 @@ module.exports = {
   plugins: [
     {
       use: '@gridsome/plugin-sitemap',
+    },
+    {
+      use: 'gridsome-plugin-seo'
     }
   ]
 }
