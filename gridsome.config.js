@@ -7,7 +7,13 @@
 module.exports = {
   icon: './src/assets/Shell.svg',
   siteName: 'Shailesh\'s Portfolio',
-  plugins: [],
-  siteUrl: 'https://shell-raiser.github.io'
-  // pathPrefix: '/portfolio',
+  siteUrl: 'https://shell-raiser.github.io',
+  plugins: [
+    {
+      use: '@gridsome/plugin-sitemap',
+    },
+    {
+      use: 'gridsome-plugin-seo'
+    }
+  ]
 }
