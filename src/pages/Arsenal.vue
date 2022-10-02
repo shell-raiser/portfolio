@@ -47,7 +47,7 @@
                                 </v-card>
                             </v-lazy>
                             <br>
-                            <v-lazy v-model="isActive" :options="{
+                            <v-lazy :options="{
                                 threshold: .5
                             }" min-height="100">
                                 <v-card class="white" rounded flat>
@@ -62,7 +62,7 @@
                                 </v-card>
                             </v-lazy>
                             <br>
-                            <v-lazy v-model="isActive" :options="{
+                            <v-lazy :options="{
                                 threshold: .5
                             }" min-height="100">
                                 <v-card class="white" rounded flat>
@@ -78,7 +78,7 @@
                                 </v-card>
                             </v-lazy>
                             <br>
-                            <v-lazy v-model="isActive" :options="{
+                            <v-lazy :options="{
                                 threshold: .5
                             }" min-height="100">
                                 <v-card class="white" rounded flat>
@@ -92,7 +92,7 @@
                                 </v-card>
                             </v-lazy>
                             <br>
-                            <v-lazy v-model="isActive" :options="{
+                            <v-lazy :options="{
                                 threshold: .5
                             }" min-height="100">
                                 <v-card class="white" rounded flat>
@@ -162,7 +162,7 @@ export default {
         title: "Tools",
     },
     data: () => ({
-        languages: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/cpp/cpp.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/c/c.png"],
+        languages: ["https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/cpp/cpp.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png", "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/c/c.png", "https://upload.wikimedia.org/wikipedia/commons/8/82/Gnu-bash-logo.svg", "https://upload.wikimedia.org/wikipedia/commons/1/1f/Z_Shell_Logo_Color_Horizontal.svg", "https://upload.wikimedia.org/wikipedia/commons/a/af/PowerShell_Core_6.0_icon.png", "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"],
 
         frontend: ["https://vuejs.org/images/logo.png", "https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-dark.svg", "https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png", "https://bulma.io/assets/Bulma%20Icon.svg"],
 
