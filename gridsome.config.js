@@ -14,6 +14,13 @@ module.exports = {
     },
     {
       use: 'gridsome-plugin-seo'
+    },
+    {
+      use: 'gridsome-plugin-umami',
+      options: {
+        srcUrl: 'https://portfolio-umami.herokuapp.com/umami.js',
+        dataWebsiteId: '694c58f0-e55d-4242-9d6e-9b93944d5e2e'
+      }
     }
   ]
 }
