@@ -18,7 +18,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-umami',
       options: {
-        srcUrl: 'https://portfolio-umami.herokuapp.com/',
+        srcUrl: 'https://portfolio-umami.herokuapp.com/umami.js',
         dataWebsiteId: 'ab441312-87a9-4f44-a8cc-676757c0ee8c'
       }
     }
