@@ -87,7 +87,47 @@
                             </v-lazy>
                         </v-col>
                     </v-row>
+                    <h2 class="rounded" id="volunteer">Volunteered Sites</h2>
+                    <v-row>
+                        <v-col v-for="(project, i) in volunteerSites" :key="i" style="width:100%" sm="6">
+                            <!-- <v-container v-for="(project, i) in projects" :key="i"> -->
+                            <v-lazy v-model="isActive" :options="{
+                                threshold: .5
+                            }" min-height="200">
+                                <v-hover v-slot="{ hover }">
+                                    <v-card class="mx-auto" color="grey lighten-4" width="350">
+                                        <v-img :aspect-ratio="16 / 9" :src="project.img">
+                                            <v-expand-transition>
+                                                <div v-if="hover"
+                                                    class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
+                                                    style="height: 100%;">
+                                                    <p class="projectCardHoverText" v-html="project.hoverText"></p>
+                                                </div>
+                                            </v-expand-transition>
+                                        </v-img>
+                                        <v-card-text class="pt-6" style="position: relative;">
+                                            <v-btn absolute color="teal" class="white--text" fab large right top
+                                                :href="project.heroLink" target="_blank" style="z-index:0;"
+                                                rel="noopener noreferrer">
+                                                <v-icon>{{ project.heroIcon }}</v-icon>
+                                            </v-btn>
 
+                                            <h3 class="text-h4 font-weight-light deep-purple--text mb-2">{{
+                                            project.title }}
+                                            </h3>
+                                            <p v-html="project.desc"></p>
+                                        </v-card-text>
+                                        <v-card-actions>
+                                            <v-btn v-for="(action, i) in project.actions" :key="i" :href="action.link"
+                                                target="_blank" rel="noopener noreferrer">
+                                                <v-icon>{{ action.icon }}</v-icon>
+                                            </v-btn>
+                                        </v-card-actions>
+                                    </v-card>
+                                </v-hover>
+                            </v-lazy>
+                        </v-col>
+                    </v-row>
                     <!-- </v-container> -->
                     <!-- </v-col> -->
 
@@ -179,6 +219,9 @@ export default {
             { img: "https://user-images.githubusercontent.com/78999739/183929986-483e206d-e15b-49cb-b872-391015398ab5.png", heroIcon: "mdi-link", heroLink: "https://black-hill-6592.on.fleek.co/", hoverText: "A decentralised website/app to report and track environmental damages caused by industries to concerned authorithies and NGOs", title: "Greensaver", desc: "A Hackathon Project for <a href='https://hackoheist.devfolio.co/'>HACK O HEIST</a>                <ul>                    <li>Top 15 Projects</li>                </ul>", actions: [{ link: "https://github.com/shell-raiser/helpfiy", icon: "mdi-github" }, { link: "https://devfolio.co/projects/greensavers-5b31", icon: "Devfolio" }] },
 
             { img: "https://user-images.githubusercontent.com/78999739/184808507-fda6894a-5425-4d52-902d-471783e15f76.png", heroIcon: "mdi-aws", heroLink: "http://52.54.137.237:3000/", hoverText: "A Website connecting Startups, Investors, Mentors and wannabe Entrepreneurs", title: "Avvio", desc: "A Hackathon Project for <a href='https://unstop.com/o/FAnGkDV?lb=4Y9Hkj2'> Codefury 5.0</a> <ul> <li>Won 1st place</li> </ul>", actions: [{ link: "https://github.com/shell-raiser/codefury5.0", icon: "mdi-github" }] },
+        ],
+        volunteerSites: [
+            { img: "https://user-images.githubusercontent.com/78999739/171996793-c0e2e157-b6ea-4984-b861-184b0568a011.png", heroIcon: "mdi-link", heroLink: "https://proresclub.github.io/", hoverText: "A 2D Platformer shooter game, with NCS Dubstep BGM", title: "Dark Green Space", desc: "2D Platformer game", actions: [{ link: "https://github.com/shell-raiser/Dark-Green-Space", icon: "mdi-github" }, { link: "https://shellraiser.itch.io/dark", icon: "itch.io" }] }
         ]
     }),
 }

@@ -9,6 +9,9 @@
         <v-divider></v-divider>
         <a href="#sideProjects">Side Projects</a>
         <v-divider></v-divider>
+        <a href="#volunteer">Volunteered Sites</a>
+        <v-divider></v-divider>
+        
         <v-chip-group column multiple>
             <v-chip active-class="deep-purple--text">
                 Python
