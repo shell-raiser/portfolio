@@ -3,35 +3,7 @@
 		<!-- 2:06:01 -->
 
 		<!-- </v-card> -->
-		<v-navigation-drawer id="theNavbar" app fixed v-if="this.$router.history.current['path'] == '/projects'" right>
-			<h3>Projects and Experience</h3>
-
-			<v-divider></v-divider>
-
-			<v-chip-group column multiple>
-				<v-chip active-class="deep-purple--text">
-					Python
-				</v-chip>
-				<v-chip active-class="deep-purple--text">
-					Javascript
-				</v-chip>
-				<v-chip active-class="deep-purple--text">
-					Java
-				</v-chip>
-				<v-chip active-class="deep-purple--text">
-					C++
-				</v-chip>
-				<v-chip active-class="deep-purple--text">
-					SQL
-				</v-chip>
-				<v-chip active-class="deep-purple--text">
-					Qiskit
-				</v-chip>
-			</v-chip-group>
-
-
-
-		</v-navigation-drawer>
+		<project-filter-navigation/>
 		<main>
 			<v-main>
 				<transition name="fade" appear>
@@ -129,32 +101,32 @@
 </template>
 
 <script>
+import ProjectFilterNavigation from '../components/projectFilterNavigation.vue';
 
 export default {
-	mounted() {
-		console.log(this.$router.history.current["path"])
-	},
-
-	data: () => ({
-		onboarding: 0,
-
-		items: [
-			{ title: 'Home', icon: 'mdi-view-dashboard' },
-			{ title: 'About', icon: 'mdi-forum' },
-		],
-	}),
-	methods: {
-		next() {
-			this.onboarding = this.onboarding + 1 === this.length
-				? 0
-				: this.onboarding + 1
-		},
-		prev() {
-			this.onboarding = this.onboarding - 1 < 0
-				? this.length - 1
-				: this.onboarding - 1
-		},
-	},
+    mounted() {
+        console.log(this.$router.history.current["path"]);
+    },
+    data: () => ({
+        onboarding: 0,
+        items: [
+            { title: "Home", icon: "mdi-view-dashboard" },
+            { title: "About", icon: "mdi-forum" },
+        ],
+    }),
+    methods: {
+        next() {
+            this.onboarding = this.onboarding + 1 === this.length
+                ? 0
+                : this.onboarding + 1;
+        },
+        prev() {
+            this.onboarding = this.onboarding - 1 < 0
+                ? this.length - 1
+                : this.onboarding - 1;
+        },
+    },
+    components: { ProjectFilterNavigation }
 };
 
 </script>
