@@ -87,7 +87,7 @@
                             </v-lazy>
                         </v-col>
                     </v-row>
-                    <h2 class="rounded" id="volunteer">Volunteered Sites</h2>
+                    <h2 class="rounded" id="volunteer">Volunteering</h2>
                     <v-row>
                         <v-col v-for="(project, i) in volunteerSites" :key="i" style="width:100%" sm="6">
                             <!-- <v-container v-for="(project, i) in projects" :key="i"> -->
@@ -96,7 +96,8 @@
                             }" min-height="200">
                                 <v-hover v-slot="{ hover }">
                                     <v-card class="mx-auto" color="grey lighten-4" width="350">
-                                        <v-img :aspect-ratio="16 / 9" :src="project.img">
+                                        <v-img :aspect-ratio="16 / 9">
+                                            <img width="350" fit="inside" :src="project.img" />
                                             <v-expand-transition>
                                                 <div v-if="hover"
                                                     class="d-flex transition-fast-in-fast-out teal v-card--reveal white--text"
@@ -105,6 +106,8 @@
                                                 </div>
                                             </v-expand-transition>
                                         </v-img>
+
+
                                         <v-card-text class="pt-6" style="position: relative;">
                                             <v-btn absolute color="teal" class="white--text" fab large right top
                                                 :href="project.heroLink" target="_blank" style="z-index:0;"
@@ -202,11 +205,12 @@ export default {
     },
     data: () => ({
         isActive: false,
-        sideProjects: [{ img: "https://user-images.githubusercontent.com/78999739/171996793-c0e2e157-b6ea-4984-b861-184b0568a011.png", heroIcon: "mdi-play", heroLink: "https://shellraiser.itch.io/dark", hoverText: "A 2D Platformer shooter game, with NCS Dubstep BGM", title: "Dark Green Space", desc: "2D Platformer game", actions: [{ link: "https://github.com/shell-raiser/Dark-Green-Space", icon: "mdi-github" }, { link: "https://shellraiser.itch.io/dark", icon: "itch.io" }] },
-        {
-            img: "https://user-images.githubusercontent.com/78999739/176103044-fe939cd9-ce4f-492d-8f50-22a795c7adb9.png", heroIcon: "mdi-link", heroLink: "https://shell-raiser.github.io/Dosha-quiz-app/", hoverText: "An online quiz, which determines your dosha and recommends diet on a daily basis", title: "Dosha Quiz", desc: "An online quiz, which determines your dosha. <br/> Used in <a href='https://b3ratna.com/dosha-quiz-app/'> B3Ratna NTA</a>", actions: [{ link: "https://github.com/shell-raiser/Dosha-quiz-app", icon: "mdi-github" }]
-        },
-        { img: "https://user-images.githubusercontent.com/78999739/181779591-f5698164-7106-451d-93bf-59175284db0c.png", heroIcon: "mdi-google-cloud", heroLink: "https://fcc-microservices-assignments.herokuapp.com/", hoverText: "Consists of                        <ul>                            <li> Request Header Parsing</li>                            <li> URL Shortener</li>                            <li> File Meta-Data Microservice</li>                            <li> Timestamp Microservice</li>                        </ul>", title: "FCC Microservices", desc: "A Compilation of APIs made for the FCC projects ", actions: [{ link: "https://github.com/shell-raiser/FCC-Microservices", icon: "mdi-github" }] },
+        sideProjects: [
+            { img: "https://user-images.githubusercontent.com/78999739/171996793-c0e2e157-b6ea-4984-b861-184b0568a011.png", heroIcon: "mdi-play", heroLink: "https://shellraiser.itch.io/dark", hoverText: "A 2D Platformer shooter game, with NCS Dubstep BGM", title: "Dark Green Space", desc: "2D Platformer game", actions: [{ link: "https://github.com/shell-raiser/Dark-Green-Space", icon: "mdi-github" }, { link: "https://shellraiser.itch.io/dark", icon: "itch.io" }] },
+            {
+                img: "https://user-images.githubusercontent.com/78999739/176103044-fe939cd9-ce4f-492d-8f50-22a795c7adb9.png", heroIcon: "mdi-link", heroLink: "https://shell-raiser.github.io/Dosha-quiz-app/", hoverText: "An online quiz, which determines your dosha and recommends diet on a daily basis", title: "Dosha Quiz", desc: "An online quiz, which determines your dosha. <br/> Used in <a href='https://b3ratna.com/dosha-quiz-app/'> B3Ratna NTA</a>", actions: [{ link: "https://github.com/shell-raiser/Dosha-quiz-app", icon: "mdi-github" }]
+            },
+            { img: "https://user-images.githubusercontent.com/78999739/181779591-f5698164-7106-451d-93bf-59175284db0c.png", heroIcon: "mdi-google-cloud", heroLink: "https://fcc-microservices-assignments.herokuapp.com/", hoverText: "Consists of                        <ul>                            <li> Request Header Parsing</li>                            <li> URL Shortener</li>                            <li> File Meta-Data Microservice</li>                            <li> Timestamp Microservice</li>                        </ul>", title: "FCC Microservices", desc: "A Compilation of APIs made for the FCC projects ", actions: [{ link: "https://github.com/shell-raiser/FCC-Microservices", icon: "mdi-github" }] },
         ],
 
         hackathonProjects: [
@@ -221,7 +225,9 @@ export default {
             { img: "https://user-images.githubusercontent.com/78999739/184808507-fda6894a-5425-4d52-902d-471783e15f76.png", heroIcon: "mdi-aws", heroLink: "http://52.54.137.237:3000/", hoverText: "A Website connecting Startups, Investors, Mentors and wannabe Entrepreneurs", title: "Avvio", desc: "A Hackathon Project for <a href='https://unstop.com/o/FAnGkDV?lb=4Y9Hkj2'> Codefury 5.0</a> <ul> <li>Won 1st place</li> </ul>", actions: [{ link: "https://github.com/shell-raiser/codefury5.0", icon: "mdi-github" }] },
         ],
         volunteerSites: [
-            { img: "https://user-images.githubusercontent.com/78999739/171996793-c0e2e157-b6ea-4984-b861-184b0568a011.png", heroIcon: "mdi-link", heroLink: "https://proresclub.github.io/", hoverText: "A 2D Platformer shooter game, with NCS Dubstep BGM", title: "Dark Green Space", desc: "2D Platformer game", actions: [{ link: "https://github.com/shell-raiser/Dark-Green-Space", icon: "mdi-github" }, { link: "https://shellraiser.itch.io/dark", icon: "itch.io" }] }
+            { img: "/ACMREVA.png", heroIcon: "mdi-wordpress", heroLink: "https://reva.hosting.acm.org/", hoverText: "A Wordpress site, made for showcasing club activities and encourage and attract members", title: "ACM REVA Student Chapter", desc: "A site made for the ACM student chapter at REVA University", actions: [{ link: "https://reva.hosting.acm.org/", icon: "mdi-wordpress" }] },
+            { img: "/ProRes.png", heroIcon: "mdi-link", heroLink: "https://proresclub.github.io/", hoverText: "A 2D Platformer shooter game, with NCS Dubstep BGM", title: "Pro Res", desc: "Club Website", actions: [{ link: "https://github.com/proresclub/proresclub.github.io", icon: "mdi-github" }] },
+            { img: "/rh21.png", heroIcon: "mdi-link", heroLink: "https://www.figma.com/proto/XWKMKUkEk2zQL2kaB1kZvX/Website-design?node-id=599%3A2&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=861%3A439&hide-ui=1", hoverText: "A 2D Platformer shooter game, with NCS Dubstep BGM", title: "Wireframing", desc: "Prototyped the website of REVA Hack 21", actions: [{ link: "https://www.figma.com/proto/XWKMKUkEk2zQL2kaB1kZvX/Website-design?node-id=599%3A2&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=861%3A439&hide-ui=1", icon: "mdi-draw" }] }
         ]
     }),
 }
