@@ -11,24 +11,24 @@
         <v-divider></v-divider>
         <a href="#volunteer">Volunteered Sites</a>
         <v-divider></v-divider>
-        
-        <v-chip-group column multiple>
-            <v-chip active-class="deep-purple--text">
+
+        <v-chip-group column multiple active-class="deep-purple--text" v-model="chipSelected" >
+            <v-chip>
                 Python
             </v-chip>
-            <v-chip active-class="deep-purple--text">
+            <v-chip>
                 Javascript
             </v-chip>
-            <v-chip active-class="deep-purple--text">
+            <v-chip>
                 Java
             </v-chip>
-            <v-chip active-class="deep-purple--text">
+            <v-chip>
                 C++
             </v-chip>
-            <v-chip active-class="deep-purple--text">
+            <v-chip>
                 SQL
             </v-chip>
-            <v-chip active-class="deep-purple--text">
+            <v-chip>
                 Qiskit
             </v-chip>
         </v-chip-group>
@@ -37,3 +37,15 @@
 
     </v-navigation-drawer>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            chipSelected: []
+        }
+    },
+    methods: {
+
+    },
+}
+</script>
