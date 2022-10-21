@@ -1,42 +1,52 @@
 <template>
-    <v-navigation-drawer app fixed v-if="this.$router.history.current['path'] == '/projects'" right>
-        <h1>Projects and Experience</h1>
 
-        <v-divider></v-divider>
+    <v-navigation-drawer app v-if="this.$router.history.current['path'] == '/projects'" right
+        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/089d21ad-7782-4104-89c2-a65435feaa61/da6ks5a-344a9f7a-bbdc-42b6-9ebe-df7ca2d32799.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA4OWQyMWFkLTc3ODItNDEwNC04OWMyLWE2NTQzNWZlYWE2MVwvZGE2a3M1YS0zNDRhOWY3YS1iYmRjLTQyYjYtOWViZS1kZjdjYTJkMzI3OTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UZk_90YLEW2QTobmrD1Wwgab016coYzw7V8MexSTqtg">
+        <v-container style="backdrop-filter:blur(5px); height:100%;">
+            <h2>Projects and Experience</h2>
+            <v-divider></v-divider>
+
+            <v-list nav class="rounded">
+                <v-list-item class="white rounded" to="#hackathons">
+                    Hackathon Projects
+                </v-list-item>
+                <v-list-item class="white rounded" to="#sideProjects">
+                    Side Projects
+                </v-list-item>
+                <v-list-item class="white rounded" to="#volunteer">
+                    Volunteered Sites
+                </v-list-item>
+            </v-list>
+
+            <v-divider></v-divider>
+
+            <v-chip-group column multiple color="deep-purple lighten-4" v-model="chipSelected">
+                <v-chip>
+                    Python
+                </v-chip>
+                <v-chip>
+                    Javascript
+                </v-chip>
+                <v-chip>
+                    Java
+                </v-chip>
+                <v-chip>
+                    C++
+                </v-chip>
+                <v-chip>
+                    SQL
+                </v-chip>
+                <v-chip>
+                    Qiskit
+                </v-chip>
+            </v-chip-group>
 
 
-        <a href="#hackathons">Hackathon Projects</a>
-        <v-divider></v-divider>
-        <a href="#sideProjects">Side Projects</a>
-        <v-divider></v-divider>
-        <a href="#volunteer">Volunteered Sites</a>
-        <v-divider></v-divider>
 
-        <v-chip-group column multiple active-class="deep-purple--text" v-model="chipSelected" >
-            <v-chip>
-                Python
-            </v-chip>
-            <v-chip>
-                Javascript
-            </v-chip>
-            <v-chip>
-                Java
-            </v-chip>
-            <v-chip>
-                C++
-            </v-chip>
-            <v-chip>
-                SQL
-            </v-chip>
-            <v-chip>
-                Qiskit
-            </v-chip>
-        </v-chip-group>
-
-
-
+        </v-container>
     </v-navigation-drawer>
 </template>
+
 <script>
 export default {
     data() {

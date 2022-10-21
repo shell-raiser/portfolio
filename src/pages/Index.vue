@@ -11,7 +11,7 @@
 							style="height:100%;"></v-img>
 					</v-col>
 					<v-col>
-						<v-container style="background-color: rgba(255, 255, 255, 0.4);min-width:fit-content;" class="rounded">
+						<v-container class="rounded contentHolder">
 							<h1>
 								Hello there,
 								<br />I'm Shailesh !
@@ -80,6 +80,11 @@ section {
 	background-size: 200% 100%;
 	animation: gradient 10s ease infinite;
 
+}
+.contentHolder{
+	background-color: rgba(255, 255, 255, 0.4);
+	min-width:fit-content;
+	backdrop-filter: blur(5px);
 }
 
 @keyframes gradient {

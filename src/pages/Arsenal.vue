@@ -16,7 +16,7 @@
                             <v-lazy :options="{
                                 threshold: .5
                             }" min-height="100">
-                                <v-card class="white" rounded flat>
+                                <v-card class="toolCard" rounded flat>
 
                                     <v-card-title class="toolsCardsImageCont deep-purple lighten-4">Languages
                                     </v-card-title>
@@ -24,33 +24,14 @@
 
                                     <div class="toolsCardsImageCont ">
                                         <img class="toolsLogos" :src="item" v-for="(item, i) in languages" :key="i" />
-
-
-                                        <!-- <img src=
-                                        class="toolsLogos" />
-
-                                    <img src=""
-                                        class="toolsLogos" />
-
-                                    <img src=
-                                        class="toolsLogos" />
-
-                                    <img src=
-                                        class="toolsLogos" />
-
-                                    <img src=
-                                        class="toolsLogos" />
-
-                                    <img src=
-                                         /> -->
                                     </div>
                                 </v-card>
                             </v-lazy>
                             <br>
-                            <v-lazy  :options="{
+                            <v-lazy :options="{
                                 threshold: .5
                             }" min-height="100">
-                                <v-card class="white" rounded flat>
+                                <v-card class="toolCard" rounded flat>
                                     <v-card-title class="toolsCardsImageCont red lighten-4">Front End Frameworks
                                     </v-card-title>
 
@@ -62,10 +43,10 @@
                                 </v-card>
                             </v-lazy>
                             <br>
-                            <v-lazy  :options="{
+                            <v-lazy :options="{
                                 threshold: .5
                             }" min-height="100">
-                                <v-card class="white" rounded flat>
+                                <v-card class="toolCard" rounded flat>
                                     <v-card-title class="toolsCardsImageCont teal lighten-4">Back End Frameworks
                                     </v-card-title>
 
@@ -78,10 +59,10 @@
                                 </v-card>
                             </v-lazy>
                             <br>
-                            <v-lazy  :options="{
+                            <v-lazy :options="{
                                 threshold: .5
                             }" min-height="100">
-                                <v-card class="white" rounded flat>
+                                <v-card class="toolCard" rounded flat>
                                     <v-card-title class="toolsCardsImageCont purple lighten-4">Design</v-card-title>
 
 
@@ -92,10 +73,10 @@
                                 </v-card>
                             </v-lazy>
                             <br>
-                            <v-lazy  :options="{
+                            <v-lazy :options="{
                                 threshold: .5
                             }" min-height="100">
-                                <v-card class="white" rounded flat>
+                                <v-card class="toolCard" rounded flat>
                                     <v-card-title class="toolsCardsImageCont indigo lighten-4">Audio</v-card-title>
 
 
@@ -114,14 +95,16 @@
 </template>
 <style scoped>
 h1 {
-    /* width: fit-content; */
+
     font-size: xxx-large;
     color: #ffffff;
-    /* background-image: -webkit-linear-gradient(90deg, #1d4ba5, #105c4a); */
-    /* background-clip: text; */
-    /* -webkit-text-fill-color: transparent; */
+    backdrop-filter: blur(15px);
     background-color: rgba(18, 0, 48, 0.61);
-    animation: 10s linear 0s infinite normal none running hue;
+}
+
+.toolCard {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
 }
 
 .toolsLogos {
@@ -135,7 +118,6 @@ h1 {
 }
 
 .toolsCardsImageCont {
-
     justify-content: center;
 
 }
@@ -148,7 +130,7 @@ section {
     /* background: linear-gradient(-45deg, #09254f, #23d5ab);
   background-size: 200% 200%;
   animation: gradient 10s ease infinite; */
-    background: url("https://images.pexels.com/photos/3527795/pexels-photo-3527795.jpeg");
+    background: url("../assets/toolsBg.jpeg");
     /* https://www.pexels.com/photo/photo-of-abstract-painting-3527795/ */
     /* filter: blur(8px); */
     /* -webkit-filter: blur(8px); */

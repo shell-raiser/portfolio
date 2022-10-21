@@ -7,7 +7,7 @@
                         <v-col
                             class="rounded"
                             sm="6"
-                            style="background:#9575cd;height:fit-content;text-align :right"
+                            style="background:#9575cd;height:fit-content;text-align :right;"
                             align-self="center"
                         >
                             <h1>Links</h1>
