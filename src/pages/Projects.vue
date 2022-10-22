@@ -53,7 +53,7 @@
             <h2 class="rounded" id="sideProjects">Side Projects</h2>
             <div style="height:10px"> </div>
             <v-row>
-              <v-col v-for="(project, i) in sideProjects" :key="i" style="width: 100%" sm="6">
+              <v-col v-for="(project, i) in sideProjects" :key="i" style="max-width: 100%" sm="6">
                 <!-- <v-container v-for="(project, i) in projects" :key="i"> -->
 
                 <v-lazy v-if="project.attributes.some(element => {

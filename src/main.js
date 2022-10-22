@@ -22,13 +22,7 @@ export default function (Vue, { appOptions, head }) {
 
   appOptions.store = new Vuex.Store({
     state: {
-      chipSelected: ["vue","unity"]
-    },
-    mutations: {
-      updateSelected (state, payload){
-        state.chipSelected = payload
-        console.log(state.chipSelected)
-      }
+      chipSelected: ["vue", "unity"]
     }
   })
   const opts = {} //opts includes, vuetify themes, icons, etc.

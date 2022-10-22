@@ -20,7 +20,7 @@
 
             <v-divider></v-divider>
 
-            <v-chip-group column multiple color="deep-purple lighten-4" v-model="chipSelected">
+            <v-chip-group column multiple color="deep-purple lighten-4" v-model="$store.state.chipSelected">
                 <v-chip value="python">
                     Python
                 </v-chip>
@@ -72,6 +72,7 @@ export default {
     methods: {
         updateState() {
             this.$store.commit('updateSelected', this.chipSelected)
+            // this.$store.state.chipSelected = this.chipSelected
             // console.log(this.$store.state.chipSelected)
         }
     },
