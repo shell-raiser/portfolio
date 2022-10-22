@@ -21,23 +21,38 @@
             <v-divider></v-divider>
 
             <v-chip-group column multiple color="deep-purple lighten-4" v-model="chipSelected">
-                <v-chip>
+                <v-chip value="python">
                     Python
                 </v-chip>
-                <v-chip>
+                <v-chip value="vue" @click="updateState()">
+                    Vue
+                </v-chip>
+                <v-chip value="javascript" @click="updateState()">
                     Javascript
                 </v-chip>
-                <v-chip>
+                <v-chip value="java" @click="updateState()">
                     Java
                 </v-chip>
-                <v-chip>
+                <v-chip value="c++" @click="updateState()">
                     C++
                 </v-chip>
-                <v-chip>
+                <v-chip value="sql" @click="updateState()">
                     SQL
                 </v-chip>
-                <v-chip>
+                <v-chip value="qiskit" @click="updateState()">
                     Qiskit
+                </v-chip>
+                <v-chip value="nodejs" @click="updateState()">
+                    Nodejs
+                </v-chip>
+                <v-chip value="expressjs" @click="updateState()">
+                    Express js
+                </v-chip>
+                <v-chip value="unity" @click="updateState()">
+                    Unity
+                </v-chip>
+                <v-chip value="c#" @click="updateState()">
+                    C#
                 </v-chip>
             </v-chip-group>
 
@@ -48,14 +63,17 @@
 </template>
 
 <script>
+import allProjects from '../assets/projectData.json'
 export default {
-    data() {
-        return {
-            chipSelected: []
-        }
-    },
-    methods: {
 
+    data: () => ({
+        chipSelected: []
+    }),
+    methods: {
+        updateState() {
+            this.$store.commit('updateSelected', this.chipSelected)
+            // console.log(this.$store.state.chipSelected)
+        }
     },
 }
 </script>

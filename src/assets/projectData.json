@@ -16,6 +16,10 @@
                     "link": "https://shellraiser.itch.io/dark",
                     "icon": "itch.io"
                 }
+            ],
+            "attributes": [
+                "unity",
+                "c#"
             ]
         },
         {
@@ -30,6 +34,10 @@
                     "link": "https://github.com/shell-raiser/Dosha-quiz-app",
                     "icon": "mdi-github"
                 }
+            ],
+            "attributes": [
+                "vue",
+                "javascript"
             ]
         },
         {
@@ -44,6 +52,11 @@
                     "link": "https://github.com/shell-raiser/FCC-Microservices",
                     "icon": "mdi-github"
                 }
+            ],
+            "attributes": [
+                "nodejs",
+                "javascript",
+                "expressjs"
             ]
         }
     ],

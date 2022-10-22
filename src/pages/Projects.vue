@@ -5,7 +5,8 @@
       <section>
         <transition name="slide-fade" appear>
           <v-container id="theContainer">
-            <h2 class="rounded" id="hackathons">Hackathon Projects</h2><div style="height:10px"> </div>
+            <h2 class="rounded" id="hackathons">Hackathon Projects</h2>
+            <div style="height:10px"> </div>
             <v-row>
               <v-col v-for="(project, i) in hackathonProjects" :key="i" style="width: 100%" sm="6">
                 <!-- <v-container v-for="(project, i) in projects" :key="i"> -->
@@ -49,11 +50,15 @@
               </v-col>
             </v-row>
             <div style="height:30px"> </div>
-            <h2 class="rounded" id="sideProjects">Side Projects</h2><div style="height:10px"> </div>
+            <h2 class="rounded" id="sideProjects">Side Projects</h2>
+            <div style="height:10px"> </div>
             <v-row>
               <v-col v-for="(project, i) in sideProjects" :key="i" style="width: 100%" sm="6">
                 <!-- <v-container v-for="(project, i) in projects" :key="i"> -->
-                <v-lazy v-model="isActive" :options="{
+
+                <v-lazy v-if="project.attributes.some(element => {
+                  return $store.state.chipSelected.includes(element);
+                })" v-model="isActive" :options="{
                   threshold: 0.5,
                 }" min-height="200">
                   <v-hover v-slot="{ hover }">
@@ -88,10 +93,12 @@
                     </v-card>
                   </v-hover>
                 </v-lazy>
+
               </v-col>
             </v-row>
             <div style="height:30px"> </div>
-            <h2 class="rounded" id="volunteer">Volunteering</h2><div style="height:10px"> </div>
+            <h2 class="rounded" id="volunteer">Volunteering</h2>
+            <div style="height:10px"> </div>
             <v-row>
               <v-col v-for="(project, i) in volunteerSites" :key="i" style="width: 100%" sm="6">
                 <!-- <v-container v-for="(project, i) in projects" :key="i"> -->
@@ -223,18 +230,13 @@ section {
 }
 </style>
 <script>
+
 import ProjectFilterNavigation from '../components/projectFilterNavigation.vue';
 import allProjects from '../assets/projectData.json'
+import 'es6-promise/auto'
+
 export default {
-  // mounted() {
-  //     var navBar = document.getElementById("theNavbar")
-  //     console.log(parseInt(getComputedStyle(navBar).getPropertyValue('width')))
-  //     var containerWidthCorrected = window.innerWidth -  parseInt(getComputedStyle(navBar).getPropertyValue('width'))
-  //     var theContainer = document.getElementById('theContainer')
-  //     console.log(parseInt(getComputedStyle(theContainer).getPropertyValue('width')))
-  //     theContainer.style.width = String(containerWidthCorrected) + "px";
-  //     console.log(parseInt(getComputedStyle(theContainer).getPropertyValue('width')))
-  // },
+
   metaInfo: {
     title: "Projects",
   },
@@ -242,11 +244,14 @@ export default {
     isActive: false,
     sideProjects: allProjects.sideProjects,
     hackathonProjects: allProjects.hackathonProjects,
-    volunteerSites: allProjects.volunteerSites
-
+    volunteerSites: allProjects.volunteerSites,
   }),
   methods: {
-
+    contains(arrAttributes) {
+      arrAttributes.some(element => {
+        return this.$store.state.chipSelected.includes(element);
+      })
+    }
   },
   components: { ProjectFilterNavigation }
 };
