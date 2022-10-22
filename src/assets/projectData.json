@@ -1,0 +1,207 @@
+{
+    "sideProjects": [
+        {
+            "img": "https://user-images.githubusercontent.com/78999739/171996793-c0e2e157-b6ea-4984-b861-184b0568a011.png",
+            "heroIcon": "mdi-play",
+            "heroLink": "https://shellraiser.itch.io/dark",
+            "hoverText": "A 2D Platformer shooter game, with NCS Dubstep BGM",
+            "title": "Dark Green Space",
+            "desc": "2D Platformer game",
+            "actions": [
+                {
+                    "link": "https://github.com/shell-raiser/Dark-Green-Space",
+                    "icon": "mdi-github"
+                },
+                {
+                    "link": "https://shellraiser.itch.io/dark",
+                    "icon": "itch.io"
+                }
+            ],
+            "attributes": [
+                "unity",
+                "c#"
+            ]
+        },
+        {
+            "img": "https://user-images.githubusercontent.com/78999739/176103044-fe939cd9-ce4f-492d-8f50-22a795c7adb9.png",
+            "heroIcon": "mdi-link",
+            "heroLink": "https://shell-raiser.github.io/Dosha-quiz-app/",
+            "hoverText": "An online quiz, which determines your dosha and recommends diet on a daily basis",
+            "title": "Dosha Quiz",
+            "desc": "An online quiz, which determines your dosha. <br/> Used in <a href='https://b3ratna.com/dosha-quiz-app/'> B3Ratna NTA</a>",
+            "actions": [
+                {
+                    "link": "https://github.com/shell-raiser/Dosha-quiz-app",
+                    "icon": "mdi-github"
+                }
+            ],
+            "attributes": [
+                "vue",
+                "javascript"
+            ]
+        },
+        {
+            "img": "https://user-images.githubusercontent.com/78999739/181779591-f5698164-7106-451d-93bf-59175284db0c.png",
+            "heroIcon": "mdi-google-cloud",
+            "heroLink": "https://fcc-microservices-assignments.herokuapp.com/",
+            "hoverText": "Consists of                        <ul>                            <li> Request Header Parsing</li>                            <li> URL Shortener</li>                            <li> File Meta-Data Microservice</li>                            <li> Timestamp Microservice</li>                        </ul>",
+            "title": "FCC Microservices",
+            "desc": "A Compilation of APIs made for the FCC projects ",
+            "actions": [
+                {
+                    "link": "https://github.com/shell-raiser/FCC-Microservices",
+                    "icon": "mdi-github"
+                }
+            ],
+            "attributes": [
+                "nodejs",
+                "javascript",
+                "expressjs"
+            ]
+        }
+    ],
+    "hackathonProjects": [
+        {
+            "img": "https://user-images.githubusercontent.com/78999739/178935897-f945338a-ceb4-48d3-8c67-889eb7e628b0.png",
+            "heroIcon": "mdi-google-cloud",
+            "heroLink": "https://parsifyapp-q3vtbj6djq-el.a.run.app/",
+            "hoverText": "A Web App and API for OCRing and extracting key points from FIR copies",
+            "title": "Parsify",
+            "desc": "A Hackathon Project made for <a href=\"https://unstop.com/o/UA3b5Qn?lb=4Y9Hkj2\">Codefiesta</a>                <ul>                    <li>Finalist</li>                </ul>",
+            "actions": [
+                {
+                    "link": "https://github.com/shell-raiser/Parsify-WebApp",
+                    "icon": "mdi-github"
+                },
+                {
+                    "link": "https://unstop.com/hackathon/codefiesta-sir-m-visvesvaraya-institute-of-technology-smvit-bengaluru-364352/case-submissions/44528?d=eyJwYWdlIjoxLCJ0ZWFtSWQiOjg5ODg0OTIsImFzc29jaWF0aW9uSWQiOjIxMTQ2N30=",
+                    "icon": "Unstop"
+                }
+            ],
+            "attributes": [
+                "javascript",
+                "bulma"
+            ]
+        },
+        {
+            "img": "https://user-images.githubusercontent.com/78999739/183272769-7576d48c-8af4-470c-bfa7-b63adbfff33d.png",
+            "heroIcon": "mdi-github",
+            "heroLink": "https://github.com/shell-raiser/saviour_kuHacks22",
+            "hoverText": "A Cross-platform Flutter app, made to connect NGOs and Volunteers protecting the environment",
+            "title": "Saviour",
+            "desc": "A Hackathon Project for        <a href=\"https://ku-hackfest-2022.devfolio.co/\"> KU HackFest 2022</a>                <ul>                    <li>Won Cloud Track</li>                    <li>\"Dream big and Create More Cheers with AB-InBev\" Winner</li>            </ul>",
+            "actions": [
+                {
+                    "link": "https://github.com/shell-raiser/saviour_kuHacks22",
+                    "icon": "mdi-github"
+                },
+                {
+                    "link": "https://devfolio.co/projects/saviour-83e6",
+                    "icon": "Devfolio"
+                }
+            ],
+            "attributes": [
+                "flutter"
+            ]
+        },
+        {
+            "img": "https://user-images.githubusercontent.com/78999739/183929986-483e206d-e15b-49cb-b872-391015398ab5.png",
+            "heroIcon": "mdi-link",
+            "heroLink": "https://black-hill-6592.on.fleek.co/",
+            "hoverText": "A decentralised website/app to report and track environmental damages caused by industries to concerned authorithies and NGOs",
+            "title": "Greensaver",
+            "desc": "A Hackathon Project for <a href='https://hackoheist.devfolio.co/'>HACK O HEIST</a>                <ul>                    <li>Top 15 Projects</li>                </ul>",
+            "actions": [
+                {
+                    "link": "https://github.com/shell-raiser/helpfiy",
+                    "icon": "mdi-github"
+                },
+                {
+                    "link": "https://devfolio.co/projects/greensavers-5b31",
+                    "icon": "Devfolio"
+                }
+            ],
+            "attributes": [
+                "ipfs",
+                "nodejs",
+                "bulma",
+                "javascript",
+                "expressjs"
+            ]
+        },
+        {
+            "img": "https://user-images.githubusercontent.com/78999739/184808507-fda6894a-5425-4d52-902d-471783e15f76.png",
+            "heroIcon": "mdi-aws",
+            "heroLink": "http://52.54.137.237:3000/",
+            "hoverText": "A Website connecting Startups, Investors, Mentors and wannabe Entrepreneurs",
+            "title": "Avvio",
+            "desc": "A Hackathon Project for <a href='https://unstop.com/o/FAnGkDV?lb=4Y9Hkj2'> Codefury 5.0</a> <ul> <li>Won 1st place</li> </ul>",
+            "actions": [
+                {
+                    "link": "https://github.com/shell-raiser/codefury5.0",
+                    "icon": "mdi-github"
+                }
+            ],
+            "attributes": [
+                "expressjs",
+                "nodejs",
+                "bootstrap",
+                "javascript"
+            ]
+        }
+    ],
+    "volunteerSites": [
+        {
+            "img": "/ACMREVA.png",
+            "heroIcon": "mdi-wordpress",
+            "heroLink": "https://reva.hosting.acm.org/",
+            "hoverText": "A Wordpress site, made for showcasing club activities and encourage and attract members",
+            "title": "ACM REVA Student Chapter",
+            "desc": "A site made for the ACM student chapter at REVA University",
+            "actions": [
+                {
+                    "link": "https://reva.hosting.acm.org/",
+                    "icon": "mdi-wordpress"
+                }
+            ],
+            "attributes": [
+                "wordpress"
+            ]
+        },
+        {
+            "img": "/ProRes.png",
+            "heroIcon": "mdi-link",
+            "heroLink": "https://proresclub.github.io/",
+            "hoverText": "A 2D Platformer shooter game, with NCS Dubstep BGM",
+            "title": "Pro Res",
+            "desc": "Club Website",
+            "actions": [
+                {
+                    "link": "https://github.com/proresclub/proresclub.github.io",
+                    "icon": "mdi-github"
+                }
+            ],
+            "attributes": [
+                "bootstrap",
+                "javascript"
+            ]
+        },
+        {
+            "img": "/rh21.png",
+            "heroIcon": "mdi-link",
+            "heroLink": "https://www.figma.com/proto/XWKMKUkEk2zQL2kaB1kZvX/Website-design?node-id=599:2&scaling=scale-down-width&page-id=0:1&starting-point-node-id=861:439&hide-ui=1",
+            "hoverText": "A 2D Platformer shooter game, with NCS Dubstep BGM",
+            "title": "Wireframing",
+            "desc": "Prototyped the website of REVA Hack 21",
+            "actions": [
+                {
+                    "link": "https://www.figma.com/proto/XWKMKUkEk2zQL2kaB1kZvX/Website-design?node-id=599:2&scaling=scale-down-width&page-id=0:1&starting-point-node-id=861:439&hide-ui=1",
+                    "icon": "mdi-draw"
+                }
+            ],
+            "attributes": [
+                "figma"
+            ]
+        }
+    ]
+}

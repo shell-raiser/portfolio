@@ -1,21 +1,17 @@
 <template>
-  <Layout>
-    <section id="theSection">
-      <transition name="slide-fade" appear>
-        <v-container style="height: 100%">
-          <v-row style="height: 100%">
-            <v-col
-              class="rounded"
-              sm="6"
-              style="
-                background: #9575cd;
-                height: fit-content;
-                text-align: right;
-              "
-              align-self="center"
-            >
-              <h1>Links</h1>
-              <!-- <v-card width="300">
+    <Layout>
+        <section id="theSection">
+            <transition name="slide-fade" appear>
+                <v-container style="height: 100%;">
+                    <v-row style="height: 100%;">
+                        <v-col
+                            class="rounded"
+                            sm="6"
+                            style="background:#9575cd;height:fit-content;text-align :right;"
+                            align-self="center"
+                        >
+                            <h1>Links</h1>
+                            <!-- <v-card width="300">
                                 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium"
                                     data-theme="dark" data-type="HORIZONTAL" data-vanity="shailesh-k-s-1b3475226"
                                     data-version="v1"><a class="badge-base__link LI-simple-link"

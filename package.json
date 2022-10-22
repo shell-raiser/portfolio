@@ -11,10 +11,12 @@
   "dependencies": {
     "@gridsome/cli": "^0.3.4",
     "@gridsome/plugin-sitemap": "^0.4.0",
+    "es6-promise": "^4.2.8",
     "gh-pages": "^4.0.0",
     "gridsome": "^0.7.23",
     "gridsome-plugin-seo": "^1.0.2",
-    "vuetify": "^2.6.4"
+    "vuetify": "^2.6.4",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "vue-cli-plugin-vuetify": "~2.4.8",
