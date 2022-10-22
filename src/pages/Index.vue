@@ -22,7 +22,7 @@
                 <span class="headtext pink rounded white--text"></span>
               </p>
 
-							<!-- <img src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple" alt="visitors" /> -->
+							<img src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple" alt="visitors" />
 							<!-- </p> -->
 							<p class="red white--text">
 								This site is still under development, many things are yet to be implemented.
