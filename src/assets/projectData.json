@@ -77,6 +77,10 @@
                     "link": "https://unstop.com/hackathon/codefiesta-sir-m-visvesvaraya-institute-of-technology-smvit-bengaluru-364352/case-submissions/44528?d=eyJwYWdlIjoxLCJ0ZWFtSWQiOjg5ODg0OTIsImFzc29jaWF0aW9uSWQiOjIxMTQ2N30=",
                     "icon": "Unstop"
                 }
+            ],
+            "attributes": [
+                "javascript",
+                "bulma"
             ]
         },
         {
@@ -95,6 +99,9 @@
                     "link": "https://devfolio.co/projects/saviour-83e6",
                     "icon": "Devfolio"
                 }
+            ],
+            "attributes": [
+                "flutter"
             ]
         },
         {
@@ -113,6 +120,13 @@
                     "link": "https://devfolio.co/projects/greensavers-5b31",
                     "icon": "Devfolio"
                 }
+            ],
+            "attributes": [
+                "ipfs",
+                "nodejs",
+                "bulma",
+                "javascript",
+                "expressjs"
             ]
         },
         {
@@ -127,6 +141,12 @@
                     "link": "https://github.com/shell-raiser/codefury5.0",
                     "icon": "mdi-github"
                 }
+            ],
+            "attributes": [
+                "expressjs",
+                "nodejs",
+                "bootstrap",
+                "javascript"
             ]
         }
     ],
@@ -143,6 +163,9 @@
                     "link": "https://reva.hosting.acm.org/",
                     "icon": "mdi-wordpress"
                 }
+            ],
+            "attributes": [
+                "wordpress"
             ]
         },
         {
@@ -157,6 +180,10 @@
                     "link": "https://github.com/proresclub/proresclub.github.io",
                     "icon": "mdi-github"
                 }
+            ],
+            "attributes": [
+                "bootstrap",
+                "javascript"
             ]
         },
         {
@@ -171,6 +198,9 @@
                     "link": "https://www.figma.com/proto/XWKMKUkEk2zQL2kaB1kZvX/Website-design?node-id=599:2&scaling=scale-down-width&page-id=0:1&starting-point-node-id=861:439&hide-ui=1",
                     "icon": "mdi-draw"
                 }
+            ],
+            "attributes": [
+                "figma"
             ]
         }
     ]
