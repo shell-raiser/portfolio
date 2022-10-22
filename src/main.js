@@ -22,7 +22,7 @@ export default function (Vue, { appOptions, head }) {
 
   appOptions.store = new Vuex.Store({
     state: {
-      chipSelected: ["vue", "unity"]
+      chipSelected: [],
     }
   })
   const opts = {} //opts includes, vuetify themes, icons, etc.

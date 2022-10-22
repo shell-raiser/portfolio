@@ -10,7 +10,9 @@
             <v-row>
               <v-col v-for="(project, i) in hackathonProjects" :key="i" style="width: 100%" sm="6">
                 <!-- <v-container v-for="(project, i) in projects" :key="i"> -->
-                <v-lazy v-model="isActive" :options="{
+                <v-lazy v-if="(project.attributes.some(element => {
+                  return $store.state.chipSelected.includes(element);
+                })) || ($store.state.chipSelected.length == 0)" v-model="isActive" :options="{
                   threshold: 0.5,
                 }" min-height="200">
                   <v-hover v-slot="{ hover }">
@@ -56,9 +58,9 @@
               <v-col v-for="(project, i) in sideProjects" :key="i" style="max-width: 100%" sm="6">
                 <!-- <v-container v-for="(project, i) in projects" :key="i"> -->
 
-                <v-lazy v-if="project.attributes.some(element => {
+                <v-lazy v-if="(project.attributes.some(element => {
                   return $store.state.chipSelected.includes(element);
-                })" v-model="isActive" :options="{
+                })) || ($store.state.chipSelected.length == 0)" v-model="isActive" :options="{
                   threshold: 0.5,
                 }" min-height="200">
                   <v-hover v-slot="{ hover }">
@@ -102,7 +104,9 @@
             <v-row>
               <v-col v-for="(project, i) in volunteerSites" :key="i" style="width: 100%" sm="6">
                 <!-- <v-container v-for="(project, i) in projects" :key="i"> -->
-                <v-lazy v-model="isActive" :options="{
+                <v-lazy v-if="(project.attributes.some(element => {
+                  return $store.state.chipSelected.includes(element);
+                })) || ($store.state.chipSelected.length == 0)" v-model="isActive" :options="{
                   threshold: 0.5,
                 }" min-height="200">
                   <v-hover v-slot="{ hover }">

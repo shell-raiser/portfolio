@@ -24,34 +24,34 @@
                 <v-chip value="python">
                     Python
                 </v-chip>
-                <v-chip value="vue" @click="updateState()">
+                <v-chip value="vue">
                     Vue
                 </v-chip>
-                <v-chip value="javascript" @click="updateState()">
+                <v-chip value="javascript">
                     Javascript
                 </v-chip>
-                <v-chip value="java" @click="updateState()">
+                <v-chip value="java">
                     Java
                 </v-chip>
-                <v-chip value="c++" @click="updateState()">
+                <v-chip value="c++">
                     C++
                 </v-chip>
-                <v-chip value="sql" @click="updateState()">
+                <v-chip value="sql">
                     SQL
                 </v-chip>
-                <v-chip value="qiskit" @click="updateState()">
+                <v-chip value="qiskit">
                     Qiskit
                 </v-chip>
-                <v-chip value="nodejs" @click="updateState()">
+                <v-chip value="nodejs">
                     Nodejs
                 </v-chip>
-                <v-chip value="expressjs" @click="updateState()">
+                <v-chip value="expressjs">
                     Express js
                 </v-chip>
-                <v-chip value="unity" @click="updateState()">
+                <v-chip value="unity">
                     Unity
                 </v-chip>
-                <v-chip value="c#" @click="updateState()">
+                <v-chip value="c#">
                     C#
                 </v-chip>
             </v-chip-group>
@@ -64,6 +64,8 @@
 
 <script>
 import allProjects from '../assets/projectData.json'
+
+
 export default {
 
     data: () => ({
