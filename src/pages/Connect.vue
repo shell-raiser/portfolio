@@ -95,7 +95,7 @@
 
                 <v-list-item
                   two-line
-                  href="https://www.linkedin.com/in/shailesh-k-s-1b3475226"
+                  href="https://www.linkedin.com/in/shailesh-k-s"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
