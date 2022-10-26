@@ -1,17 +1,13 @@
 <template>
-    <Layout>
-        <section id="theSection">
-            <transition name="slide-fade" appear>
-                <v-container style="height: 100%;">
-                    <v-row style="height: 100%;">
-                        <v-col
-                            class="rounded"
-                            sm="6"
-                            style="background:#9575cd;height:fit-content;text-align :right;"
-                            align-self="center"
-                        >
-                            <h1>Links</h1>
-                            <!-- <v-card width="300">
+  <Layout>
+    <section id="theSection">
+      <transition name="slide-fade" appear>
+        <v-container style="height: 100%;">
+          <v-row style="height: 100%;" align="center" justify="center">
+            <v-col class="rounded" sm="6" style="background:#9575cd;max-width: 600px;text-align :right;"
+              align-self="center">
+              <h1>Links</h1>
+              <!-- <v-card width="300">
                                 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium"
                                     data-theme="dark" data-type="HORIZONTAL" data-vanity="shailesh-k-s-1b3475226"
                                     data-version="v1"><a class="badge-base__link LI-simple-link"
@@ -33,29 +29,19 @@
                                         target="_blank" style="color: #cccccc; text-decoration: none;">All tarcks</a>
                                 </div>
                             </v-card>-->
-              <v-card min-width="300">
+              <v-card>
                 <!-- <v-card-title class="connectHead" style="text-align:right;">Contact</v-card-title> -->
                 <!-- <v-list> -->
                 <!-- <v-list-item-group> -->
-                <v-list-item
-                  two-line
-                  href="mailto: contactshellraiser@gmail.com"
-                >
+                <v-list-item two-line href="mailto: contactshellraiser@gmail.com">
                   <v-list-item-content>
                     <v-list-item-title>Email</v-list-item-title>
-                    <v-list-item-subtitle
-                      >contactshellraiser@gmail.com</v-list-item-subtitle
-                    >
+                    <v-list-item-subtitle>contactshellraiser@gmail.com</v-list-item-subtitle>
                   </v-list-item-content>
                   <v-icon right>mdi-email-variant</v-icon>
                 </v-list-item>
 
-                <v-list-item
-                  two-line
-                  href="https://github.com/shell-raiser"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <v-list-item two-line href="https://github.com/shell-raiser" target="_blank" rel="noopener noreferrer">
                   <v-list-item-content>
                     <v-list-item-title>Github</v-list-item-title>
                     <v-list-item-subtitle>@shell-raiser</v-list-item-subtitle>
@@ -63,57 +49,35 @@
                   <v-icon right>mdi-github</v-icon>
                 </v-list-item>
 
-                <v-list-item
-                  two-line
-                  href="https://soundcloud.com/user-185450671"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <v-list-item two-line href="https://soundcloud.com/user-185450671" target="_blank"
+                  rel="noopener noreferrer">
                   <v-list-item-content>
                     <v-list-item-title>Soundcloud</v-list-item-title>
-                    <v-list-item-subtitle
-                      >soundcloud.com/user-185450671</v-list-item-subtitle
-                    >
+                    <v-list-item-subtitle>soundcloud.com/user-185450671</v-list-item-subtitle>
                   </v-list-item-content>
                   <v-icon right>mdi-soundcloud</v-icon>
                 </v-list-item>
 
-                <v-list-item
-                  two-line
-                  href="https://youtube.com/channel/UCmEShK3aru1usVrGOrzGqqw"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <v-list-item two-line href="https://youtube.com/channel/UCmEShK3aru1usVrGOrzGqqw" target="_blank"
+                  rel="noopener noreferrer">
                   <v-list-item-content>
                     <v-list-item-title>Youtube</v-list-item-title>
-                    <v-list-item-subtitle
-                      >youtube.com/channel/UCmEShK3aru1usVrGOrzGqqw</v-list-item-subtitle
-                    >
+                    <v-list-item-subtitle>youtube.com/channel/UCmEShK3aru1usVrGOrzGqqw</v-list-item-subtitle>
                   </v-list-item-content>
                   <v-icon right>mdi-youtube</v-icon>
                 </v-list-item>
 
-                <v-list-item
-                  two-line
-                  href="https://www.linkedin.com/in/shailesh-k-s"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <v-list-item two-line href="https://www.linkedin.com/in/shailesh-k-s" target="_blank"
+                  rel="noopener noreferrer">
                   <v-list-item-content>
                     <v-list-item-title>Linkedin</v-list-item-title>
-                    <v-list-item-subtitle
-                      >linkedin.com/in/shailesh-k-s-1b3475226</v-list-item-subtitle
-                    >
+                    <v-list-item-subtitle>linkedin.com/in/shailesh-k-s-1b3475226</v-list-item-subtitle>
                   </v-list-item-content>
                   <v-icon right>mdi-linkedin</v-icon>
                 </v-list-item>
 
-                <v-list-item
-                  two-line
-                  href="https://devfolio.co/@shell_raiser"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <v-list-item two-line href="https://devfolio.co/@shell_raiser" target="_blank"
+                  rel="noopener noreferrer">
                   <v-list-item-content>
                     <v-list-item-title>Devfolio</v-list-item-title>
                     <v-list-item-subtitle>@shell_raiser</v-list-item-subtitle>
@@ -128,13 +92,40 @@
               <!-- </v-container> -->
             </v-col>
 
-            <v-col class="d-none d-sm-block" sm="6" style="height: 100%">
+            <!-- <v-col class="d-none d-sm-block" sm="6" style="height: 100%">
               <img
                 src="../assets/pebbleRotation.gif"
                 alt="pebbels"
                 loading="lazy"
                 width="100%"
               />
+            </v-col> -->
+            <v-col align-self="center" style="max-width:600px;">
+              <h1 class="rounded white--text" style="text-align: center">Contact</h1>
+
+              <v-card style="padding: 10px">
+                <v-form ref="form" v-model="valid" lazy-validation action="https://formspree.io/f/xeqdjwoo"
+                  method="post">
+                  <v-text-field label="Name" v-model="name" type="text" name="name" id="name" :rules="nameRules"
+                    aria-required></v-text-field>
+
+                  <v-text-field label="Email" name="Email" id="email" type="email" :rules="emailRules"
+                    hint="example@gmail.com"></v-text-field>
+
+                  <v-text-field label="Subject" name="Subject" id="subject" type="subject" :rules="reqRules" required>
+                  </v-text-field>
+
+                  <v-textarea label="Message" name="message" id="message" :rules="reqRules" auto-grow rows="2"
+                    placeholder="Multi-line Field"></v-textarea>
+
+                  <!-- <v-btn type="submit" class="mr-4"> -->
+                  <v-container class="d-flex justify-center">
+                    <v-btn :disabled="!valid" class="mr-4" @click="submit">submit</v-btn>
+                    <!-- <v-btn type="reset" onclick="clear()"> -->
+                    <v-btn class="mr-4" @click="reset">clear</v-btn>
+                  </v-container>
+                </v-form>
+              </v-card>
             </v-col>
           </v-row>
         </v-container>
@@ -155,39 +146,29 @@ h1 {
 }
 
 section {
-  /* min-height: calc(100vh - 60px); */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background:#9575cd; */
-  /* height: 100vh; */
+  height: 100%;
   background: #000;
-  /* overflow-x: hidden; */
-  overflow-y: hidden;
-  /* background-image: url('http://fc02.deviantart.net/fs21/f/2007/236/a/a/Animated_Rain_Desktop_HD_by_MrQuicksilver.gif'); */
-  /* background-color: #9575cd; */
-  /* background-color: #000; */
-  /* background-size: cover; */
-  /* background: linear-gradient(90deg, yellow, brown); */
-  /* background-size: 200% 200%; */
+  /* background-attachment: fixed;
+  background-size: contain;*/
+  min-height: calc(100vh - 56px);
 }
 </style>
 
 <script>
 export default {
-  mounted() {
-    var navBar = document.getElementById("navBar");
-    console.log(parseInt(getComputedStyle(navBar).getPropertyValue("height")));
-    var sectionHeight =
-      window.innerHeight -
-      parseInt(getComputedStyle(navBar).getPropertyValue("height"));
-    console.log(window.innerHeight);
-    var theSectionDOM = document.getElementById("theSection");
-    theSectionDOM.style.height = String(sectionHeight) + "px";
-    console.log(
-      parseInt(getComputedStyle(theSectionDOM).getPropertyValue("height"))
-    );
-  },
+  // mounted() {
+  //   var navBar = document.getElementById("navBar");
+  //   console.log(parseInt(getComputedStyle(navBar).getPropertyValue("height")));
+  //   var sectionHeight =
+  //     window.innerHeight -
+  //     parseInt(getComputedStyle(navBar).getPropertyValue("height"));
+  //   console.log(window.innerHeight);
+  //   var theSectionDOM = document.getElementById("theSection");
+  //   theSectionDOM.style.height = String(sectionHeight) + "px";
+  //   console.log(
+  //     parseInt(getComputedStyle(theSectionDOM).getPropertyValue("height"))
+  //   );
+  // },
   metaInfo() {
     return this.$seo({
       title: "Connect with me",
@@ -204,6 +185,31 @@ export default {
       link: [],   // any links
       script: []  // any scripts
     });
+  },
+  data: () => ({
+    valid: true,
+    name: "",
+    nameRules: [
+      (v) => !!v || "Name is required",
+      // v => (v && v.length <= 10) || 'Name must be less than 10 characters',
+    ],
+    email: "",
+    emailRules: [
+      (v) => !!v || "E-mail is required",
+      (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+    ],
+    reqRules: [
+      (v) => !!v || "This Field is required",
+      // v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+    ],
+  }),
+  methods: {
+    submit() {
+      this.$refs.form.validate();
+    },
+    reset() {
+      this.$refs.form.reset();
+    },
   },
 };
 </script>
