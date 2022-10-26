@@ -1,50 +1,49 @@
 <template >
-	<Layout>
-		<!-- <div> -->
-		<section id="theSection">
-			<transition name="slide-fade" appear>
-				<!-- <v-container id="theSectionContainer"> -->
-				<v-row>
-					<v-col sm="6">
-						<v-img class="rounded" alt="profile picture"
-							src="https://randomuser.me/api/portraits/lego/5.jpg" aspect-ratio="1" min-width="300px"
-							style="height:100%;"></v-img>
-					</v-col>
-					<v-col>
-						<v-container class="rounded contentHolder">
-							<h1>
-								Hello there,
-								<br />I'm Shailesh !
-							</h1>
+  <Layout>
+    <section id="theSection">
+      <transition name="slide-fade" appear>
+        <v-container style="height: 100%;">
+          <v-row style="height: 100%;" align="center" justify="center" align-content="center">
+
+            <v-col align-self="center" sm="6">
+              <!-- <v-container> -->
+              <v-img class="rounded" alt="profile picture" src="https://randomuser.me/api/portraits/lego/5.jpg"
+                aspect-ratio="1" min-width="300px" max-width="500px" style="height:100%;"></v-img>
+              <!-- </v-container> -->
+            </v-col>
+
+            <v-col align-self="center" class="rounded contentHolder">
+              <h1>
+                Hello there,
+                <br />I'm Shailesh !
+              </h1>
 
               <p style="color: black">
                 I'm a
                 <span class="headtext pink rounded white--text"></span>
               </p>
 
-							<img src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple" alt="visitors" />
-							<!-- </p> -->
-							<p class="red white--text">
-								This site is still under development, many things are yet to be implemented.
-								<br />Keep an eye on
-								<a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">other
-									branches</a>
-								for major changes.
-							</p>
-						</v-container>
-					</v-col>
-				</v-row>
-				<!-- </v-container> -->
-			</transition>
-		</section>
-		<!-- <section class="d-sm-none">
+              <!-- <img src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple" alt="visitors" /> -->
+              <!-- </p> -->
+              <p class="red white--text">
+                This site is still under development, many things are yet to be implemented.
+                <br />Keep an eye on
+                <a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">other
+                  branches</a>
+                for major changes.
+              </p>
+            </v-col>
+          </v-row>
+        </v-container>
+      </transition>
+    </section>
+    <!-- <section class="d-sm-none">
 				<transition name="slide-fade" appear>
 					<v-container>
 						<AboutContent />
 					</v-container>
 				</transition>
 			</section> -->
-    <!-- </div> -->
   </Layout>
 </template>
 
@@ -73,22 +72,19 @@ export default {
 
 <style scoped>
 section {
+  height: 100%;
   min-height: calc(100vh - 56px);
-
-	display: grid;
-	align-items: center;
-	justify-content: center;
-	justify-items: center;
-	width: 100%;
-	background: linear-gradient(90deg, #9575CD, #90caf9);
-	background-size: 200% 100%;
-	animation: gradient 10s ease infinite;
+  /* width: 100%; */
+  background: linear-gradient(90deg, #9575CD, #90caf9);
+  background-size: 200% 100%;
+  animation: gradient 10s ease infinite;
 
 }
-.contentHolder{
-	background-color: rgba(255, 255, 255, 0.4);
-	min-width:fit-content;
-	backdrop-filter: blur(5px);
+
+.contentHolder {
+  background-color: rgba(255, 255, 255, 0.4);
+  /* min-width: fit-content; */
+  backdrop-filter: blur(5px);
 }
 
 @keyframes gradient {
