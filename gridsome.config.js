@@ -21,7 +21,7 @@ module.exports = {
     {
       use: "gridsome-plugin-manifest",
       options: {
-        background_color: "#000000",
+        background_color: "#00000000",
         icon_path: "./src/assets/Shell.svg",
         name: "Shell Raiser's portfolio",
         short_name: "Shell Raiser",
