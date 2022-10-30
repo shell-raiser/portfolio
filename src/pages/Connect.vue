@@ -71,7 +71,7 @@
                   rel="noopener noreferrer">
                   <v-list-item-content>
                     <v-list-item-title>Linkedin</v-list-item-title>
-                    <v-list-item-subtitle>linkedin.com/in/shailesh-k-s-1b3475226</v-list-item-subtitle>
+                    <v-list-item-subtitle>linkedin.com/in/shailesh-k-s</v-list-item-subtitle>
                   </v-list-item-content>
                   <v-icon right>mdi-linkedin</v-icon>
                 </v-list-item>
@@ -82,7 +82,7 @@
                     <v-list-item-title>Devfolio</v-list-item-title>
                     <v-list-item-subtitle>@shell_raiser</v-list-item-subtitle>
                   </v-list-item-content>
-                  <v-icon right>mdi-github</v-icon>
+                  <v-icon right>D</v-icon>
                 </v-list-item>
                 <!-- </v-list-item-group> -->
 
