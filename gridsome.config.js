@@ -15,6 +15,20 @@ module.exports = {
     {
       use: 'gridsome-plugin-seo'
     },
+    {
+      use: 'gridsome-plugin-robots'
+    },
+    {
+      use: "gridsome-plugin-manifest",
+      options: {
+        background_color: "#000000",
+        icon_path: "./src/assets/Shell.svg",
+        name: "Shell Raiser's portfolio",
+        short_name: "Shell Raiser",
+        theme_color: "#FFFFFF",
+        lang: "en",
+      }
+    }
     // {
     //   use: 'gridsome-plugin-umami',
     //   options: {
