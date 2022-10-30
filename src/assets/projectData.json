@@ -172,7 +172,7 @@
             "img": "/ProRes.png",
             "heroIcon": "mdi-link",
             "heroLink": "https://proresclub.github.io/",
-            "hoverText": "A 2D Platformer shooter game, with NCS Dubstep BGM",
+            "hoverText": "A static site showcasing the projects undertaken/funded by the club.",
             "title": "Pro Res",
             "desc": "Club Website",
             "actions": [
@@ -190,7 +190,7 @@
             "img": "/rh21.png",
             "heroIcon": "mdi-link",
             "heroLink": "https://www.figma.com/proto/XWKMKUkEk2zQL2kaB1kZvX/Website-design?node-id=599:2&scaling=scale-down-width&page-id=0:1&starting-point-node-id=861:439&hide-ui=1",
-            "hoverText": "A 2D Platformer shooter game, with NCS Dubstep BGM",
+            "hoverText": "Figma preview of the website wireframing for REVA Hack 2021",
             "title": "Wireframing",
             "desc": "Prototyped the website of REVA Hack 21",
             "actions": [
@@ -201,6 +201,24 @@
             ],
             "attributes": [
                 "figma"
+            ]
+        },
+        {
+            "img": "/glug.png",
+            "heroIcon": "mdi-link",
+            "heroLink": "https://proresclub.github.io/",
+            "hoverText": "A site showcasing past events by the club",
+            "title": "GLUG and FOSS Club, REVA",
+            "desc": "Club Website",
+            "actions": [
+                {
+                    "link": "https://github.com/proresclub/proresclub.github.io",
+                    "icon": "mdi-github"
+                }
+            ],
+            "attributes": [
+                "jekyll",
+                "javascript"
             ]
         }
     ]
