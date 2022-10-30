@@ -8,142 +8,138 @@
             <h2 class="rounded" id="hackathons">Hackathon Projects</h2>
             <div style="height:10px"> </div>
             <v-row>
-              <v-col v-for="(project, i) in hackathonProjects" :key="i" style="width: 100%" sm="6">
-                <!-- <v-container v-for="(project, i) in projects" :key="i"> -->
-                <v-lazy v-if="(project.attributes.some(element => {
+              <template v-for="project in hackathonProjects">
+                <v-col v-if="(project.attributes.some(element => {
                   return $store.state.chipSelected.includes(element);
-                })) || ($store.state.chipSelected.length == 0)" v-model="isActive" :options="{
-                  threshold: 0.5,
-                }" min-height="200">
-                  <v-hover v-slot="{ hover }">
-                    <v-card class="mx-auto projectCard" width="350">
-                      <v-img :aspect-ratio="16 / 9" :src="project.img">
-                        <v-expand-transition class="bgBlur">
+                })) || ($store.state.chipSelected.length == 0)" style="width: 100%" sm="6">
+                  <v-lazy v-model="isActive" :options="{ threshold: 0.5 }" min-height="200">
+                    <v-hover v-slot="{ hover }">
+                      <v-card class="mx-auto projectCard" width="350">
+                        <v-img :aspect-ratio="16 / 9" :src="project.img">
+                          <v-expand-transition class="bgBlur">
 
-                          <div v-if="hover" class="d-flex transition-fast-in-fast-out v-card--reveal white--text"
-                            style="height: 100%">
-                            <div class="cardHoverBlurBg">
-                              <p class="projectCardHoverText" v-html="project.hoverText"></p>
+                            <div v-if="hover" class="d-flex transition-fast-in-fast-out v-card--reveal white--text"
+                              style="height: 100%">
+                              <div class="cardHoverBlurBg">
+                                <p class="projectCardHoverText" v-html="project.hoverText"></p>
+                              </div>
                             </div>
-                          </div>
 
-                        </v-expand-transition>
-                      </v-img>
-                      <v-card-text class="pt-6" style="position: relative">
-                        <v-btn absolute color="teal" class="white--text" fab large right top :href="project.heroLink"
-                          target="_blank" style="z-index: 0" rel="noopener noreferrer">
-                          <v-icon>{{ project.heroIcon }}</v-icon>
-                        </v-btn>
+                          </v-expand-transition>
+                        </v-img>
+                        <v-card-text class="pt-6" style="position: relative">
+                          <v-btn absolute color="teal" class="white--text" fab large right top :href="project.heroLink"
+                            target="_blank" style="z-index: 0" rel="noopener noreferrer">
+                            <v-icon>{{ project.heroIcon }}</v-icon>
+                          </v-btn>
 
-                        <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
-                          {{ project.title }}
-                        </h3>
-                        <p v-html="project.desc"></p>
-                      </v-card-text>
-                      <v-card-actions>
-                        <v-btn v-for="(action, i) in project.actions" :key="i" :href="action.link" target="_blank"
-                          rel="noopener noreferrer">
-                          <v-icon>{{ action.icon }}</v-icon>
-                        </v-btn>
-                      </v-card-actions>
-                    </v-card>
-                  </v-hover>
-                </v-lazy>
-              </v-col>
+                          <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
+                            {{ project.title }}
+                          </h3>
+                          <p v-html="project.desc"></p>
+                        </v-card-text>
+                        <v-card-actions>
+                          <v-btn v-for="(action, i) in project.actions" :key="i" :href="action.link" target="_blank"
+                            rel="noopener noreferrer">
+                            <v-icon>{{ action.icon }}</v-icon>
+                          </v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </v-hover>
+                  </v-lazy>
+                </v-col>
+              </template>
             </v-row>
             <div style="height:30px"> </div>
             <h2 class="rounded" id="sideProjects">Side Projects</h2>
             <div style="height:10px"> </div>
             <v-row>
-              <v-col v-for="(project, i) in sideProjects" :key="i" style="max-width: 100%" sm="6">
-                <!-- <v-container v-for="(project, i) in projects" :key="i"> -->
-
-                <v-lazy v-if="(project.attributes.some(element => {
+              <template v-for="project in sideProjects">
+                <v-col v-if="(project.attributes.some(element => {
                   return $store.state.chipSelected.includes(element);
-                })) || ($store.state.chipSelected.length == 0)" v-model="isActive" :options="{
-                  threshold: 0.5,
-                }" min-height="200">
-                  <v-hover v-slot="{ hover }">
-                    <v-card class="mx-auto projectCard" width="350">
-                      <v-img :aspect-ratio="16 / 9" :src="project.img">
-                        <v-expand-transition>
-                          <div v-if="hover" class="d-flex transition-fast-in-fast-out v-card--reveal white--text"
-                            style="height: 100%">
-                            <div class="cardHoverBlurBg">
-                              <p class="projectCardHoverText" v-html="project.hoverText"></p>
+                })) || ($store.state.chipSelected.length == 0)" style="max-width: 100%" sm="6">
+                  <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
+                    <v-hover v-slot="{ hover }">
+                      <v-card class="mx-auto projectCard" width="350">
+                        <v-img :aspect-ratio="16 / 9" :src="project.img">
+                          <v-expand-transition>
+                            <div v-if="hover" class="d-flex transition-fast-in-fast-out v-card--reveal white--text"
+                              style="height: 100%">
+                              <div class="cardHoverBlurBg">
+                                <p class="projectCardHoverText" v-html="project.hoverText"></p>
+                              </div>
                             </div>
-                          </div>
-                        </v-expand-transition>
-                      </v-img>
-                      <v-card-text class="pt-6" style="position: relative">
-                        <v-btn absolute color="teal" class="white--text" fab large right top :href="project.heroLink"
-                          target="_blank" style="z-index: 0" rel="noopener noreferrer">
-                          <v-icon>{{ project.heroIcon }}</v-icon>
-                        </v-btn>
+                          </v-expand-transition>
+                        </v-img>
+                        <v-card-text class="pt-6" style="position: relative">
+                          <v-btn absolute color="teal" class="white--text" fab large right top :href="project.heroLink"
+                            target="_blank" style="z-index: 0" rel="noopener noreferrer">
+                            <v-icon>{{ project.heroIcon }}</v-icon>
+                          </v-btn>
 
-                        <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
-                          {{ project.title }}
-                        </h3>
-                        <p v-html="project.desc"></p>
-                      </v-card-text>
-                      <v-card-actions>
-                        <v-btn v-for="(action, i) in project.actions" :key="i" :href="action.link" target="_blank"
-                          rel="noopener noreferrer">
-                          <v-icon>{{ action.icon }}</v-icon>
-                        </v-btn>
-                      </v-card-actions>
-                    </v-card>
-                  </v-hover>
-                </v-lazy>
-
-              </v-col>
+                          <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
+                            {{ project.title }}
+                          </h3>
+                          <p v-html="project.desc"></p>
+                        </v-card-text>
+                        <v-card-actions>
+                          <v-btn v-for="(action, i) in project.actions" :key="i" :href="action.link" target="_blank"
+                            rel="noopener noreferrer">
+                            <v-icon>{{ action.icon }}</v-icon>
+                          </v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </v-hover>
+                  </v-lazy>
+                </v-col>
+              </template>
             </v-row>
             <div style="height:30px"> </div>
             <h2 class="rounded" id="volunteer">Volunteering</h2>
             <div style="height:10px"> </div>
             <v-row>
-              <v-col v-for="(project, i) in volunteerSites" :key="i" style="width: 100%" sm="6">
-                <!-- <v-container v-for="(project, i) in projects" :key="i"> -->
-                <v-lazy v-if="(project.attributes.some(element => {
+              <template v-for="project in volunteerSites">
+                <v-col v-if="(project.attributes.some(element => {
                   return $store.state.chipSelected.includes(element);
-                })) || ($store.state.chipSelected.length == 0)" v-model="isActive" :options="{
-                  threshold: 0.5,
-                }" min-height="200">
-                  <v-hover v-slot="{ hover }">
-                    <v-card class="mx-auto projectCard" width="350">
-                      <v-img :aspect-ratio="16 / 9">
-                        <img width="350" fit="inside" :src="project.img" />
-                        <v-expand-transition>
-                          <div v-if="hover" class="d-flex transition-fast-in-fast-out v-card--reveal white--text"
-                            style="height: 100%">
-                            <div class="cardHoverBlurBg">
-                              <p class="projectCardHoverText" v-html="project.hoverText"></p>
+                })) || ($store.state.chipSelected.length == 0)" style="width: 100%" sm="6">
+                  <!-- <v-container v-for="(project, i) in projects" :key="i"> -->
+                  <v-lazy v-model="isActive" options="{ threshold: 0.5 }" min-height="200">
+                    <v-hover v-slot="{ hover }">
+                      <v-card class="mx-auto projectCard" width="350">
+                        <v-img :aspect-ratio="16 / 9">
+                          <img width="350" fit="inside" :src="project.img" />
+                          <v-expand-transition>
+                            <div v-if="hover" class="d-flex transition-fast-in-fast-out v-card--reveal white--text"
+                              style="height: 100%">
+                              <div class="cardHoverBlurBg">
+                                <p class="projectCardHoverText" v-html="project.hoverText"></p>
+                              </div>
                             </div>
-                          </div>
-                        </v-expand-transition>
-                      </v-img>
+                          </v-expand-transition>
+                        </v-img>
 
-                      <v-card-text class="pt-6" style="position: relative">
-                        <v-btn absolute color="teal" class="white--text" fab large right top :href="project.heroLink"
-                          target="_blank" style="z-index: 0" rel="noopener noreferrer">
-                          <v-icon>{{ project.heroIcon }}</v-icon>
-                        </v-btn>
+                        <v-card-text class="pt-6" style="position: relative">
+                          <v-btn absolute color="teal" class="white--text" fab large right top :href="project.heroLink"
+                            target="_blank" style="z-index: 0" rel="noopener noreferrer">
+                            <v-icon>{{ project.heroIcon }}</v-icon>
+                          </v-btn>
 
-                        <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
-                          {{ project.title }}
-                        </h3>
-                        <p v-html="project.desc"></p>
-                      </v-card-text>
-                      <v-card-actions>
-                        <v-btn v-for="(action, i) in project.actions" :key="i" :href="action.link" target="_blank"
-                          rel="noopener noreferrer">
-                          <v-icon>{{ action.icon }}</v-icon>
-                        </v-btn>
-                      </v-card-actions>
-                    </v-card>
-                  </v-hover>
-                </v-lazy>
-              </v-col>
+                          <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
+                            {{ project.title }}
+                          </h3>
+                          <p v-html="project.desc"></p>
+                        </v-card-text>
+                        <v-card-actions>
+                          <v-btn v-for="(action, i) in project.actions" :key="i" :href="action.link" target="_blank"
+                            rel="noopener noreferrer">
+                            <v-icon>{{ action.icon }}</v-icon>
+                          </v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </v-hover>
+                  </v-lazy>
+                </v-col>
+              </template>
             </v-row>
             <!-- </v-container> -->
             <!-- </v-col> -->
@@ -237,7 +233,6 @@ section {
 
 import ProjectFilterNavigation from '../components/projectFilterNavigation.vue';
 import allProjects from '../assets/projectData.json'
-import 'es6-promise/auto'
 
 export default {
 
