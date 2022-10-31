@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div>
-      <ProjectFilterNavigation />
+      <ProjectFilterNavigation class="d-sm-none d-md-flex" />
       <section>
         <transition name="slide-fade" appear>
           <v-container id="theContainer">
@@ -240,6 +240,7 @@ export default {
   },
   data: () => ({
     isActive: false,
+    drawer: false,
     sideProjects: allProjects.sideProjects,
     hackathonProjects: allProjects.hackathonProjects,
     volunteerSites: allProjects.volunteerSites,
