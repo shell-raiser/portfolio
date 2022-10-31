@@ -21,39 +21,10 @@
             <v-divider></v-divider>
 
             <v-chip-group column multiple color="deep-purple lighten-4" v-model="$store.state.chipSelected">
-                <v-chip value="python">
-                    Python
+                <v-chip v-for="i in allProjects" :value="i" :key="i">
+                    {{ i }}
                 </v-chip>
-                <v-chip value="vue">
-                    Vue
-                </v-chip>
-                <v-chip value="javascript">
-                    Javascript
-                </v-chip>
-                <v-chip value="java">
-                    Java
-                </v-chip>
-                <v-chip value="c++">
-                    C++
-                </v-chip>
-                <v-chip value="sql">
-                    SQL
-                </v-chip>
-                <v-chip value="qiskit">
-                    Qiskit
-                </v-chip>
-                <v-chip value="nodejs">
-                    Nodejs
-                </v-chip>
-                <v-chip value="expressjs">
-                    Express js
-                </v-chip>
-                <v-chip value="unity">
-                    Unity
-                </v-chip>
-                <v-chip value="c#">
-                    C#
-                </v-chip>
+
             </v-chip-group>
 
 
@@ -63,20 +34,47 @@
 </template>
 
 <script>
-import allProjects from '../assets/projectData.json'
-
-
+import allTheProjects from '../assets/projectData.json'
+var availableAttributes = [];
+for (const category in allTheProjects) {
+    var categoryArray = allTheProjects[category];
+    for (let i = 0; i < categoryArray.length; i++) {
+        var attrrArray = categoryArray[i]["attributes"]
+        for (var attr in attrrArray) {
+            // console.log(attrrArray[attr])
+            availableAttributes.push(attrrArray[attr])
+        }
+    }
+}
+availableAttributes = availableAttributes.filter((item,
+    index) => availableAttributes.indexOf(item) === index);
+console.log(availableAttributes)
 export default {
+    mounted: () => {
+        // console.log(chipSelected)
 
+    },
     data: () => ({
-        chipSelected: []
+        chipSelected: [],
+        allProjects: availableAttributes,
     }),
     methods: {
         updateState() {
             this.$store.commit('updateSelected', this.chipSelected)
             // this.$store.state.chipSelected = this.chipSelected
             // console.log(this.$store.state.chipSelected)
+        },
+        getAvailableAttributes() {
+            var allAttributes = [];
+            for (const category in allProjects) {
+                for (let i = 0; i < category.length; i++) {
+                    const project = category[i];
+                    availableAttributes.push(project[attributes])
+                }
+            }
+            return allAttributes
         }
+
     },
 }
 </script>

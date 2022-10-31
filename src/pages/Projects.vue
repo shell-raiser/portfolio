@@ -12,7 +12,7 @@
                 <v-col v-if="(project.attributes.some(element => {
                   return $store.state.chipSelected.includes(element);
                 })) || ($store.state.chipSelected.length == 0)" style="width: 100%" sm="6">
-                  <v-lazy v-model="isActive" :options="{ threshold: 0.5 }" min-height="200">
+                  <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
                     <v-hover v-slot="{ hover }">
                       <v-card class="mx-auto projectCard" width="350">
                         <v-img :aspect-ratio="16 / 9" :src="project.img">
@@ -102,8 +102,7 @@
                 <v-col v-if="(project.attributes.some(element => {
                   return $store.state.chipSelected.includes(element);
                 })) || ($store.state.chipSelected.length == 0)" style="width: 100%" sm="6">
-                  <!-- <v-container v-for="(project, i) in projects" :key="i"> -->
-                  <v-lazy v-model="isActive" options="{ threshold: 0.5 }" min-height="200">
+                  <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
                     <v-hover v-slot="{ hover }">
                       <v-card class="mx-auto projectCard" width="350">
                         <v-img :aspect-ratio="16 / 9">
