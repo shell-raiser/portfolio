@@ -58,6 +58,26 @@
                 "javascript",
                 "expressjs"
             ]
+        },
+        {
+            "img": "https://user-images.githubusercontent.com/78999739/199042968-a83e67ca-ef91-455c-bb9d-400d4ce527f2.png",
+            "heroIcon": "mdi-link",
+            "heroLink": "https://med-prod-hosting.herokuapp.com/",
+            "hoverText": "Retrieves data from an IOT device and displays the patient's vitals to the assigned doctor",
+            "title": "Patient Management Website",
+            "desc": "Website made with Firebase and Nuxt js to monitor patients. <br>It never saw the light due to some technical difficulties 🥺",
+            "actions": [
+                {
+                    "link": "https://github.com/Tense-Turtles/Med-Prod-Web-UI",
+                    "icon": "mdi-github"
+                }
+            ],
+            "attributes": [
+                "nodejs",
+                "javascript",
+                "nuxt",
+                "firebase"
+            ]
         }
     ],
     "hackathonProjects": [
