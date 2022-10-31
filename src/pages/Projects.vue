@@ -16,7 +16,7 @@
                     <v-hover v-slot="{ hover }">
                       <v-card class="mx-auto projectCard" width="350">
                         <v-img :aspect-ratio="16 / 9" :src="project.img">
-                          <v-expand-transition class="bgBlur">
+                          <v-expand-transition class="d-sm-none d-md-flex">
 
                             <div v-if="hover" class="d-flex transition-fast-in-fast-out v-card--reveal white--text"
                               style="height: 100%">
@@ -62,7 +62,7 @@
                     <v-hover v-slot="{ hover }">
                       <v-card class="mx-auto projectCard" width="350">
                         <v-img :aspect-ratio="16 / 9" :src="project.img">
-                          <v-expand-transition>
+                          <v-expand-transition class="d-sm-none d-md-flex">
                             <div v-if="hover" class="d-flex transition-fast-in-fast-out v-card--reveal white--text"
                               style="height: 100%">
                               <div class="cardHoverBlurBg">
@@ -107,7 +107,7 @@
                       <v-card class="mx-auto projectCard" width="350">
                         <v-img :aspect-ratio="16 / 9">
                           <img width="350" fit="inside" :src="project.img" />
-                          <v-expand-transition>
+                          <v-expand-transition class="d-sm-none d-md-flex">
                             <div v-if="hover" class="d-flex transition-fast-in-fast-out v-card--reveal white--text"
                               style="height: 100%">
                               <div class="cardHoverBlurBg">
