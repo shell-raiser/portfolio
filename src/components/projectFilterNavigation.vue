@@ -6,8 +6,8 @@
             <h2>Projects and Experience</h2>
             <v-divider></v-divider>
 
-            <v-list nav class="rounded">
-                <v-list-item class="white rounded" to="#hackathons">
+            <v-list nav class="rounded" v-if="$store.state.chipSelected.length == 0">
+                <v-list-item class="white rounded" to="#hackathons" >
                     Hackathon Projects
                 </v-list-item>
                 <v-list-item class="white rounded" to="#sideProjects">

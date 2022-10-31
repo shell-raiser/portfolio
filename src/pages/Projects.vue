@@ -5,7 +5,7 @@
       <section>
         <transition name="slide-fade" appear>
           <v-container id="theContainer">
-            <h2 class="rounded" id="hackathons">Hackathon Projects</h2>
+            <h2 v-if="$store.state.chipSelected.length == 0" class="rounded" id="hackathons">Hackathon Projects</h2>
             <div style="height:10px"> </div>
             <v-row>
               <template v-for="project in hackathonProjects">
@@ -51,7 +51,7 @@
               </template>
             </v-row>
             <div style="height:30px"> </div>
-            <h2 class="rounded" id="sideProjects">Side Projects</h2>
+            <h2 v-if="$store.state.chipSelected.length == 0" class="rounded" id="sideProjects">Side Projects</h2>
             <div style="height:10px"> </div>
             <v-row>
               <template v-for="project in sideProjects">
@@ -95,7 +95,7 @@
               </template>
             </v-row>
             <div style="height:30px"> </div>
-            <h2 class="rounded" id="volunteer">Volunteering</h2>
+            <h2 v-if="$store.state.chipSelected.length == 0" class="rounded" id="volunteer">Volunteering</h2>
             <div style="height:10px"> </div>
             <v-row>
               <template v-for="project in volunteerSites">
