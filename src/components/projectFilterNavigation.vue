@@ -11,10 +11,10 @@
                     Hackathon Projects
                 </v-list-item>
                 <v-list-item class="white rounded" to="#sideProjects">
-                    Side Projects
+                    Other Projects
                 </v-list-item>
                 <v-list-item class="white rounded" to="#volunteer">
-                    Volunteered Sites
+                    Volunteering
                 </v-list-item>
             </v-list>
 
