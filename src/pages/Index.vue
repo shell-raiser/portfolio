@@ -53,7 +53,7 @@ export default {
   metaInfo() {
     return this.$seo({
       title: "About me", // Uses the titleTemplate in Gridsome config
-      description: "My description",
+      description: "I'm Shailesh (Shell Raiser), and this is my portfolio",
       keywords: "one,two",
       openGraph: {
         title: "Shailesh K S, About me",
