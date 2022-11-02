@@ -78,6 +78,27 @@
                 "nuxt",
                 "firebase"
             ]
+        },
+        {
+            "img": "https://user-images.githubusercontent.com/78999739/199546109-db111597-5c67-498c-96ad-67a29bc3b5b1.png",
+            "heroIcon": "mdi-link",
+            "heroLink": "https://shell-raiser.github.io/",
+            "hoverText": "My portfolio website, where I record all the stuff I do",
+            "title": "My Portfolio",
+            "desc": "This site, yes, this one right here!",
+            "actions": [
+                {
+                    "link": "https://github.com/shell-raiser/shell-raiser.github.io",
+                    "icon": "mdi-github"
+                }
+            ],
+            "attributes": [
+                "nodejs",
+                "javascript",
+                "gridsome",
+                "vuetify",
+                "jquery"
+            ]
         }
     ],
     "hackathonProjects": [
