@@ -2,8 +2,8 @@
   <Layout>
     <section id="theSection">
       <transition name="slide-fade" appear>
-        <v-container style="height: 100%;">
-          <v-row style="height: 100%;" align="center" justify="center">
+        <v-container fill-height >
+          <v-row  align="center" justify="center">
             <v-col class="rounded" sm="6" style="background:#9575cd;max-width: 600px;text-align :right;"
               align-self="center">
               <h1>Links</h1>

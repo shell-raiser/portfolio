@@ -2,8 +2,8 @@
   <Layout>
     <section id="theSection">
       <transition name="slide-fade" appear>
-        <v-container style="height: 100%;">
-          <v-row style="height: 100%;" align="center" justify="center" align-content="center">
+        <v-container class="fill-height">
+          <v-row align="center" justify="center" align-content="center">
 
             <v-col align-self="center" sm="6">
               <!-- <v-container> -->
@@ -32,6 +32,11 @@
                   branches</a>
                 for major changes.
               </p>
+              <!-- <p>
+                I like to tweak code and mess around. Doing mostly Web Dev, But will be doing some CyberSec stuff soon
+                <br>
+                I make electronic music in my free time.
+              </p> -->
             </v-col>
           </v-row>
         </v-container>
