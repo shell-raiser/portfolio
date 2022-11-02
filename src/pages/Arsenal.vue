@@ -138,7 +138,7 @@ export default {
     metaInfo() {
         return this.$seo({
             title: "Tools",
-            description: "My description",
+            description: "A collection of all the tools I've ever used, and know my way around getting things done with them",
             keywords: "one,two",
             openGraph: {
                 title: "Shailesh K S, Tools",
