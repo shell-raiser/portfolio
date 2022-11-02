@@ -28,7 +28,7 @@
             "heroLink": "https://shell-raiser.github.io/Dosha-quiz-app/",
             "hoverText": "An online quiz, which determines your dosha and recommends diet on a daily basis",
             "title": "Dosha Quiz",
-            "desc": "An online quiz, which determines your dosha. <br/> Used in <a href='https://b3ratna.com/dosha-quiz-app/'> B3Ratna NTA</a>",
+            "desc": "An online quiz, which determines your dosha. <br/> Used in <a href='https://ayurvers.com/dosha-quiz-app/'> Ayurvers (previously B3Ratna NTA)</a>",
             "actions": [
                 {
                     "link": "https://github.com/shell-raiser/Dosha-quiz-app",
