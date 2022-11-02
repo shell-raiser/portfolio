@@ -247,13 +247,13 @@
         {
             "img": "/glug.png",
             "heroIcon": "mdi-link",
-            "heroLink": "https://proresclub.github.io/",
+            "heroLink": "#",
             "hoverText": "A site showcasing past events by the club",
             "title": "GLUG and FOSS Club, REVA",
             "desc": "Club Website",
             "actions": [
                 {
-                    "link": "https://github.com/proresclub/proresclub.github.io",
+                    "link": "#",
                     "icon": "mdi-github"
                 }
             ],
