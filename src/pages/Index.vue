@@ -21,8 +21,16 @@
                   </h1>
 
                   <p style="color: black">
-                    I'm a
-                    <span class="headtext pink rounded white--text"></span>
+
+                  <div class="content__container__text">I'm a</div>
+                  <div class="content__container">
+                    <ul class="content__container__list">
+                      <li class="content__container__list__item rounded">CyberSec enthusiast</li>
+                      <li class="content__container__list__item2 rounded">Web dev</li>
+                      <li class="content__container__list__item rounded">Designer</li>
+                      <li class="content__container__list__item2 rounded">Python Dev</li>
+                    </ul>
+                  </div>
                   </p>
 
                   <img src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple" alt="visitors" />
@@ -132,12 +140,197 @@ h1 {
   /* z-index: 1; */
 }
 
+/* 
 .headtext::before {
   content: "Web dev";
   animation: animate infinite 5s;
-  /* padding-left: 10px; */
+} */
+
+.content__container {
+
+  /* background-color: red; */
+  overflow: hidden;
+  height: 40px;
+  margin: 0;
 }
 
+
+.content__container__text {
+  display: inline;
+  float: left;
+  /* margin: 0; */
+  line-height: 40px;
+  padding-right: 3px;
+  /* background-color: rgb(255, 255, 255); */
+}
+
+.content__container__list {
+
+  /* margin: 0; */
+  padding-left: 3px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.content__container__list__item {
+  line-height: 40px;
+  padding-inline: 3px;
+  width: fit-content;
+  color: aliceblue;
+  background-color: rgb(140, 0, 255);
+}
+.content__container__list__item2{
+  width: fit-content;
+  padding-inline: 3px;
+  line-height: 40px;
+  color: #65499c;
+  background-color: rgb(255, 255, 255);
+}
+
+@-webkit-keyframes change {
+
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  16.66%,
+  29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+
+  33.32%,
+  45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+
+  49.98%,
+  62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+
+  66.64%,
+  79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+
+  83.3%,
+  95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+
+
+@-o-keyframes change {
+
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  16.66%,
+  29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+
+  33.32%,
+  45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+
+  49.98%,
+  62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+
+  66.64%,
+  79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+
+  83.3%,
+  95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+@-moz-keyframes change {
+
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  16.66%,
+  29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+
+  33.32%,
+  45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+
+  49.98%,
+  62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+
+  66.64%,
+  79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+
+  83.3%,
+  95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+
+
+@keyframes change {
+
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  16.66%,
+  29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+
+  33.32%,
+  45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+
+  49.98%,
+  62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+
+  66.64%,
+  79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+
+  83.3%,
+  95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+
+/* 
 @keyframes animate {
   25% {
     content: "CyberSec enthusiast";
@@ -150,5 +343,5 @@ h1 {
   75% {
     content: "Python dev";
   }
-}
+} */
 </style>
