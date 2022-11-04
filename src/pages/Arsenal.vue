@@ -110,7 +110,7 @@ section {
     /* background: linear-gradient(-45deg, #09254f, #23d5ab);
   background-size: 200% 200%;
   animation: gradient 10s ease infinite; */
-    background: url("../assets/toolsBg.jpeg");
+    background: url("../assets/toolsBg.webp");
     /* https://www.pexels.com/photo/photo-of-abstract-painting-3527795/ */
     /* filter: blur(8px); */
     /* -webkit-filter: blur(8px); */
