@@ -13,76 +13,61 @@
                             <!-- </p> -->
                         </v-col>
                         <v-col>
-                            <v-lazy :options="{
-                                threshold: .5
-                            }" min-height="100">
-                                <v-card class="toolCard" rounded flat>
-                                    <v-card-title class="toolsCardsImageCont deep-purple lighten-4">Languages
-                                    </v-card-title>
 
-                                    <div class="toolsCardsImageCont">
-                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in languages" :key="i" />
-                                    </div>
-                                </v-card>
-                            </v-lazy>
+                            <v-card class="toolCard" rounded flat>
+                                <v-card-title class="toolsCardsImageCont deep-purple lighten-4">Languages
+                                </v-card-title>
+
+                                <div class="toolsCardsImageCont">
+                                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in languages" :key="i" />
+                                </div>
+                            </v-card>
                             <br>
-                            <v-lazy v-model="isActive" :options="{
-                                threshold: .5
-                            }" min-height="100">
-                                <v-card class="toolCard" rounded flat>
-                                    <v-card-title class="toolsCardsImageCont red lighten-4">Front End Frameworks
-                                    </v-card-title>
 
-                                    <div class="toolsCardsImageCont">
+                            <v-card class="toolCard" rounded flat>
+                                <v-card-title class="toolsCardsImageCont red lighten-4">Front End Frameworks
+                                </v-card-title>
 
-                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in frontend" :key="i" />
+                                <div class="toolsCardsImageCont">
 
-                                    </div>
-                                </v-card>
-                            </v-lazy>
+                                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in frontend" :key="i" />
+
+                                </div>
+                            </v-card>
                             <br>
-                            <v-lazy v-model="isActive" :options="{
-                                threshold: .5
-                            }" min-height="100">
-                                <v-card class="toolCard" rounded flat>
-                                    <v-card-title class="toolsCardsImageCont teal lighten-4">Back End Frameworks
-                                    </v-card-title>
+
+                            <v-card class="toolCard" rounded flat>
+                                <v-card-title class="toolsCardsImageCont teal lighten-4">Back End Frameworks
+                                </v-card-title>
 
 
-                                    <div class="toolsCardsImageCont">
+                                <div class="toolsCardsImageCont">
 
-                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in backend" :key="i" />
+                                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in backend" :key="i" />
 
-                                    </div>
-                                </v-card>
-                            </v-lazy>
+                                </div>
+                            </v-card>
                             <br>
-                            <v-lazy v-model="isActive" :options="{
-                                threshold: .5
-                            }" min-height="100">
-                                <v-card class="toolCard" rounded flat>
-                                    <v-card-title class="toolsCardsImageCont purple lighten-4">Design</v-card-title>
+
+                            <v-card class="toolCard" rounded flat>
+                                <v-card-title class="toolsCardsImageCont purple lighten-4">Design</v-card-title>
 
 
-                                    <div class="toolsCardsImageCont">
+                                <div class="toolsCardsImageCont">
 
-                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in design" :key="i" />
-                                    </div>
-                                </v-card>
-                            </v-lazy>
+                                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in design" :key="i" />
+                                </div>
+                            </v-card>
                             <br>
-                            <v-lazy v-model="isActive" :options="{
-                                threshold: .5
-                            }" min-height="100">
-                                <v-card class="toolCard" rounded flat>
-                                    <v-card-title class="toolsCardsImageCont indigo lighten-4">Audio</v-card-title>
+
+                            <v-card class="toolCard" rounded flat>
+                                <v-card-title class="toolsCardsImageCont indigo lighten-4">Audio</v-card-title>
 
 
-                                    <div class="toolsCardsImageCont">
-                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in audio" :key="i" />
-                                    </div>
-                                </v-card>
-                            </v-lazy>
+                                <div class="toolsCardsImageCont">
+                                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in audio" :key="i" />
+                                </div>
+                            </v-card>
                         </v-col>
                     </v-row>
                 </v-container>
@@ -192,7 +177,6 @@ export default {
             "https://www.tracktion.com/sites/default/files/logo-tracktion-black_3x.png",
         ],
 
-        isActive: false
     }),
 };
 </script>
