@@ -58,11 +58,11 @@
                   <v-icon right>mdi-soundcloud</v-icon>
                 </v-list-item>
 
-                <v-list-item two-line href="https://youtube.com/channel/UCmEShK3aru1usVrGOrzGqqw" target="_blank"
+                <v-list-item two-line href="https://www.youtube.com/@shell-raiser" target="_blank"
                   rel="noopener noreferrer">
                   <v-list-item-content>
                     <v-list-item-title>Youtube</v-list-item-title>
-                    <v-list-item-subtitle>youtube.com/channel/UCmEShK3aru1usVrGOrzGqqw</v-list-item-subtitle>
+                    <v-list-item-subtitle>@shell-raiser</v-list-item-subtitle>
                   </v-list-item-content>
                   <v-icon right>mdi-youtube</v-icon>
                 </v-list-item>
