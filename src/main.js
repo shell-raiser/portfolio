@@ -3,18 +3,17 @@ import 'vuetify/dist/vuetify.min.css'
 import DefaultLayout from '~/layouts/Default.vue'
 
 import Vuex from 'vuex'
-
+import '@mdi/font/css/materialdesignicons.css' 
 
 
 
 export default function (Vue, { appOptions, head }) {
   Vue.use(Vuex)
 
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css',
-  })
-  // async defer  
+  // head.link.push({
+  //   rel: 'stylesheet',
+  //   href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css',
+  // })
   head.script.push({
     'data-website-id': "ab441312-87a9-4f44-a8cc-676757c0ee8c",
     src: "https://portfolio-umami.herokuapp.com/umami.js",
