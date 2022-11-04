@@ -14,7 +14,13 @@ export default function (Vue, { appOptions, head }) {
     rel: 'stylesheet',
     href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css',
   })
-
+  // async defer  
+  head.script.push({
+    'data-website-id': "ab441312-87a9-4f44-a8cc-676757c0ee8c",
+    src: "https://portfolio-umami.herokuapp.com/umami.js",
+    async: true,
+    defer: true
+  })
   head.link.push({
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Syncopate:100,300,400,500,700,900',
