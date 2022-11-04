@@ -231,7 +231,7 @@ section {
 <script>
 
 import ProjectFilterNavigation from '../components/projectFilterNavigation.vue';
-import allProjects from '../assets/projectData.json'
+import allProjects from '../data/projectData.json'
 
 export default {
 

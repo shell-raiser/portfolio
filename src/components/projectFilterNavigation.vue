@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import allTheProjects from '../assets/projectData.json'
+import allTheProjects from '../data/projectData.json'
 var availableAttributes = [];
 for (const category in allTheProjects) {
     var categoryArray = allTheProjects[category];
