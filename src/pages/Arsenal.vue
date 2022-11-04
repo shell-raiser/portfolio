@@ -119,6 +119,7 @@ section {
 }
 </style>
 <script>
+import tools from '~/data/tools.json'
 export default {
     metaInfo() {
         return this.$seo({
@@ -138,44 +139,15 @@ export default {
         });
     },
     data: () => ({
-        languages: [
-            "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-            "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-            "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
-            "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/cpp/cpp.png",
-            "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-            "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/c/c.png", "https://upload.wikimedia.org/wikipedia/commons/8/82/Gnu-bash-logo.svg", "https://upload.wikimedia.org/wikipedia/commons/1/1f/Z_Shell_Logo_Color_Horizontal.svg", "https://upload.wikimedia.org/wikipedia/commons/a/af/PowerShell_Core_6.0_icon.png", "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"],
+        languages: tools.languages,
 
-        frontend: [
-            "https://vuejs.org/images/logo.png",
-            "https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-dark.svg",
-            "https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png",
-            "https://bulma.io/assets/Bulma%20Icon.svg",
-        ],
+        frontend: tools.frontend,
 
-        backend: [
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Qiskit-Logo.svg/800px-Qiskit-Logo.svg.png",
-            "https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg",
-            "https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg",
-            "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
-            "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/MySQL_logo.svg/1280px-MySQL_logo.svg.png",
-            "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/1280px-Nuxt_logo.svg.png",
-            "https://gridsome.org/logos/logo-normal.svg",
-        ],
+        backend: tools.backend,
 
-        design: [
-            "https://upload.wikimedia.org/wikipedia/commons/3/3c/Logo_Blender.svg",
-            "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Canva_Logo.png/1920px-Canva_Logo.png",
-            "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
-            "https://inkscape.org/gallery/item/10252/Inkscape-flat-logo-2color.svg",
-            "https://www.gimp.org/images/frontpage/wilber-big.png",
-        ],
+        design: tools.design,
 
-        audio: [
-            "https://upload.wikimedia.org/wikipedia/en/d/d7/Audacity_Logo_2-2-0.png",
-            "https://www.tracktion.com/sites/default/files/logo-tracktion-black_3x.png",
-        ],
+        audio: tools.audio,
 
     }),
 };
