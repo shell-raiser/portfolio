@@ -8,7 +8,7 @@
                         <v-col cols="auto">
                             <!-- <p align="center"> -->
 
-                            <img style="max-width: 100%"
+                            <g-image style="max-width: 100%"
                                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=shell-raiser&layout=compact&title_color=0f0128&text_color=0e0126&hide_border&disable_animations=true&count_private=true" />
                             <!-- </p> -->
                         </v-col>
@@ -21,7 +21,7 @@
                                     </v-card-title>
 
                                     <div class="toolsCardsImageCont">
-                                        <img class="toolsLogos" :src="item" v-for="(item, i) in languages" :key="i" />
+                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in languages" :key="i" />
                                     </div>
                                 </v-card>
                             </v-lazy>
@@ -35,7 +35,7 @@
 
                                     <div class="toolsCardsImageCont">
 
-                                        <img class="toolsLogos" :src="item" v-for="(item, i) in frontend" :key="i" />
+                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in frontend" :key="i" />
 
                                     </div>
                                 </v-card>
@@ -51,7 +51,7 @@
 
                                     <div class="toolsCardsImageCont">
 
-                                        <img class="toolsLogos" :src="item" v-for="(item, i) in backend" :key="i" />
+                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in backend" :key="i" />
 
                                     </div>
                                 </v-card>
@@ -66,7 +66,7 @@
 
                                     <div class="toolsCardsImageCont">
 
-                                        <img class="toolsLogos" :src="item" v-for="(item, i) in design" :key="i" />
+                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in design" :key="i" />
                                     </div>
                                 </v-card>
                             </v-lazy>
@@ -79,7 +79,7 @@
 
 
                                     <div class="toolsCardsImageCont">
-                                        <img class="toolsLogos" :src="item" v-for="(item, i) in audio" :key="i" />
+                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in audio" :key="i" />
                                     </div>
                                 </v-card>
                             </v-lazy>
@@ -191,6 +191,8 @@ export default {
             "https://upload.wikimedia.org/wikipedia/en/d/d7/Audacity_Logo_2-2-0.png",
             "https://www.tracktion.com/sites/default/files/logo-tracktion-black_3x.png",
         ],
+
+        isActive: false
     }),
 };
 </script>

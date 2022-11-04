@@ -4,39 +4,54 @@
       <transition name="slide-fade" appear>
         <v-container class="fill-height">
           <v-row align="center" justify="center" align-content="center">
-
             <v-col align-self="center" sm="6">
               <!-- <v-container> -->
-              <v-img class="rounded" alt="profile picture" src="https://randomuser.me/api/portraits/lego/5.jpg"
-                aspect-ratio="1" min-width="300px" max-width="500px" style="height:100%;"></v-img>
+              <!-- <v-img src="../assets/legoMan.jpg" lazy-src="https://wp-technique.com/loading/loading.gif"
+                aspect-ratio="1" min-width="300px" max-width="500px" style="height:100%;"></v-img> -->
+              <g-image class="rounded" alt="profile picture" src="~/assets/legoMan.jpg" />
               <!-- </v-container> -->
             </v-col>
 
-            <v-col align-self="center" class="rounded contentHolder">
-              <h1>
-                Hello there,
-                <br />I'm Shailesh !
-              </h1>
+            <v-col>
+              <v-row>
+                <v-col align-self="center" class="rounded contentHolder">
+                  <h1>
+                    Hello there,
+                    <br />I'm Shailesh !
+                  </h1>
 
-              <p style="color: black">
-                I'm a
-                <span class="headtext pink rounded white--text"></span>
-              </p>
+                  <p style="color: black">
+                    I'm a
+                    <span class="headtext pink rounded white--text"></span>
+                  </p>
 
-              <img src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple" alt="visitors" />
-              <!-- </p> -->
-              <p class="red white--text">
-                This site is still under development, many things are yet to be implemented.
-                <br />Keep an eye on
-                <a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">other
-                  branches</a>
-                for major changes.
-              </p>
-              <!-- <p>
-                I like to tweak code and mess around. Doing mostly Web Dev, But will be doing some CyberSec stuff soon
-                <br>
-                I make electronic music in my free time.
-              </p> -->
+                  <!-- <img src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple" alt="visitors" /> -->
+                  <!-- </p> -->
+                  <p class="red white--text">
+                    This site is still under development, many things are yet to be implemented.
+                    <br />Keep an eye on
+                    <a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">other
+                      branches</a>
+                    for major changes.
+                  </p>
+                </v-col>
+              </v-row>
+
+              <!-- <v-row>
+                <v-col align-self="center" class="rounded contentHolder">
+                  <p>
+                    I like to tweak code and mess around. Doing mostly Web Dev, But will be doing some CyberSec stuff
+                    soon
+                    <br>
+                    Super interested in Open source
+                    <br>
+                    I make electronic music in my free time.
+                    <br>
+                    This site was built from scratch with gridsome and vuetify. I'm using Umami analytics (Link here).
+                  </p>
+                </v-col>
+              </v-row> -->
+
             </v-col>
           </v-row>
         </v-container>
