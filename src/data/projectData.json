@@ -18,8 +18,8 @@
                 }
             ],
             "attributes": [
-                "unity",
-                "c#"
+                "Unity",
+                "C#"
             ]
         },
         {
@@ -36,8 +36,8 @@
                 }
             ],
             "attributes": [
-                "vue",
-                "javascript"
+                "Vue JS",
+                "Javascript"
             ]
         },
         {
@@ -54,10 +54,10 @@
                 }
             ],
             "attributes": [
-                "nodejs",
-                "javascript",
-                "expressjs",
-                "mongodb"
+                "Node JS",
+                "Javascript",
+                "Express JS",
+                "Mongo DB Atlas"
             ]
         },
         {
@@ -74,10 +74,11 @@
                 }
             ],
             "attributes": [
-                "nodejs",
-                "javascript",
-                "nuxt",
-                "firebase"
+                "Node JS",
+                "Javascript",
+                "Nuxt JS",
+                "Firebase",
+                "Vuetify"
             ]
         },
         {
@@ -94,12 +95,12 @@
                 }
             ],
             "attributes": [
-                "nodejs",
-                "javascript",
-                "gridsome",
-                "vuetify",
-                "jquery",
-                "vue"
+                "Node JS",
+                "Javascript",
+                "Gridsome",
+                "Vuetify",
+                "JQuery",
+                "Vue JS"
             ]
         }
     ],
@@ -122,10 +123,10 @@
                 }
             ],
             "attributes": [
-                "javascript",
-                "bulma",
-                "nodejs",
-                "expressjs",
+                "Javascript",
+                "Bulma",
+                "Node JS",
+                "Express JS",
                 "tesseractjs"
             ]
         },
@@ -147,7 +148,7 @@
                 }
             ],
             "attributes": [
-                "flutter"
+                "Flutter"
             ]
         },
         {
@@ -168,11 +169,11 @@
                 }
             ],
             "attributes": [
-                "ipfs",
-                "nodejs",
-                "bulma",
-                "javascript",
-                "expressjs"
+                "IPFS",
+                "Node JS",
+                "Bulma",
+                "Javascript",
+                "Express JS"
             ]
         },
         {
@@ -189,10 +190,10 @@
                 }
             ],
             "attributes": [
-                "expressjs",
-                "nodejs",
-                "bootstrap",
-                "javascript"
+                "Express JS",
+                "Node JS",
+                "Bootstrap",
+                "Javascript"
             ]
         }
     ],
@@ -211,7 +212,7 @@
                 }
             ],
             "attributes": [
-                "wordpress"
+                "Wordpress"
             ]
         },
         {
@@ -228,9 +229,9 @@
                 }
             ],
             "attributes": [
-                "bootstrap",
-                "javascript",
-                "jquery"
+                "Bootstrap",
+                "Javascript",
+                "JQuery"
             ]
         },
         {
@@ -247,8 +248,8 @@
                 }
             ],
             "attributes": [
-                "figma",
-                "blender"
+                "Figma",
+                "Blender"
             ]
         },
         {
@@ -265,8 +266,8 @@
                 }
             ],
             "attributes": [
-                "jekyll",
-                "javascript"
+                "Jekyll",
+                "Javascript"
             ]
         }
     ]
