@@ -206,7 +206,7 @@ h2 {
 
 
 section {
-  background: lightblue url("../assets/projectsBg.gif");
+  background: lightblue url("/assets/projectsBg.gif");
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;

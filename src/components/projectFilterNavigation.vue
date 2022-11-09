@@ -1,9 +1,8 @@
 <template>
 
     <v-navigation-drawer app v-if="this.$router.history.current['path'] == '/projects'" right
-        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/089d21ad-7782-4104-89c2-a65435feaa61/da6ks5a-344a9f7a-bbdc-42b6-9ebe-df7ca2d32799.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA4OWQyMWFkLTc3ODItNDEwNC04OWMyLWE2NTQzNWZlYWE2MVwvZGE2a3M1YS0zNDRhOWY3YS1iYmRjLTQyYjYtOWViZS1kZjdjYTJkMzI3OTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.UZk_90YLEW2QTobmrD1Wwgab016coYzw7V8MexSTqtg"
-        floating>
-        <v-container style="backdrop-filter:blur(5px); height:100%;">
+        src="assets/projectsBg.gif">
+        <v-container style="backdrop-filter:blur(5px);">
             <v-row>
                 <v-col>
                     <h2>Projects and Experience</h2>
@@ -64,7 +63,7 @@ for (const category in allTheProjects) {
 }
 availableAttributes = availableAttributes.filter((item,
     index) => availableAttributes.indexOf(item) === index);
-console.log(availableAttributes)
+// console.log(availableAttributes)
 export default {
     mounted: () => {
         // console.log(chipSelected)
