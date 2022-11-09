@@ -97,12 +97,12 @@ export default {
 .fade-enter-active {
   transition: opacity .5s ease-out;
 } */
-
+/* 
 @keyframes textclip {
 	to {
 		background-position: 200% center;
 	}
-}
+} */
 
 /* .contactAnimation {
   min-height: calc(100vh - 60px);
