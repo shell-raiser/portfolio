@@ -20,20 +20,24 @@
                     <br />I'm Shailesh !
                   </h1>
 
+
+                  <img
+                    src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple"
+                    alt="visitors" />
                   <p style="color: black">
 
                   <div class="content__container__text">I'm a</div>
                   <div class="content__container">
                     <ul class="content__container__list">
-                      <li class="content__container__list__item rounded">CyberSec enthusiast</li>
-                      <li class="content__container__list__item2 rounded">Web dev</li>
-                      <li class="content__container__list__item rounded">Designer</li>
-                      <li class="content__container__list__item2 rounded">Python Dev</li>
+                      <li class="content__container__list__item ">CyberSec enthusiast</li>
+                      <li class="content__container__list__item2 ">Web dev</li>
+                      <li class="content__container__list__item ">Designer</li>
+                      <li class="content__container__list__item2 ">Music Maker</li>
+                      <!-- <li class="content__container__list__item ">Python Dev</li> -->
                     </ul>
                   </div>
                   </p>
 
-                  <img src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple" alt="visitors" />
                   <!-- </p> -->
                   <p class="red white--text">
                     This site is still under development, many things are yet to be implemented.
@@ -77,6 +81,7 @@
 
 <script>
 // import AboutContent from "../components/aboutContent.vue"
+
 export default {
   metaInfo() {
     return this.$seo({
@@ -167,6 +172,7 @@ h1 {
 .content__container__list {
 
   /* margin: 0; */
+  width: max-content;
   padding-left: 3px;
   text-align: left;
   list-style: none;
@@ -179,18 +185,33 @@ h1 {
 }
 
 .content__container__list__item {
-  line-height: 40px;
+  line-height: 41px;
   padding-inline: 3px;
-  width: fit-content;
-  color: aliceblue;
-  background-color: rgb(140, 0, 255);
+  background-color: #9b27b04e;
+  /* width: fit-content; */
+  /* color: aliceblue;
+  background-color: rgb(140, 0, 255); */
+  text-decoration: underline;
+  text-decoration-color: #65499c;
+  text-decoration-thickness: 2px;
+  /* border-top-style: dashed; */
+  border-bottom-style: dotted;
+  border-width: 1px;
 }
-.content__container__list__item2{
-  width: fit-content;
+
+.content__container__list__item2 {
+  /* width: fit-content; */
   padding-inline: 3px;
-  line-height: 40px;
-  color: #65499c;
-  background-color: rgb(255, 255, 255);
+  line-height: 41px;
+  background-color: #3f51b54e;
+  /* border-top-style: dashed; */
+  border-bottom-style: groove;
+  border-width: 1px;
+  text-decoration: underline;
+  text-decoration-color: #3f51b5;
+  text-decoration-thickness: 2px;
+  /* color: #65499c;
+  background-color: rgb(255, 255, 255); */
 }
 
 @-webkit-keyframes change {
@@ -261,6 +282,7 @@ h1 {
     transform: translate3d(0, -25%, 0);
   }
 }
+
 @-moz-keyframes change {
 
   0%,
