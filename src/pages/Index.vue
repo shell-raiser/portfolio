@@ -176,9 +176,6 @@ h1 {
   padding-left: 3px;
   text-align: left;
   list-style: none;
-  -webkit-animation-name: change;
-  -webkit-animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
   animation-name: change;
   animation-duration: 10s;
   animation-iteration-count: infinite;
