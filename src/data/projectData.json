@@ -199,7 +199,7 @@
     ],
     "volunteerSites": [
         {
-            "img": "/ACMREVA.png",
+            "img": "/ACMREVA.webp",
             "heroIcon": "mdi-wordpress",
             "heroLink": "https://reva.hosting.acm.org/",
             "hoverText": "A Wordpress site, made for showcasing club activities and encourage and attract members",
@@ -216,7 +216,7 @@
             ]
         },
         {
-            "img": "/ProRes.png",
+            "img": "/ProRes.webp",
             "heroIcon": "mdi-link",
             "heroLink": "https://proresclub.github.io/",
             "hoverText": "A static site showcasing the projects undertaken/funded by the club.",
@@ -235,7 +235,7 @@
             ]
         },
         {
-            "img": "/rh21.png",
+            "img": "/rh21.webp",
             "heroIcon": "mdi-link",
             "heroLink": "https://www.figma.com/proto/XWKMKUkEk2zQL2kaB1kZvX/Website-design?node-id=599:2&scaling=scale-down-width&page-id=0:1&starting-point-node-id=861:439&hide-ui=1",
             "hoverText": "Figma preview of the website wireframing for REVA Hack 2021",
@@ -253,7 +253,7 @@
             ]
         },
         {
-            "img": "/glug.png",
+            "img": "/glug.webp",
             "heroIcon": "mdi-link",
             "heroLink": "#",
             "hoverText": "A site showcasing past events by the club",
