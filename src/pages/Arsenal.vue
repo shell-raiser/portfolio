@@ -1,10 +1,10 @@
 <template>
     <Layout>
-        <section>
-            <transition name="slide-fade" appear>
-                <div>
+        <div>
+            <ArsenalLanguageStats />
+            <section>
+                <transition name="slide-fade" appear>
                     <h1 class=" text-center">Arsenal</h1>
-                    <ArsenalLanguageStats />
 
 
                     <v-container class="text-center">
@@ -13,7 +13,7 @@
                             <v-col>
                                 <g-image style="max-width: 100%" class="d-sm-none"
                                     src="https://github-readme-stats.vercel.app/api?username=shell-raiser&show_icons=true&title_color=200254&bg_color=0,90caf9,9575CD&text_color=0e0126&count_private=true&custom_title=My%20Github%20Stats&hide_rank=true" />
-                                    <br>
+                                <br>
                                 <g-image style="max-width: 100%" class="d-sm-none"
                                     src="https://github-readme-stats.vercel.app/api/top-langs/?username=shell-raiser&layout=default&title_color=200254&bg_color=0,90caf9,9575CD&text_color=0e0126&count_private=true&exclude_repo=Qiskit-Developer-Certification-Notes-and-Code,REVA-University-CSE-Code,codefury5.0" />
                                 <v-card class="toolCard" rounded flat>
@@ -75,9 +75,9 @@
                             </v-col>
                         </v-row>
                     </v-container>
-                </div>
-            </transition>
-        </section>
+                </transition>
+            </section>
+        </div>
     </Layout>
 </template>
 <style scoped>
