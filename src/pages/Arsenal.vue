@@ -1,76 +1,81 @@
 <template>
     <Layout>
         <section>
-            <h1 class="rounded text-center">Arsenal</h1>
             <transition name="slide-fade" appear>
-                <v-container class="text-center">
-                    <v-row>
-                        <v-col cols="auto">
-                            <!-- <p align="center"> -->
-
-                            <g-image style="max-width: 100%"
-                                src="https://github-readme-stats.vercel.app/api/top-langs/?username=shell-raiser&layout=compact&title_color=0f0128&text_color=0e0126&hide_border&disable_animations=true&count_private=true" />
-                            <!-- </p> -->
-                        </v-col>
-                        <v-col>
-
-                            <v-card class="toolCard" rounded flat>
-                                <v-card-title class="toolsCardsImageCont deep-purple lighten-4">Languages
-                                </v-card-title>
-
-                                <div class="toolsCardsImageCont">
-                                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in languages" :key="i" />
-                                </div>
-                            </v-card>
-                            <br>
-
-                            <v-card class="toolCard" rounded flat>
-                                <v-card-title class="toolsCardsImageCont red lighten-4">Front End Frameworks
-                                </v-card-title>
-
-                                <div class="toolsCardsImageCont">
-
-                                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in frontend" :key="i" />
-
-                                </div>
-                            </v-card>
-                            <br>
-
-                            <v-card class="toolCard" rounded flat>
-                                <v-card-title class="toolsCardsImageCont teal lighten-4">Back End Frameworks
-                                </v-card-title>
+                <div>
+                    <h1 class=" text-center">Arsenal</h1>
+                    <ArsenalLanguageStats />
 
 
-                                <div class="toolsCardsImageCont">
+                    <v-container class="text-center">
+                        <v-row>
 
-                                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in backend" :key="i" />
+                            <v-col>
+                                <g-image style="max-width: 100%" class="d-sm-none"
+                                    src="https://github-readme-stats.vercel.app/api?username=shell-raiser&show_icons=true&title_color=200254&bg_color=0,90caf9,9575CD&text_color=0e0126&count_private=true&custom_title=My%20Github%20Stats&hide_rank=true" />
+                                    <br>
+                                <g-image style="max-width: 100%" class="d-sm-none"
+                                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=shell-raiser&layout=default&title_color=200254&bg_color=0,90caf9,9575CD&text_color=0e0126&count_private=true&exclude_repo=Qiskit-Developer-Certification-Notes-and-Code,REVA-University-CSE-Code,codefury5.0" />
+                                <v-card class="toolCard" rounded flat>
+                                    <v-card-title class="toolsCardsImageCont deep-purple lighten-4">Languages
+                                    </v-card-title>
 
-                                </div>
-                            </v-card>
-                            <br>
+                                    <div class="toolsCardsImageCont">
+                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in languages"
+                                            :key="i" />
+                                    </div>
+                                </v-card>
+                                <br>
 
-                            <v-card class="toolCard" rounded flat>
-                                <v-card-title class="toolsCardsImageCont purple lighten-4">Design</v-card-title>
+                                <v-card class="toolCard" rounded flat>
+                                    <v-card-title class="toolsCardsImageCont red lighten-4">Front End Frameworks
+                                    </v-card-title>
+
+                                    <div class="toolsCardsImageCont">
+
+                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in frontend"
+                                            :key="i" />
+
+                                    </div>
+                                </v-card>
+                                <br>
+
+                                <v-card class="toolCard" rounded flat>
+                                    <v-card-title class="toolsCardsImageCont teal lighten-4">Back End Frameworks
+                                    </v-card-title>
 
 
-                                <div class="toolsCardsImageCont">
+                                    <div class="toolsCardsImageCont">
 
-                                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in design" :key="i" />
-                                </div>
-                            </v-card>
-                            <br>
+                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in backend" :key="i" />
 
-                            <v-card class="toolCard" rounded flat>
-                                <v-card-title class="toolsCardsImageCont indigo lighten-4">Audio</v-card-title>
+                                    </div>
+                                </v-card>
+                                <br>
+
+                                <v-card class="toolCard" rounded flat>
+                                    <v-card-title class="toolsCardsImageCont purple lighten-4">Design</v-card-title>
 
 
-                                <div class="toolsCardsImageCont">
-                                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in audio" :key="i" />
-                                </div>
-                            </v-card>
-                        </v-col>
-                    </v-row>
-                </v-container>
+                                    <div class="toolsCardsImageCont">
+
+                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in design" :key="i" />
+                                    </div>
+                                </v-card>
+                                <br>
+
+                                <v-card class="toolCard" rounded flat>
+                                    <v-card-title class="toolsCardsImageCont indigo lighten-4">Audio</v-card-title>
+
+
+                                    <div class="toolsCardsImageCont">
+                                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in audio" :key="i" />
+                                    </div>
+                                </v-card>
+                            </v-col>
+                        </v-row>
+                    </v-container>
+                </div>
             </transition>
         </section>
     </Layout>
@@ -120,6 +125,7 @@ section {
 </style>
 <script>
 import tools from '~/data/tools.json'
+import ArsenalLanguageStats from '../components/arsenalLanguageStats.vue';
 export default {
     metaInfo() {
         return this.$seo({
@@ -134,21 +140,17 @@ export default {
                 title: "Shailesh K S, Tools",
                 type: "summary",
             },
-            link: [],   // any links
-            script: []  // any scripts
+            link: [],
+            script: [] // any scripts
         });
     },
     data: () => ({
         languages: tools.languages,
-
         frontend: tools.frontend,
-
         backend: tools.backend,
-
         design: tools.design,
-
         audio: tools.audio,
-
     }),
+    components: { ArsenalLanguageStats }
 };
 </script>
