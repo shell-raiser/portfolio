@@ -1,6 +1,6 @@
 <template>
 
-    <v-navigation-drawer touchless app v-if="this.$router.history.current['path'] == '/arsenal'" color="deep-purple lighten-4"
+    <v-navigation-drawer touchless app v-if="this.$route.path == '/arsenal'" color="deep-purple lighten-4"
         floating>
         <v-container style="backdrop-filter:blur(5px);">
             <!-- <p align="center"> -->

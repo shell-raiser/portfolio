@@ -1,6 +1,6 @@
 <template>
 
-    <v-navigation-drawer app v-if="this.$router.history.current['path'] == '/projects'" right
+    <v-navigation-drawer app v-if="this.$route.path == '/projects'" right
         src="assets/projectsBg.gif">
         <v-container style="backdrop-filter:blur(5px);">
             <v-row>
@@ -67,7 +67,6 @@ availableAttributes = availableAttributes.filter((item,
 export default {
     mounted: () => {
         // console.log(chipSelected)
-
     },
     data: () => ({
         chipSelected: [],
