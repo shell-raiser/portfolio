@@ -6,7 +6,7 @@
           <v-row  align="center" justify="center">
             <v-col class="rounded" sm="6" style="background:#9575cd;max-width: 600px;text-align :right;"
               align-self="center">
-              <h1>Links</h1>
+              <h1 style="text-align: right;">Links</h1>
               <!-- <v-card width="300">
                                 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium"
                                     data-theme="dark" data-type="HORIZONTAL" data-vanity="shailesh-k-s-1b3475226"
@@ -101,7 +101,7 @@
               />
             </v-col> -->
             <v-col align-self="center" style="max-width:600px;">
-              <h1 class="rounded white--text" style="text-align: center">Contact</h1>
+              <h1 class="rounded white--text" >Contact</h1>
 
               <v-card style="padding: 10px">
                 <v-form ref="form" v-model="valid" lazy-validation action="https://formspree.io/f/xeqdjwoo"
@@ -119,7 +119,7 @@
                     placeholder="Multi-line Field"></v-textarea>
 
                   <!-- <v-btn type="submit" class="mr-4"> -->
-                  <v-container class="d-flex justify-center">
+                  <v-container class="d-flex">
                     <v-btn :disabled="!valid" class="mr-4" @click="submit">submit</v-btn>
                     <!-- <v-btn type="reset" onclick="clear()"> -->
                     <v-btn class="mr-4" @click="reset">clear</v-btn>
@@ -137,7 +137,6 @@
 h1 {
   font-size: xxx-large;
   color: #2b2f57;
-  text-align: right;
   /* background-image: -webkit-linear-gradient(90deg, purple, #2B2F57); */
   /* background-clip: text; */
   /* -webkit-text-fill-color: transparent; */
