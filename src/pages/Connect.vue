@@ -100,10 +100,10 @@
                 width="100%"
               />
             </v-col> -->
-            <v-col align-self="center" style="max-width:600px;">
-              <h1 class="rounded white--text" >Contact</h1>
+            <v-col align-self="center" style="max-width:600px;" >
+              <h1 class="rounded white--text"  >Contact</h1>
 
-              <v-card style="padding: 10px">
+              <v-card style="padding: 10px;" color="primary lighten-4">
                 <v-form ref="form" v-model="valid" lazy-validation action="https://formspree.io/f/xeqdjwoo"
                   method="post">
                   <v-text-field label="Name" v-model="name" type="text" name="name" id="name" :rules="nameRules"
