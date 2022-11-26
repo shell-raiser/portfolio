@@ -3,7 +3,7 @@ import 'vuetify/dist/vuetify.min.css'
 import DefaultLayout from '~/layouts/Default.vue'
 
 import Vuex from 'vuex'
-import '@mdi/font/css/materialdesignicons.css' 
+import '@mdi/font/css/materialdesignicons.css'
 
 
 
