@@ -10,7 +10,7 @@
 				</transition>
 			</v-main>
 		</main>
-		<v-bottom-navigation id="navBar" app active-class mandatory shift color="deep-purple">
+		<v-bottom-navigation id="navBar" app active-class mandatory shift color="primary darken-3" background-color="primary lighten-4">
 			<!-- <v-footer class="justify-center" tile app> -->
 
 			<!-- <v-btn text @click="prev">

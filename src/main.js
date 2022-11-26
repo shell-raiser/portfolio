@@ -1,5 +1,6 @@
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+import colors from 'vuetify/lib/util/colors'
 import DefaultLayout from '~/layouts/Default.vue'
 
 import Vuex from 'vuex'
@@ -30,7 +31,18 @@ export default function (Vue, { appOptions, head }) {
       chipSelected: [],
     }
   })
-  const opts = {} //opts includes, vuetify themes, icons, etc.
+  const opts = {
+    theme: {
+      themes: {
+        light: {
+          primary: colors.deepPurple
+        },
+        dark:{
+
+        }
+      }
+    }
+  } //opts includes, vuetify themes, icons, etc.
   Vue.use(Vuetify)
 
   appOptions.vuetify = new Vuetify(opts);
