@@ -158,7 +158,7 @@
   opacity: 1;
   padding: 10px;
   text-align: center;
-  filter: blur(0px)
+  /* filter: blur(0px) */
 }
 
 .cardHoverBlurBg {

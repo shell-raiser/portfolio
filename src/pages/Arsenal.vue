@@ -5,10 +5,7 @@
             <section>
                 <transition name="slide-fade" appear>
                     <div>
-
                         <h1 class=" text-center">Arsenal</h1>
-
-
                         <v-container class="text-center">
                             <v-row>
 
