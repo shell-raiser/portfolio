@@ -26,14 +26,14 @@
                     alt="visitors" />
                   <p style="color: black">
 
-                  <div class="content__container__text">I'm a</div>
-                  <div class="content__container">
-                    <ul class="content__container__list">
-                      <li class="content__container__list__item ">CyberSec enthusiast</li>
-                      <li class="content__container__list__item2 ">Web dev</li>
-                      <li class="content__container__list__item ">Designer</li>
-                      <li class="content__container__list__item2 ">Music Maker</li>
-                      <!-- <li class="content__container__list__item ">Python Dev</li> -->
+                  <div class="scrollingList__text">I'm a</div>
+                  <div class="scrollingList">
+                    <ul class="scrollingList__list">
+                      <li class="scrollingList__list__item ">CyberSec enthusiast</li>
+                      <li class="scrollingList__list__item ">Web dev</li>
+                      <li class="scrollingList__list__item ">Designer</li>
+                      <li class="scrollingList__list__item ">Music Maker</li>
+                      <!-- <li class="scrollingList__list__item ">Python Dev</li> -->
                     </ul>
                   </div>
                   </p>
@@ -105,13 +105,24 @@ export default {
 
 <style scoped>
 section {
+
+  /* @font-face {
+    font-family: 'times';
+    src: url('../assets/nunito.woff2') format('truetype')
+  }
+
+  @font-face {
+    font-family: 'nunito';
+    src: url('../assets/nunito_bold.woff2') format('truetype');
+    font-weight: bold
+  } */
+
   height: 100%;
   min-height: calc(100vh - 56px);
   /* width: 100%; */
   background: linear-gradient(90deg, #9575CD, #90caf9);
   background-size: 200% 100%;
   animation: gradient 10s ease infinite;
-
 }
 
 .contentHolder {
@@ -151,7 +162,7 @@ h1 {
   animation: animate infinite 5s;
 } */
 
-.content__container {
+.scrollingList {
 
   /* background-color: red; */
   overflow: hidden;
@@ -160,7 +171,7 @@ h1 {
 }
 
 
-.content__container__text {
+.scrollingList__text {
   display: inline;
   float: left;
   /* margin: 0; */
@@ -169,7 +180,7 @@ h1 {
   /* background-color: rgb(255, 255, 255); */
 }
 
-.content__container__list {
+.scrollingList__list {
 
   /* margin: 0; */
   width: max-content;
@@ -181,34 +192,23 @@ h1 {
   animation-iteration-count: infinite;
 }
 
-.content__container__list__item {
+.scrollingList__list__item {
   line-height: 41px;
   padding-inline: 3px;
-  background-color: #9b27b04e;
-  /* width: fit-content; */
-  /* color: aliceblue;
-  background-color: rgb(140, 0, 255); */
   text-decoration: underline;
-  text-decoration-color: #65499c;
   text-decoration-thickness: 2px;
-  /* border-top-style: dashed; */
-  border-bottom-style: dotted;
   border-width: 1px;
 }
 
-.content__container__list__item2 {
-  /* width: fit-content; */
-  padding-inline: 3px;
-  line-height: 41px;
-  background-color: #3f51b54e;
+.scrollingList__list__item:nth-child(2n+1) {
+  background-color: #9b27b04e;
+  text-decoration-color: #65499c;
   /* border-top-style: dashed; */
-  border-bottom-style: groove;
-  border-width: 1px;
-  text-decoration: underline;
+}
+
+.scrollingList__list__item:nth-child(2n+2) {
+  background-color: #3f51b54e;
   text-decoration-color: #3f51b5;
-  text-decoration-thickness: 2px;
-  /* color: #65499c;
-  background-color: rgb(255, 255, 255); */
 }
 
 @keyframes change {
