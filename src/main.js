@@ -5,7 +5,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 import Vuex from 'vuex'
 import '@mdi/font/css/materialdesignicons.css'
-
+// import "@fontsource/nunito"
 
 
 export default function (Vue, { appOptions, head }) {
@@ -23,7 +23,7 @@ export default function (Vue, { appOptions, head }) {
   })
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Syncopate:100,300,400,500,700,900',
+    href: 'href="https://fonts.googleapis.com/css?family=Tangerine"',
   });
 
   appOptions.store = new Vuex.Store({
@@ -37,7 +37,7 @@ export default function (Vue, { appOptions, head }) {
         light: {
           primary: colors.deepPurple
         },
-        dark:{
+        dark: {
 
         }
       }
