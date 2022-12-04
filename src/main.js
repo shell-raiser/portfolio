@@ -17,7 +17,7 @@ export default function (Vue, { appOptions, head }) {
   // })
   head.script.push({
     'data-website-id': "ab441312-87a9-4f44-a8cc-676757c0ee8c",
-    src: "https://portfolio-umami.herokuapp.com/umami.js",
+    src: "https://umami2-eosin.vercel.app/umami.js",
     async: true,
     defer: true
   })
