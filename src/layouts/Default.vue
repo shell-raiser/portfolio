@@ -10,7 +10,8 @@
 				</transition>
 			</v-main>
 		</main>
-		<v-bottom-navigation id="navBar" app active-class mandatory shift color="primary darken-3" background-color="primary lighten-5">
+		<v-bottom-navigation id="navBar" app active-class mandatory shift color="accent" 
+		background-color="navBar">
 			<!-- <v-footer class="justify-center" tile app> -->
 
 			<!-- <v-btn text @click="prev">
@@ -73,6 +74,18 @@ export default {
 </script>
 
 <style>
+/* @font-face {
+	font-family: nunito;
+	src: url('../assets/nunito.otf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: nunito;
+	src: url('../assets/nunito_bold.otf') format('truetype');
+	font-weight: bold
+} */
+
 .slide-fade-enter-active {
 	transition: all 0.5s;
 }

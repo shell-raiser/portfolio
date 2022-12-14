@@ -6,11 +6,8 @@ import DefaultLayout from '~/layouts/Default.vue'
 import Vuex from 'vuex'
 import '@mdi/font/css/materialdesignicons.css'
 // import "@fontsource/nunito"
-
-
 export default function (Vue, { appOptions, head }) {
   Vue.use(Vuex)
-
   // head.link.push({
   //   rel: 'stylesheet',
   //   href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css',
@@ -35,12 +32,18 @@ export default function (Vue, { appOptions, head }) {
     theme: {
       themes: {
         light: {
-          primary: colors.deepPurple
+          primary: colors.deepPurple,
+          menu: colors.deepPurple.lighten4,
+          navBar: colors.deepPurple.lighten4,
+          accent: colors.red.darken3,
         },
         dark: {
-
+          primary: colors.deepPurple,
+          menu: colors.deepPurple.darken4,
+          navBar: colors.deepPurple.darken4
         }
-      }
+      },
+      // dark: true
     }
   } //opts includes, vuetify themes, icons, etc.
   Vue.use(Vuetify)
