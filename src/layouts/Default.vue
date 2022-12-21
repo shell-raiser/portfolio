@@ -14,42 +14,42 @@
 			<!-- <v-footer class="justify-center" tile app> -->
 
 			<!-- <v-list-item text @click="prev">
-        <v-icon>mdi-chevron-left</v-icon>
+        <v-list-item-icon><v-icon>mdi-chevron-left</v-icon></v-list-item-icon>
 			</v-list-item>-->
 
 			<!-- <g-link to="/"> -->
 			<v-list nav dense>
 				<!-- <v-list-item link> -->
 				<v-list-item to="/">
-					<v-icon>mdi-view-dashboard</v-icon>
+					<v-list-item-icon><v-icon>mdi-view-dashboard</v-icon></v-list-item-icon>
 					<v-list-item-title>About</v-list-item-title>
 				</v-list-item>
 				<!-- </g-link> -->
 
 				<!-- <g-link to="/connect"> -->
 				<v-list-item to="/connect">
-					<v-icon>mdi-human-greeting-proximity</v-icon>
+					<v-list-item-icon><v-icon>mdi-human-greeting-proximity</v-icon></v-list-item-icon>
 					<v-list-item-title>Connect</v-list-item-title>
 				</v-list-item>
 				<!-- </g-link> -->
 
 				<!-- <g-link to="/projects"> -->
 				<v-list-item to="/projects">
-					<v-icon>mdi-devices</v-icon>
+					<v-list-item-icon><v-icon>mdi-devices</v-icon></v-list-item-icon>
 					<v-list-item-title>Projects</v-list-item-title>
 				</v-list-item>
 				<!-- </g-link> -->
 
 				<!-- <g-link to="/arsenal"> -->
 				<v-list-item to="/arsenal">
-					<v-icon>mdi-hammer-wrench</v-icon>
+					<v-list-item-icon><v-icon>mdi-hammer-wrench</v-icon></v-list-item-icon>
 					<v-list-item-title>Tools</v-list-item-title>
 				</v-list-item>
 				<!-- </g-link> -->
 
 				<!-- <g-link to="/contact"> -->
 				<!-- <v-list-item to="/contact">
-				<v-icon>mdi-card-account-mail</v-icon>
+				<v-list-item-icon><v-icon>mdi-card-account-mail</v-icon></v-list-item-icon>
 				<v-list-item-title>Contact</v-list-item-title>
 			</v-list-item> -->
 				<!-- </g-link> -->
