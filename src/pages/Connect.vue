@@ -2,8 +2,8 @@
   <Layout>
     <section id="theSection">
       <transition name="slide-fade" appear>
-        <v-container fill-height >
-          <v-row  align="center" justify="center">
+        <v-container fill-height>
+          <v-row align="center" justify="center">
             <v-col class="rounded" sm="6" style="background:#9575cd;max-width: 600px;text-align :right;"
               align-self="center">
               <h1 style="text-align: right;">Links</h1>
@@ -100,8 +100,8 @@
                 width="100%"
               />
             </v-col> -->
-            <v-col align-self="center" style="max-width:600px;" >
-              <h1 class="rounded white--text"  >Contact</h1>
+            <v-col align-self="center" style="max-width:600px;">
+              <h1 class="rounded white--text">Contact</h1>
 
               <v-card style="padding: 10px;" color="menu">
                 <v-form ref="form" v-model="valid" lazy-validation action="https://formspree.io/f/xeqdjwoo"
@@ -195,7 +195,7 @@ export default {
     email: "",
     emailRules: [
       (v) => !!v || "E-mail is required",
-      (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+      (v) => /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/g.test(v) || "E-mail must be valid",
     ],
     reqRules: [
       (v) => !!v || "This Field is required",
