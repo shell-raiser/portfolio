@@ -81,7 +81,11 @@
       style='background: lightblue url("/assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed; max-height: 90vh; overflow:scroll'>
       <Projects />
     </section>
-    
+    <section
+      style='background: url("/assets/toolsBg.jpg");   '>
+      <Arsenal />
+    </section>
+
     <!-- <section class="d-sm-none">
 				<transition name="slide-fade" appear>
 					<v-container>
@@ -95,6 +99,7 @@
 <script>
 // import AboutContent from "../components/aboutContent.vue"
 
+import Arsenal from '../components/Arsenal.vue';
 import ConnectComponent from '../components/Connect.vue'
 import Projects from '../components/Projects.vue';
 
@@ -116,7 +121,7 @@ export default {
       script: [] // any scripts
     });
   },
-  components: { ConnectComponent, Projects }
+  components: { ConnectComponent, Projects, Arsenal }
 };
 </script>
 
