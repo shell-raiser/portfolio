@@ -1,79 +1,81 @@
 <template >
   <Layout>
-    <section id="theSection">
-      <transition name="slide-fade" appear>
-        <v-container class="fill-height">
-          <v-row align="center" justify="center" align-content="center">
-            <v-col align-self="center" sm="6">
-              <!-- <v-container> -->
-              <!-- <v-img src="../assets/legoMan.jpg" lazy-src="https://wp-technique.com/loading/loading.gif"
+
+    <section>
+      <v-container class="fill-height">
+        <v-row align="center" justify="center" align-content="center">
+          <v-col align-self="center" sm="6">
+            <!-- <v-container> -->
+            <!-- <v-img src="../assets/legoMan.jpg" lazy-src="https://wp-technique.com/loading/loading.gif"
                 aspect-ratio="1" min-width="300px" max-width="500px" style="height:100%;"></v-img> -->
-              <g-image class="rounded" alt="profile picture" src="~/assets/legoMan.jpg" />
-              <!-- </v-container> -->
-            </v-col>
+            <g-image class="rounded" alt="profile picture" src="~/assets/legoMan.jpg" />
+            <!-- </v-container> -->
+          </v-col>
 
-            <v-col>
-              <v-row class="rounded contentHolder">
-                <v-container>
-                  <h1>
-                    Hello there,
-                    <br />I'm Shailesh !
-                  </h1>
+          <v-col>
+            <v-row class="rounded contentHolder">
+              <v-container>
+                <h1>
+                  Hello there,
+                  <br />I'm Shailesh !
+                </h1>
 
 
-                  <img
-                    src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple"
-                    alt="visitors" />
-                  <p style="color: black">
+                <img
+                  src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple"
+                  alt="visitors" />
+                <p style="color: black">
 
-                  <div class="scrollingList__text">I'm a</div>
-                  <div class="scrollingList">
-                    <ul class="scrollingList__list">
-                      <li class="scrollingList__list__item ">CyberSec enthusiast</li>
-                      <li class="scrollingList__list__item ">Web dev</li>
-                      <li class="scrollingList__list__item ">Designer</li>
-                      <li class="scrollingList__list__item ">Music Maker</li>
-                    </ul>
-                  </div>
-                  </p>
+                <div class="scrollingList__text">I'm a</div>
+                <div class="scrollingList">
+                  <ul class="scrollingList__list">
+                    <li class="scrollingList__list__item ">CyberSec enthusiast</li>
+                    <li class="scrollingList__list__item ">Web dev</li>
+                    <li class="scrollingList__list__item ">Designer</li>
+                    <li class="scrollingList__list__item ">Music Maker</li>
+                  </ul>
+                </div>
+                </p>
 
-                  <!-- </p> -->
+                <!-- </p> -->
 
-                </v-container>
-              </v-row>
-              <br><br>
-              <v-row class="rounded contentHolder">
-                <v-container>
-                  <p>
-                    I like to tweak code and mess around. Doing mostly Web Dev, But will be doing some CyberSec stuff
-                    soon
-                    <br>
-                    Super interested in Open source
-                    <br>
-                    I make electronic music in my free time.
-                    <br>
-                    This site was built from scratch with gridsome and vuetify. I'm using Umami analytics (Link here).
-                    <br>
-                    I really enjoy working long hours on stuff that I find interesting, yet I barely make the deadline
-                    when I have to work on something boring
-                  </p>
-                </v-container>
-              </v-row>
-              <br><br>
-              <v-row class="rounded contentHolder red white--text">
-                <v-container>
-                  This site is still under development, many things are yet to be implemented.
-                  <br />Keep an eye on
-                  <a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">other
-                    branches</a>
-                  for major changes.
-                </v-container>
-              </v-row>
+              </v-container>
+            </v-row>
+            <br><br>
+            <v-row class="rounded contentHolder">
+              <v-container>
+                <p>
+                  I like to tweak code and mess around. Doing mostly Web Dev, But will be doing some CyberSec stuff
+                  soon
+                  <br>
+                  Super interested in Open source
+                  <br>
+                  I make electronic music in my free time.
+                  <br>
+                  This site was built from scratch with gridsome and vuetify. I'm using Umami analytics (Link here).
+                  <br>
+                  I really enjoy working long hours on stuff that I find interesting, yet I barely make the deadline
+                  when I have to work on something boring
+                </p>
+              </v-container>
+            </v-row>
+            <br><br>
+            <v-row class="rounded contentHolder red white--text">
+              <v-container>
+                This site is still under development, many things are yet to be implemented.
+                <br />Keep an eye on
+                <a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">other
+                  branches</a>
+                for major changes.
+              </v-container>
+            </v-row>
 
-            </v-col>
-          </v-row>
-        </v-container>
-      </transition>
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
+    <section style="background: #000;">
+      <ConnectComponent />
     </section>
     <!-- <section class="d-sm-none">
 				<transition name="slide-fade" appear>
@@ -88,10 +90,12 @@
 <script>
 // import AboutContent from "../components/aboutContent.vue"
 
+import ConnectComponent from '../components/Connect.vue'
+
 export default {
   metaInfo() {
     return this.$seo({
-      title: "About me", // Uses the titleTemplate in Gridsome config
+      title: "About me",
       description: "I'm Shailesh (Shell Raiser), and this is my portfolio",
       keywords: "one,two",
       openGraph: {
@@ -102,16 +106,21 @@ export default {
         title: "Shailesh K S, About me",
         type: "summary",
       },
-      link: [],   // any links
-      script: []  // any scripts
+      link: [],
+      script: [] // any scripts
     });
   },
+  components: { ConnectComponent }
 };
 </script>
 
 <style scoped>
 section {
-
+  background: linear-gradient(90deg, #9575CD, #90caf9);
+  background-size: 200% 100%;
+  animation: gradient 10s ease infinite;
+  padding-top: 30px;
+  padding-bottom: 30px;
   /* @font-face {
     font-family: 'times';
     src: url('../assets/nunito.woff2') format('truetype')
@@ -126,9 +135,7 @@ section {
   /* height: 100%; */
   /* min-height: calc(100vh - 56px); */
   /* width: 100%; */
-  background: linear-gradient(90deg, #9575CD, #90caf9);
-  background-size: 200% 100%;
-  animation: gradient 10s ease infinite;
+
 }
 
 .contentHolder {
