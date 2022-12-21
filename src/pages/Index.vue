@@ -77,6 +77,11 @@
     <section style="background: #000;">
       <ConnectComponent />
     </section>
+    <section
+      style='background: lightblue url("/assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed; max-height: 90vh; overflow:scroll'>
+      <Projects />
+    </section>
+    
     <!-- <section class="d-sm-none">
 				<transition name="slide-fade" appear>
 					<v-container>
@@ -91,6 +96,7 @@
 // import AboutContent from "../components/aboutContent.vue"
 
 import ConnectComponent from '../components/Connect.vue'
+import Projects from '../components/Projects.vue';
 
 export default {
   metaInfo() {
@@ -110,7 +116,7 @@ export default {
       script: [] // any scripts
     });
   },
-  components: { ConnectComponent }
+  components: { ConnectComponent, Projects }
 };
 </script>
 

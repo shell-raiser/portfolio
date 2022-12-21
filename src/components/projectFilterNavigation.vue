@@ -1,7 +1,6 @@
 <template>
 
-    <v-navigation-drawer app v-if="this.$route.path == '/projects'" right
-        src="assets/projectsBg.gif">
+    <div>
         <v-container style="backdrop-filter:blur(5px);">
             <v-row>
                 <v-col>
@@ -45,7 +44,7 @@
                 </v-col>
             </v-row>
         </v-container>
-    </v-navigation-drawer>
+    </div>
 </template>
 
 <script>
