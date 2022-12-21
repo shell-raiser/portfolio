@@ -10,52 +10,53 @@
 				</transition>
 			</v-main>
 		</main>
-		<v-bottom-navigation id="navBar" app active-class mandatory shift color="accent" 
-		background-color="navBar">
+		<v-navigation-drawer id="navBar" app mini-variant expand-on-hover color="primary lighten-4">
 			<!-- <v-footer class="justify-center" tile app> -->
 
-			<!-- <v-btn text @click="prev">
+			<!-- <v-list-item text @click="prev">
         <v-icon>mdi-chevron-left</v-icon>
-			</v-btn>-->
+			</v-list-item>-->
 
 			<!-- <g-link to="/"> -->
-			<v-btn to="/">
-				<span>About</span>
-				<v-icon>mdi-view-dashboard</v-icon>
-			</v-btn>
-			<!-- </g-link> -->
+			<v-list nav dense>
+				<!-- <v-list-item link> -->
+				<v-list-item to="/">
+					<v-icon>mdi-view-dashboard</v-icon>
+					<v-list-item-title>About</v-list-item-title>
+				</v-list-item>
+				<!-- </g-link> -->
 
-			<!-- <g-link to="/connect"> -->
-			<v-btn to="/connect">
-				<v-icon>mdi-human-greeting-proximity</v-icon>
-				<span>Connect</span>
-			</v-btn>
-			<!-- </g-link> -->
+				<!-- <g-link to="/connect"> -->
+				<v-list-item to="/connect">
+					<v-icon>mdi-human-greeting-proximity</v-icon>
+					<v-list-item-title>Connect</v-list-item-title>
+				</v-list-item>
+				<!-- </g-link> -->
 
-			<!-- <g-link to="/projects"> -->
-			<v-btn to="/projects">
-				<v-icon>mdi-devices</v-icon>
-				<span>Projects</span>
-			</v-btn>
-			<!-- </g-link> -->
+				<!-- <g-link to="/projects"> -->
+				<v-list-item to="/projects">
+					<v-icon>mdi-devices</v-icon>
+					<v-list-item-title>Projects</v-list-item-title>
+				</v-list-item>
+				<!-- </g-link> -->
 
-			<!-- <g-link to="/arsenal"> -->
-			<v-btn to="/arsenal">
-				<v-icon>mdi-hammer-wrench</v-icon>
-				<span>Tools</span>
-			</v-btn>
-			<!-- </g-link> -->
+				<!-- <g-link to="/arsenal"> -->
+				<v-list-item to="/arsenal">
+					<v-icon>mdi-hammer-wrench</v-icon>
+					<v-list-item-title>Tools</v-list-item-title>
+				</v-list-item>
+				<!-- </g-link> -->
 
-			<!-- <g-link to="/contact"> -->
-			<!-- <v-btn to="/contact">
+				<!-- <g-link to="/contact"> -->
+				<!-- <v-list-item to="/contact">
 				<v-icon>mdi-card-account-mail</v-icon>
-				<span>Contact</span>
-			</v-btn> -->
-			<!-- </g-link> -->
+				<v-list-item-title>Contact</v-list-item-title>
+			</v-list-item> -->
+				<!-- </g-link> -->
+			</v-list>
 
 
-
-		</v-bottom-navigation>
+		</v-navigation-drawer>
 	</v-app>
 </template>
 
