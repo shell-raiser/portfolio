@@ -5,9 +5,7 @@
 		<!-- </v-card> -->
 		<main>
 			<v-main>
-				<transition name="fade" appear>
 					<slot />
-				</transition>
 			</v-main>
 		</main>
 		<v-navigation-drawer id="navBar" app mini-variant expand-on-hover color="primary lighten-4">
