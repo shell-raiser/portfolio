@@ -13,8 +13,8 @@
             </v-col>
 
             <v-col>
-              <v-row>
-                <v-col align-self="center" class="rounded contentHolder">
+              <v-row class="rounded contentHolder">
+                <v-container>
                   <h1>
                     Hello there,
                     <br />I'm Shailesh !
@@ -33,24 +33,17 @@
                       <li class="scrollingList__list__item ">Web dev</li>
                       <li class="scrollingList__list__item ">Designer</li>
                       <li class="scrollingList__list__item ">Music Maker</li>
-                      <!-- <li class="scrollingList__list__item ">Python Dev</li> -->
                     </ul>
                   </div>
                   </p>
 
                   <!-- </p> -->
-                  <p class="red white--text">
-                    This site is still under development, many things are yet to be implemented.
-                    <br />Keep an eye on
-                    <a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">other
-                      branches</a>
-                    for major changes.
-                  </p>
-                </v-col>
-              </v-row>
 
-              <!-- <v-row>
-                <v-col align-self="center" class="rounded contentHolder">
+                </v-container>
+              </v-row>
+              <br><br>
+              <v-row class="rounded contentHolder">
+                <v-container>
                   <p>
                     I like to tweak code and mess around. Doing mostly Web Dev, But will be doing some CyberSec stuff
                     soon
@@ -60,9 +53,22 @@
                     I make electronic music in my free time.
                     <br>
                     This site was built from scratch with gridsome and vuetify. I'm using Umami analytics (Link here).
+                    <br>
+                    I really enjoy working long hours on stuff that I find interesting, yet I barely make the deadline
+                    when I have to work on something boring
                   </p>
-                </v-col>
-              </v-row> -->
+                </v-container>
+              </v-row>
+              <br><br>
+              <v-row class="rounded contentHolder red white--text">
+                <v-container>
+                  This site is still under development, many things are yet to be implemented.
+                  <br />Keep an eye on
+                  <a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">other
+                    branches</a>
+                  for major changes.
+                </v-container>
+              </v-row>
 
             </v-col>
           </v-row>
@@ -117,8 +123,8 @@ section {
     font-weight: bold
   } */
 
-  height: 100%;
-  min-height: calc(100vh - 56px);
+  /* height: 100%; */
+  /* min-height: calc(100vh - 56px); */
   /* width: 100%; */
   background: linear-gradient(90deg, #9575CD, #90caf9);
   background-size: 200% 100%;
@@ -163,13 +169,11 @@ h1 {
 } */
 
 .scrollingList {
-
   /* background-color: red; */
   overflow: hidden;
   height: 40px;
   margin: 0;
 }
-
 
 .scrollingList__text {
   display: inline;
@@ -181,7 +185,6 @@ h1 {
 }
 
 .scrollingList__list {
-
   /* margin: 0; */
   width: max-content;
   padding-left: 3px;
