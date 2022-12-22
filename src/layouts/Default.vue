@@ -5,10 +5,10 @@
 		<!-- </v-card> -->
 		<main>
 			<v-main>
-					<slot />
+				<slot />
 			</v-main>
 		</main>
-		<v-navigation-drawer id="navBar" app mini-variant expand-on-hover color="primary lighten-4">
+		<v-navigation-drawer permanent id="navBar" app mini-variant expand-on-hover color="primary lighten-4">
 			<!-- <v-footer class="justify-center" tile app> -->
 
 			<!-- <v-list-item text @click="prev">
@@ -18,28 +18,28 @@
 			<!-- <g-link to="/"> -->
 			<v-list nav dense>
 				<!-- <v-list-item link> -->
-				<v-list-item to="/">
+				<v-list-item @click="scrollToElement('about')">
 					<v-list-item-icon><v-icon>mdi-view-dashboard</v-icon></v-list-item-icon>
 					<v-list-item-title>About</v-list-item-title>
 				</v-list-item>
 				<!-- </g-link> -->
 
 				<!-- <g-link to="/connect"> -->
-				<v-list-item to="/connect">
+				<v-list-item @click="scrollToElement('connect')">
 					<v-list-item-icon><v-icon>mdi-human-greeting-proximity</v-icon></v-list-item-icon>
 					<v-list-item-title>Connect</v-list-item-title>
 				</v-list-item>
 				<!-- </g-link> -->
 
 				<!-- <g-link to="/projects"> -->
-				<v-list-item to="/projects">
+				<v-list-item @click="scrollToElement('projects')">
 					<v-list-item-icon><v-icon>mdi-devices</v-icon></v-list-item-icon>
 					<v-list-item-title>Projects</v-list-item-title>
 				</v-list-item>
 				<!-- </g-link> -->
 
 				<!-- <g-link to="/arsenal"> -->
-				<v-list-item to="/arsenal">
+				<v-list-item @click="scrollToElement('arsenal')">
 					<v-list-item-icon><v-icon>mdi-hammer-wrench</v-icon></v-list-item-icon>
 					<v-list-item-title>Tools</v-list-item-title>
 				</v-list-item>
@@ -67,6 +67,13 @@ export default {
 	data: () => ({
 	}),
 	methods: {
+		scrollToElement(refName) {
+			const position = document.getElementById(refName).offsetTop;
+			window.scrollTo({ top: position, behavior: "smooth" });  
+			// var top = element.offsetTop;
+
+			// window.scrollTo(0, top);
+		}
 	},
 };
 
