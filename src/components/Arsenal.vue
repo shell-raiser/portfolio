@@ -1,7 +1,6 @@
 <template>
-    <div>
-        <h1 class=" text-center">Arsenal</h1>
         <v-container class="text-center">
+        <h1 class=" text-center">Arsenal</h1>
             <v-row>
             <v-col cols="3" fill-height>
             <ArsenalLanguageStats/>
@@ -69,7 +68,6 @@
                 </v-col>
             </v-row>
         </v-container>
-    </div>
 </template>
 <style scoped>
 h1 {
