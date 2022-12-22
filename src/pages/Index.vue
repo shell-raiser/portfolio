@@ -1,7 +1,7 @@
 <template >
   <Layout>
 
-    <section>
+    <section id="about">
       <v-container class="fill-height">
         <v-row align="center" justify="center" align-content="center">
           <v-col align-self="center" sm="6">
@@ -74,15 +74,16 @@
         </v-row>
       </v-container>
     </section>
-    <section style="background: #000;">
+    <section id="connect" style="background: #000;">
       <ConnectComponent />
+
     </section>
-    <section
-      style='background: lightblue url("/assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed; max-height: 90vh; overflow:scroll'>
+    <section id="projects"
+      style='background: lightblue url("../assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed; max-height: 100vh; overflow:scroll'>
       <Projects />
     </section>
-    <section
-      style='background: url("/assets/toolsBg.jpg");   '>
+    <section id="arsenal"
+      style='background-image: url("../assets/pebbelAnimation.gif"); background-size:contain;  background-attachment: fixed;'>
       <Arsenal />
     </section>
 
@@ -120,6 +121,9 @@ export default {
       link: [],
       script: [] // any scripts
     });
+  },
+  methods: {
+
   },
   components: { ConnectComponent, Projects, Arsenal }
 };
