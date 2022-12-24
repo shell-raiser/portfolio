@@ -81,7 +81,7 @@
       style='background: url("../assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed; '>
       <v-row>
         <v-col cols="3" class="d-none d-sm-block">
-          <ProjectFilterNavigation style=" position: sticky;  top: 0; " />
+          <ProjectFilterNavigation style=" position: sticky; top: 0;" />
         </v-col>
         <v-col>
           <Projects />
@@ -93,7 +93,7 @@
       style='background: red url("assets/toolsBg.webp"); background-size:contain;  background-attachment: fixed;'>
       <v-row>
         <v-col cols="3" class="d-none d-sm-block">
-          <ArsenalLanguageStats style=" position: sticky;  top: 0;" />
+          <ArsenalLanguageStats style=" position: sticky; top: 0;" />
         </v-col>
         <v-col>
           <Arsenal />

@@ -8,7 +8,8 @@
 				<slot />
 			</v-main>
 		</main>
-		<v-navigation-drawer id="navBar" app mini-variant expand-on-hover touchless color="primary lighten-4" >
+		<v-navigation-drawer class="d-none d-sm-block" id="navBar" app :mini-variant="!$vuetify.breakpoint.xlOnly"
+			:expand-on-hover="!$vuetify.breakpoint.xlOnly" touchless color="primary lighten-4">
 			<!-- <v-footer class="justify-center" tile app> -->
 
 			<!-- <v-list-item text @click="prev">
@@ -70,9 +71,6 @@ export default {
 		scrollToElement(refName) {
 			const position = document.getElementById(refName).offsetTop;
 			window.scrollTo({ top: position, behavior: "smooth" });
-			// var top = element.offsetTop;
-
-			// window.scrollTo(0, top);
 		}
 	},
 };
