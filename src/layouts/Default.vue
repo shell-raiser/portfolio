@@ -8,7 +8,7 @@
 				<slot />
 			</v-main>
 		</main>
-		<v-navigation-drawer permanent id="navBar" app mini-variant expand-on-hover color="primary lighten-4">
+		<v-navigation-drawer id="navBar" app mini-variant expand-on-hover touchless color="primary lighten-4" >
 			<!-- <v-footer class="justify-center" tile app> -->
 
 			<!-- <v-list-item text @click="prev">
@@ -69,7 +69,7 @@ export default {
 	methods: {
 		scrollToElement(refName) {
 			const position = document.getElementById(refName).offsetTop;
-			window.scrollTo({ top: position, behavior: "smooth" });  
+			window.scrollTo({ top: position, behavior: "smooth" });
 			// var top = element.offsetTop;
 
 			// window.scrollTo(0, top);
