@@ -1,7 +1,7 @@
 <template >
   <Layout>
-
-    <section id="about">
+    <section id="about"
+      style="background: linear-gradient(90deg, #9575CD, #90caf9);  background-size: 200% 100%;  animation: gradient 10s ease infinite;">
       <v-container class="fill-height">
         <v-row align="center" justify="center" align-content="center">
           <v-col align-self="center" sm="6">
@@ -81,7 +81,7 @@
       style='background: url("../assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed; '>
       <v-row>
         <v-col cols="3" class="d-none d-sm-block">
-          <ProjectFilterNavigation style=" position: sticky;  top: 0; overflow:scroll" />
+          <ProjectFilterNavigation style=" position: sticky;  top: 0; " />
         </v-col>
         <v-col>
           <Projects />
@@ -90,24 +90,16 @@
 
     </section>
     <section id="arsenal"
-      style='background: red url("../assets/pebbelAnimation.gif"); background-size:contain;  background-attachment: fixed;'>
+      style='background: red url("assets/toolsBg.webp"); background-size:contain;  background-attachment: fixed;'>
       <v-row>
         <v-col cols="3" class="d-none d-sm-block">
-          <ArsenalLanguageStats style=" position: sticky;  top: 0; overflow:scroll" />
+          <ArsenalLanguageStats style=" position: sticky;  top: 0;" />
         </v-col>
         <v-col>
           <Arsenal />
         </v-col>
       </v-row>
     </section>
-
-    <!-- <section class="d-sm-none">
-				<transition name="slide-fade" appear>
-					<v-container>
-						<AboutContent />
-					</v-container>
-				</transition>
-			</section> -->
   </Layout>
 </template>
 
@@ -147,9 +139,7 @@ export default {
 
 <style scoped>
 section {
-  background: linear-gradient(90deg, #9575CD, #90caf9);
-  background-size: 200% 100%;
-  animation: gradient 10s ease infinite;
+
   padding-top: 30px;
   padding-bottom: 30px;
   /* @font-face {
