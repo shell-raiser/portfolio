@@ -1,8 +1,5 @@
 <template>
 	<v-app>
-		<!-- 2:06:01 -->
-
-		<!-- </v-card> -->
 		<main>
 			<v-main>
 				<slot />
@@ -10,52 +7,45 @@
 		</main>
 		<v-navigation-drawer class="d-none d-sm-block" id="navBar" app :mini-variant="!$vuetify.breakpoint.xlOnly"
 			:expand-on-hover="!$vuetify.breakpoint.xlOnly" touchless color="primary lighten-4">
-			<!-- <v-footer class="justify-center" tile app> -->
-
-			<!-- <v-list-item text @click="prev">
-        <v-list-item-icon><v-icon>mdi-chevron-left</v-icon></v-list-item-icon>
-			</v-list-item>-->
-
-			<!-- <g-link to="/"> -->
 			<v-list nav dense>
-				<!-- <v-list-item link> -->
 				<v-list-item @click="scrollToElement('about')">
 					<v-list-item-icon><v-icon>mdi-view-dashboard</v-icon></v-list-item-icon>
 					<v-list-item-title>About</v-list-item-title>
 				</v-list-item>
-				<!-- </g-link> -->
-
-				<!-- <g-link to="/connect"> -->
 				<v-list-item @click="scrollToElement('connect')">
 					<v-list-item-icon><v-icon>mdi-human-greeting-proximity</v-icon></v-list-item-icon>
 					<v-list-item-title>Connect</v-list-item-title>
 				</v-list-item>
-				<!-- </g-link> -->
-
-				<!-- <g-link to="/projects"> -->
 				<v-list-item @click="scrollToElement('projects')">
 					<v-list-item-icon><v-icon>mdi-devices</v-icon></v-list-item-icon>
 					<v-list-item-title>Projects</v-list-item-title>
 				</v-list-item>
-				<!-- </g-link> -->
-
-				<!-- <g-link to="/arsenal"> -->
 				<v-list-item @click="scrollToElement('arsenal')">
 					<v-list-item-icon><v-icon>mdi-hammer-wrench</v-icon></v-list-item-icon>
 					<v-list-item-title>Tools</v-list-item-title>
 				</v-list-item>
-				<!-- </g-link> -->
-
-				<!-- <g-link to="/contact"> -->
-				<!-- <v-list-item to="/contact">
-				<v-list-item-icon><v-icon>mdi-card-account-mail</v-icon></v-list-item-icon>
-				<v-list-item-title>Contact</v-list-item-title>
-			</v-list-item> -->
-				<!-- </g-link> -->
 			</v-list>
-
-
 		</v-navigation-drawer>
+
+		<v-bottom-navigation class="d-sm-none" app active-class mandatory shift color="primary darken-3"
+			background-color="primary lighten-4">
+			<v-btn to="/">
+				<span>About</span>
+				<v-icon>mdi-view-dashboard</v-icon>
+			</v-btn>
+			<v-btn to="/connect">
+				<v-icon>mdi-human-greeting-proximity</v-icon>
+				<span>Connect</span>
+			</v-btn>
+			<v-btn to="/projects">
+				<v-icon>mdi-devices</v-icon>
+				<span>Projects</span>
+			</v-btn>
+			<v-btn to="/arsenal">
+				<v-icon>mdi-hammer-wrench</v-icon>
+				<span>Tools</span>
+			</v-btn>
+		</v-bottom-navigation>
 	</v-app>
 </template>
 

@@ -1,7 +1,9 @@
 <template>
-  <section id="connect" style="background: #000;">
-    <Connect />
-  </section>
+  <Layout>
+    <section id="connect" style="background: #000;">
+      <Connect />
+    </section>
+  </Layout>
 </template>
 <style scoped>
 h1 {
