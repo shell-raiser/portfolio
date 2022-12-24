@@ -1,6 +1,6 @@
 <template>
     <v-container class="text-center">
-        <h1 class=" text-center">Arsenal</h1>
+        <h1 class="rounded text-center">Arsenal</h1>
         <br>
         <ArsenalLanguageStats class="d-sm-none" />
         <br>
