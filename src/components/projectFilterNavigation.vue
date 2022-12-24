@@ -1,48 +1,47 @@
 <template>
 
-        <v-container style="backdrop-filter:blur(5px);">
-            <v-row>
-                <v-col>
-                    <h2>Projects and Experience</h2>
-                </v-col>
-            </v-row>
+    <v-container style="backdrop-filter:blur(5px);">
+        <v-row>
+            <v-col>
+                <h2>Projects and Experience</h2>
+            </v-col>
+        </v-row>
 
-            <!-- <v-divider></v-divider> -->
-
-
+        <!-- <v-divider></v-divider> -->
 
 
-            <v-row>
-                <v-col>
-                    <h3>Filter
-                    </h3>
-                    <v-chip-group column multiple color="deep-purple lighten-4" v-model="$store.state.chipSelected">
-                        <v-chip v-for="i in allProjects" :value="i" :key="i">
-                            {{ i }}
-                        </v-chip>
 
-                    </v-chip-group>
-                </v-col>
-            </v-row>
 
-            <!-- <v-divider></v-divider> -->
-            <v-row>
-                <v-col>
-                    <v-list nav class="rounded" v-if="$store.state.chipSelected.length == 0">
-                        <h3>Go to </h3>
-                        <v-list-item class="white rounded" to="#hackathons">
-                            Hackathon Projects
-                        </v-list-item>
-                        <v-list-item class="white rounded" to="#sideProjects">
-                            Other Projects
-                        </v-list-item>
-                        <v-list-item class="white rounded" to="#volunteer">
-                            Volunteering
-                        </v-list-item>
-                    </v-list>
-                </v-col>
-            </v-row>
-        </v-container>
+        <v-row>
+            <v-col>
+                <h3>Filter
+                </h3>
+                <v-chip-group column multiple color="deep-purple lighten-4" v-model="$store.state.chipSelected">
+                    <v-chip v-for="i in allProjects" :value="i" :key="i">
+                        {{ i }}
+                    </v-chip>
+                </v-chip-group>
+            </v-col>
+        </v-row>
+
+        <!-- <v-divider></v-divider> -->
+        <v-row>
+            <v-col>
+                <v-list nav class="rounded" v-if="$store.state.chipSelected.length == 0">
+                    <h3>Go to </h3>
+                    <v-list-item class="white rounded" @click="scrollToElement('hackathons')">
+                        Hackathon Projects
+                    </v-list-item>
+                    <v-list-item class="white rounded" @click="scrollToElement('sideProjects')">
+                        Other Projects
+                    </v-list-item>
+                    <v-list-item class="white rounded" @click="scrollToElement('volunteer')">
+                        Volunteering
+                    </v-list-item>
+                </v-list>
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <script>
@@ -84,6 +83,13 @@ export default {
                 }
             }
             return allAttributes
+        },
+        scrollToElement(refName) {
+            const position = document.getElementById(refName).offsetTop;
+            window.scrollTo({ top: position, behavior: "smooth" });
+            // var top = element.offsetTop;
+
+            // window.scrollTo(0, top);
         }
 
     },
