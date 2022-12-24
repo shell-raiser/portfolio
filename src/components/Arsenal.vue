@@ -1,63 +1,64 @@
 <template>
     <v-container class="text-center">
         <h1 class=" text-center">Arsenal</h1>
-                <ArsenalLanguageStats class="d-sm-none" />
+        <br>
+        <ArsenalLanguageStats class="d-sm-none" />
+        <br>
+        <v-card class="toolCard" rounded flat>
+            <v-card-title class="toolsCardsImageCont deep-purple lighten-4">Languages
+            </v-card-title>
 
-                <v-card class="toolCard" rounded flat>
-                    <v-card-title class="toolsCardsImageCont deep-purple lighten-4">Languages
-                    </v-card-title>
+            <div class="toolsCardsImageCont">
+                <g-image class="toolsLogos" :src="item" v-for="(item, i) in languages" :key="i" />
+            </div>
+        </v-card>
+        <br>
 
-                    <div class="toolsCardsImageCont">
-                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in languages" :key="i" />
-                    </div>
-                </v-card>
-                <br>
+        <v-card class="toolCard" rounded flat>
+            <v-card-title class="toolsCardsImageCont red lighten-4">Front End Frameworks
+            </v-card-title>
 
-                <v-card class="toolCard" rounded flat>
-                    <v-card-title class="toolsCardsImageCont red lighten-4">Front End Frameworks
-                    </v-card-title>
+            <div class="toolsCardsImageCont">
 
-                    <div class="toolsCardsImageCont">
+                <g-image class="toolsLogos" :src="item" v-for="(item, i) in frontend" :key="i" />
 
-                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in frontend" :key="i" />
+            </div>
+        </v-card>
+        <br>
 
-                    </div>
-                </v-card>
-                <br>
-
-                <v-card class="toolCard" rounded flat>
-                    <v-card-title class="toolsCardsImageCont teal lighten-4">Back End Frameworks
-                    </v-card-title>
-
-
-                    <div class="toolsCardsImageCont">
-
-                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in backend" :key="i" />
-
-                    </div>
-                </v-card>
-                <br>
-
-                <v-card class="toolCard" rounded flat>
-                    <v-card-title class="toolsCardsImageCont purple lighten-4">Design</v-card-title>
+        <v-card class="toolCard" rounded flat>
+            <v-card-title class="toolsCardsImageCont teal lighten-4">Back End Frameworks
+            </v-card-title>
 
 
-                    <div class="toolsCardsImageCont">
+            <div class="toolsCardsImageCont">
 
-                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in design" :key="i" />
-                    </div>
-                </v-card>
-                <br>
+                <g-image class="toolsLogos" :src="item" v-for="(item, i) in backend" :key="i" />
 
-                <v-card class="toolCard" rounded flat>
-                    <v-card-title class="toolsCardsImageCont indigo lighten-4">Audio</v-card-title>
+            </div>
+        </v-card>
+        <br>
+
+        <v-card class="toolCard" rounded flat>
+            <v-card-title class="toolsCardsImageCont purple lighten-4">Design</v-card-title>
 
 
-                    <div class="toolsCardsImageCont">
-                        <g-image class="toolsLogos" :src="item" v-for="(item, i) in audio" :key="i" />
-                    </div>
-                </v-card>
-        
+            <div class="toolsCardsImageCont">
+
+                <g-image class="toolsLogos" :src="item" v-for="(item, i) in design" :key="i" />
+            </div>
+        </v-card>
+        <br>
+
+        <v-card class="toolCard" rounded flat>
+            <v-card-title class="toolsCardsImageCont indigo lighten-4">Audio</v-card-title>
+
+
+            <div class="toolsCardsImageCont">
+                <g-image class="toolsLogos" :src="item" v-for="(item, i) in audio" :key="i" />
+            </div>
+        </v-card>
+
     </v-container>
 </template>
 <style scoped>

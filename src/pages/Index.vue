@@ -80,7 +80,7 @@
     <section id="projects"
       style='background: url("../assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed; '>
       <v-row>
-        <v-col cols="3">
+        <v-col cols="3" class="d-none d-sm-block">
           <ProjectFilterNavigation style=" position: sticky;  top: 0; overflow:scroll" />
         </v-col>
         <v-col>
@@ -92,7 +92,7 @@
     <section id="arsenal"
       style='background: red url("../assets/pebbelAnimation.gif"); background-size:contain;  background-attachment: fixed;'>
       <v-row>
-        <v-col cols="3">
+        <v-col cols="3" class="d-none d-sm-block">
           <ArsenalLanguageStats style=" position: sticky;  top: 0; overflow:scroll" />
         </v-col>
         <v-col>
