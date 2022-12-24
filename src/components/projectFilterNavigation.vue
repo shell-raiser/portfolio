@@ -1,6 +1,5 @@
 <template>
 
-    <div>
         <v-container style="backdrop-filter:blur(5px);">
             <v-row>
                 <v-col>
@@ -44,7 +43,6 @@
                 </v-col>
             </v-row>
         </v-container>
-    </div>
 </template>
 
 <script>

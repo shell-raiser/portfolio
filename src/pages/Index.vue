@@ -76,15 +76,29 @@
     </section>
     <section id="connect" style="background: #000;">
       <ConnectComponent />
-
     </section>
     <section id="projects"
-      style='background: lightblue url("../assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed; max-height: 100vh; overflow:scroll'>
-      <Projects />
+      style='background: url("../assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed; '>
+      <v-row>
+        <v-col cols="3">
+          <ProjectFilterNavigation style=" position: sticky;  top: 0; overflow:scroll" />
+        </v-col>
+        <v-col>
+          <Projects />
+        </v-col>
+      </v-row>
+
     </section>
     <section id="arsenal"
-      style='background-image: url("../assets/pebbelAnimation.gif"); background-size:contain;  background-attachment: fixed;'>
-      <Arsenal />
+      style='background: red url("../assets/pebbelAnimation.gif"); background-size:contain;  background-attachment: fixed;'>
+      <v-row>
+        <v-col cols="3">
+          <ArsenalLanguageStats style=" position: sticky;  top: 0; overflow:scroll" />
+        </v-col>
+        <v-col>
+          <Arsenal />
+        </v-col>
+      </v-row>
     </section>
 
     <!-- <section class="d-sm-none">
@@ -101,7 +115,9 @@
 // import AboutContent from "../components/aboutContent.vue"
 
 import Arsenal from '../components/Arsenal.vue';
+import ArsenalLanguageStats from '../components/arsenalLanguageStats.vue';
 import ConnectComponent from '../components/Connect.vue'
+import ProjectFilterNavigation from '../components/projectFilterNavigation.vue';
 import Projects from '../components/Projects.vue';
 
 export default {
@@ -125,7 +141,7 @@ export default {
   methods: {
 
   },
-  components: { ConnectComponent, Projects, Arsenal }
+  components: { ConnectComponent, Projects, Arsenal, ProjectFilterNavigation, ArsenalLanguageStats }
 };
 </script>
 
