@@ -159,7 +159,7 @@ section {
 }
 
 .contentHolder {
-  background-color: rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.4);
   /* min-width: fit-content; */
   backdrop-filter: blur(5px);
 }
