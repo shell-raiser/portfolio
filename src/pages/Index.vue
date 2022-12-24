@@ -1,7 +1,7 @@
 <template >
   <Layout>
     <section id="about"
-      style="background: linear-gradient(90deg, #9575CD, #90caf9);  background-size: 200% 100%;  animation: gradient 10s ease infinite;">
+      style="background: linear-gradient(90deg, #9575CD, #90caf9);  background-size: 200% 100%;  animation: gradient 10s ease infinite; min-height: 100vh;">
       <v-container class="fill-height">
         <v-row align="center" justify="center" align-content="center">
           <v-col align-self="center" sm="6">
@@ -139,7 +139,6 @@ export default {
 
 <style scoped>
 section {
-
   padding-top: 30px;
   padding-bottom: 30px;
   /* @font-face {
@@ -160,7 +159,7 @@ section {
 }
 
 .contentHolder {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255);
   /* min-width: fit-content; */
   backdrop-filter: blur(5px);
 }
