@@ -67,7 +67,7 @@ h1 {
     font-size: xxx-large;
     color: #ffffff;
     backdrop-filter: blur(15px);
-    background-color: rgba(18, 0, 48, 0.61);
+    background-color: rgba(18, 0, 48, 0.6);
 }
 
 .toolCard {
