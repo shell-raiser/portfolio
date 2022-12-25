@@ -1,16 +1,11 @@
 <template>
 
-    <v-container style="backdrop-filter:blur(5px);">
+    <v-container class="rounded" style="backdrop-filter:blur(5px); background-color: rgba(255, 255, 255, 0.2)">
         <v-row>
             <v-col>
                 <h2>Projects and Experience</h2>
             </v-col>
         </v-row>
-
-        <!-- <v-divider></v-divider> -->
-
-
-
 
         <v-row>
             <v-col>
