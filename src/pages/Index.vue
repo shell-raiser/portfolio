@@ -173,14 +173,9 @@ h1 {
   /* z-index: 1; */
 }
 
-/* 
-.headtext::before {
-  content: "Web dev";
-  animation: animate infinite 5s;
-} */
+
 
 .scrollingList {
-  /* background-color: red; */
   overflow: hidden;
   height: 40px;
   margin: 0;
@@ -259,18 +254,4 @@ h1 {
   }
 }
 
-/* 
-@keyframes animate {
-  25% {
-    content: "CyberSec enthusiast";
-  }
-
-  50% {
-    content: "Designer";
-  }
-
-  75% {
-    content: "Python dev";
-  }
-} */
 </style>
