@@ -41,7 +41,7 @@
 
               </v-container>
             </v-row>
-            <br><br>
+            <!-- <br><br> -->
             <!-- <v-row class="rounded contentHolder">
               <v-container>
                 <p>
