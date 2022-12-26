@@ -1,7 +1,7 @@
 <template >
   <Layout>
     <section id="about"
-      style="background: linear-gradient(90deg, #9575CD, #90caf9);  background-size: 200% 100%;  animation: gradient 10s ease infinite; min-height: 100vh;">
+      style="background: linear-gradient(90deg, #9575CD, #90caf9);  background-size: 200% 100%;  animation: gradient 10s ease infinite;">
       <v-container class="fill-height">
         <v-row align="center" justify="center" align-content="center">
           <v-col align-self="center" sm="6">
@@ -253,5 +253,4 @@ h1 {
     transform: translate3d(0, -25%, 0);
   }
 }
-
 </style>
