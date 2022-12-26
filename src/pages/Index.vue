@@ -42,7 +42,7 @@
               </v-container>
             </v-row>
             <br><br>
-            <v-row class="rounded contentHolder">
+            <!-- <v-row class="rounded contentHolder">
               <v-container>
                 <p>
                   I like to tweak code and mess around. Doing mostly Web Dev, But will be doing some CyberSec stuff
@@ -58,7 +58,7 @@
                   when I have to work on something boring
                 </p>
               </v-container>
-            </v-row>
+            </v-row> -->
             <br><br>
             <v-row class="rounded contentHolder red white--text">
               <v-container>
