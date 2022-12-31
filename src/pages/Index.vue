@@ -89,7 +89,7 @@
       </v-row>
     </section>
     <section id="arsenal" class="d-none d-sm-block"
-      style='background: red url("assets/toolsBg.webp"); background-size:contain;  background-attachment: fixed;'>
+      style='background: purple url("assets/toolsBg.webp"); background-size:contain;  background-attachment: fixed;'>
       <v-row>
         <v-col cols="3">
           <ArsenalLanguageStats style="position: sticky; top: 0;" />
@@ -110,7 +110,6 @@ import ArsenalLanguageStats from '../components/arsenalLanguageStats.vue';
 import ConnectComponent from '../components/Connect.vue'
 import ProjectFilterNavigation from '../components/projectFilterNavigation.vue';
 import Projects from '../components/Projects.vue';
-
 export default {
   metaInfo() {
     return this.$seo({
