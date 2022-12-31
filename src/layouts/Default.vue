@@ -8,19 +8,23 @@
 		<v-navigation-drawer class="d-none d-sm-block" id="navBar" app :mini-variant="!$vuetify.breakpoint.xlOnly"
 			:expand-on-hover="!$vuetify.breakpoint.xlOnly" touchless color="primary lighten-4">
 			<v-list nav dense>
-				<v-list-item @click="scrollToElement('about')">
+				<v-list-item :class="[($store.state.activeSection == 'about') ? 'v-list-item--active' : null]"
+					@click="scrollToElement('about')">
 					<v-list-item-icon><v-icon>mdi-view-dashboard</v-icon></v-list-item-icon>
 					<v-list-item-title>About</v-list-item-title>
 				</v-list-item>
-				<v-list-item @click="scrollToElement('connect')">
+				<v-list-item :class="[($store.state.activeSection == 'connect') ? 'v-list-item--active' : null]"
+					@click="scrollToElement('connect')">
 					<v-list-item-icon><v-icon>mdi-human-greeting-proximity</v-icon></v-list-item-icon>
 					<v-list-item-title>Connect</v-list-item-title>
 				</v-list-item>
-				<v-list-item @click="scrollToElement('projects')">
+				<v-list-item :class="[($store.state.activeSection == 'projects') ? 'v-list-item--active' : null]"
+					@click="scrollToElement('projects')">
 					<v-list-item-icon><v-icon>mdi-devices</v-icon></v-list-item-icon>
 					<v-list-item-title>Projects</v-list-item-title>
 				</v-list-item>
-				<v-list-item @click="scrollToElement('arsenal')">
+				<v-list-item :class="[($store.state.activeSection == 'arsenal') ? 'v-list-item--active' : null]"
+					@click="scrollToElement('arsenal')">
 					<v-list-item-icon><v-icon>mdi-hammer-wrench</v-icon></v-list-item-icon>
 					<v-list-item-title>Tools</v-list-item-title>
 				</v-list-item>
@@ -50,12 +54,23 @@
 </template>
 
 <script>
-
 export default {
-	// mounted() {
-	// 	console.log(this.$router.history.current["path"]);
-	// },
+	mounted() {
+		window.addEventListener(
+			"scroll", () => {
+				var allSections = [...document.querySelectorAll('section')]
+				allSections.forEach((thisSec) => {
+					if (thisSec.offsetTop <= window.scrollY && (thisSec.offsetTop + thisSec.offsetHeight) > window.scrollY) {
+						this.$store.state.activeSection = thisSec.id
+					}
+					// console.log(window.scrollY)
+					// console.log(this.$store.state.activeSection)
+
+				});
+			});
+	},
 	data: () => ({
+
 	}),
 	methods: {
 		scrollToElement(refName) {

@@ -9,8 +9,7 @@
 
         <v-row>
             <v-col>
-                <h3>Filter
-                </h3>
+                <h3>Filter</h3>
                 <v-chip-group column multiple color="deep-purple lighten-4" v-model="$store.state.chipSelected">
                     <v-chip v-for="i in allProjects" :value="i" :key="i">
                         {{ i }}

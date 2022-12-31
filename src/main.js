@@ -26,6 +26,7 @@ export default function (Vue, { appOptions, head }) {
   appOptions.store = new Vuex.Store({
     state: {
       chipSelected: [],
+      activeSection: "about"
     }
   })
   const opts = {
