@@ -54,10 +54,6 @@ export default {
   // props: [
   //   hackathonProjects
   // ],
-  created() {
-    // props are exposed on `this`
-    console.log(this.foo)
-  },
   methods: {
     contains(arrAttributes) {
       arrAttributes.some(element => {

@@ -31,23 +31,22 @@
 			</v-list>
 		</v-navigation-drawer>
 
-		<v-bottom-navigation class="d-sm-none" app active-class mandatory shift color="primary darken-3"
-			background-color="primary lighten-4">
-			<v-btn to="/">
+		<v-bottom-navigation class="d-sm-none" app grow color="primary darken-3" mandatory shift>
+			<v-btn height="100%" to="/">
 				<span>About</span>
 				<v-icon>mdi-view-dashboard</v-icon>
 			</v-btn>
-			<v-btn to="/connect">
-				<v-icon>mdi-human-greeting-proximity</v-icon>
+			<v-btn height="100%" to="/connect">
 				<span>Connect</span>
+				<v-icon>mdi-human-greeting-proximity</v-icon>
 			</v-btn>
-			<v-btn to="/projects">
-				<v-icon>mdi-devices</v-icon>
+			<v-btn height="100%" to="/projects">
 				<span>Projects</span>
+				<v-icon>mdi-devices</v-icon>
 			</v-btn>
-			<v-btn to="/arsenal">
-				<v-icon>mdi-hammer-wrench</v-icon>
+			<v-btn height="100%" to="/arsenal">
 				<span>Tools</span>
+				<v-icon>mdi-hammer-wrench</v-icon>
 			</v-btn>
 		</v-bottom-navigation>
 	</v-app>
@@ -82,7 +81,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 /* @font-face {
 	font-family: nunito;
 	src: url('../assets/nunito.otf') format('truetype');
