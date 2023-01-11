@@ -18,10 +18,10 @@ export default function (Vue, { appOptions, head }) {
     async: true,
     defer: true
   })
-  // head.link.push({
-  //   rel: 'stylesheet',
-  //   href: 'href="https://fonts.googleapis.com/css?family=Tangerine"',
-  // });
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css?family=Roboto&display=auto'
+  })
 
   appOptions.store = new Vuex.Store({
     state: {
@@ -53,5 +53,4 @@ export default function (Vue, { appOptions, head }) {
   // Vue.use(store)
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
-  
 }
