@@ -75,31 +75,39 @@
         </v-row>
       </v-container>
     </section>
-    <section id="connect" class="d-none d-sm-block" style="background: #000;">
-      <ConnectComponent />
-    </section>
-    <section id="projects" class="d-none d-sm-block"
-      style='background: url("../assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed;'>
-      <v-row>
-        <v-col cols="3">
-          <ProjectFilterNavigation style="position: sticky; top: 0;" />
-        </v-col>
-        <v-col>
-          <Projects />
-        </v-col>
-      </v-row>
-    </section>
-    <section id="arsenal" class="d-none d-sm-block"
-      style='background: purple url("assets/toolsBg.webp"); background-size:contain;  background-attachment: fixed;'>
-      <v-row>
-        <v-col cols="3">
-          <ArsenalLanguageStats style="position: sticky; top: 0;" />
-        </v-col>
-        <v-col>
-          <Arsenal />
-        </v-col>
-      </v-row>
-    </section>
+    <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
+      <section id="connect" class="d-none d-sm-block" style="background: #000;">
+        <ConnectComponent />
+      </section>
+    </v-lazy>
+    <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
+
+      <section id="projects" class="d-none d-sm-block"
+        style='background: url("../assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed;'>
+        <v-row>
+          <v-col cols="3">
+            <ProjectFilterNavigation style="position: sticky; top: 0;" />
+          </v-col>
+          <v-col>
+            <Projects />
+          </v-col>
+        </v-row>
+      </section>
+    </v-lazy>
+    <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
+
+      <section id="arsenal" class="d-none d-sm-block"
+        style='background: purple url("assets/toolsBg.webp"); background-size:contain;  background-attachment: fixed;'>
+        <v-row>
+          <v-col cols="3">
+            <ArsenalLanguageStats style="position: sticky; top: 0;" />
+          </v-col>
+          <v-col>
+            <Arsenal />
+          </v-col>
+        </v-row>
+      </section>
+    </v-lazy>
   </Layout>
 </template>
 
@@ -131,6 +139,11 @@ export default {
   },
   methods: {
 
+  },
+  data() {
+    return {
+      isActive: false,
+    }
   },
   components: { ConnectComponent, Projects, Arsenal, ProjectFilterNavigation, ArsenalLanguageStats }
 };
