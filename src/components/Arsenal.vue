@@ -103,23 +103,23 @@ h1 {
 import tools from '~/data/tools.json'
 import ArsenalLanguageStats from '../components/arsenalLanguageStats.vue';
 export default {
-    metaInfo() {
-        return this.$seo({
-            title: "Tools",
-            description: "A collection of all the tools I've ever used, and know my way around getting things done with them",
-            keywords: "one,two",
-            openGraph: {
-                title: "Shailesh K S, Tools",
-                type: "website",
-            },
-            twitter: {
-                title: "Shailesh K S, Tools",
-                type: "summary",
-            },
-            link: [],
-            script: [] // any scripts
-        });
-    },
+    // metaInfo() {
+    //     return this.$seo({
+    //         title: "Tools",
+    //         description: "A collection of all the tools I've ever used, and know my way around getting things done with them",
+    //         keywords: "one,two",
+    //         openGraph: {
+    //             title: "Shailesh K S, Tools",
+    //             type: "website",
+    //         },
+    //         twitter: {
+    //             title: "Shailesh K S, Tools",
+    //             type: "summary",
+    //         },
+    //         link: [],
+    //         script: [] // any scripts
+    //     });
+    // },
     data: () => ({
         languages: tools.languages,
         frontend: tools.frontend,
