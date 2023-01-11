@@ -42,9 +42,9 @@ import ProjectCard from '../components/projectCard.vue';
 
 export default {
 
-  metaInfo: {
-    title: "Projects",
-  },
+  // metaInfo: {
+  //   title: "Projects",
+  // },
   data: () => ({
     drawer: false,
     sideProjects: allProjects.sideProjects,
