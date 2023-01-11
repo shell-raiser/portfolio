@@ -36,5 +36,13 @@ module.exports = {
     //     dataWebsiteId: 'ab441312-87a9-4f44-a8cc-676757c0ee8c'
     //   }
     // }
-  ]
+  ],
+  // 'css.split': true
+  // css: {
+  //   loaderOptions: {
+  //     scss: {
+  //       // options here will be passed to sass-loader
+  //     }
+  //   }
+  // }
 }

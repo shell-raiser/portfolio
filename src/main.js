@@ -1,4 +1,4 @@
-import Vuetify from 'vuetify'
+import Vuetify from 'vuetify/lib/framework'
 import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/lib/util/colors'
 import DefaultLayout from '~/layouts/Default.vue'
@@ -18,10 +18,10 @@ export default function (Vue, { appOptions, head }) {
     async: true,
     defer: true
   })
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'href="https://fonts.googleapis.com/css?family=Tangerine"',
-  });
+  // head.link.push({
+  //   rel: 'stylesheet',
+  //   href: 'href="https://fonts.googleapis.com/css?family=Tangerine"',
+  // });
 
   appOptions.store = new Vuex.Store({
     state: {
@@ -53,4 +53,5 @@ export default function (Vue, { appOptions, head }) {
   // Vue.use(store)
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+  
 }
