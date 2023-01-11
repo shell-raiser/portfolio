@@ -7,58 +7,55 @@
         <v-card class="toolCard" rounded flat>
             <v-card-title class="toolsCardsImageCont deep-purple lighten-4">Languages
             </v-card-title>
-
-            <div class="toolsCardsImageCont">
-                <g-image class="toolsLogos" :src="item" v-for="(item, i) in languages" :key="i" />
-            </div>
+            <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
+                <div class="toolsCardsImageCont">
+                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in languages" :key="i" />
+                </div>
+            </v-lazy>
         </v-card>
         <br>
 
         <v-card class="toolCard" rounded flat>
-            <v-card-title class="toolsCardsImageCont red lighten-4">Front End Frameworks
-            </v-card-title>
+            <v-card-title class="toolsCardsImageCont red lighten-4">Front End Frameworks</v-card-title>
+            <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
+                <div class="toolsCardsImageCont">
 
-            <div class="toolsCardsImageCont">
-
-                <g-image class="toolsLogos" :src="item" v-for="(item, i) in frontend" :key="i" />
-
-            </div>
+                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in frontend" :key="i" />
+                </div>
+            </v-lazy>
         </v-card>
         <br>
 
         <v-card class="toolCard" rounded flat>
-            <v-card-title class="toolsCardsImageCont teal lighten-4">Back End Frameworks
-            </v-card-title>
+            <v-card-title class="toolsCardsImageCont teal lighten-4">Back End Frameworks </v-card-title>
+            <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
+                <div class="toolsCardsImageCont">
 
-
-            <div class="toolsCardsImageCont">
-
-                <g-image class="toolsLogos" :src="item" v-for="(item, i) in backend" :key="i" />
-
-            </div>
+                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in backend" :key="i" />
+                </div>
+            </v-lazy>
         </v-card>
         <br>
 
         <v-card class="toolCard" rounded flat>
             <v-card-title class="toolsCardsImageCont purple lighten-4">Design</v-card-title>
+            <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
+                <div class="toolsCardsImageCont">
 
-
-            <div class="toolsCardsImageCont">
-
-                <g-image class="toolsLogos" :src="item" v-for="(item, i) in design" :key="i" />
-            </div>
+                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in design" :key="i" />
+                </div>
+            </v-lazy>
         </v-card>
         <br>
 
         <v-card class="toolCard" rounded flat>
             <v-card-title class="toolsCardsImageCont indigo lighten-4">Audio</v-card-title>
-
-
-            <div class="toolsCardsImageCont">
-                <g-image class="toolsLogos" :src="item" v-for="(item, i) in audio" :key="i" />
-            </div>
+            <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
+                <div class="toolsCardsImageCont">
+                    <g-image class="toolsLogos" :src="item" v-for="(item, i) in audio" :key="i" />
+                </div>
+            </v-lazy>
         </v-card>
-
     </v-container>
 </template>
 <style scoped>
@@ -129,6 +126,7 @@ export default {
         backend: tools.backend,
         design: tools.design,
         audio: tools.audio,
+        isActive: false,
     }),
     components: { ArsenalLanguageStats }
 };
