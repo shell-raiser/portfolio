@@ -2,13 +2,14 @@
   <Layout>
     <section id="about"
       style="background: linear-gradient(90deg, #9575CD, #90caf9);  background-size: 200% 100%;  animation: gradient 10s ease infinite;">
-      <v-container class="fill-height">
+      <v-container>
         <v-row align="center" justify="center" align-content="center">
-          <v-col align-self="center" sm="6">
+          <v-col align-self="center" style="margin: auto;">
             <!-- <v-container> -->
             <!-- <v-img src="../assets/legoMan.jpg" lazy-src="https://wp-technique.com/loading/loading.gif"
                 aspect-ratio="1" min-width="300px" max-width="500px" style="height:100%;"></v-img> -->
-            <g-image class="rounded" alt="profile picture" src="~/assets/legoMan.jpg" />
+            <g-image class="rounded" style=" margin: auto;  display: block; max-width: calc(100vw - 24px);"
+              alt="profile picture" src="~/assets/legoMan.jpg" />
             <!-- </v-container> -->
           </v-col>
 
