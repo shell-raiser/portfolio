@@ -1,6 +1,7 @@
 import Vuetify from 'vuetify/lib/framework'
-import 'vuetify/dist/vuetify.min.css'
+// import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/lib/util/colors'
+import './sass/main.scss'
 import DefaultLayout from '~/layouts/Default.vue'
 
 import Vuex from 'vuex'
