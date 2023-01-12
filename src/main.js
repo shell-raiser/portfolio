@@ -19,10 +19,10 @@ export default function (Vue, { appOptions, head }) {
     async: true,
     defer: true
   })
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Roboto&display=auto'
-  })
+  // head.link.push({
+  //   rel: 'stylesheet',
+  //   href: 'https://fonts.googleapis.com/css?family=Roboto&display=auto'
+  // })
 
   appOptions.store = new Vuex.Store({
     state: {

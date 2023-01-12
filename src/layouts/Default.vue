@@ -82,17 +82,12 @@ export default {
 </script>
 
 <style scoped>
-/* @font-face {
-	font-family: nunito;
-	src: url('../assets/nunito.otf') format('truetype');
+@font-face {
+	font-family: Roboto;
+	src: url('../assets/Roboto/Roboto-Light.ttf') format('truetype');
 	font-weight: normal;
 }
 
-@font-face {
-	font-family: nunito;
-	src: url('../assets/nunito_bold.otf') format('truetype');
-	font-weight: bold
-} */
 
 .slide-fade-enter-active {
 	transition: all 0.5s;
