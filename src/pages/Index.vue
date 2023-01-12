@@ -28,12 +28,12 @@
                 <p style="color: black">
 
                 <div class="scrollingList__text">I'm a</div>
-                <div class="scrollingList">
-                  <ul class="scrollingList__list">
-                    <li class="scrollingList__list__item ">CyberSec enthusiast</li>
-                    <li class="scrollingList__list__item ">Web dev</li>
-                    <li class="scrollingList__list__item ">Designer</li>
-                    <li class="scrollingList__list__item ">Music Maker</li>
+                <div class="scrollingList ">
+                  <ul class="scrollingList__list ">
+                    <li class="scrollingList__list__item rounded">CyberSec enthusiast</li>
+                    <li class="scrollingList__list__item rounded">Web dev</li>
+                    <li class="scrollingList__list__item rounded">Designer</li>
+                    <li class="scrollingList__list__item rounded">Music Maker</li>
                   </ul>
                 </div>
                 </p>
@@ -215,11 +215,11 @@ h1 {
 }
 
 .scrollingList__list__item {
-  line-height: 41px;
+  line-height: 38px;
   padding-inline: 3px;
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  border-width: 1px;
+  margin-bottom: 3px;
 }
 
 .scrollingList__list__item:nth-child(2n+1) {
@@ -236,34 +236,23 @@ h1 {
 @keyframes change {
 
   0%,
-  12.66%,
-  100% {
-    transform: translate3d(0, 0, 0);
+  12% {
+    transform: translateY(0);
   }
 
-  16.66%,
-  29.32% {
-    transform: translate3d(0, -25%, 0);
+  25%,
+  37% {
+    transform: translateY(-25%);
   }
 
-  33.32%,
-  45.98% {
-    transform: translate3d(0, -50%, 0);
+  50%,
+  62% {
+    transform: translateY(-50%);
   }
 
-  49.98%,
-  62.64% {
-    transform: translate3d(0, -75%, 0);
-  }
-
-  66.64%,
-  79.3% {
-    transform: translate3d(0, -50%, 0);
-  }
-
-  83.3%,
-  95.96% {
-    transform: translate3d(0, -25%, 0);
+  75%,
+  87% {
+    transform: translateY(-75%);
   }
 }
 </style>
