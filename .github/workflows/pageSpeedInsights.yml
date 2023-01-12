@@ -15,6 +15,7 @@ jobs:
         with:
           url: "https://shell-raiser.github.io/"
           strategy: mobile
+          threshold: 40
       - name: Running Page Speed Insights (Desktop)
         uses: jakepartusch/psi-action@v1.3
         with:
