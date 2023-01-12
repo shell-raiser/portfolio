@@ -1,0 +1,22 @@
+name: pageSpeedInsights
+
+on:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types:
+      - completed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running Page Speed Insights (Mobile)
+        uses: jakepartusch/psi-action@v1.3
+        with:
+          url: "https://shell-raiser.github.io/"
+          strategy: mobile
+      - name: Running Page Speed Insights (Desktop)
+        uses: jakepartusch/psi-action@v1.3
+        with:
+          url: "https://shell-raiser.github.io/"
+          strategy: desktop
