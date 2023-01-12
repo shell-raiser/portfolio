@@ -8,7 +8,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "dependencies": {
+  "devDependencies": {
     "@gridsome/cli": "^0.3.4",
     "@gridsome/plugin-sitemap": "^0.4.0",
     "es6-promise": "^4.2.8",
@@ -16,9 +16,7 @@
     "gridsome": "^0.7.23",
     "gridsome-plugin-robots": "^0.2.1",
     "gridsome-plugin-seo": "^1.0.2",
-    "vuex": "^3.6.2"
-  },
-  "devDependencies": {
+    "vuex": "^3.6.2",
     "@mdi/font": "^7.0.96",
     "deepmerge": "^4.2.2",
     "fibers": "^5.0.3",
