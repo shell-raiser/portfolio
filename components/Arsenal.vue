@@ -9,7 +9,7 @@
             </v-card-title>
 
             <div class="toolsCardsImageCont">
-                <g-image class="toolsLogos" :src="item" v-for="(item, i) in languages" :key="i" />
+                <img class="toolsLogos" :src="item" v-for="(item, i) in languages" :key="i" />
             </div>
         </v-card>
         <br>
@@ -20,7 +20,7 @@
 
             <div class="toolsCardsImageCont">
 
-                <g-image class="toolsLogos" :src="item" v-for="(item, i) in frontend" :key="i" />
+                <img class="toolsLogos" :src="item" v-for="(item, i) in frontend" :key="i" />
 
             </div>
         </v-card>
@@ -33,7 +33,7 @@
 
             <div class="toolsCardsImageCont">
 
-                <g-image class="toolsLogos" :src="item" v-for="(item, i) in backend" :key="i" />
+                <img class="toolsLogos" :src="item" v-for="(item, i) in backend" :key="i" />
 
             </div>
         </v-card>
@@ -45,7 +45,7 @@
 
             <div class="toolsCardsImageCont">
 
-                <g-image class="toolsLogos" :src="item" v-for="(item, i) in design" :key="i" />
+                <img class="toolsLogos" :src="item" v-for="(item, i) in design" :key="i" />
             </div>
         </v-card>
         <br>
@@ -55,7 +55,7 @@
 
 
             <div class="toolsCardsImageCont">
-                <g-image class="toolsLogos" :src="item" v-for="(item, i) in audio" :key="i" />
+                <img class="toolsLogos" :src="item" v-for="(item, i) in audio" :key="i" />
             </div>
         </v-card>
 

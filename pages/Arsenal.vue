@@ -1,9 +1,9 @@
 <template>
-    <Layout>
+    <!-- <Layout> -->
         <section id="arsenal">
             <Arsenal />
         </section>
-    </Layout>
+    <!-- </Layout> -->
 </template>
 <style scoped>
 h1 {

@@ -1,10 +1,7 @@
 <template>
 	<v-app>
-		<main>
-			<v-main>
-				<slot />
-			</v-main>
-		</main>
+		<!-- <v-main> -->
+		<Nuxt /> <!-- </v-main> -->
 		<v-navigation-drawer class="d-none d-sm-block" id="navBar" app :mini-variant="!$vuetify.breakpoint.xlOnly"
 			:expand-on-hover="!$vuetify.breakpoint.xlOnly" touchless color="primary lighten-4">
 			<v-list nav dense>
@@ -61,7 +58,8 @@ export default {
 				var allSections = [...document.querySelectorAll('section')]
 				allSections.forEach((thisSec) => {
 					if (thisSec.offsetTop <= window.scrollY && (thisSec.offsetTop + thisSec.offsetHeight) > window.scrollY) {
-						this.$store.state.activeSection = thisSec.id
+						// this.$store.state.activeSection = thisSec.id
+						this.$store.commit('changeActiveSection',thisSec.id )
 					}
 					// console.log(window.scrollY)
 					// console.log(this.$store.state.activeSection)

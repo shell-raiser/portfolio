@@ -1,7 +1,7 @@
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/lib/util/colors'
-import DefaultLayout from '~/layouts/Default.vue'
+import DefaultLayout from '~/layouts/default.vue'
 
 import Vuex from 'vuex'
 import '@mdi/font/css/materialdesignicons.css'

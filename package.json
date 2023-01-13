@@ -1,28 +1,23 @@
 {
-  "name": "portfolio",
+  "name": "newFolder",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "@gridsome/cli": "^0.3.4",
-    "@gridsome/plugin-sitemap": "^0.4.0",
-    "es6-promise": "^4.2.8",
-    "gh-pages": "^4.0.0",
-    "gridsome": "^0.7.23",
-    "gridsome-plugin-robots": "^0.2.1",
-    "gridsome-plugin-seo": "^1.0.2",
-    "vuetify": "^2.6.4",
-    "vuex": "^3.6.2"
+    "@nuxtjs/pwa": "^3.3.5",
+    "core-js": "^3.25.3",
+    "nuxt": "^2.15.8",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10",
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
-    "@mdi/font": "^7.0.96",
-    "gridsome-plugin-manifest": "^0.3.5",
-    "vue-cli-plugin-vuetify": "~2.4.8",
-    "webpack-node-externals": "^3.0.0"
+    "@nuxtjs/vuetify": "^1.12.3"
   }
 }
