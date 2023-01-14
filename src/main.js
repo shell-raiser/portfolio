@@ -6,7 +6,6 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 import Vuex from 'vuex'
 import '@mdi/font/css/materialdesignicons.css'
-// import "@fontsource/nunito"
 export default function (Vue, { appOptions, head }) {
   Vue.use(Vuex)
   // head.link.push({
