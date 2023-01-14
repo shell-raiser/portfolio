@@ -7,17 +7,17 @@ on:
       - completed
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Running Page Speed Insights (Mobile)
-        uses: jakepartusch/psi-action@v1.3
-        with:
-          url: "https://shell-raiser.github.io/"
-          strategy: mobile
-          threshold: 40
       - name: Running Page Speed Insights (Desktop)
         uses: jakepartusch/psi-action@v1.3
         with:
           url: "https://shell-raiser.github.io/"
           strategy: desktop
+      - name: Running Page Speed Insights (Mobile)
+        uses: jakepartusch/psi-action@v1.3
+        with:
+          url: "https://shell-raiser.github.io/"
+          strategy: mobile
+          threshold: 50
