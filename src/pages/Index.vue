@@ -3,73 +3,74 @@
     <section id="about"
       style="background: linear-gradient(90deg, #9575CD, #90caf9);  background-size: 200% 100%;  animation: gradient 10s ease infinite;">
       <v-container>
-        <v-row align="center" justify="center" align-content="center">
-          <v-col align-self="center" style="margin: auto;">
+        <v-row>
+          <v-col align-self="center" class="rounded contentHolder">
             <!-- <v-container> -->
             <!-- <v-img src="../assets/legoMan.jpg" lazy-src="https://wp-technique.com/loading/loading.gif"
                 aspect-ratio="1" min-width="300px" max-width="500px" style="height:100%;"></v-img> -->
-            <g-image class="rounded" style=" margin: auto;  display: block; max-width: calc(100vw - 24px);"
-              alt="profile picture" src="~/assets/legoMan.jpg" />
+            <!-- <g-image class="rounded" style=" margin: auto;  display: block; max-width: calc(100vw - 24px);"
+              alt="profile picture" src="~/assets/legoMan.jpg" /> -->
             <!-- </v-container> -->
+            <!-- <v-row > -->
+            <v-container>
+              <h1>
+                <p style="font-size:x-large;margin-bottom: auto;">
+                  Hello there 👋,</p>
+                I'm Shailesh !
+              </h1>
+
+
+
+              <p style="color: black">
+              <div class="scrollingList__text">I'm a</div>
+              <div class="scrollingList ">
+                <ul class="scrollingList__list ">
+                  <li class="scrollingList__list__item rounded">CyberSec enthusiast</li>
+                  <li class="scrollingList__list__item rounded">Web dev</li>
+                  <li class="scrollingList__list__item rounded">Designer</li>
+                  <li class="scrollingList__list__item rounded">Music Maker</li>
+                </ul>
+              </div>
+              </p>
+
+              <img
+                src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple"
+                alt="visitors" />
+            </v-container>
+            <!-- </v-row> -->
           </v-col>
 
-          <v-col>
-            <v-row class="rounded contentHolder">
-              <v-container>
-                <h1>
-                  Hello there,
-                  <br />I'm Shailesh !
-                </h1>
+          <v-col align-self="center">
+            <!-- <v-row > -->
+            <!-- <v-container class="rounded contentHolder">
+              <p>
+                I like to tweak code and mess around. Doing mostly Web Dev, But will be doing some CyberSec stuff
+                soon
+                <br>
+                Super interested in Open source
+                <br>
+                I make electronic music in my free time.
+                <br>
+                This site was built from scratch with gridsome and vuetify. I'm using Umami analytics (Link here).
+                <br>
+                I really enjoy working long hours on stuff that I find interesting, yet I barely make the deadline
+                when I have to work on something boring
+              </p>
+            </v-container> -->
+            <!-- </v-row> -->
 
-
-                <img
-                  src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple"
-                  alt="visitors" />
-                <p style="color: black">
-
-                <div class="scrollingList__text">I'm a</div>
-                <div class="scrollingList ">
-                  <ul class="scrollingList__list ">
-                    <li class="scrollingList__list__item rounded">CyberSec enthusiast</li>
-                    <li class="scrollingList__list__item rounded">Web dev</li>
-                    <li class="scrollingList__list__item rounded">Designer</li>
-                    <li class="scrollingList__list__item rounded">Music Maker</li>
-                  </ul>
-                </div>
-                </p>
-
-                <!-- </p> -->
-
-              </v-container>
-            </v-row>
             <!-- <br><br> -->
-            <!-- <v-row class="rounded contentHolder">
-              <v-container>
-                <p>
-                  I like to tweak code and mess around. Doing mostly Web Dev, But will be doing some CyberSec stuff
-                  soon
-                  <br>
-                  Super interested in Open source
-                  <br>
-                  I make electronic music in my free time.
-                  <br>
-                  This site was built from scratch with gridsome and vuetify. I'm using Umami analytics (Link here).
-                  <br>
-                  I really enjoy working long hours on stuff that I find interesting, yet I barely make the deadline
-                  when I have to work on something boring
-                </p>
-              </v-container>
-            </v-row> -->
-            <br><br>
-            <v-row class="rounded contentHolder red white--text">
-              <v-container>
-                This site is still under development, many things are yet to be implemented.
-                <br />Keep an eye on
-                <a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">other
-                  branches</a>
-                for major changes.
-              </v-container>
-            </v-row>
+
+            <br>
+            <!-- <v-row > -->
+            <v-container class="rounded contentHolder red white--text">
+              This site is still under development, many things are yet to be implemented.
+              <br />Keep an eye on
+              <a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">other
+                branches</a>
+              for major changes.
+            </v-container>
+            <!-- </v-row> -->
 
           </v-col>
         </v-row>
