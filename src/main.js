@@ -3,13 +3,9 @@ import Vuetify from 'vuetify/lib/framework'
 import colors from 'vuetify/lib/util/colors'
 import './sass/main.scss'
 import DefaultLayout from '~/layouts/Default.vue'
-import {
-  auto as followSystemColorScheme,
-} from 'darkreader';
+
 import Vuex from 'vuex'
 import '@mdi/font/css/materialdesignicons.css'
-
-// import auto from 'darkreader'
 
 export default function (Vue, { appOptions, head }) {
   Vue.use(Vuex)
@@ -29,16 +25,12 @@ export default function (Vue, { appOptions, head }) {
     // })
 
 
-    followSystemColorScheme();
-
-
-
-  appOptions.store = new Vuex.Store({
-    state: {
-      chipSelected: [],
-      activeSection: "about"
-    }
-  })
+    appOptions.store = new Vuex.Store({
+      state: {
+        chipSelected: [],
+        activeSection: "about"
+      }
+    })
   const opts = {
     theme: {
       themes: {

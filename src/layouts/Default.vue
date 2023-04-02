@@ -57,11 +57,7 @@
 </template>
 
 <script>
-import {
-	enable as enableDarkMode,
-	disable as disableDarkMode,
-	isEnabled as isDarkReaderEnabled
-} from 'darkreader';
+var DReader
 export default {
 	mounted() {
 		window.addEventListener(
@@ -71,11 +67,10 @@ export default {
 					if (thisSec.offsetTop <= window.scrollY && (thisSec.offsetTop + thisSec.offsetHeight) > window.scrollY) {
 						this.$store.state.activeSection = thisSec.id
 					}
-					// console.log(window.scrollY)
-					// console.log(this.$store.state.activeSection)
-
 				});
 			});
+		DReader = require('darkreader')
+		DReader.auto()
 	},
 	data: () => ({
 
@@ -86,11 +81,10 @@ export default {
 			window.scrollTo({ top: position, behavior: "smooth" });
 		},
 		changeTheme() {
-			if (isDarkReaderEnabled()) {
-				disableDarkMode();
-
+			if (DReader.isEnabled()) {
+				DReader.disable();
 			} else {
-				enableDarkMode();
+				DReader.enable();
 			}
 		}
 	},
