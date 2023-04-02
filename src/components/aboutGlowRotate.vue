@@ -39,7 +39,7 @@
 h1 {
     font-size: xxx-large;
     /* color: rgb(100, 0, 172); */
-    color: #55379a;
+    color: #3c276d;
     /* background-image: -webkit-linear-gradient(0deg, #3f51b5, #9c27b0); */
     /* background-clip: text; */
     /* -webkit-text-fill-color: transparent; */

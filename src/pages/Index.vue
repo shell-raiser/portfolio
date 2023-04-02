@@ -168,7 +168,7 @@ h1 {
 .rotatingGlow {
   padding: 3px;
   /* border-radius: 7px; */
-  background-image: linear-gradient(var(--rotate), #ffffff, 30%, rgba(95, 0, 238, 0.801));
+  background-image: linear-gradient(var(--rotate), #a1a6ff, 30%, rgb(79, 0, 238));
   animation: spin 10s linear infinite;
 }
 
