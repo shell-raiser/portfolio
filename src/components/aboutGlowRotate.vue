@@ -27,7 +27,7 @@
 </template>
 <style scoped>
 .abtcontentHolder {
-    background: rgba(255, 255, 255, 0.466);
+    background: rgba(255, 255, 255, 0.6);
     /* min-width: fit-content; */
     backdrop-filter: blur(5px);
     /* height: max-content; */

@@ -6,7 +6,7 @@
         <v-row>
           <v-col align-self="center">
 
-            <v-container class="rotatingGlow">
+            <v-container class="rotatingGlow rounded">
               <AboutGlowRotate />
             </v-container>
             <br>
@@ -166,9 +166,9 @@ h1 {
 
 
 .rotatingGlow {
-  padding: 5px;
-  border-radius: 7px;
-  background-image: linear-gradient(var(--rotate), #90a5f9b3, 30%, rgba(95, 0, 238, 0.553));
+  padding: 3px;
+  /* border-radius: 7px; */
+  background-image: linear-gradient(var(--rotate), #ffffff, 30%, rgba(95, 0, 238, 0.801));
   animation: spin 10s linear infinite;
 }
 
