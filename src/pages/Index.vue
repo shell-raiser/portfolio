@@ -5,7 +5,6 @@
       <v-container>
         <v-row>
           <v-col align-self="center">
-
             <v-container class="rotatingGlow rounded">
               <AboutGlowRotate />
             </v-container>
