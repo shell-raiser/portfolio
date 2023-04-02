@@ -3,9 +3,14 @@ import Vuetify from 'vuetify/lib/framework'
 import colors from 'vuetify/lib/util/colors'
 import './sass/main.scss'
 import DefaultLayout from '~/layouts/Default.vue'
-
+import {
+  auto as followSystemColorScheme,
+} from 'darkreader';
 import Vuex from 'vuex'
 import '@mdi/font/css/materialdesignicons.css'
+
+// import auto from 'darkreader'
+
 export default function (Vue, { appOptions, head }) {
   Vue.use(Vuex)
   // head.link.push({
@@ -17,11 +22,16 @@ export default function (Vue, { appOptions, head }) {
     src: "https://umami2-eosin.vercel.app/umami.js",
     async: true,
     defer: true
-  })
-  // head.link.push({
-  //   rel: 'stylesheet',
-  //   href: 'https://fonts.googleapis.com/css?family=Roboto&display=auto'
-  // })
+  }),
+    // head.link.push({
+    //   rel: 'stylesheet',
+    //   href: 'https://fonts.googleapis.com/css?family=Roboto&display=auto'
+    // })
+
+
+    followSystemColorScheme();
+
+
 
   appOptions.store = new Vuex.Store({
     state: {

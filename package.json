@@ -11,19 +11,22 @@
   "devDependencies": {
     "@gridsome/cli": "^0.3.4",
     "@gridsome/plugin-sitemap": "^0.4.0",
-    "es6-promise": "^4.2.8",
-    "gh-pages": "^4.0.0",
-    "gridsome": "^0.7.23",
-    "gridsome-plugin-robots": "^0.2.1",
-    "gridsome-plugin-seo": "^1.0.2",
-    "vuex": "^3.6.2",
     "@mdi/font": "^7.0.96",
     "deepmerge": "^4.2.2",
+    "es6-promise": "^4.2.8",
     "fibers": "^5.0.3",
+    "gh-pages": "^4.0.0",
+    "gridsome": "^0.7.23",
     "gridsome-plugin-manifest": "^0.3.5",
+    "gridsome-plugin-robots": "^0.2.1",
+    "gridsome-plugin-seo": "^1.0.2",
     "sass": "^1.57.1",
     "sass-loader": "^7.3.1",
     "vue-cli-plugin-vuetify": "~2.4.8",
-    "vuetify-loader": "^1.9.2"
+    "vuetify-loader": "^1.9.2",
+    "vuex": "^3.6.2"
+  },
+  "dependencies": {
+    "darkreader": "^4.9.58"
   }
 }

@@ -28,6 +28,10 @@
 					<v-list-item-icon><v-icon>mdi-hammer-wrench</v-icon></v-list-item-icon>
 					<v-list-item-title>Tools</v-list-item-title>
 				</v-list-item>
+				<v-list-item style="position: fixed; bottom: 1em;" @click="changeTheme()">
+					<v-list-item-icon><v-icon>mdi-lightbulb</v-icon></v-list-item-icon>
+					<v-list-item-title>Theme</v-list-item-title>
+				</v-list-item>
 			</v-list>
 		</v-navigation-drawer>
 
@@ -53,6 +57,11 @@
 </template>
 
 <script>
+import {
+	enable as enableDarkMode,
+	disable as disableDarkMode,
+	isEnabled as isDarkReaderEnabled
+} from 'darkreader';
 export default {
 	mounted() {
 		window.addEventListener(
@@ -75,6 +84,14 @@ export default {
 		scrollToElement(refName) {
 			const position = document.getElementById(refName).offsetTop;
 			window.scrollTo({ top: position, behavior: "smooth" });
+		},
+		changeTheme() {
+			if (isDarkReaderEnabled()) {
+				disableDarkMode();
+
+			} else {
+				enableDarkMode();
+			}
 		}
 	},
 };
