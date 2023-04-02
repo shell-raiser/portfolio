@@ -4,65 +4,12 @@
       style="background: linear-gradient(90deg, #9575CD, #90caf9);  background-size: 200% 100%;  animation: gradient 10s ease infinite;">
       <v-container>
         <v-row>
-          <v-col align-self="center" class="rounded contentHolder">
-            <!-- <v-container> -->
-            <!-- <v-img src="../assets/legoMan.jpg" lazy-src="https://wp-technique.com/loading/loading.gif"
-                aspect-ratio="1" min-width="300px" max-width="500px" style="height:100%;"></v-img> -->
-            <!-- <g-image class="rounded" style=" margin: auto;  display: block; max-width: calc(100vw - 24px);"
-              alt="profile picture" src="~/assets/legoMan.jpg" /> -->
-            <!-- </v-container> -->
-            <!-- <v-row > -->
-            <v-container>
-              <h1>
-                <p style="font-size:x-large;margin-bottom: auto;">
-                  Hello there 👋,</p>
-                I'm Shailesh !
-              </h1>
-
-
-
-              <p style="color: black">
-              <div class="scrollingList__text">I'm a</div>
-              <div class="scrollingList ">
-                <ul class="scrollingList__list ">
-                  <li class="scrollingList__list__item rounded">CyberSec enthusiast</li>
-                  <li class="scrollingList__list__item rounded">Web dev</li>
-                  <li class="scrollingList__list__item rounded">Designer</li>
-                  <li class="scrollingList__list__item rounded">Music Maker</li>
-                </ul>
-              </div>
-              </p>
-
-              <img
-                src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple"
-                alt="visitors" />
-            </v-container>
-            <!-- </v-row> -->
-          </v-col>
-
           <v-col align-self="center">
-            <!-- <v-row > -->
-            <!-- <v-container class="rounded contentHolder">
-              <p>
-                I like to tweak code and mess around. Doing mostly Web Dev, But will be doing some CyberSec stuff
-                soon
-                <br>
-                Super interested in Open source
-                <br>
-                I make electronic music in my free time.
-                <br>
-                This site was built from scratch with gridsome and vuetify. I'm using Umami analytics (Link here).
-                <br>
-                I really enjoy working long hours on stuff that I find interesting, yet I barely make the deadline
-                when I have to work on something boring
-              </p>
-            </v-container> -->
-            <!-- </v-row> -->
 
-            <!-- <br><br> -->
-
+            <v-container class="rotatingGlow">
+              <AboutGlowRotate />
+            </v-container>
             <br>
-            <!-- <v-row > -->
             <v-container class="rounded contentHolder red white--text">
               This site is still under development, many things are yet to be implemented.
               <br />Keep an eye on
@@ -70,7 +17,31 @@
                 branches</a>
               for major changes.
             </v-container>
-            <!-- </v-row> -->
+          </v-col>
+
+          <v-col align-self="center">
+            <!-- <v-row > -->
+            <v-container class="rounded contentHolder" style="font-weight: 600;">
+              <p>
+                I'm a student who enjoys learning new things and solving problems.
+                <br> I'm passionate about protecting people
+                and systems from cyber threats, and enjoy putting my knowledge to use in real-world scenarios.
+                <br> I enjoy tweaking and experimenting with code. Currently focused on web development, but beginning to
+                dabble in cybersecurity. FOSS piques my interest. <br>
+                I enjoy working long
+                hours on interesting projects, but when I have to work on something boring, I barely make the
+                deadline.<br>
+                In my spare time, I create electronic music. Check out the
+                links section for my work . <br>
+
+              </p>
+              <p>
+                Feel free to browse through my projects, as well as my resume and contact information, and let me know
+                what you think.
+              </p>
+            </v-container>
+
+
 
           </v-col>
         </v-row>
@@ -115,6 +86,7 @@
 <script>
 // import AboutContent from "../components/aboutContent.vue"
 
+import AboutGlowRotate from '../components/aboutGlowRotate.vue';
 import Arsenal from '../components/Arsenal.vue';
 import ArsenalLanguageStats from '../components/arsenalLanguageStats.vue';
 import ConnectComponent from '../components/Connect.vue'
@@ -146,7 +118,7 @@ export default {
       isActive: false,
     }
   },
-  components: { ConnectComponent, Projects, Arsenal, ProjectFilterNavigation, ArsenalLanguageStats }
+  components: { ConnectComponent, Projects, Arsenal, ProjectFilterNavigation, ArsenalLanguageStats, AboutGlowRotate }
 };
 </script>
 
@@ -158,7 +130,6 @@ section {
 
 .contentHolder {
   background-color: rgba(255, 255, 255, 0.4);
-  /* min-width: fit-content; */
   backdrop-filter: blur(5px);
 }
 
@@ -178,82 +149,37 @@ section {
 
 h1 {
   font-size: xxx-large;
-  /* color: rgb(100, 0, 172); */
   color: #65499c;
   background-image: -webkit-linear-gradient(0deg, #3f51b5, #9c27b0);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: 6s linear 0s infinite normal none running hue;
-  /* z-index: 1; */
+}
+
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
 }
 
 
 
-.scrollingList {
-  overflow: hidden;
-  height: 40px;
-  margin: 0;
+.rotatingGlow {
+  padding: 5px;
+  border-radius: 7px;
+  background-image: linear-gradient(var(--rotate), #90a5f9b3, 30%, rgba(95, 0, 238, 0.553));
+  animation: spin 10s linear infinite;
 }
 
-.scrollingList__text {
-  display: inline;
-  float: left;
-  /* margin: 0; */
-  line-height: 40px;
-  padding-right: 3px;
-  /* background-color: rgb(255, 255, 255); */
-}
 
-.scrollingList__list {
-  /* margin: 0; */
-  width: max-content;
-  padding-left: 3px;
-  text-align: left;
-  list-style: none;
-  animation-name: change;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
-
-.scrollingList__list__item {
-  line-height: 38px;
-  padding-inline: 3px;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  margin-bottom: 3px;
-}
-
-.scrollingList__list__item:nth-child(2n+1) {
-  background-color: #9b27b04e;
-  text-decoration-color: #65499c;
-  /* border-top-style: dashed; */
-}
-
-.scrollingList__list__item:nth-child(2n+2) {
-  background-color: #3f51b54e;
-  text-decoration-color: #3f51b5;
-}
-
-@keyframes change {
-
-  0%,
-  12% {
-    transform: translateY(0);
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
   }
 
-  25%,
-  37% {
-    transform: translateY(-25%);
-  }
-
-  50%,
-  62% {
-    transform: translateY(-50%);
-  }
-
-  75%,
-  87% {
-    transform: translateY(-75%);
+  100% {
+    --rotate: 360deg;
   }
 }
 </style>
