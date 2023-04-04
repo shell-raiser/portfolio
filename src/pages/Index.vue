@@ -158,27 +158,29 @@ h1 {
 
 @property --rotate {
   syntax: "<angle>";
-  initial-value: 132deg;
+  initial-value: 0deg;
   inherits: false;
 }
 
 
 
 .rotatingGlow {
-  padding: 3px;
-  /* border-radius: 7px; */
-  background-image: linear-gradient(var(--rotate), #a1a6ff, 30%, rgb(79, 0, 238));
+  padding: 0px;
+  background-image: linear-gradient(var(--rotate), #a1a6ff, 20%, rgb(37, 0, 110));
   animation: spin 10s linear infinite;
 }
 
 
 @keyframes spin {
   0% {
-    --rotate: 0deg;
+    --rotate: 225deg;
   }
 
-  100% {
-    --rotate: 360deg;
+  50% {
+    --rotate: 315deg;
+  }
+  100%{
+    --rotate: 225deg;
   }
 }
 </style>
