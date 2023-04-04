@@ -1,6 +1,5 @@
 <template>
-
-    <v-container class="rounded" style="backdrop-filter:blur(5px); background-color: rgba(255, 255, 255, 0.2)">
+    <v-container class="rounded filterContainer">
         <v-row>
             <v-col>
                 <h2>Projects and Experience</h2>
@@ -37,6 +36,12 @@
         </v-row>
     </v-container>
 </template>
+<style scoped>
+.filterContainer {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.388)
+}
+</style>
 
 <script>
 import allTheProjects from '../data/projectData.json'

@@ -31,7 +31,7 @@ h2 {
   color: rgb(36, 0, 95);
   width: 100%;
   text-align: center;
-  background-color: #d1c4e96f;
+  background-color: #d1c4e98e;
   backdrop-filter: blur(5px);
 }
 </style>

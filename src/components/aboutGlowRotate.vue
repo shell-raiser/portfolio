@@ -29,7 +29,7 @@
 .abtcontentHolder {
     background: rgba(255, 255, 255, 0.6);
     /* min-width: fit-content; */
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
     /* height: max-content; */
 }
 

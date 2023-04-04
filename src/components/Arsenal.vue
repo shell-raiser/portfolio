@@ -60,7 +60,6 @@
 </template>
 <style scoped>
 h1 {
-
     font-size: xxx-large;
     color: #ffffff;
     backdrop-filter: blur(15px);
@@ -68,7 +67,7 @@ h1 {
 }
 
 .toolCard {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.416);
     backdrop-filter: blur(15px);
 }
 
