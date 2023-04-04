@@ -57,7 +57,11 @@
 </template>
 
 <script>
+
 var DReader
+var themeFixes = { css: '.v-navigation-drawer__content {background-color: #251542} #hackathons,#sideProjects,#volunteer{color: white} .projCard{color: #EDE7F6} .greet{color: white}' }
+
+
 export default {
 	mounted() {
 		window.addEventListener(
@@ -70,7 +74,12 @@ export default {
 				});
 			});
 		DReader = require('darkreader')
-		DReader.auto()
+		DReader.auto({}, themeFixes)
+		// async function smth() {
+		// 	const CSS = await DReader.exportGeneratedCSS();
+		// 	console.log(CSS)
+		// }
+		// smth()
 	},
 	data: () => ({
 
@@ -84,7 +93,7 @@ export default {
 			if (DReader.isEnabled()) {
 				DReader.disable();
 			} else {
-				DReader.enable();
+				DReader.enable({},themeFixes);
 			}
 		}
 	},
