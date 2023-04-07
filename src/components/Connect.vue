@@ -3,7 +3,7 @@
       <v-row align="center" justify="center">
         <v-col class="rounded" sm="6" style="background:#9575cd;max-width: 600px;text-align :right;"
           align-self="center">
-          <h1 style="text-align: right;">Links</h1>
+          <h1 id="LinksHead" style="text-align: right;">Links</h1>
           <!-- <v-card width="300">
                                 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium"
                                     data-theme="dark" data-type="HORIZONTAL" data-vanity="shailesh-k-s-1b3475226"

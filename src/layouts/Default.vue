@@ -59,7 +59,7 @@
 <script>
 
 var DReader
-var themeFixes = { css: '.v-navigation-drawer__content {background-color: #251542} #hackathons,#sideProjects,#volunteer{color: white} .projCard{color: #EDE7F6} .greet{color: white}' }
+var themeFixes = { css: '.v-navigation-drawer__content {background-color: #251542} #hackathons,#sideProjects,#volunteer{color: white} .projCard{color: #EDE7F6} .greet{color: white} #LinksHead{color: white}' }
 
 
 export default {
