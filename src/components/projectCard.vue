@@ -69,7 +69,7 @@ export default {
     justify-content: center;
     align-items: center;
     display: flex;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
     background-color: rgba(1, 99, 99, 0.55);
     height: 100%;
     width: 100%;
@@ -89,7 +89,7 @@ export default {
 
 .projectCard {
     background-color: #cdd3f9dd;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
 }
 
 /* } */

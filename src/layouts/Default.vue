@@ -75,11 +75,11 @@ export default {
 			});
 		DReader = require('darkreader')
 		DReader.auto({}, themeFixes)
-		// async function smth() {
-		// 	const CSS = await DReader.exportGeneratedCSS();
-		// 	console.log(CSS)
-		// }
-		// smth()
+		async function smth() {
+			const CSS = await DReader.exportGeneratedCSS();
+			console.log(CSS)
+		}
+		smth()
 	},
 	data: () => ({
 
@@ -93,7 +93,7 @@ export default {
 			if (DReader.isEnabled()) {
 				DReader.disable();
 			} else {
-				DReader.enable({},themeFixes);
+				DReader.enable({}, themeFixes);
 			}
 		}
 	},

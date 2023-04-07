@@ -32,7 +32,7 @@ h2 {
   width: 100%;
   text-align: center;
   background-color: #d1c4e98e;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
 }
 </style>
 <script>

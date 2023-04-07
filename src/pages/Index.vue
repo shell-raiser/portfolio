@@ -1,7 +1,6 @@
 <template >
   <Layout>
-    <section id="about"
-      style="background: linear-gradient(90deg, #9575CD, #90caf9);  background-size: 200% 100%;  animation: gradient 10s ease infinite;">
+    <section id="about" style="">
       <v-container>
         <v-row>
           <v-col align-self="center">
@@ -127,9 +126,18 @@ section {
   padding-bottom: 30px;
 }
 
+
+#about {
+  background: linear-gradient(90deg, #9575CD, #a6d7ff);
+  background-size: 150% 100%;
+  animation: gradient 10s ease infinite;
+}
+
 .contentHolder {
   background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
+
 }
 
 @keyframes gradient {
@@ -179,7 +187,8 @@ h1 {
   50% {
     --rotate: 315deg;
   }
-  100%{
+
+  100% {
     --rotate: 225deg;
   }
 }

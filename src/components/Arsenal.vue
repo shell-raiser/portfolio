@@ -62,13 +62,13 @@
 h1 {
     font-size: xxx-large;
     color: #ffffff;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
     background-color: rgba(18, 0, 48, 0.6);
 }
 
 .toolCard {
     background-color: rgba(255, 255, 255, 0.416);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
 }
 
 .toolsLogos {
