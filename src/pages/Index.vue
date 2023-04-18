@@ -1,6 +1,6 @@
 <template >
   <Layout>
-    <section id="about" style="">
+    <section id="about">
       <v-container>
         <v-row>
           <v-col align-self="center">
@@ -64,8 +64,8 @@
         </v-row>
       </section>
     </v-lazy>
-    <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
 
+    <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
       <section id="arsenal" class="d-none d-sm-block"
         style='background: purple url("assets/toolsBg.webp"); background-size:contain;  background-attachment: fixed;'>
         <v-row>
