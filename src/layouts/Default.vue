@@ -77,7 +77,7 @@ export default {
 		DReader.auto({}, themeFixes)
 		async function smth() {
 			const CSS = await DReader.exportGeneratedCSS();
-			console.log(CSS)
+			// console.log(CSS)
 		}
 		smth()
 	},
