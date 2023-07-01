@@ -6,11 +6,45 @@
         <g-image style="max-width: 100%"
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=shell-raiser&layout=default&title_color=200254&bg_color=0,90caf9,9575CD&text_color=0e0126&count_private=true&exclude_repo=Qiskit-Developer-Certification-Notes-and-Code,REVA-University-CSE-Code,codefury5.0" />
         <br>
-        <a href="https://tryhackme.com/p/shaileshuniv" target="_blank">
-        <img src="https://tryhackme-badges.s3.amazonaws.com/shellRaiser.png" alt="TryHackMe">
-        </a>
+        <!-- <a href="https://tryhackme.com/p/shellRaiser" target="_blank"> -->
+        <!-- <img src="https://tryhackme-badges.s3.amazonaws.com/shellRaiser.png" alt="TryHackMe"> -->
+
+        <!-- </a> -->
+        {{ decodedData }}
+
+        <!-- Javascript to get current URL and append to our server -->
 
         <!-- <script src="https://tryhackme.com/badge/1993469"></script> -->
         <!-- <thmScript/> -->
     </v-container>
 </template>    
+<script>
+import axios from 'axios';
+import { decode } from 'base64url';
+
+export default {
+
+    data() {
+        return {
+            decodedData: null
+        };
+    },
+    mounted() {
+        this.fetchAndDecodeData();
+    },
+    methods: {
+        async fetchAndDecodeData() {
+            try {
+                // console.log("in")
+                const response = await axios.get('https://tryhackme.com/badge/1993469');
+                const base64Data = response.data;
+                const decodedData = decode(base64Data);
+                this.decodedData = decodedData;
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    }
+
+}
+</script>
