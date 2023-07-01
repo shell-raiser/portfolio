@@ -7,7 +7,7 @@
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=shell-raiser&layout=default&title_color=200254&bg_color=0,90caf9,9575CD&text_color=0e0126&count_private=true&exclude_repo=Qiskit-Developer-Certification-Notes-and-Code,REVA-University-CSE-Code,codefury5.0" />
         <br>
         <a href="https://tryhackme.com/p/shaileshuniv" target="_blank">
-        <img src="https://tryhackme-badges.s3.amazonaws.com/shaileshuniv.png" alt="TryHackMe">
+        <img src="https://tryhackme-badges.s3.amazonaws.com/shellRaiser.png" alt="TryHackMe">
         </a>
 
         <!-- <script src="https://tryhackme.com/badge/1993469"></script> -->
