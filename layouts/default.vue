@@ -102,8 +102,8 @@ export default {
 
 <style scoped>
 @font-face {
-	font-family: Roboto;
-	src: url('../assets/Roboto/Roboto-Light.ttf') format('truetype');
+	font-family: 'Roboto';
+	src: url('~assets/Roboto/Roboto-Light.ttf') format('truetype');
 	font-weight: normal;
 	font-display: auto;
 }

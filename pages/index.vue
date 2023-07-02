@@ -1,5 +1,6 @@
 <template >
-  <!-- <Layout> --><div>
+  <!-- <Layout> -->
+  <div>
     <section id="about">
       <v-container>
         <v-row>
@@ -79,7 +80,7 @@
       </section>
     </v-lazy>
 
-    </div>
+  </div>
   <!-- </Layout> -->
 </template>
 
@@ -93,22 +94,20 @@ import ConnectComponent from '../components/Connect.vue'
 import ProjectFilterNavigation from '../components/projectFilterNavigation.vue';
 import Projects from '../components/Projects.vue';
 export default {
-  metaInfo() {
-    return this.$seo({
-      title: "About me",
-      description: "I'm Shailesh (Shell Raiser), and this is my portfolio",
-      keywords: "one,two",
-      openGraph: {
-        title: "Shailesh K S, About me",
-        type: "website",
-      },
-      twitter: {
-        title: "Shailesh K S, About me",
-        type: "summary",
-      },
-      link: [],
-      script: [] // any scripts
-    });
+  head: {
+    title: "About me",
+    meta: [
+      { content: "I'm Shailesh (Shell Raiser), and this is my portfolio" },
+      { hid: 'og-title', property: 'og:title', content: 'Shailesh K S - My Portfolio' },
+      { hid: 'og-desc', property: 'og:description', content: 'I\'m Shailesh (Shell Raiser), and this is my portfolio' },
+      // {
+      //   hid: 'og-image', property: 'og:image',
+      //   content: 'https://domain.com/my-image.jpg'
+      // },
+      // { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' },
+      { hid: 'og-url', property: 'og:url', content: 'https://shell-raiser.github.io/' },
+
+    ]
   },
   methods: {
 

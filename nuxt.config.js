@@ -9,7 +9,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - newFolder',
+    titleTemplate: '%s - Shailesh\'s Portfolio',
     title: 'newFolder',
     meta: [
       { charset: 'utf-8' },
@@ -56,22 +56,22 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     // customVariables: ['~/assets/variables.scss'],
-    theme: {
-      dark: false,
-      themes: {
-        light: {
-          primary: colors.deepPurple,
-          menu: colors.deepPurple.lighten4,
-          navBar: colors.deepPurple.lighten4,
-          accent: colors.red.darken3,
-        },
-        dark: {
-          primary: colors.deepPurple,
-          menu: colors.deepPurple.darken4,
-          navBar: colors.deepPurple.darken4
-        }
-      }
-    }
+    // theme: {
+    //   dark: false,
+    //   themes: {
+    //     light: {
+    //       primary: colors.deepPurple,
+    //       menu: colors.deepPurple.lighten4,
+    //       navBar: colors.deepPurple.lighten4,
+    //       accent: colors.red.darken3,
+    //     },
+    //     dark: {
+    //       primary: colors.deepPurple,
+    //       menu: colors.deepPurple.darken4,
+    //       navBar: colors.deepPurple.darken4
+    //     }
+    //   }
+    // }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
