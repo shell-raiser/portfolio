@@ -1,104 +1,84 @@
 <template >
   <!-- <Layout> --><div>
-    <section id="about"
-      style="background: linear-gradient(90deg, #9575CD, #90caf9);  background-size: 200% 100%;  animation: gradient 10s ease infinite;">
-      <v-container class="fill-height">
-        <v-row align="center" justify="center" align-content="center">
-          <v-col align-self="center" sm="6">
-            <!-- <v-container> -->
-            <!-- <v-img src="../assets/legoMan.jpg" lazy-src="https://wp-technique.com/loading/loading.gif"
-                aspect-ratio="1" min-width="300px" max-width="500px" style="height:100%;"></v-img> -->
-            <img class="rounded" alt="profile picture" src="~/assets/legoMan.jpg" />
-            <!-- </v-container> -->
+    <section id="about">
+      <v-container>
+        <v-row>
+          <v-col align-self="center">
+            <v-container class="rotatingGlow rounded">
+              <AboutGlowRotate />
+            </v-container>
+            <br>
+            <v-container class="rounded contentHolder red white--text">
+              This site is still under development, many things are yet to be implemented.
+              <br />Keep an eye on
+              <a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">other
+                branches</a>
+              for major changes.
+            </v-container>
           </v-col>
 
-          <v-col>
-            <v-row class="rounded contentHolder">
-              <v-container>
-                <h1>
-                  Hello there,
-                  <br />I'm Shailesh !
-                </h1>
+          <v-col align-self="center">
+            <!-- <v-row > -->
+            <v-container class="rounded contentHolder" style="font-weight: 600;">
+              <p>
+                I'm a student who enjoys learning new things and solving problems.
+                <br> I'm passionate about protecting people
+                and systems from cyber threats, and enjoy putting my knowledge to use in real-world scenarios.
+                <br> I enjoy tweaking and experimenting with code. Currently focused on web development, but beginning to
+                dabble in cybersecurity. FOSS piques my interest. <br>
+                I enjoy working long
+                hours on interesting projects, but when I have to work on something boring, I barely make the
+                deadline.<br>
+                In my spare time, I create electronic music. Check out the
+                links section for my work . <br>
+
+              </p>
+              <p>
+                Feel free to browse through my projects, as well as my resume and contact information, and let me know
+                what you think.
+              </p>
+            </v-container>
 
 
-                <img
-                  src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple"
-                  alt="visitors" />
-                <p style="color: black">
-
-                <div class="scrollingList__text">I'm a</div>
-                <div class="scrollingList">
-                  <ul class="scrollingList__list">
-                    <li class="scrollingList__list__item ">CyberSec enthusiast</li>
-                    <li class="scrollingList__list__item ">Web dev</li>
-                    <li class="scrollingList__list__item ">Designer</li>
-                    <li class="scrollingList__list__item ">Music Maker</li>
-                  </ul>
-                </div>
-                </p>
-
-                <!-- </p> -->
-
-              </v-container>
-            </v-row>
-            <!-- <br><br> -->
-            <!-- <v-row class="rounded contentHolder">
-              <v-container>
-                <p>
-                  I like to tweak code and mess around. Doing mostly Web Dev, But will be doing some CyberSec stuff
-                  soon
-                  <br>
-                  Super interested in Open source
-                  <br>
-                  I make electronic music in my free time.
-                  <br>
-                  This site was built from scratch with gridsome and vuetify. I'm using Umami analytics (Link here).
-                  <br>
-                  I really enjoy working long hours on stuff that I find interesting, yet I barely make the deadline
-                  when I have to work on something boring
-                </p>
-              </v-container>
-            </v-row> -->
-            <br><br>
-            <v-row class="rounded contentHolder red white--text">
-              <v-container>
-                This site is still under development, many things are yet to be implemented.
-                <br />Keep an eye on
-                <a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">other
-                  branches</a>
-                for major changes.
-              </v-container>
-            </v-row>
 
           </v-col>
         </v-row>
       </v-container>
     </section>
-    <section id="connect" class="d-none d-sm-block" style="background: #000;">
-      <ConnectComponent />
-    </section>
-    <section id="projects" class="d-none d-sm-block"
-      style='background: url("../assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed;'>
-      <v-row>
-        <v-col cols="3">
-          <ProjectFilterNavigation style="position: sticky; top: 0;" />
-        </v-col>
-        <v-col>
-          <Projects />
-        </v-col>
-      </v-row>
-    </section>
-    <section id="arsenal" class="d-none d-sm-block"
-      style='background: purple url("assets/toolsBg.webp"); background-size:contain;  background-attachment: fixed;'>
-      <v-row>
-        <v-col cols="3">
-          <ArsenalLanguageStats style="position: sticky; top: 0;" />
-        </v-col>
-        <v-col>
-          <Arsenal />
-        </v-col>
-      </v-row>
-    </section>
+    <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
+      <section id="connect" class="d-none d-sm-block" style="background: #000;">
+        <ConnectComponent />
+      </section>
+    </v-lazy>
+    <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
+
+      <section id="projects" class="d-none d-sm-block"
+        style='background: url("../assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed;'>
+        <v-row>
+          <v-col cols="3">
+            <ProjectFilterNavigation style="position: sticky; top: 0;" />
+          </v-col>
+          <v-col>
+            <Projects />
+          </v-col>
+        </v-row>
+      </section>
+    </v-lazy>
+
+    <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
+      <section id="arsenal" class="d-none d-sm-block"
+        style='background: purple url("assets/toolsBg.webp"); background-size:contain;  background-attachment: fixed;'>
+        <v-row>
+          <v-col cols="3">
+            <ArsenalLanguageStats style="position: sticky; top: 0;" />
+          </v-col>
+          <v-col>
+            <Arsenal />
+          </v-col>
+        </v-row>
+      </section>
+    </v-lazy>
+
     </div>
   <!-- </Layout> -->
 </template>
@@ -106,6 +86,7 @@
 <script>
 // import AboutContent from "../components/aboutContent.vue"
 
+import AboutGlowRotate from '../components/aboutGlowRotate.vue';
 import Arsenal from '../components/Arsenal.vue';
 import ArsenalLanguageStats from '../components/arsenalLanguageStats.vue';
 import ConnectComponent from '../components/Connect.vue'
@@ -132,7 +113,12 @@ export default {
   methods: {
 
   },
-  components: { ConnectComponent, Projects, Arsenal, ProjectFilterNavigation, ArsenalLanguageStats }
+  data() {
+    return {
+      isActive: false,
+    }
+  },
+  components: { ConnectComponent, Projects, Arsenal, ProjectFilterNavigation, ArsenalLanguageStats, AboutGlowRotate }
 };
 </script>
 
@@ -142,10 +128,18 @@ section {
   padding-bottom: 30px;
 }
 
+
+#about {
+  background: linear-gradient(90deg, #9575CD, #a6d7ff);
+  background-size: 150% 100%;
+  animation: gradient 10s ease infinite;
+}
+
 .contentHolder {
   background-color: rgba(255, 255, 255, 0.4);
-  /* min-width: fit-content; */
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
+
 }
 
 @keyframes gradient {
@@ -164,93 +158,40 @@ section {
 
 h1 {
   font-size: xxx-large;
-  /* color: rgb(100, 0, 172); */
   color: #65499c;
   background-image: -webkit-linear-gradient(0deg, #3f51b5, #9c27b0);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: 6s linear 0s infinite normal none running hue;
-  /* z-index: 1; */
+}
+
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 
 
-.scrollingList {
-  overflow: hidden;
-  height: 40px;
-  margin: 0;
+.rotatingGlow {
+  padding: 0px;
+  background-image: linear-gradient(var(--rotate), #a1a6ff, 20%, rgb(37, 0, 110));
+  animation: spin 10s linear infinite;
 }
 
-.scrollingList__text {
-  display: inline;
-  float: left;
-  /* margin: 0; */
-  line-height: 40px;
-  padding-right: 3px;
-  /* background-color: rgb(255, 255, 255); */
-}
 
-.scrollingList__list {
-  /* margin: 0; */
-  width: max-content;
-  padding-left: 3px;
-  text-align: left;
-  list-style: none;
-  animation-name: change;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
+@keyframes spin {
+  0% {
+    --rotate: 225deg;
+  }
 
-.scrollingList__list__item {
-  line-height: 41px;
-  padding-inline: 3px;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  border-width: 1px;
-}
+  50% {
+    --rotate: 315deg;
+  }
 
-.scrollingList__list__item:nth-child(2n+1) {
-  background-color: #9b27b04e;
-  text-decoration-color: #65499c;
-  /* border-top-style: dashed; */
-}
-
-.scrollingList__list__item:nth-child(2n+2) {
-  background-color: #3f51b54e;
-  text-decoration-color: #3f51b5;
-}
-
-@keyframes change {
-
-  0%,
-  12.66%,
   100% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  16.66%,
-  29.32% {
-    transform: translate3d(0, -25%, 0);
-  }
-
-  33.32%,
-  45.98% {
-    transform: translate3d(0, -50%, 0);
-  }
-
-  49.98%,
-  62.64% {
-    transform: translate3d(0, -75%, 0);
-  }
-
-  66.64%,
-  79.3% {
-    transform: translate3d(0, -50%, 0);
-  }
-
-  83.3%,
-  95.96% {
-    transform: translate3d(0, -25%, 0);
+    --rotate: 225deg;
   }
 }
 </style>

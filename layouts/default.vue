@@ -26,32 +26,40 @@
 					<v-list-item-icon><v-icon>mdi-hammer-wrench</v-icon></v-list-item-icon>
 					<v-list-item-title>Tools</v-list-item-title>
 				</v-list-item>
+				<v-list-item style="position: fixed; bottom: 1em;" @click="changeTheme()">
+					<v-list-item-icon><v-icon>mdi-lightbulb</v-icon></v-list-item-icon>
+					<v-list-item-title>Theme</v-list-item-title>
+				</v-list-item>
 			</v-list>
 		</v-navigation-drawer>
 
-		<v-bottom-navigation class="d-sm-none" app active-class mandatory shift color="primary darken-3"
-			background-color="primary lighten-4">
-			<v-btn to="/">
+		<v-bottom-navigation class="d-sm-none" app grow color="primary darken-3" mandatory shift>
+			<v-btn height="100%" to="/">
 				<span>About</span>
 				<v-icon>mdi-view-dashboard</v-icon>
 			</v-btn>
-			<v-btn to="/connect">
-				<v-icon>mdi-human-greeting-proximity</v-icon>
+			<v-btn height="100%" to="/connect">
 				<span>Connect</span>
+				<v-icon>mdi-human-greeting-proximity</v-icon>
 			</v-btn>
-			<v-btn to="/projects">
-				<v-icon>mdi-devices</v-icon>
+			<v-btn height="100%" to="/projects">
 				<span>Projects</span>
+				<v-icon>mdi-devices</v-icon>
 			</v-btn>
-			<v-btn to="/arsenal">
-				<v-icon>mdi-hammer-wrench</v-icon>
+			<v-btn height="100%" to="/arsenal">
 				<span>Tools</span>
+				<v-icon>mdi-hammer-wrench</v-icon>
 			</v-btn>
 		</v-bottom-navigation>
 	</v-app>
 </template>
 
 <script>
+
+var DReader
+var themeFixes = { css: '.v-navigation-drawer__content {background-color: #251542} #hackathons,#sideProjects,#volunteer{color: white} .projCard{color: #EDE7F6} .greet{color: white} #LinksHead{color: white}' }
+
+
 export default {
 	mounted() {
 		window.addEventListener(
@@ -62,11 +70,15 @@ export default {
 						// this.$store.state.activeSection = thisSec.id
 						this.$store.commit('changeActiveSection', thisSec.id)
 					}
-					// console.log(window.scrollY)
-					// console.log(this.$store.state.activeSection)
-
 				});
 			});
+		DReader = require('darkreader')
+		DReader.auto({}, themeFixes)
+		async function smth() {
+			const CSS = await DReader.exportGeneratedCSS();
+			// console.log(CSS)
+		}
+		smth()
 	},
 	data: () => ({
 
@@ -75,24 +87,27 @@ export default {
 		scrollToElement(refName) {
 			const position = document.getElementById(refName).offsetTop;
 			window.scrollTo({ top: position, behavior: "smooth" });
+		},
+		changeTheme() {
+			if (DReader.isEnabled()) {
+				DReader.disable();
+			} else {
+				DReader.enable({}, themeFixes);
+			}
 		}
 	},
 };
 
 </script>
 
-<style>
-/* @font-face {
-	font-family: nunito;
-	src: url('../assets/nunito.otf') format('truetype');
+<style scoped>
+@font-face {
+	font-family: Roboto;
+	src: url('../assets/Roboto/Roboto-Light.ttf') format('truetype');
 	font-weight: normal;
+	font-display: auto;
 }
 
-@font-face {
-	font-family: nunito;
-	src: url('../assets/nunito_bold.otf') format('truetype');
-	font-weight: bold
-} */
 
 .slide-fade-enter-active {
 	transition: all 0.5s;

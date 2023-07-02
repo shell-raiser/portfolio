@@ -10,13 +10,13 @@ h1 {
 
     font-size: xxx-large;
     color: #ffffff;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
     background-color: rgba(18, 0, 48, 0.61);
 }
 
 .toolCard {
     background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
 }
 
 .toolsLogos {
@@ -40,7 +40,7 @@ section {
     /* background: linear-gradient(-45deg, #09254f, #23d5ab);
   background-size: 200% 200%;
   animation: gradient 10s ease infinite; */
-    background: url("../assets/toolsBg.webp");
+    background: url("/assets/toolsBg.webp");
     /* https://www.pexels.com/photo/photo-of-abstract-painting-3527795/ */
     /* filter: blur(8px); */
     /* -webkit-filter: blur(8px); */

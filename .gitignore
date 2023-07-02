@@ -14,3 +14,4 @@ target/npmlist.json
 .output
 .nuxt
 src/index.html
+static/sw.js

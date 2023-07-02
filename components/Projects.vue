@@ -31,8 +31,8 @@ h2 {
   color: rgb(36, 0, 95);
   width: 100%;
   text-align: center;
-  background-color: #d1c4e96f;
-  backdrop-filter: blur(5px);
+  background-color: #d1c4e98e;
+  backdrop-filter: blur(15px);box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
 }
 </style>
 <script>
@@ -42,9 +42,9 @@ import ProjectCard from '../components/projectCard.vue';
 
 export default {
 
-  metaInfo: {
-    title: "Projects",
-  },
+  // metaInfo: {
+  //   title: "Projects",
+  // },
   data: () => ({
     drawer: false,
     sideProjects: allProjects.sideProjects,
@@ -54,10 +54,6 @@ export default {
   // props: [
   //   hackathonProjects
   // ],
-  created() {
-    // props are exposed on `this`
-    console.log(this.foo)
-  },
   methods: {
     contains(arrAttributes) {
       arrAttributes.some(element => {

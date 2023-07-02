@@ -1,10 +1,9 @@
 <template>
-    <v-container fill-height>
-      <v-row align="center" justify="center">
-        <v-col class="rounded" sm="6" style="background:#9575cd;max-width: 600px;text-align :right;"
-          align-self="center">
-          <h1 style="text-align: right;">Links</h1>
-          <!-- <v-card width="300">
+  <v-container fill-height>
+    <v-row align="center" justify="center">
+      <v-col class="rounded" sm="6" style="background:#9575cd;max-width: 600px;text-align :right;" align-self="center">
+        <h1 id="LinksHead" style="text-align: right;">Links</h1>
+        <!-- <v-card width="300">
                                 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium"
                                     data-theme="dark" data-type="HORIZONTAL" data-vanity="shailesh-k-s-1b3475226"
                                     data-version="v1"><a class="badge-base__link LI-simple-link"
@@ -26,69 +25,77 @@
                                         target="_blank" style="color: #cccccc; text-decoration: none;">All tarcks</a>
                                 </div>
                             </v-card>-->
-          <v-card>
-            <!-- <v-card-title class="connectHead" style="text-align:right;">Contact</v-card-title> -->
-            <!-- <v-list> -->
-            <!-- <v-list-item-group> -->
-            <v-list-item two-line href="mailto: contactshellraiser@gmail.com">
-              <v-list-item-content>
-                <v-list-item-title>Email</v-list-item-title>
-                <v-list-item-subtitle>contactshellraiser@gmail.com</v-list-item-subtitle>
-              </v-list-item-content>
-              <v-icon right>mdi-email-variant</v-icon>
-            </v-list-item>
+        <v-card>
+          <!-- <v-card-title class="connectHead" style="text-align:right;">Contact</v-card-title> -->
+          <!-- <v-list> -->
+          <!-- <v-list-item-group> -->
 
-            <v-list-item two-line href="https://github.com/shell-raiser" target="_blank" rel="noopener noreferrer">
-              <v-list-item-content>
-                <v-list-item-title>Github</v-list-item-title>
-                <v-list-item-subtitle>@shell-raiser</v-list-item-subtitle>
-              </v-list-item-content>
-              <v-icon right>mdi-github</v-icon>
-            </v-list-item>
+          <v-list-item two-line href="mailto: ksshaileshofficial@gmail.com">
+            <v-list-item-content>
+              <v-list-item-title>Email (Official)</v-list-item-title>
+              <v-list-item-subtitle>ksshaileshofficial@gmail.com</v-list-item-subtitle>
+            </v-list-item-content>
+            <v-icon right>mdi-email-variant</v-icon>
+          </v-list-item>
 
-            <v-list-item two-line href="https://soundcloud.com/user-185450671" target="_blank"
-              rel="noopener noreferrer">
-              <v-list-item-content>
-                <v-list-item-title>Soundcloud</v-list-item-title>
-                <v-list-item-subtitle>soundcloud.com/user-185450671</v-list-item-subtitle>
-              </v-list-item-content>
-              <v-icon right>mdi-soundcloud</v-icon>
-            </v-list-item>
+          <v-list-item two-line href="mailto: contactshellraiser@gmail.com">
+            <v-list-item-content>
+              <v-list-item-title>Email (Music Stuff)</v-list-item-title>
+              <v-list-item-subtitle>contactshellraiser@gmail.com</v-list-item-subtitle>
+            </v-list-item-content>
+            <v-icon right>mdi-email-variant</v-icon>
+          </v-list-item>
 
-            <v-list-item two-line href="https://www.youtube.com/@shell-raiser" target="_blank"
-              rel="noopener noreferrer">
-              <v-list-item-content>
-                <v-list-item-title>Youtube</v-list-item-title>
-                <v-list-item-subtitle>@shell-raiser</v-list-item-subtitle>
-              </v-list-item-content>
-              <v-icon right>mdi-youtube</v-icon>
-            </v-list-item>
 
-            <v-list-item two-line href="https://www.linkedin.com/in/shailesh-k-s" target="_blank"
-              rel="noopener noreferrer">
-              <v-list-item-content>
-                <v-list-item-title>Linkedin</v-list-item-title>
-                <v-list-item-subtitle>linkedin.com/in/shailesh-k-s</v-list-item-subtitle>
-              </v-list-item-content>
-              <v-icon right>mdi-linkedin</v-icon>
-            </v-list-item>
 
-            <v-list-item two-line href="https://devfolio.co/@shell_raiser" target="_blank" rel="noopener noreferrer">
-              <v-list-item-content>
-                <v-list-item-title>Devfolio</v-list-item-title>
-                <v-list-item-subtitle>@shell_raiser</v-list-item-subtitle>
-              </v-list-item-content>
-              <v-icon right>D</v-icon>
-            </v-list-item>
-            <!-- </v-list-item-group> -->
+          <v-list-item two-line href="https://github.com/shell-raiser" target="_blank" rel="noopener noreferrer">
+            <v-list-item-content>
+              <v-list-item-title>Github</v-list-item-title>
+              <v-list-item-subtitle>@shell-raiser</v-list-item-subtitle>
+            </v-list-item-content>
+            <v-icon right>mdi-github</v-icon>
+          </v-list-item>
 
-            <!-- </v-list> -->
-          </v-card>
+          <v-list-item two-line href="https://soundcloud.com/user-185450671" target="_blank" rel="noopener noreferrer">
+            <v-list-item-content>
+              <v-list-item-title>Soundcloud</v-list-item-title>
+              <v-list-item-subtitle>soundcloud.com/user-185450671</v-list-item-subtitle>
+            </v-list-item-content>
+            <v-icon right>mdi-soundcloud</v-icon>
+          </v-list-item>
 
-          <!-- </v-container> -->
-        </v-col>
+          <v-list-item two-line href="https://www.youtube.com/@shell-raiser" target="_blank" rel="noopener noreferrer">
+            <v-list-item-content>
+              <v-list-item-title>Youtube</v-list-item-title>
+              <v-list-item-subtitle>@shell-raiser</v-list-item-subtitle>
+            </v-list-item-content>
+            <v-icon right>mdi-youtube</v-icon>
+          </v-list-item>
 
-        <!-- <v-col class="d-none d-sm-block" sm="6" style="height: 100%">
+          <v-list-item two-line href="https://www.linkedin.com/in/shailesh-k-s" target="_blank" rel="noopener noreferrer">
+            <v-list-item-content>
+              <v-list-item-title>Linkedin</v-list-item-title>
+              <v-list-item-subtitle>linkedin.com/in/shailesh-k-s</v-list-item-subtitle>
+            </v-list-item-content>
+            <v-icon right>mdi-linkedin</v-icon>
+          </v-list-item>
+
+          <v-list-item two-line href="https://devfolio.co/@shell_raiser" target="_blank" rel="noopener noreferrer">
+            <v-list-item-content>
+              <v-list-item-title>Devfolio</v-list-item-title>
+              <v-list-item-subtitle>@shell_raiser</v-list-item-subtitle>
+            </v-list-item-content>
+            <v-icon right>D</v-icon>
+          </v-list-item>
+          <!-- </v-list-item-group> -->
+
+          <!-- </v-list> -->
+        </v-card>
+
+        <!-- </v-container> -->
+      </v-col>
+
+      <!-- <v-col class="d-none d-sm-block" sm="6" style="height: 100%">
               <img
                 src="../assets/pebbleRotation.gif"
                 alt="pebbels"
@@ -96,34 +103,34 @@
                 width="100%"
               />
             </v-col> -->
-        <v-col align-self="center" style="max-width:600px;">
-          <h1 class="rounded white--text">Contact</h1>
+      <v-col align-self="center" style="max-width:600px;">
+        <h1 class="rounded white--text">Contact</h1>
 
-          <v-card style="padding: 10px;" color="menu">
-            <v-form ref="form" v-model="valid" lazy-validation action="https://formspree.io/f/xeqdjwoo" method="post">
-              <v-text-field label="Name" v-model="name" type="text" name="name" id="name" :rules="nameRules"
-                aria-required></v-text-field>
+        <v-card style="padding: 10px;" color="menu">
+          <v-form ref="form" v-model="valid" lazy-validation action="https://formspree.io/f/xeqdjwoo" method="post">
+            <v-text-field label="Name" v-model="name" type="text" name="name" id="name" :rules="nameRules"
+              aria-required></v-text-field>
 
-              <v-text-field label="Email" name="Email" id="email" type="email" :rules="emailRules"
-                hint="example@gmail.com"></v-text-field>
+            <v-text-field label="Email" name="Email" id="email" type="email" :rules="emailRules"
+              hint="example@gmail.com"></v-text-field>
 
-              <v-text-field label="Subject" name="Subject" id="subject" type="subject" :rules="reqRules" required>
-              </v-text-field>
+            <v-text-field label="Subject" name="Subject" id="subject" type="subject" :rules="reqRules" required>
+            </v-text-field>
 
-              <v-textarea label="Message" name="message" id="message" :rules="reqRules" auto-grow rows="2"
-                placeholder="Multi-line Field"></v-textarea>
+            <v-textarea label="Message" name="message" id="message" :rules="reqRules" auto-grow rows="2"
+              placeholder="Multi-line Field"></v-textarea>
 
-              <!-- <v-btn type="submit" class="mr-4"> -->
-              <v-container class="d-flex">
-                <v-btn :disabled="!valid" class="mr-4" @click="submit">submit</v-btn>
-                <!-- <v-btn type="reset" onclick="clear()"> -->
-                <v-btn class="mr-4" @click="reset">clear</v-btn>
-              </v-container>
-            </v-form>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
+            <!-- <v-btn type="submit" class="mr-4"> -->
+            <v-container class="d-flex">
+              <v-btn :disabled="!valid" class="mr-4" @click="submit">submit</v-btn>
+              <!-- <v-btn type="reset" onclick="clear()"> -->
+              <v-btn class="mr-4" @click="reset">clear</v-btn>
+            </v-container>
+          </v-form>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 <style scoped>
 h1 {
@@ -135,7 +142,6 @@ h1 {
   /* animation: 6s linear 0s infinite normal none running hue; */
   /* z-index: 1; */
 }
-
 </style>
 
 <script>

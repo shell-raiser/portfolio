@@ -43,6 +43,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxt/image',
+
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -54,7 +56,7 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    // customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: false,
       themes: {

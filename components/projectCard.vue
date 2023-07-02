@@ -25,7 +25,7 @@
                             <v-icon>{{ project.heroIcon }}</v-icon>
                         </v-btn>
 
-                        <h3 class="text-h4 font-weight-light deep-purple--text mb-2">
+                        <h3 class="projCard text-h4">
                             {{ project.title }}
                         </h3>
                         <p v-html="project.desc"></p>
@@ -50,6 +50,9 @@ export default {
 }
 </script>
 <style>
+.projCard{
+    color:  #673AB7;
+}
 .projectCardHoverText {
     /* top: 8px; */
     /* height: 100%; */
@@ -66,7 +69,7 @@ export default {
     justify-content: center;
     align-items: center;
     display: flex;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
     background-color: rgba(1, 99, 99, 0.55);
     height: 100%;
     width: 100%;
@@ -86,7 +89,7 @@ export default {
 
 .projectCard {
     background-color: #cdd3f9dd;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
 }
 
 /* } */
