@@ -10,11 +10,12 @@
             </v-container>
             <br>
             <v-container class="rounded contentHolder red white--text">
-              This site is still under development, many things are yet to be implemented.
-              <br />Keep an eye on
+              This site was recently migrated to Nuxt 2, resulting in many bugs
+              <br />Further changes are WIP in
               <a href="https://github.com/shell-raiser/shell-raiser.github.io" class="white">other
-                branches</a>
-              for major changes.
+                branches. </a>
+              <br>
+              To report bugs and ideas, please use the contact form or open a github issue. It would mean a lot 😁.
             </v-container>
           </v-col>
 
