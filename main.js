@@ -1,11 +1,11 @@
-import Vuetify from 'vuetify'
-import 'vuetify/dist/vuetify.min.css'
+import Vuetify from 'vuetify/lib/framework'
+// import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/lib/util/colors'
 import DefaultLayout from '~/layouts/default.vue'
 
 import Vuex from 'vuex'
 import '@mdi/font/css/materialdesignicons.css'
-// import "@fontsource/nunito"
+
 export default function (Vue, { appOptions, head }) {
   Vue.use(Vuex)
   // head.link.push({
@@ -17,18 +17,19 @@ export default function (Vue, { appOptions, head }) {
     src: "https://umami2-eosin.vercel.app/umami.js",
     async: true,
     defer: true
-  })
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'href="https://fonts.googleapis.com/css?family=Tangerine"',
-  });
+  }),
+    // head.link.push({
+    //   rel: 'stylesheet',
+    //   href: 'https://fonts.googleapis.com/css?family=Roboto&display=auto'
+    // })
 
-  appOptions.store = new Vuex.Store({
-    state: {
-      chipSelected: [],
-      activeSection: "about"
-    }
-  })
+
+    appOptions.store = new Vuex.Store({
+      state: {
+        chipSelected: [],
+        activeSection: "about"
+      }
+    })
   const opts = {
     theme: {
       themes: {
