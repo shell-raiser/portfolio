@@ -1,7 +1,7 @@
 <template>
     <v-container class="rounded abtcontentHolder ">
         <h1>
-            <p style="font-size:x-large;margin-bottom: auto;">
+            <p style="font-size:large;margin-bottom: auto;">
                 Hello there 👋,</p>
             I'm Shailesh !
             <p style="font-size:x-large;display:inline;"> (Shell Raiser)</p>
@@ -21,15 +21,16 @@
         </div>
         </p>
 
-        <img src="https://visitor-badge.glitch.me/badge?page_id=https://shell-raiser.github.io/&left_color=black&right_color=purple"
+        <img src="https://api.visitor.plantree.me/visitor-badge/pv?namespace=shell-raiser.github.io&key=index.html&style=flat&label=View Count&labelColor=black&color=purple"
             alt="visitors" />
     </v-container>
 </template>
 <style scoped>
 .abtcontentHolder {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
     /* min-width: fit-content; */
-    backdrop-filter: blur(15px);box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.3);
     /* height: max-content; */
 }
 
@@ -76,8 +77,6 @@ h1 {
 .scrollingList__list__item {
     line-height: 38px;
     padding-inline: 3px;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
     margin-bottom: 3px;
 }
 

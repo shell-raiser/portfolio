@@ -5,9 +5,7 @@
       <v-container>
         <v-row>
           <v-col align-self="center">
-            <v-container class="rotatingGlow rounded">
-              <AboutGlowRotate />
-            </v-container>
+            <AboutGlowRotate />
             <br>
             <v-container class="rounded contentHolder red white--text">
               This site was recently migrated to Nuxt 2, resulting in many bugs
@@ -87,7 +85,6 @@
 
 <script>
 // import AboutContent from "../components/aboutContent.vue"
-
 import AboutGlowRotate from '../components/aboutGlowRotate.vue';
 import Arsenal from '../components/Arsenal.vue';
 import ArsenalLanguageStats from '../components/arsenalLanguageStats.vue';
@@ -130,7 +127,6 @@ section {
 
 
 #about {
-  background: linear-gradient(90deg, #9575CD, #a6d7ff);
   background-size: 150% 100%;
   animation: gradient 10s ease infinite;
 }
@@ -170,28 +166,5 @@ h1 {
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
-}
-
-
-
-.rotatingGlow {
-  padding: 0px;
-  background-image: linear-gradient(var(--rotate), #a1a6ff, 20%, rgb(37, 0, 110));
-  animation: spin 10s linear infinite;
-}
-
-
-@keyframes spin {
-  0% {
-    --rotate: 225deg;
-  }
-
-  50% {
-    --rotate: 315deg;
-  }
-
-  100% {
-    --rotate: 225deg;
-  }
 }
 </style>

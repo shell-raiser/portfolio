@@ -4,7 +4,7 @@
 			<Nuxt />
 		</v-main>
 		<v-navigation-drawer class="d-none d-sm-block" id="navBar" app :mini-variant="!$vuetify.breakpoint.xlOnly"
-			:expand-on-hover="!$vuetify.breakpoint.xlOnly" touchless color="primary lighten-4">
+			:expand-on-hover="!$vuetify.breakpoint.xlOnly" touchless color="deep-purple lighten-4">
 			<v-list nav dense>
 				<v-list-item :class="[($store.state.activeSection == 'about') ? 'v-list-item--active' : null]"
 					@click="scrollToElement('about')">
@@ -33,7 +33,7 @@
 			</v-list>
 		</v-navigation-drawer>
 
-		<v-bottom-navigation class="d-sm-none" app grow color="primary darken-3" mandatory shift>
+		<v-bottom-navigation class="d-sm-none" app grow color="deep-purple darken-3" mandatory shift>
 			<v-btn height="100%" to="/">
 				<span>About</span>
 				<v-icon>mdi-view-dashboard</v-icon>
@@ -58,10 +58,11 @@
 
 var DReader
 var themeFixes = { css: '.v-navigation-drawer__content {background-color: #251542} #hackathons,#sideProjects,#volunteer{color: white} .projCard{color: #EDE7F6} .greet{color: white} #LinksHead{color: white}' }
-
+var aboutSec
 
 export default {
 	mounted() {
+		aboutSec = document.querySelector('#about')
 		window.addEventListener(
 			"scroll", () => {
 				var allSections = [...document.querySelectorAll('section')]
@@ -74,11 +75,18 @@ export default {
 			});
 		DReader = require('darkreader')
 		DReader.auto({}, themeFixes)
-		async function smth() {
-			const CSS = await DReader.exportGeneratedCSS();
-			// console.log(CSS)
+		// async function smth() {
+		// 	const CSS = await DReader.exportGeneratedCSS();
+		// 	console.log(CSS)
+		// }
+		// smth()
+		if (DReader.isEnabled()) {
+			// aboutSec.style.background = '#635e78'
+			aboutSec.style.background = 'linear-gradient(90deg, #9575CD, #003b6b)';
+
+		} else {
+			aboutSec.style.background = 'linear-gradient(190deg, #9575CD, #a6d7ff)';
 		}
-		smth()
 	},
 	data: () => ({
 
@@ -91,8 +99,10 @@ export default {
 		changeTheme() {
 			if (DReader.isEnabled()) {
 				DReader.disable();
+				aboutSec.style.background = 'linear-gradient(190deg, #9575CD, #a6d7ff)';
 			} else {
 				DReader.enable({}, themeFixes);
+				aboutSec.style.background = 'linear-gradient(90deg, #9575CD, #003b6b)';
 			}
 		}
 	},
@@ -103,7 +113,7 @@ export default {
 <style scoped>
 @font-face {
 	font-family: 'Roboto';
-	src: url('~assets/Roboto/Roboto-Light.ttf') format('truetype');
+	src: url('~assets/fonts/Roboto/Roboto-Light.ttf') format('truetype');
 	font-weight: normal;
 	font-display: auto;
 }
