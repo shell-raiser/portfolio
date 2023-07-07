@@ -6,6 +6,14 @@
 		<v-navigation-drawer class="d-none d-sm-block" id="navBar" app :mini-variant="!$vuetify.breakpoint.xlOnly"
 			:expand-on-hover="!$vuetify.breakpoint.xlOnly" touchless color="deep-purple lighten-4">
 			<v-list nav dense>
+				<!-- <img src="/Shell.svg" alt="logo"> -->
+				<v-img class="d-none d-xl-flex" src="/Shell.svg" width="100%" style="margin-bottom: 1em;"></v-img>
+
+				<p v-if="$vuetify.breakpoint.xlOnly" class="text-center text-h6" style="margin-bottom: 0.2em;"> Shailesh's
+					Portfolio </p>
+				<p v-if="$vuetify.breakpoint.xlOnly" class="text-center text-subtitle-1">Shell Raiser</p>
+
+
 				<v-list-item :class="[($store.state.activeSection == 'about') ? 'v-list-item--active' : null]"
 					@click="scrollToElement('about')">
 					<v-list-item-icon><v-icon>mdi-view-dashboard</v-icon></v-list-item-icon>
