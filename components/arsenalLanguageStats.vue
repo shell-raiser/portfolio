@@ -13,25 +13,6 @@
         <!-- Javascript to get current URL and append to our server -->
 
         <!-- <script src="https://tryhackme.com/badge/1993469"></script> -->
-        <!-- <thmScript/> -->{{ smth }}
+        <!-- <thmScript/> -->
     </v-container>
 </template>    
-<script>
-// import { onClient } from '@nuxtjs/composition-api';
-
-export default {
-    data() {
-        return {
-            smth: 0
-        }
-    },
-    mounted() {
-        async function smhw() {
-            smth = await fetch('https://tryhackme.com/badge/1993469')
-            smth = await smth.text();
-
-        }
-        smhw()
-    },
-}
-</script>
