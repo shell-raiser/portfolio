@@ -9,10 +9,29 @@
         <a href="https://tryhackme.com/p/shellRaiser" target="_blank">
             <img src="https://tryhackme-badges.s3.amazonaws.com/shellRaiser.png" alt="TryHackMe">
         </a>
-
+        {{ UserRank }}
         <!-- Javascript to get current URL and append to our server -->
 
         <!-- <script src="https://tryhackme.com/badge/1993469"></script> -->
         <!-- <thmScript/> -->
     </v-container>
 </template>    
+<script>
+
+
+export default {
+    data() {
+        return {
+            UserRank: null
+        }
+    },
+    mounted() {
+        fetch('http://tryhackme.com/api/user/rank/shellRaiser')
+            .then(response => {
+                if (response.status === 200) {
+                    this.UserRank = response.json().rank
+                }
+            })
+    },
+}
+</script>
