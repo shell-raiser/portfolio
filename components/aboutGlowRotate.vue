@@ -6,9 +6,6 @@
             I'm Shailesh !
             <p style="font-size:x-large;display:inline;"> (Shell Raiser)</p>
         </h1>
-
-
-
         <p style="color: black">
         <div class="scrollingList__text">I'm a</div>
         <div class="scrollingList ">
@@ -20,9 +17,6 @@
             </ul>
         </div>
         </p>
-
-        <img src="https://api.visitor.plantree.me/visitor-badge/pv?namespace=shell-raiser.github.io&key=index.html&style=flat&label=View Count&labelColor=black&color=purple"
-            alt="visitors" />
     </v-container>
 </template>
 <style scoped>
