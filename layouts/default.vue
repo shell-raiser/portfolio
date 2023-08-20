@@ -3,15 +3,14 @@
 		<v-main>
 			<Nuxt />
 		</v-main>
-		<v-navigation-drawer class="d-none d-sm-block" id="navBar" app :mini-variant="!$vuetify.breakpoint.xlOnly"
-			:expand-on-hover="!$vuetify.breakpoint.xlOnly" touchless color="deep-purple lighten-4">
+		<v-navigation-drawer class="d-none d-sm-block" id="navBar" app color="deep-purple lighten-4">
 			<v-list nav dense>
 				<!-- <img src="/Shell.svg" alt="logo"> -->
-				<v-img class="d-none d-xl-flex" src="/Shell.svg" width="100%" style="margin-bottom: 1em;"></v-img>
+				<v-img src="/Shell.svg" width="100%" style="margin-bottom: 1em;"></v-img>
 
-				<p v-if="$vuetify.breakpoint.xlOnly" class="text-center text-h6" style="margin-bottom: 0.2em;"> Shailesh's
+				<p class="text-center text-h6" style="margin-bottom: 0.2em;"> Shailesh's
 					Portfolio </p>
-				<p v-if="$vuetify.breakpoint.xlOnly" class="text-center text-subtitle-1">Shell Raiser</p>
+				<p class="text-center text-subtitle-1">Shell Raiser</p>
 
 
 				<v-list-item :class="[($store.state.activeSection == 'about') ? 'v-list-item--active' : null]"
@@ -41,20 +40,24 @@
 			</v-list>
 		</v-navigation-drawer>
 
-		<v-bottom-navigation class="d-sm-none" app grow color="deep-purple darken-3" mandatory shift>
-			<v-btn height="100%" to="/">
+		<v-bottom-navigation class="d-lg-none" app grow color="deep-purple darken-3" shift>
+			<v-btn height="100%" :class="[($store.state.activeSection == 'about') ? 'v-btn--active' : null]"
+				@click="scrollToElement('about')">
 				<span>About</span>
 				<v-icon>mdi-view-dashboard</v-icon>
 			</v-btn>
-			<v-btn height="100%" to="/connect">
+			<v-btn height="100%" :class="[($store.state.activeSection == 'connect') ? 'v-btn--active' : null]"
+				@click="scrollToElement('connect')">
 				<span>Connect</span>
 				<v-icon>mdi-human-greeting-proximity</v-icon>
 			</v-btn>
-			<v-btn height="100%" to="/projects">
+			<v-btn height="100%" :class="[($store.state.activeSection == 'projects') ? 'v-btn--active' : null]"
+				@click="scrollToElement('projects')">
 				<span>Projects</span>
 				<v-icon>mdi-devices</v-icon>
 			</v-btn>
-			<v-btn height="100%" to="/arsenal">
+			<v-btn height="100%" :class="[($store.state.activeSection == 'arsenal') ? 'v-btn--active' : null]"
+				@click="scrollToElement('arsenal')">
 				<span>Tools</span>
 				<v-icon>mdi-hammer-wrench</v-icon>
 			</v-btn>
@@ -96,9 +99,6 @@ export default {
 			aboutSec.style.background = 'linear-gradient(190deg, #9575CD, #a6d7ff)';
 		}
 	},
-	data: () => ({
-
-	}),
 	methods: {
 		scrollToElement(refName) {
 			const position = document.getElementById(refName).offsetTop;

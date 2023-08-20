@@ -8,7 +8,8 @@
 						<AboutGlowRotate />
 						<br>
 						<v-container class="rounded contentHolder blue-grey darken-1 white--text">
-							Find this site's repo on <a href="https://github.com/shell-raiser/shell-raiser.github.io" target="_blank" rel="noopener noreferrer" class="white--text">
+							Find this site's repo on <a href="https://github.com/shell-raiser/shell-raiser.github.io"
+								target="_blank" rel="noopener noreferrer" class="white--text">
 								Github </a>
 							<br>
 							To report bugs and ideas, please use the contact form or open a github issue. It would mean a
@@ -23,15 +24,16 @@
 							<br> I'm passionate about protecting people
 							and systems from cyber threats, and enjoy putting my knowledge to use in real-world scenarios.
 							<br> I enjoy tweaking and experimenting with code. I have built some web based projects in the
-							past and FOSS piques my interest. <br>	
+							past and FOSS piques my interest. <br>
 							In my spare time, I create electronic music. Check out the
 							links section for my work . <br>
 						</v-container>
 						<br>
-						<v-container class="rounded contentHolder" 	style="font-weight: 600;">
+						<v-container class="rounded contentHolder" style="font-weight: 600;">
 							Feel free to browse through my projects and contact information, and let me know what you think.
-							<br> No time to go through the site ?, <a
-								href="https://drive.google.com/file/d/1atMoLVFRdqCL0_1CJZyBF37lIj3zP6yW/view" target="_blank" rel="noopener noreferrer"> get my resume
+							<br> No time to go through the site ? <a
+								href="https://drive.google.com/file/d/1atMoLVFRdqCL0_1CJZyBF37lIj3zP6yW/view"
+								target="_blank" rel="noopener noreferrer"> get my resume
 								here </a>
 						</v-container>
 					</v-col>
@@ -39,16 +41,16 @@
 			</v-container>
 		</section>
 
-		<section id="connect" class="d-none d-sm-block" style="background: #000;">
+		<section id="connect"  style="background: #000;">
 			<ConnectComponent />
 		</section>
 
 
 
-		<section id="projects" class="d-none d-sm-block"
+		<section id="projects" 
 			style='background: url("../assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed;'>
 			<v-row>
-				<v-col cols="3">
+				<v-col cols="3" class="d-none d-sm-block">
 					<ProjectFilterNavigation style="position: sticky; top: 0;" />
 				</v-col>
 				<v-col>
@@ -59,10 +61,10 @@
 
 
 
-		<section id="arsenal" class="d-none d-sm-block"
+		<section id="arsenal" 
 			style='background: purple url("assets/toolsBg.webp"); background-size:contain;  background-attachment: fixed;'>
 			<v-row>
-				<v-col cols="3">
+				<v-col cols="3" class="d-none d-sm-block" >
 					<ArsenalLanguageStats style="position: sticky; top: 0;" />
 				</v-col>
 				<v-col>

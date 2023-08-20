@@ -7,15 +7,15 @@
             <p style="font-size:x-large;display:inline;"> (Shell Raiser)</p>
         </h1>
         <p style="color: black">
-        <div class="scrollingList__text">I'm a</div>
-        <div class="scrollingList ">
-            <ul class="scrollingList__list ">
-                <li class="scrollingList__list__item rounded">CyberSec enthusiast</li>
-                <li class="scrollingList__list__item rounded">Web dev</li>
-                <li class="scrollingList__list__item rounded">Designer</li>
-                <li class="scrollingList__list__item rounded">Music Maker</li>
-            </ul>
-        </div>
+            <div class="scrollingList__text">I'm a</div>
+            <div class="scrollingList ">
+                <ul class="scrollingList__list ">
+                    <li class="scrollingList__list__item rounded">CyberSec enthusiast</li>
+                    <li class="scrollingList__list__item rounded">Web dev</li>
+                    <li class="scrollingList__list__item rounded">Designer</li>
+                    <li class="scrollingList__list__item rounded">Music Maker</li>
+                </ul>
+            </div>
         </p>
     </v-container>
 </template>
