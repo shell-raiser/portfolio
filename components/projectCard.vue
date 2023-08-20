@@ -5,7 +5,7 @@
     <v-col v-if="(project.attributes.some(element => {
         return $store.state.chipSelected.includes(element);
     })) || ($store.state.chipSelected.length == 0)" style="max-width: 100%" sm="6">
-        <v-lazy v-model="isActive" :options="{ threshold: 0.5 }">
+        <!-- <v-lazy v-model="isActive" :options="{ threshold: 0.5 }"> -->
 
             <v-hover v-slot="{ hover }">
                 <v-card class="mx-auto projectCard" width="350">
@@ -38,7 +38,7 @@
                     </v-card-actions>
                 </v-card>
             </v-hover>
-        </v-lazy>
+        <!-- </v-lazy> -->
     </v-col>
 </template>
 <script>
