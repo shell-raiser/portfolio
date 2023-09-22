@@ -82,6 +82,20 @@
             ]
         },
         {
+            "img": "LORSystemSS.png",
+            "heroIcon": "mdi-link",
+            "heroLink": "https://www.reva.edu.in/apply-for-lor-noc-letter.html",
+            "hoverText": "A platform for taking & managing LOR/NoC applications from students.<br>Designed in powerautomate, takes care of the whole end-to-end process by automating everything from E-mail notifications to monthly statistics",
+            "title": "LOR/NoC Manager",
+            "desc": "An LOR/NoC applications manager.<br>The University uses it manage around 15k students",
+            "attributes": [
+                "Power Automate",
+                "Azure",
+                "Bootstrap",
+                "Javascript"
+            ]
+        },
+        {
             "img": "https://user-images.githubusercontent.com/78999739/199546109-db111597-5c67-498c-96ad-67a29bc3b5b1.png",
             "heroIcon": "mdi-link",
             "heroLink": "https://shell-raiser.github.io/",
