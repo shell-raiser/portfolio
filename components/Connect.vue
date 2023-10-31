@@ -3,32 +3,8 @@
     <v-row align="center" justify="center">
       <v-col class="rounded" sm="6" style="background:#9575cd;max-width: 600px;text-align :right;" align-self="center">
         <h1 id="LinksHead" style="text-align: right;">Links</h1>
-        <!-- <v-card width="300">
-                                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium"
-                                    data-theme="dark" data-type="HORIZONTAL" data-vanity="shailesh-k-s-1b3475226"
-                                    data-version="v1"><a class="badge-base__link LI-simple-link"
-                                        href="https://in.linkedin.com/in/shailesh-k-s-1b3475226?trk=profile-badge">Shailesh
-                                        K
-                                        S</a></div>
-                            </v-card>
-                            <v-card width="300">
-                                <github-card data-user="shell-raiser"></github-card>
-                            </v-card>
-                            <v-card width="300"> <iframe width="100%" height="300" scrolling="no" frameborder="no"
-                                    allow="autoplay"
-                                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1479346411%3Fsecret_token%3Ds-PQ8j8pMoFRA&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                                <div
-                                    style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                                    <a href="https://soundcloud.com/user-185450671" title="Shell Raiser" target="_blank"
-                                        style="color: #cccccc; text-decoration: none;">Shell Raiser</a> · <a
-                                        href="https://soundcloud.com/user-185450671/sets/all-tarcks" title="All tarcks"
-                                        target="_blank" style="color: #cccccc; text-decoration: none;">All tarcks</a>
-                                </div>
-                            </v-card>-->
+
         <v-card>
-          <!-- <v-card-title class="connectHead" style="text-align:right;">Contact</v-card-title> -->
-          <!-- <v-list> -->
-          <!-- <v-list-item-group> -->
 
           <v-list-item two-line href="mailto: ksshaileshofficial@gmail.com">
             <v-list-item-content>
@@ -64,13 +40,13 @@
             <v-icon right>mdi-soundcloud</v-icon>
           </v-list-item>
 
-          <v-list-item two-line href="https://www.youtube.com/@shell-raiser" target="_blank" rel="noopener noreferrer">
+          <!-- <v-list-item two-line href="https://www.youtube.com/@shell-raiser" target="_blank" rel="noopener noreferrer">
             <v-list-item-content>
               <v-list-item-title>Youtube</v-list-item-title>
               <v-list-item-subtitle>@shell-raiser</v-list-item-subtitle>
             </v-list-item-content>
             <v-icon right>mdi-youtube</v-icon>
-          </v-list-item>
+          </v-list-item> -->
 
           <v-list-item two-line href="https://www.linkedin.com/in/shailesh-k-s" target="_blank" rel="noopener noreferrer">
             <v-list-item-content>
