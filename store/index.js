@@ -1,10 +1,14 @@
-export const state = () => ({
-    chipSelected: [],
-    activeSection: "about"
-})
+import { defineStore } from 'pinia';
 
-export const mutations = {
-    changeActiveSection(state, activeSection) {
-        state.activeSection = activeSection
-    }
-}
+export const useUserStore = defineStore('user', {
+  state: () => ({
+    chipSelected: [],
+    activeSection: 'about',
+  }),
+
+  actions: {
+    changeActiveSection(activeSection) {
+      this.activeSection = activeSection;
+    },
+  },
+});

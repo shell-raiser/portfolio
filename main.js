@@ -1,4 +1,4 @@
-import Vuetify from 'vuetify/lib/framework'
+import vuetify from './plugins/vuetify'
 // import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/lib/util/colors'
 import DefaultLayout from '~/layouts/default.vue'
@@ -48,7 +48,7 @@ export default function (Vue, { appOptions, head }) {
       // dark: true
     }
   } //opts includes, vuetify themes, icons, etc.
-  Vue.use(Vuetify)
+  Vue.use(vuetify)
 
   appOptions.vuetify = new Vuetify(opts);
   // Vue.use(store)

@@ -9,7 +9,7 @@
         <v-row>
             <v-col>
                 <h3>Filter</h3>
-                <v-chip-group column multiple color="deep-purple lighten-4" v-model="$store.state.chipSelected">
+                <v-chip-group column multiple color="deep-purple lighten-4" v-model="userStore.chipSelected">
                     <v-chip v-for="i in allProjects" :value="i" :key="i">
                         {{ i }}
                     </v-chip>
@@ -20,7 +20,7 @@
         <!-- <v-divider></v-divider> -->
         <v-row>
             <v-col>
-                <v-list nav class="rounded" v-if="$store.state.chipSelected.length == 0">
+                <v-list nav class="rounded" v-if="userStore.chipSelected.length == 0">
                     <h3>Go to </h3>
                     <v-list-item class="white rounded" @click="scrollToElement('hackathons')">
                         Hackathon Projects
@@ -44,6 +44,10 @@
 </style>
 
 <script>
+
+import { useUserStore } from '@/store/index.js';
+// var userStore = useUserStore();
+
 import allTheProjects from '../data/projectData.json'
 var availableAttributes = [];
 for (const category in allTheProjects) {
@@ -60,6 +64,11 @@ availableAttributes = availableAttributes.filter((item,
     index) => availableAttributes.indexOf(item) === index);
 // console.log(availableAttributes)
 export default {
+    setup() {
+    return {
+        userStore: useUserStore(),
+    };
+  },
     mounted: () => {
         // console.log(chipSelected)
     },
@@ -68,21 +77,21 @@ export default {
         allProjects: availableAttributes,
     }),
     methods: {
-        updateState() {
-            this.$store.commit('updateSelected', this.chipSelected)
-            // this.$store.state.chipSelected = this.chipSelected
-            // console.log(this.$store.state.chipSelected)
-        },
-        getAvailableAttributes() {
-            var allAttributes = [];
-            for (const category in allProjects) {
-                for (let i = 0; i < category.length; i++) {
-                    const project = category[i];
-                    availableAttributes.push(project[attributes])
-                }
-            }
-            return allAttributes
-        },
+        // updateState() {
+        //     this.$store.commit('updateSelected', this.chipSelected)
+        //     // this.$store.state.chipSelected = this.chipSelected
+        //     // console.log(this.$store.state.chipSelected)
+        // },
+        // getAvailableAttributes() {
+        //     var allAttributes = [];
+        //     for (const category in allProjects) {
+        //         for (let i = 0; i < category.length; i++) {
+        //             const project = category[i];
+        //             availableAttributes.push(project[attributes])
+        //         }
+        //     }
+        //     return allAttributes
+        // },
         scrollToElement(refName) {
             const position = document.getElementById(refName).offsetTop;
             window.scrollTo({ top: position, behavior: "smooth" });

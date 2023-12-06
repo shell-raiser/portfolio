@@ -13,22 +13,22 @@
 				<p class="text-center text-subtitle-1">Shell Raiser</p>
 
 
-				<v-list-item :class="[($store.state.activeSection == 'about') ? 'v-list-item--active' : null]"
+				<v-list-item :class="[(userStore.activeSection == 'about') ? 'v-list-item--active' : null]"
 					@click="scrollToElement('about')">
 					<v-list-item-icon><v-icon>mdi-view-dashboard</v-icon></v-list-item-icon>
 					<v-list-item-title>About</v-list-item-title>
 				</v-list-item>
-				<v-list-item :class="[($store.state.activeSection == 'connect') ? 'v-list-item--active' : null]"
+				<v-list-item :class="[(userStore.activeSection == 'connect') ? 'v-list-item--active' : null]"
 					@click="scrollToElement('connect')">
 					<v-list-item-icon><v-icon>mdi-human-greeting-proximity</v-icon></v-list-item-icon>
 					<v-list-item-title>Connect</v-list-item-title>
 				</v-list-item>
-				<v-list-item :class="[($store.state.activeSection == 'projects') ? 'v-list-item--active' : null]"
+				<v-list-item :class="[(userStore.activeSection == 'projects') ? 'v-list-item--active' : null]"
 					@click="scrollToElement('projects')">
 					<v-list-item-icon><v-icon>mdi-devices</v-icon></v-list-item-icon>
 					<v-list-item-title>Projects</v-list-item-title>
 				</v-list-item>
-				<v-list-item :class="[($store.state.activeSection == 'arsenal') ? 'v-list-item--active' : null]"
+				<v-list-item :class="[(userStore.activeSection == 'arsenal') ? 'v-list-item--active' : null]"
 					@click="scrollToElement('arsenal')">
 					<v-list-item-icon><v-icon>mdi-hammer-wrench</v-icon></v-list-item-icon>
 					<v-list-item-title>Tools</v-list-item-title>
@@ -41,22 +41,22 @@
 		</v-navigation-drawer>
 
 		<v-bottom-navigation class="d-lg-none" app grow color="deep-purple darken-3" shift>
-			<v-btn height="100%" :class="[($store.state.activeSection == 'about') ? 'v-btn--active' : null]"
+			<v-btn height="100%" :class="[(userStore.activeSection == 'about') ? 'v-btn--active' : null]"
 				@click="scrollToElement('about')">
 				<span>About</span>
 				<v-icon>mdi-view-dashboard</v-icon>
 			</v-btn>
-			<v-btn height="100%" :class="[($store.state.activeSection == 'connect') ? 'v-btn--active' : null]"
+			<v-btn height="100%" :class="[(userStore.activeSection == 'connect') ? 'v-btn--active' : null]"
 				@click="scrollToElement('connect')">
 				<span>Connect</span>
 				<v-icon>mdi-human-greeting-proximity</v-icon>
 			</v-btn>
-			<v-btn height="100%" :class="[($store.state.activeSection == 'projects') ? 'v-btn--active' : null]"
+			<v-btn height="100%" :class="[(userStore.activeSection == 'projects') ? 'v-btn--active' : null]"
 				@click="scrollToElement('projects')">
 				<span>Projects</span>
 				<v-icon>mdi-devices</v-icon>
 			</v-btn>
-			<v-btn height="100%" :class="[($store.state.activeSection == 'arsenal') ? 'v-btn--active' : null]"
+			<v-btn height="100%" :class="[(userStore.activeSection == 'arsenal') ? 'v-btn--active' : null]"
 				@click="scrollToElement('arsenal')">
 				<span>Tools</span>
 				<v-icon>mdi-hammer-wrench</v-icon>
@@ -66,12 +66,19 @@
 </template>
 
 <script>
+import { useUserStore } from '@/store/index.js';
+// var userStore = useUserStore();
 
 var DReader
 var themeFixes = { css: '.v-navigation-drawer__content {background-color: #251542} #hackathons,#sideProjects,#volunteer{color: white} .projCard{color: #EDE7F6} .greet{color: white} #LinksHead{color: white}' }
 var aboutSec
 
 export default {
+	setup() {
+    return {
+        userStore: useUserStore(),
+    };
+  },
 	mounted() {
 		aboutSec = document.querySelector('#about')
 		window.addEventListener(
@@ -80,7 +87,9 @@ export default {
 				allSections.forEach((thisSec) => {
 					if (thisSec.offsetTop <= window.scrollY && (thisSec.offsetTop + thisSec.offsetHeight) > window.scrollY) {
 						// this.$store.state.activeSection = thisSec.id
-						this.$store.commit('changeActiveSection', thisSec.id)
+						// this.$store.commit('changeActiveSection', thisSec.id)
+						userStore.changeActiveSection(thisSec.id);
+
 					}
 				});
 			});

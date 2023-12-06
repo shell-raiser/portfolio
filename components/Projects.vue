@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h2 v-if="$store.state.chipSelected.length == 0" class="rounded" id="hackathons">Hackathon Projects</h2>
+    <h2 v-if="userStore.chipSelected.length == 0" class="rounded" id="hackathons">Hackathon Projects</h2>
     <div style="height:10px"> </div>
     <v-row>
       <template v-for="project in hackathonProjects">
@@ -8,7 +8,7 @@
       </template>
     </v-row>
     <div style="height:30px"> </div>
-    <h2 v-if="$store.state.chipSelected.length == 0" class="rounded" id="sideProjects">Other Projects</h2>
+    <h2 v-if="userStore.chipSelected.length == 0" class="rounded" id="sideProjects">Other Projects</h2>
     <div style="height:10px"> </div>
     <v-row>
       <template v-for="project in sideProjects">
@@ -16,7 +16,7 @@
       </template>
     </v-row>
     <div style="height:30px"> </div>
-    <h2 v-if="$store.state.chipSelected.length == 0" class="rounded" id="volunteer">Volunteering</h2>
+    <h2 v-if="userStore.chipSelected.length == 0" class="rounded" id="volunteer">Volunteering</h2>
     <div style="height:10px"> </div>
     <v-row>
       <template v-for="project in volunteerSites">
@@ -36,12 +36,19 @@ h2 {
 }
 </style>
 <script>
+import { useUserStore } from '@/store/index.js';
+// var userStore = useUserStore();
+
 import ProjectFilterNavigation from '../components/projectFilterNavigation.vue';
 import allProjects from '../data/projectData.json'
 import ProjectCard from '../components/projectCard.vue';
 
 export default {
-
+  setup() {
+    return {
+        userStore: useUserStore(),
+    };
+  },
   // metaInfo: {
   //   title: "Projects",
   // },
@@ -57,7 +64,7 @@ export default {
   methods: {
     contains(arrAttributes) {
       arrAttributes.some(element => {
-        return this.$store.state.chipSelected.includes(element);
+        return this.userStore.chipSelected.includes(element);
       })
     }
   },
