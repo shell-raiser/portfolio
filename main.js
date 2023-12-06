@@ -3,11 +3,11 @@ import Vuetify from 'vuetify/lib/framework'
 import colors from 'vuetify/lib/util/colors'
 import DefaultLayout from '~/layouts/default.vue'
 
-import Vuex from 'vuex'
+// import Vuex from 'vuex'
 import '@mdi/font/css/materialdesignicons.css'
 
 export default function (Vue, { appOptions, head }) {
-  Vue.use(Vuex)
+  // Vue.use(Vuex)
   // head.link.push({
   //   rel: 'stylesheet',
   //   href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css',
@@ -24,12 +24,12 @@ export default function (Vue, { appOptions, head }) {
     // })
 
 
-    appOptions.store = new Vuex.Store({
-      state: {
-        chipSelected: [],
-        activeSection: "about"
-      }
-    })
+    // appOptions.store = new Vuex.Store({
+    //   state: {
+    //     chipSelected: [],
+    //     activeSection: "about"
+    //   }
+    // })
   const opts = {
     theme: {
       themes: {

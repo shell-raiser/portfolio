@@ -1,7 +1,7 @@
 <template>
 	<v-app>
 		<v-main>
-			<Nuxt />
+			<NuxtPage />
 		</v-main>
 		<v-navigation-drawer class="d-none d-sm-block" id="navBar" app color="deep-purple lighten-4">
 			<v-list nav dense>
