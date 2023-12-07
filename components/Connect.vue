@@ -6,70 +6,54 @@
 
         <v-card>
 
-          <v-list-item two-line href="mailto: ksshaileshofficial@gmail.com">
-            <v-list-item-content>
-              <v-list-item-title>Email (Official)</v-list-item-title>
-              <v-list-item-subtitle>ksshaileshofficial@gmail.com</v-list-item-subtitle>
-            </v-list-item-content>
-            <v-icon right>mdi-email-variant</v-icon>
+          <v-list-item append-icon="mdi-email-variant" two-line href="mailto: ksshaileshofficial@gmail.com">
+            <v-list-item-title>Email (Official)</v-list-item-title>
+            <v-list-item-subtitle>ksshaileshofficial@gmail.com</v-list-item-subtitle>
           </v-list-item>
 
-          <v-list-item two-line href="mailto: contactshellraiser@gmail.com">
-            <v-list-item-content>
-              <v-list-item-title>Email (Music Stuff)</v-list-item-title>
-              <v-list-item-subtitle>contactshellraiser@gmail.com</v-list-item-subtitle>
-            </v-list-item-content>
-            <v-icon right>mdi-email-variant</v-icon>
+          <v-list-item append-icon="mdi-account-music" two-line href="mailto: contactshellraiser@gmail.com">
+            <v-list-item-title>Email (Music Stuff)</v-list-item-title>
+            <v-list-item-subtitle>contactshellraiser@gmail.com</v-list-item-subtitle>
           </v-list-item>
 
 
 
-          <v-list-item two-line href="https://github.com/shell-raiser" target="_blank" rel="noopener noreferrer">
-            <v-list-item-content>
-              <v-list-item-title>Github</v-list-item-title>
-              <v-list-item-subtitle>@shell-raiser</v-list-item-subtitle>
-            </v-list-item-content>
-            <v-icon right>mdi-github</v-icon>
+          <v-list-item append-icon="mdi-github" two-line href="https://github.com/shell-raiser" target="_blank"
+            rel="noopener noreferrer">
+            <v-list-item-title>Github</v-list-item-title>
+            <v-list-item-subtitle>@shell-raiser</v-list-item-subtitle>
           </v-list-item>
 
-          <v-list-item two-line href="https://soundcloud.com/user-185450671" target="_blank" rel="noopener noreferrer">
-            <v-list-item-content>
-              <v-list-item-title>Soundcloud</v-list-item-title>
-              <v-list-item-subtitle>soundcloud.com/user-185450671</v-list-item-subtitle>
-            </v-list-item-content>
-            <v-icon right>mdi-soundcloud</v-icon>
+          <v-list-item append-icon="mdi-soundcloud" two-line href="https://soundcloud.com/user-185450671" target="_blank"
+            rel="noopener noreferrer">
+            <v-list-item-title>Soundcloud</v-list-item-title>
+            <v-list-item-subtitle>soundcloud.com/user-185450671</v-list-item-subtitle>
           </v-list-item>
 
           <!-- <v-list-item two-line href="https://www.youtube.com/@shell-raiser" target="_blank" rel="noopener noreferrer">
-            <v-list-item-content>
+            
               <v-list-item-title>Youtube</v-list-item-title>
               <v-list-item-subtitle>@shell-raiser</v-list-item-subtitle>
-            </v-list-item-content>
+            
             <v-icon right>mdi-youtube</v-icon>
           </v-list-item> -->
 
-          <v-list-item two-line href="https://www.linkedin.com/in/shailesh-k-s" target="_blank" rel="noopener noreferrer">
-            <v-list-item-content>
-              <v-list-item-title>Linkedin</v-list-item-title>
-              <v-list-item-subtitle>linkedin.com/in/shailesh-k-s</v-list-item-subtitle>
-            </v-list-item-content>
-            <v-icon right>mdi-linkedin</v-icon>
+          <v-list-item append-icon="mdi-linkedin" two-line href="https://www.linkedin.com/in/shailesh-k-s" target="_blank"
+            rel="noopener noreferrer">
+            <v-list-item-title>Linkedin</v-list-item-title>
+            <v-list-item-subtitle>linkedin.com/in/shailesh-k-s</v-list-item-subtitle>
           </v-list-item>
 
-          <v-list-item two-line href="https://devfolio.co/@shell_raiser" target="_blank" rel="noopener noreferrer">
-            <v-list-item-content>
-              <v-list-item-title>Devfolio</v-list-item-title>
-              <v-list-item-subtitle>@shell_raiser</v-list-item-subtitle>
-            </v-list-item-content>
-            <v-icon right>D</v-icon>
+          <v-list-item append-icon="mdi-alpha-d-box" two-line href="https://devfolio.co/@shell_raiser" target="_blank"
+            rel="noopener noreferrer">
+            <v-list-item-title>Devfolio</v-list-item-title>
+            <v-list-item-subtitle>@shell_raiser</v-list-item-subtitle>
           </v-list-item>
 
-          <v-list-item two-line href="https://unstop.com/u/shaileshks" target="_blank" rel="noopener noreferrer">
-            <v-list-item-content>
-              <v-list-item-title>Unstop</v-list-item-title>
-              <v-list-item-subtitle>shaileshks</v-list-item-subtitle>
-            </v-list-item-content>
-            <v-icon right>U</v-icon>
+          <v-list-item append-icon="mdi-alpha-u-box" two-line href="https://unstop.com/u/shaileshks" target="_blank"
+            rel="noopener noreferrer">
+            <v-list-item-title>Unstop</v-list-item-title>
+            <v-list-item-subtitle>shaileshks</v-list-item-subtitle>
           </v-list-item>
           <!-- </v-list-item-group> -->
           <!-- </v-list> -->

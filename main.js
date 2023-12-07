@@ -30,27 +30,27 @@ export default function (Vue, { appOptions, head }) {
     //     activeSection: "about"
     //   }
     // })
-  const opts = {
-    theme: {
-      themes: {
-        light: {
-          primary: colors.deepPurple,
-          menu: colors.deepPurple.lighten4,
-          navBar: colors.deepPurple.lighten4,
-          accent: colors.red.darken3,
-        },
-        dark: {
-          primary: colors.deepPurple,
-          menu: colors.deepPurple.darken4,
-          navBar: colors.deepPurple.darken4
-        }
-      },
-      // dark: true
-    }
-  } //opts includes, vuetify themes, icons, etc.
+  // const opts = {
+  //   theme: {
+  //     themes: {
+  //       light: {
+  //         primary: colors.deepPurple,
+  //         menu: colors.deepPurple.lighten4,
+  //         navBar: colors.deepPurple.lighten4,
+  //         accent: colors.red.darken3,
+  //       },
+  //       dark: {
+  //         primary: colors.deepPurple,
+  //         menu: colors.deepPurple.darken4,
+  //         navBar: colors.deepPurple.darken4
+  //       }
+  //     },
+  //     // dark: true
+  //   }
+  // } //opts includes, vuetify themes, icons, etc.
   Vue.use(vuetify)
 
-  appOptions.vuetify = new Vuetify(opts);
+  // appOptions.vuetify = new vuetify(opts);
   // Vue.use(store)
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
