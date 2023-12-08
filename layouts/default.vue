@@ -63,8 +63,13 @@
 <script>
 import { useUserStore } from '@/store/index.js';
 // var userStore = useUserStore();
+import {
+    enable as enableDarkMode,
+    disable as disableDarkMode,
+    auto as followSystemColorScheme,
+    isEnabled as isDarkReaderEnabled
+} from 'darkreader';
 
-var DReader
 var themeFixes = { css: '.v-navigation-drawer__content {background-color: #251542} #hackathons,#sideProjects,#volunteer{color: white} .projCard{color: #EDE7F6} .greet{color: white} #LinksHead{color: white}' }
 var aboutSec
 
@@ -88,14 +93,15 @@ export default {
 					}
 				});
 			});
-		DReader = require('darkreader')
-		DReader.auto({}, themeFixes)
+		// DarkReader = require('darkreader')
+		
+		followSystemColorScheme({}, themeFixes)
 		// async function smth() {
-		// 	const CSS = await DReader.exportGeneratedCSS();
+		// 	const CSS = await DarkReader.exportGeneratedCSS();
 		// 	console.log(CSS)
 		// }
 		// smth()
-		if (DReader.isEnabled()) {
+		if (isDarkReaderEnabled()) {
 			// aboutSec.style.background = '#635e78'
 			aboutSec.style.background = 'linear-gradient(90deg, #9575CD, #003b6b)';
 
@@ -109,11 +115,11 @@ export default {
 			window.scrollTo({ top: position, behavior: "smooth" });
 		},
 		changeTheme() {
-			if (DReader.isEnabled()) {
-				DReader.disable();
+			if (isDarkReaderEnabled()) {
+				DarkReader.disable();
 				aboutSec.style.background = 'linear-gradient(190deg, #9575CD, #a6d7ff)';
 			} else {
-				DReader.enable({}, themeFixes);
+				DarkReader.enable({}, themeFixes);
 				aboutSec.style.background = 'linear-gradient(90deg, #9575CD, #003b6b)';
 			}
 		}
