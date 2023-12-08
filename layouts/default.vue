@@ -116,10 +116,10 @@ export default {
 		},
 		changeTheme() {
 			if (isDarkReaderEnabled()) {
-				DarkReader.disable();
+				disableDarkMode();
 				aboutSec.style.background = 'linear-gradient(190deg, #9575CD, #a6d7ff)';
 			} else {
-				DarkReader.enable({}, themeFixes);
+				enableDarkMode({}, themeFixes);
 				aboutSec.style.background = 'linear-gradient(90deg, #9575CD, #003b6b)';
 			}
 		}
