@@ -2,46 +2,27 @@
   <!-- <div>
     {{ hackathonProjects }}
     </div> -->
-  <v-col
-    v-if="
-      project.attributes.some((element) => {
-        return userStore.chipSelected.includes(element);
-      }) || userStore.chipSelected.length == 0
-    "
-    style="max-width: 100%"
-    sm="6"
-  >
+  <v-col v-if="project.attributes.some((element) => {
+    return userStore.chipSelected.includes(element);
+  }) || userStore.chipSelected.length == 0
+    ">
+    <!-- style="max-width: 100%" sm="6"> -->
     <!-- <v-lazy v-model="isActive" :options="{ threshold: 0.5 }"> -->
 
-    <v-hover v-slot="{ hover }">
-      <v-card class="mx-auto projectCard" width="350">
+    <v-hover v-slot="{ hover, props }">
+      <v-card class="mx-auto projectCard" v-bind="props" width="350">
         <v-img :aspect-ratio="16 / 9" :src="project.img">
-          <v-expand-transition>
-            <div
-              v-if="hover"
-              class="d-flex transition-fast-in-fast-out v-card--reveal white--text"
-              style="height: 100%"
-            >
+          <v-overlay :model-value="hover" contained>
+            <div class="d-flex transition-fast-in-fast-out v-card--reveal white--text" style="height: 100%">
               <div class="cardHoverBlurBg">
                 <p class="projectCardHoverText" v-html="project.hoverText"></p>
               </div>
             </div>
-          </v-expand-transition>
+          </v-overlay>
         </v-img>
         <v-card-text class="pt-6" style="position: relative">
-          <v-btn
-            absolute
-            color="teal"
-            class="white--text"
-            fab
-            large
-            right
-            top
-            :href="project.heroLink"
-            target="_blank"
-            style="z-index: 0"
-            rel="noopener noreferrer"
-          >
+          <v-btn absolute color="teal" class="white--text" fab large right top :href="project.heroLink" target="_blank"
+            style="z-index: 0" rel="noopener noreferrer">
             <v-icon>{{ project.heroIcon }}</v-icon>
           </v-btn>
 
@@ -51,13 +32,8 @@
           <p v-html="project.desc"></p>
         </v-card-text>
         <v-card-actions>
-          <v-btn
-            v-for="(action, i) in project.actions"
-            :key="i"
-            :href="action.link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <v-btn v-for="(action, i) in project.actions" :key="i" :href="action.link" target="_blank"
+            rel="noopener noreferrer">
             <v-icon>{{ action.icon }}</v-icon>
           </v-btn>
         </v-card-actions>
@@ -73,7 +49,7 @@ import { useUserStore } from "@/store/index.js";
 export default {
   setup() {
     return {
-        userStore: useUserStore(),
+      userStore: useUserStore(),
     };
   },
 
@@ -87,6 +63,7 @@ export default {
 .projCard {
   color: #673ab7;
 }
+
 .projectCardHoverText {
   /* top: 8px; */
   /* height: 100%; */

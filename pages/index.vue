@@ -122,6 +122,7 @@ section {
 
 
 #about {
+	background: linear-gradient(90deg, #9575CD, #a6d7ff);
 	background-size: 150% 100%;
 	animation: gradient 10s ease infinite;
 }
