@@ -13,23 +13,24 @@
 				<p class="text-center text-subtitle-1">Shell Raiser</p>
 
 
-				<v-list-item :class="[(userStore.activeSection == 'about') ? 'v-list-item--active' : null]" prepend-icon="mdi-view-dashboard"
-					@click="scrollToElement('about')">
+				<v-list-item :class="[(userStore.activeSection == 'about') ? 'v-list-item--active' : null]"
+					prepend-icon="mdi-view-dashboard" @click="scrollToElement('about')">
 					<v-list-item-title>About</v-list-item-title>
 				</v-list-item>
-				<v-list-item :class="[(userStore.activeSection == 'connect') ? 'v-list-item--active' : null]" prepend-icon="mdi-human-greeting-proximity"
-					@click="scrollToElement('connect')">
+				<v-list-item :class="[(userStore.activeSection == 'connect') ? 'v-list-item--active' : null]"
+					prepend-icon="mdi-human-greeting-proximity" @click="scrollToElement('connect')">
 					<v-list-item-title>Connect</v-list-item-title>
 				</v-list-item>
-				<v-list-item :class="[(userStore.activeSection == 'projects') ? 'v-list-item--active' : null]" prepend-icon="mdi-devices"
-					@click="scrollToElement('projects')">
+				<v-list-item :class="[(userStore.activeSection == 'projects') ? 'v-list-item--active' : null]"
+					prepend-icon="mdi-devices" @click="scrollToElement('projects')">
 					<v-list-item-title>Projects</v-list-item-title>
 				</v-list-item>
-				<v-list-item :class="[(userStore.activeSection == 'arsenal') ? 'v-list-item--active' : null]" prepend-icon="mdi-hammer-wrench"
-					@click="scrollToElement('arsenal')">
+				<v-list-item :class="[(userStore.activeSection == 'arsenal') ? 'v-list-item--active' : null]"
+					prepend-icon="mdi-hammer-wrench" @click="scrollToElement('arsenal')">
 					<v-list-item-title>Tools</v-list-item-title>
 				</v-list-item>
-				<v-list-item style="position: fixed; bottom: 1em;" prepend-icon="mdi-lightbulb" @click="changeTheme()">
+				<v-list-item style="position: fixed; bottom: 1em;width: 94%;" prepend-icon="mdi-lightbulb"
+					@click="changeTheme()">
 					<v-list-item-title>Theme</v-list-item-title>
 				</v-list-item>
 			</v-list>
@@ -64,10 +65,10 @@
 import { useUserStore } from '@/store/index.js';
 // var userStore = useUserStore();
 import {
-    enable as enableDarkMode,
-    disable as disableDarkMode,
-    auto as followSystemColorScheme,
-    isEnabled as isDarkReaderEnabled
+	enable as enableDarkMode,
+	disable as disableDarkMode,
+	auto as followSystemColorScheme,
+	isEnabled as isDarkReaderEnabled
 } from 'darkreader';
 
 var themeFixes = { css: '.v-navigation-drawer__content {background-color: #251542} #hackathons,#sideProjects,#volunteer{color: white} .projCard{color: #EDE7F6} .greet{color: white} #LinksHead{color: white}' }
@@ -75,10 +76,10 @@ var aboutSec
 
 export default {
 	setup() {
-    return {
-        userStore: useUserStore(),
-    };
-  },
+		return {
+			userStore: useUserStore(),
+		};
+	},
 	mounted() {
 		aboutSec = document.querySelector('#about')
 		window.addEventListener(
@@ -94,7 +95,7 @@ export default {
 				});
 			});
 		// DarkReader = require('darkreader')
-		
+
 		followSystemColorScheme({}, themeFixes)
 		// async function smth() {
 		// 	const CSS = await DarkReader.exportGeneratedCSS();
