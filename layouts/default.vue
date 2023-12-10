@@ -3,7 +3,7 @@
 		<v-main>
 			<NuxtPage />
 		</v-main>
-		<v-navigation-drawer class="d-none d-sm-block" id="navBar" app color="deep-purple lighten-4">
+		<v-navigation-drawer class="d-none d-sm-block" id="navBar" app color="#D1C4E9">
 			<v-list nav dense>
 				<!-- <img src="/Shell.svg" alt="logo"> -->
 				<v-img src="/Shell.svg" width="100%" style="margin-bottom: 1em;"></v-img>

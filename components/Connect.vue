@@ -56,7 +56,7 @@
               />
             </v-col> -->
       <v-col align-self="center" style="max-width:600px;">
-        <h1 class="rounded white--text">Contact</h1>
+        <h1 class="rounded" style="color: white;">Contact</h1>
 
         <v-card style="padding: 10px;" color="menu">
           <v-form ref="form" v-model="valid" lazy-validation action="https://formspree.io/f/xeqdjwoo" method="post">
