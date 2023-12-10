@@ -10,7 +10,7 @@
     <!-- <v-lazy v-model="isActive" :options="{ threshold: 0.5 }"> -->
 
     <v-hover v-slot="{ hover, props }">
-      <v-card class="mx-auto projectCard" v-bind="props" width="350">
+      <v-card class="mx-auto projectCard" v-bind="props" min-width="250">
         <v-img :aspect-ratio="16 / 9" :src="project.img">
           <v-overlay :model-value="hover" contained>
             <div class="d-flex transition-fast-in-fast-out v-card--reveal white--text" style="height: 100%">
