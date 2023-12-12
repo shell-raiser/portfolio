@@ -1,9 +1,0 @@
-{
-  "name": "shell-raiser.github.io",
-  "short_name": "shell-raiser.github.io",
-  "icons": [],
-  "start_url": "/?standalone=true",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "lang": "en"
-}
