@@ -41,13 +41,13 @@
 			</v-container>
 		</section>
 
-		<section id="connect"  style="background: #000;">
+		<section id="connect" style="background: #000;">
 			<ConnectComponent />
 		</section>
 
 
 
-		<section id="projects" 
+		<section id="projects"
 			style='background: url("../assets/projectsBg.gif");  background-size: cover;  background-attachment: fixed;'>
 			<v-row>
 				<v-col cols="3" class="d-none d-sm-block">
@@ -61,10 +61,10 @@
 
 
 
-		<section id="arsenal" 
+		<section id="arsenal"
 			style='background: purple url("assets/toolsBg.webp"); background-size:contain;  background-attachment: fixed;'>
 			<v-row>
-				<v-col cols="3" class="d-none d-sm-block" >
+				<v-col cols="3" class="d-none d-sm-block">
 					<ArsenalLanguageStats style="position: sticky; top: 0;" />
 				</v-col>
 				<v-col>
@@ -88,7 +88,6 @@ import ProjectFilterNavigation from '../components/projectFilterNavigation.vue';
 import Projects from '../components/Projects.vue';
 export default {
 	head: {
-		title: "About me",
 		meta: [
 			{ content: "I'm Shailesh (Shell Raiser), and this is my portfolio" },
 			{ hid: 'og-title', property: 'og:title', content: 'Shailesh K S - My Portfolio' },
@@ -98,7 +97,7 @@ export default {
 			//   content: 'https://domain.com/my-image.jpg'
 			// },
 			// { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' },
-			{ hid: 'og-url', property: 'og:url', content: 'https://shell-raiser.github.io/' },
+			{ hid: 'og-url', property: 'og:url', content: 'https://shell-raiser.co/' },
 
 		]
 	},
