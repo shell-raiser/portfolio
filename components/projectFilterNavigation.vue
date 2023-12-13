@@ -94,9 +94,9 @@ export default {
         // },
         scrollToElement(refName) {
             const position = document.getElementById(refName).offsetTop;
-            if (process.browser) {
-                window.scrollTo({ top: position, behavior: "smooth" });
-            }
+            // if (process.browser) {
+            window.scrollTo({ top: position, behavior: "smooth" });
+            // }
             // var top = element.offsetTop;
 
             // window.scrollTo(0, top);

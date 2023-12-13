@@ -82,34 +82,29 @@ export default {
 	},
 	mounted() {
 		aboutSec = document.querySelector('#about')
-		if (process.browser) {
-			window.addEventListener(
-				"scroll", () => {
-					var allSections = [...document.querySelectorAll('section')]
-					allSections.forEach((thisSec) => {
-						if (thisSec.offsetTop <= window.scrollY && (thisSec.offsetTop + thisSec.offsetHeight) > window.scrollY) {
-							// this.$store.state.activeSection = thisSec.id
-							// this.$store.commit('changeActiveSection', thisSec.id)
-							this.userStore.changeActiveSection(thisSec.id);
+		// if (process.browser) {
+		window.addEventListener(
+			"scroll", () => {
+				var allSections = [...document.querySelectorAll('section')]
+				allSections.forEach((thisSec) => {
+					if (thisSec.offsetTop <= window.scrollY && (thisSec.offsetTop + thisSec.offsetHeight) > window.scrollY) {
+						// this.$store.state.activeSection = thisSec.id
+						// this.$store.commit('changeActiveSection', thisSec.id)
+						this.userStore.changeActiveSection(thisSec.id);
 
-						}
-					});
+					}
 				});
-		}
-		// DarkReader = require('darkreader')
-
-		followSystemColorScheme({}, themeFixes)
-		// async function smth() {
-		// 	const CSS = await DarkReader.exportGeneratedCSS();
-		// 	console.log(CSS)
+			});
 		// }
-		// smth()
-		if (isDarkReaderEnabled()) {
-			// aboutSec.style.background = '#635e78'
-			aboutSec.style.background = 'linear-gradient(90deg, #9575CD, #003b6b)';
+		if (process.browser) {
+			followSystemColorScheme({}, themeFixes)
+			if (isDarkReaderEnabled()) {
+				// aboutSec.style.background = '#635e78'
+				aboutSec.style.background = 'linear-gradient(90deg, #9575CD, #003b6b)';
 
-		} else {
-			aboutSec.style.background = 'linear-gradient(190deg, #9575CD, #a6d7ff)';
+			} else {
+				aboutSec.style.background = 'linear-gradient(190deg, #9575CD, #a6d7ff)';
+			}
 		}
 	},
 	methods: {
@@ -120,12 +115,14 @@ export default {
 			}
 		},
 		changeTheme() {
-			if (isDarkReaderEnabled()) {
-				disableDarkMode();
-				aboutSec.style.background = 'linear-gradient(190deg, #9575CD, #a6d7ff)';
-			} else {
-				enableDarkMode({}, themeFixes);
-				aboutSec.style.background = 'linear-gradient(90deg, #9575CD, #003b6b)';
+			if (process.browser) {
+				if (isDarkReaderEnabled()) {
+					disableDarkMode();
+					aboutSec.style.background = 'linear-gradient(190deg, #9575CD, #a6d7ff)';
+				} else {
+					enableDarkMode({}, themeFixes);
+					aboutSec.style.background = 'linear-gradient(90deg, #9575CD, #003b6b)';
+				}
 			}
 		}
 	},
