@@ -82,18 +82,20 @@ export default {
 	},
 	mounted() {
 		aboutSec = document.querySelector('#about')
-		window.addEventListener(
-			"scroll", () => {
-				var allSections = [...document.querySelectorAll('section')]
-				allSections.forEach((thisSec) => {
-					if (thisSec.offsetTop <= window.scrollY && (thisSec.offsetTop + thisSec.offsetHeight) > window.scrollY) {
-						// this.$store.state.activeSection = thisSec.id
-						// this.$store.commit('changeActiveSection', thisSec.id)
-						this.userStore.changeActiveSection(thisSec.id);
+		if (process.browser) {
+			window.addEventListener(
+				"scroll", () => {
+					var allSections = [...document.querySelectorAll('section')]
+					allSections.forEach((thisSec) => {
+						if (thisSec.offsetTop <= window.scrollY && (thisSec.offsetTop + thisSec.offsetHeight) > window.scrollY) {
+							// this.$store.state.activeSection = thisSec.id
+							// this.$store.commit('changeActiveSection', thisSec.id)
+							this.userStore.changeActiveSection(thisSec.id);
 
-					}
+						}
+					});
 				});
-			});
+		}
 		// DarkReader = require('darkreader')
 
 		followSystemColorScheme({}, themeFixes)
@@ -113,7 +115,9 @@ export default {
 	methods: {
 		scrollToElement(refName) {
 			const position = document.getElementById(refName).offsetTop;
-			window.scrollTo({ top: position, behavior: "smooth" });
+			if (process.browser) {
+				window.scrollTo({ top: position, behavior: "smooth" });
+			}
 		},
 		changeTheme() {
 			if (isDarkReaderEnabled()) {

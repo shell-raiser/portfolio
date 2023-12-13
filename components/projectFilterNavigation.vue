@@ -65,10 +65,10 @@ availableAttributes = availableAttributes.filter((item,
 // console.log(availableAttributes)
 export default {
     setup() {
-    return {
-        userStore: useUserStore(),
-    };
-  },
+        return {
+            userStore: useUserStore(),
+        };
+    },
     mounted: () => {
         // console.log(chipSelected)
     },
@@ -94,7 +94,9 @@ export default {
         // },
         scrollToElement(refName) {
             const position = document.getElementById(refName).offsetTop;
-            window.scrollTo({ top: position, behavior: "smooth" });
+            if (process.browser) {
+                window.scrollTo({ top: position, behavior: "smooth" });
+            }
             // var top = element.offsetTop;
 
             // window.scrollTo(0, top);
