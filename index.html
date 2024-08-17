@@ -4,6 +4,25 @@
     </title>
     <meta name="description" content="I'm Shailesh (Shell Raiser), and this is my portfolio">
     <link rel="shortcut icon" href="/assets/Shell.svg" type="image/x-icon">
+    <style>
+        .feature-items {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 0px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .feature-item--wrapper {
+            flex-direction: row;
+            box-sizing: border-box;
+            min-width: 30%px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex: 1 1 auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,7 +46,7 @@
         links section for my work . <br>
     </div>
 
-    <br>    
+    <br>
 
     <div>
         Feel free to browse through my projects and contact information, and let me know what you think.
@@ -37,64 +56,72 @@
             here </a>
     </div>
 
-    <section>
+    <section style="text-align: center; width: 100%; display: flex; flex-direction: column; justify-content: center;">
         <h2>
             Connect with me
         </h2>
-        <ul>
-            <li>
-                Email (Official) <br>
-                <a href="mailto: ksshaileshofficial@gmail.com" target="_blank" rel="noopener noreferrer">
+        <div class="feature-items">
+
+            <div class="feature-item--wrapper">
+                Email (Official) : 
+                <a href="mailto: ksshaileshofficial@gmail.com" target="_blank" rel="noopener noreferrer"  style="margin-left: 3px;">
                     ksshaileshofficial@gmail.com
                 </a>
-            </li>
+            </div>
 
-            <li append-icon="mdi-account-music">
-                Email (Music Stuff) <br>
-                <a href="mailto: contactshellraiser@gmail.com" target="_blank" rel="noopener noreferrer">
+
+
+            <div class="feature-item--wrapper">
+                Email (Music Stuff) :
+                <a href="mailto: contactshellraiser@gmail.com" target="_blank" rel="noopener noreferrer" style="margin-left: 3px;">
                     contactshellraiser@gmail.com
                 </a>
-            </li>
+            </div>
 
 
-            <li>
-                
-                Github <br>
-                <a append-icon="mdi-github" href="https://github.com/shell-raiser" target="_blank"rel="noopener noreferrer">
+
+            <div class="feature-item--wrapper">
+                Github :
+                <a href="https://github.com/shell-raiser" target="_blank" rel="noopener noreferrer"  style="margin-left: 3px;">
                     @shell-raiser
                 </a>
-            </li>
-            <li>
-                
-                Soundcloud <br>
-                <a append-icon="mdi-soundcloud" href="https://soundcloud.com/user-185450671" target="_blank"
-                    rel="noopener noreferrer">
+            </div>
+
+
+            <div class="feature-item--wrapper">
+                Soundcloud :
+                <a href="https://soundcloud.com/user-185450671" target="_blank" rel="noopener noreferrer"  style="margin-left: 3px;">
                     soundcloud.com/user-185450671
                 </a>
-            </li>
+            </div>
 
-            <li>
-                Linkedin <br>
-                <a append-icon="mdi-linkedin" href="https://www.linkedin.com/in/shailesh-k-s" target="_blank"
-                    rel="noopener noreferrer">
+
+
+            <div class="feature-item--wrapper">
+                Linkedin :
+                <a href="https://www.linkedin.com/in/shailesh-k-s" target="_blank" rel="noopener noreferrer"  style="margin-left: 3px;">
                     linkedin.com/in/shailesh-k-s
                 </a>
-            </li>
+            </div>
 
-            <li>
-                LinkTr.ee <br>
-                <a append-icon="mdi-link-box" href="https://linktr.ee/shell_raiser" target="_blank"
-                    rel="noopener noreferrer">
+
+
+            <div class="feature-item--wrapper">
+                LinkTr.ee :
+                <a href="https://linktr.ee/shell_raiser" target="_blank" rel="noopener noreferrer"  style="margin-left: 3px;">
                     shell_raiser
                 </a>
-            </li>
-        </ul>
+            </div>
+
+        </div>
+    </section>
     </section>
 
-    <h2>
-        Projects
-    </h2>
 
-    <h2>Arsenal</h2>
+    <footer style="position: fixed; bottom: 0;">
+        <p>
+            <a href="/philosophy">Why is this site so <em>simple</em> ?</a>
+        </p>
+    </footer>
 
 </body>
