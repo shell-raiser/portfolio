@@ -1,7 +1,7 @@
 # My WIP Portfolio ⚠️
 
 Made with Gridsome, Vue.js and Vuetify <br>
-Hosted at https://shell-raiser.co
+Hosted at https://shell-raiser.github.io
 ![image](https://github.com/shell-raiser/shell-raiser.github.io/assets/78999739/e35e3ff7-7310-4d8b-af46-2bf0a14b5057)
 ![image](https://github.com/shell-raiser/shell-raiser.github.io/assets/78999739/92c2e1c2-97ae-42c4-9905-e8d772d2e304)
 ----
