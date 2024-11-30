@@ -1,0 +1,17 @@
+*.log
+.cache
+.DS_Store
+src/.temp
+node_modules
+dist
+.env
+.env.*
+.vscode
+*.blend
+*.blend1
+*.kdenlive
+target/npmlist.json
+.output
+.nuxt
+src/index.html
+static/sw.js
